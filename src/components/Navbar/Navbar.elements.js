@@ -4,8 +4,8 @@ import { Container } from '../../globalStyles';
 
 
 export const Nav = styled.nav`
-background: yellow;
-height: 80px;
+background: white;
+height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -18,19 +18,21 @@ z-index:999;
 export const NavbarContainer = styled(Container)`
 display: flex;
 justify-content: space-between;
-height: 80px;
+height: 100px;
 
 ${Container}  
 `;
 
 
-export const NavLogo = styled.h1`
-  color: blue;
-  justify-self: flex-start;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
+export const NavLogo = styled.img`
+ height: 160px;
+ width: 160px;
+background-image: url('/public/images/logo-reactgirls.png');
+border-radius: 80px;
+border: 1px solid red;
+position: relative;
+top: 50px;
+
 `;
 
 export const NavMenu = styled.ul`
@@ -49,7 +51,7 @@ border-bottom: 2px solid transparent;
 }
 `;
 export const NavLinks = styled(Link)`
-color: blue;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;

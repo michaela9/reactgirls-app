@@ -19,8 +19,8 @@ function Navbar() {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                        ReactGirls
+                    <NavLogo >
+                        
                     </NavLogo>
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
