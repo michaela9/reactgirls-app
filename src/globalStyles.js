@@ -5,20 +5,44 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 `;
 
 export const Container = styled.div`
 z-index:1;
 width: 100%;
-max-width: 1300px;
-margin-right: auto;
-margin-left: auto;
-padding-right:50px;
-padding-left: 50px;
+padding-right: 150px;
+padding-left: 150px;
+border: 1px solid red;
+`;
 
+export const ContainerColor = styled.div`
+z-index:1;
+width: 100%;
+padding: 100px 250px;
+background-color: rgba(212, 237, 240, 0.47);
+`;
 
+export const Button = styled.button`
+font-size: 18px;
+border: none;
+border-radius:30px;
+background-color: rgb(0,180,205);
+color: white;
+padding: 10px 35px;
+
+&:hover {
+    background: black;
+}
+`;
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    align-items: flex-start;
+    justify-content: space-between;
 `;
 
 

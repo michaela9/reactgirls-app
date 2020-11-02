@@ -1,8 +1,8 @@
 import React from 'react';
-import GlobalStyle from './globalStyles'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import GlobalStyle from './globalStyles';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import { Navbar } from './components';
+import { InfoSection, Navbar } from './components';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
+      <InfoSection />>
     </Router>
   );
 }
