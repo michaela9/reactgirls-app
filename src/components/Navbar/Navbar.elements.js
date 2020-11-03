@@ -1,36 +1,31 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
 
 
 export const Nav = styled.nav`
-  background: yellow;
-  height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  width:100%;
+  background: white;
+  height: 100px;
   position: sticky;
-  top: 0;
   z-index:999;
+  padding: auto 300px;
+  padding: 0px 300px;
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
-
-${Container}  
+  width:100%;
 `;
 
-
 export const NavLogo = styled.h1`
-  color: blue;
-  justify-self: flex-start;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
+  height: 160px;
+  width: 160px;
+  border-radius:80px;
+  position: relative;
+  top: 50px;
+  background-image: url('images/logo-reactgirls.png');
 `;
 
 export const NavMenu = styled.ul`
@@ -41,19 +36,20 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
   border-bottom: 2px solid transparent;
+  margin-right: 20px;
 
 &:hover {
   border-bottom: 2px solid blue;
 }
 `;
+
 export const NavLinks = styled(Link)`
-  color: blue;
+  color: black;
+  font-size: 18px;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-
-`
+`;

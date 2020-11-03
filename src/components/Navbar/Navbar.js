@@ -8,6 +8,8 @@ import {
     NavLinks
     } from './Navbar.elements';
 
+    import { Button } from '../../globalStyles';
+
 
 
 
@@ -22,9 +24,7 @@ function Navbar() {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                        ReactGirls
-                    </NavLogo>
+                    <NavLogo />
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
                             <NavLinks to='/'>Úvod</NavLinks>
@@ -39,7 +39,7 @@ function Navbar() {
                             <NavLinks to='/'>Akademie</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/'>KONTAKT</NavLinks>
+                            <NavLinks to='/'><Button>KONTAKT</Button></NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
