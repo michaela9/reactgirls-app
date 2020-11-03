@@ -4,13 +4,16 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import { InfoSection, Navbar } from './components';
 
+import { SponzorSection } from './components';
+
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
       <Navbar />
-      <InfoSection />>
+      <InfoSection />
+      <SponzorSection />
     </Router>
   );
 }
