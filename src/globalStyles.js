@@ -10,31 +10,30 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-z-index:1;
-width: 100%;
-padding-right: 150px;
-padding-left: 150px;
-border: 1px solid red;
+    z-index:1;
+    width: 100%;
+    padding: 100px 300px;
 `;
 
 export const ContainerColor = styled.div`
-z-index:1;
-width: 100%;
-padding: 100px 250px;
-background-color: rgba(212, 237, 240, 0.47);
+    z-index:1;
+    width: 100%;
+    padding: 100px 300px;
+    background-color: rgba(212, 237, 240, 0.47);
 `;
 
-export const Button = styled.button`
-font-size: 18px;
-border: none;
-border-radius:30px;
-background-color: rgb(0,180,205);
-color: white;
-padding: 10px 35px;
 
-&:hover {
-    background: black;
-}
+export const Button = styled.button`
+    font-size: 18px;
+    border: none;
+    border-radius:30px;
+    background-color: rgb(0,180,205);
+    color: white;
+    padding: 10px 35px;
+
+    &:hover {
+        background: black;
+    }
 `;
 
 export const ButtonContainer = styled.div`
@@ -44,6 +43,7 @@ export const ButtonContainer = styled.div`
     align-items: flex-start;
     justify-content: space-between;
 `;
+
 
 
 export default GlobalStyle;

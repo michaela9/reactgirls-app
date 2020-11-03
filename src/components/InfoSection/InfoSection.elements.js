@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TitleContainer = styled.div`
 display: flex;
 flex-direction:column;
-max-width: 45%;
+max-width: 50%;
 height: 400px;
 margin-right: 50px;
 justify-content: space-between;

@@ -2,9 +2,8 @@ import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import { InfoSection, Navbar } from './components';
+import { InfoSection, Navbar, SponzorSection, ProductSection } from './components';
 
-import { SponzorSection } from './components';
 
 
 function App() {
@@ -14,6 +13,7 @@ function App() {
       <Navbar />
       <InfoSection />
       <SponzorSection />
+      <ProductSection />
     </Router>
   );
 }
