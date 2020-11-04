@@ -25,8 +25,7 @@ export const Card = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 25px;
-    box-shadow: 0px 0px 40px rgba(68, 68, 68, 0.25);
-    //box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.2);
+    box-shadow: 0px 0px 40px rgba(68, 68, 68, 0.25), 0px 6px 6px rgba(68, 68, 68, 0.2);
     position: relative;
 `;
 

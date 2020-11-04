@@ -16,7 +16,7 @@ function InfoSection() {
               <ContainerColor>
                 <Wrapper>
                     <TitleContainer>
-                        <Title>Zapoj se do Mentoringu a nauč se programovat v Reactu!</Title>
+                        <Title>Zapoj se do Mentoringu <br />a nauč se programovat v Reactu!</Title>
                         <SubTitle>#ReactGirlsPrague</SubTitle>
                         <ButtonContainer>
                             <Button>user@gmail.com</Button>
