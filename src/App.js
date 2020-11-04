@@ -8,7 +8,8 @@ import {
   SponzorSection, 
   ProductSection, 
   NewsletterSection,
-  LectorSection
+  LectorSection,
+  FooterSection
 } from './components';
 
 
@@ -23,6 +24,7 @@ function App() {
       <ProductSection />
       <NewsletterSection />
       <LectorSection />
+      <FooterSection />
     </Router>
   );
 }

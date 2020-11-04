@@ -24,7 +24,7 @@ export const NavLogo = styled.h1`
   width: 160px;
   border-radius:80px;
   position: relative;
-  top: 50px;
+  top:60px;
   background-image: url('images/logo-reactgirls.png');
 `;
 
