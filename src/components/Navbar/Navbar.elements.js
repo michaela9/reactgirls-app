@@ -9,8 +9,8 @@ export const Nav = styled.nav`
   height: 100px;
   position: sticky;
   z-index:999;
-  padding: auto 300px;
-  padding: 0px 300px;
+  padding: auto 150px;
+  padding: 0px 150px;
 `;
 
 export const NavbarContainer = styled.div`

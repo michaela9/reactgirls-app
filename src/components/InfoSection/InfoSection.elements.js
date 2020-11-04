@@ -17,19 +17,19 @@ align-items: flex-start;
  `;
 
  export const ImgContainer = styled.div`
-width: 650px;
-height: 650px;
+width: 550px;
+height: 550px;
 border-radius: 325px;
  `;
 
 export const ImgTitle = styled.img`
-width: 650px;
-height: 650px;
-border-radius: 325px;
-background-image: url('/images/community/photo_5.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    width: 650px;
+    height: 650px;
+    border-radius: 325px;
+    background-image: url('/images/community/photo_5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
  `;
 
  export const Title = styled.h1`

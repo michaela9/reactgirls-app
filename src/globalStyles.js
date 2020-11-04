@@ -12,13 +12,13 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
     z-index:1;
     width: 100%;
-    padding: 100px 300px;
+    padding: 100px 150px;
 `;
 
 export const ContainerColor = styled.div`
     z-index:1;
     width: 100%;
-    padding: 100px 300px;
+    padding: 100px 150px;
     background-color: rgba(212, 237, 240, 0.47);
 `;
 

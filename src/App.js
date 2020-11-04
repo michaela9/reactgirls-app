@@ -7,7 +7,8 @@ import {
   Navbar, 
   SponzorSection, 
   ProductSection, 
-  NewsletterSection
+  NewsletterSection,
+  LectorSection
 } from './components';
 
 
@@ -21,6 +22,7 @@ function App() {
       <SponzorSection />
       <ProductSection />
       <NewsletterSection />
+      <LectorSection />
     </Router>
   );
 }
