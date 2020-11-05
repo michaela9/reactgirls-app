@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0 50px;
 `; 
 
 export const WrapperReverse = styled.div`
@@ -44,9 +45,15 @@ export const ProductInfo = styled.p`
 `;
 
 export const ProductImg = styled.img`
-    width: 480px;
-    height: 480px;
+    width: auto;
+    height: 380px;
+`;
+
+export const ProductImgContainer = styled.div`
+    width: 380px;
+    height: 380px;
     border-radius: 240px;
+    overflow: hidden;
 `;
 
 

@@ -9,6 +9,9 @@ export const FooterLogo = styled.h1`
     background-image: url('images/logo-reactgirls.png');
     position: relative;
     top: -40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 `;
 
 export const FooterContainer = styled.h1`

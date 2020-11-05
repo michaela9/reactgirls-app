@@ -6,6 +6,7 @@ import {
     ProductInfoTitle,
     ProductInfo,
     ProductImg,
+    ProductImgContainer,
     Wrapper,
     WrapperReverse
  } from './ProductSection.elements';
@@ -32,7 +33,10 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_19.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_19.jpg'} />
+                    </ProductImgContainer>
+                    
                 </Wrapper>
             </Container>
             <ContainerColor>
@@ -46,7 +50,9 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_51.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_51.jpg'} />
+                    </ProductImgContainer>
                 </WrapperReverse>
             </ContainerColor>
             <Container>
@@ -60,7 +66,9 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_12.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_12.jpg'} />
+                    </ProductImgContainer>
                 </Wrapper>
             </Container>
             <ContainerColor>
@@ -74,7 +82,9 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_8.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_8.jpg'} />
+                    </ProductImgContainer>
                 </WrapperReverse>
             </ContainerColor>
             <Container>
@@ -88,7 +98,9 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_5.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_5.jpg'} />
+                    </ProductImgContainer>
                 </Wrapper>
             </Container>
             <ContainerColor>
@@ -102,7 +114,9 @@ function ProductSection() {
 
                         </ProductInfo>
                     </ProductInfoContainer>
-                    <ProductImg src={'images/community/photo_14.jpg'} />
+                    <ProductImgContainer>
+                        <ProductImg src={'images/community/photo_14.jpg'} />
+                    </ProductImgContainer>
                 </WrapperReverse>
             </ContainerColor>
    
