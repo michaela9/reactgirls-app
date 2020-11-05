@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+//import sizes from '../../Variables.js';
+//import * as palette from './Variables.js';
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -33,6 +35,7 @@ export const ImgTitle = styled.img`
  `;
 
  export const Title = styled.h1`
+
     font-size: 48px;
     font-weight: 900;
     color: rgba(7, 92, 104, 1);

@@ -10,6 +10,8 @@ import {
  } from './InfoSection.elements';
 
 import { Container, ContainerColor, Button, ButtonContainer } from '../../globalStyles';
+
+
 function InfoSection() {
     return (
         <>

@@ -44,6 +44,17 @@ export const ButtonContainer = styled.div`
     justify-content: space-between;
 `;
 
+/*export const sizes = {
+    sizeXXS: `12px`,
+    sizeXs: `14px`,
+    sizeS: `16px`,
+    sizeM: `18px`,
+    sizeL: `24px`,
+    sizeXL: `30px`,
+    sizeXXL: `36px`,
+    sizeXXXL: `48px`,
+};*/
+
 
 
 export default GlobalStyle;
