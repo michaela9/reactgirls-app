@@ -22,14 +22,19 @@ function Lector() {
                 <LectorWrapper>
                     <LectorTitle>Lektoři</LectorTitle>
                     <CardsContainer>
-                        {lectorArr.map(lector => <Card>
-                            <LectorInterest>{lectorArr.lectorInterest}</LectorInterest>
-                            <LectorImg src={lectorArr.lectorImg} />
-                            <LectorIn></LectorIn>
-                            <LectorName>{lectorArr.lectorName}</LectorName>
-                            <LectorInfo>{lectorArr.lectorInfo}</LectorInfo>
-                            <LectorJob>{lectorArr.lectorJob}</LectorJob>
-                    </Card>
+                        {lectorArr.map((lector) => {
+
+                            return (
+                                <Card>
+                                <LectorInterest>{lector.lectorInterest}</LectorInterest>
+                                <LectorImg src={lector.lectorImg} />
+                                <LectorIn></LectorIn>
+                                <LectorName>{lector.lectorName}</LectorName>
+                                <LectorInfo>{lector.lectorInfo}</LectorInfo>
+                                <LectorJob>{lector.lectorJob}</LectorJob>
+                                </Card>
+                            )
+                        }    
                     )}
                     </CardsContainer>
                 </LectorWrapper>
