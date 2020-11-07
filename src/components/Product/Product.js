@@ -10,7 +10,6 @@ import {
  } from './Product.elements';
 
 import { Container, ContainerColor, Wrapper, WrapperReverse } from '../../components/reusable/styled';
-import { Button, ButtonContainer } from '../../components/reusable/Button/Button';
 
 
 

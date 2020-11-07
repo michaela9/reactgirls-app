@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-    NavbarContainer,
     NavLogo,
     NavMenu,
     NavItem,
@@ -9,7 +8,7 @@ import {
     } from './Navbar.elements';
 
     import { Container } from '../../components/reusable/styled';
-    import  Button  from '../../components/reusable/Button/Button';
+
 
 function Navbar() {
     const [click, setClick] = useState(false);

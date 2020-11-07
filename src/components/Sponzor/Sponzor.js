@@ -5,7 +5,6 @@ import { SponzorImg} from './Sponzor.elements';
  
 function Sponzor() {
     return (
-        <>
             <SponzorContainer>
                 <SponzorImg src={'images/sponzors/techaboo.png'}/>  
                 <SponzorImg src={'images/sponzors/laufen.png'}/>
@@ -18,7 +17,6 @@ function Sponzor() {
                 <SponzorImg src={'images/sponzors/Productboard-logo-clean-300x76.png'}/>
                 <SponzorImg src={'images/sponzors/puntoverde.png'}/>
             </SponzorContainer>
-        </>
     )
 }
 

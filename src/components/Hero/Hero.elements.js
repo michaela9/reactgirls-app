@@ -11,11 +11,6 @@ export const TitleContainer = styled.div`
     align-items: flex-start;
  `;
 
- export const Wrapper = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
- `;
 
  export const ImgContainer = styled.div`
     width: 500px;
