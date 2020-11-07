@@ -3,11 +3,11 @@ import {
     FooterContainer,
     FooterLogo,
     FooterInfo
-    } from './FooterSection.elements';
+    } from './Footer.elements';
 
     import {   } from '../../globalStyles';
 
-function FooterSection() {
+function Footer() {
     return (
         <>
             <FooterContainer>
@@ -18,4 +18,4 @@ function FooterSection() {
     )
 }
 
-export default FooterSection;
+export default Footer;

@@ -1,25 +1,14 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 
-export const Wrapper = styled.div`
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 0 50px;
-`; 
 
-export const WrapperReverse = styled.div`
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-`; 
+
 
 export const ProductTitle = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
     font-weight: 900;
-    text-align: center;
+    margin: 0 auto;
+
 `;
 
 export const ProductInfoContainer = styled.div`

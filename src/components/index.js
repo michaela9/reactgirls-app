@@ -1,7 +1,7 @@
 export { default as Navbar} from './Navbar/Navbar';
-export { default as InfoSection} from './InfoSection/InfoSection';
-export { default as SponzorSection} from './SponzorSection/SponzorSection';
-export { default as ProductSection} from './ProductSection/ProductSection';
-export { default as NewsletterSection} from './NewsletterSection/NewsletterSection';
-export { default as LectorSection} from './LectorSection/LectorSection';
-export { default as FooterSection} from './FooterSection/FooterSection';
+export { default as Hero} from './Hero/Hero';
+export { default as Sponzor} from './Sponzor/Sponzor';
+export { default as Product} from './Product/Product';
+export { default as Newsletter} from './Newsletter/Newsletter';
+export { default as Lector} from './Lector/Lector';
+export { default as Footer} from './Footer/Footer';

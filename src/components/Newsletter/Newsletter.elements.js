@@ -19,10 +19,5 @@ export const TitleContainer = styled.div `
     max-width: 680px;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
-`;
-
-export const NewsletterContainer = styled.div `
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 `;

@@ -1,50 +1,43 @@
 import React, { useState } from 'react';
 import { 
-    Nav,
     NavbarContainer,
     NavLogo,
     NavMenu,
     NavItem,
-    NavLinks
+    NavLinks,
+    NavWrapper
     } from './Navbar.elements';
 
-    import { Button } from '../../globalStyles';
-
-
-
-
-
-
+    import { Container } from '../../components/reusable/styled';
+    import  Button  from '../../components/reusable/Button/Button';
 
 function Navbar() {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
     return (
-        <>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo />
-                    <NavMenu onClick = {handleClick}>
-                        <NavItem>
-                            <NavLinks to='/'>Úvod</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='/'>O nás</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks to='/'>Mentoring</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks to='/'>Akademie</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='/'><Button>KONTAKT</Button></NavLinks>
-                        </NavItem>
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav> 
-        </>
+                <Container>
+                    <NavWrapper>
+                        <NavLogo />
+                        <NavMenu onClick = {handleClick}>
+                            <NavItem>
+                                <NavLinks to='/'>Úvod</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='/'>O nás</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks to='/'>Mentoring</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks to='/'>Akademie</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='/'>Kontakt</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                    </NavWrapper>
+                </Container>
     )
 }
 

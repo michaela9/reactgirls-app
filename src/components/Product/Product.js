@@ -7,20 +7,22 @@ import {
     ProductInfo,
     ProductImg,
     ProductImgContainer,
-    Wrapper,
-    WrapperReverse
- } from './ProductSection.elements';
+ } from './Product.elements';
 
-import { Container, ContainerColor, Button, ButtonContainer } from '../../globalStyles';
+import { Container, ContainerColor, Wrapper, WrapperReverse } from '../../components/reusable/styled';
+import { Button, ButtonContainer } from '../../components/reusable/Button/Button';
 
 
-function ProductSection() {
+
+function Product() {
     return (
         <>
             <ContainerColor>
-                <ProductTitle>
-                    Co je ReactGirls Prague?
-                </ProductTitle>
+                <Wrapper>
+                    <ProductTitle>
+                        Co je ReactGirls Prague?
+                    </ProductTitle>
+                </Wrapper>
             </ContainerColor>
             <Container>
                 <Wrapper> 
@@ -124,4 +126,4 @@ function ProductSection() {
     )
 }
 
-export default ProductSection
+export default Product;

@@ -3,13 +3,13 @@ import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import { 
-  InfoSection, 
+  Hero, 
   Navbar, 
-  SponzorSection, 
-  ProductSection, 
-  NewsletterSection,
-  LectorSection,
-  FooterSection
+  Sponzor, 
+  Product, 
+  Newsletter,
+  Lector,
+  Footer
 } from './components';
 
 
@@ -19,12 +19,12 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      <InfoSection />
-      <SponzorSection />
-      <ProductSection />
-      <NewsletterSection />
-      <LectorSection />
-      <FooterSection />
+      <Hero />
+      <Sponzor />
+      <Product />
+      <Newsletter />
+      <Lector />
+      <Footer />
     </Router>
   );
 }

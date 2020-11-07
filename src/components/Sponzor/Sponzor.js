@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import { SponzorContainer} from './SponzorSection.elements';
-import { SponzorImg} from './SponzorSection.elements';
+import { SponzorContainer} from './Sponzor.elements';
+import { SponzorImg} from './Sponzor.elements';
  
-function SponzorSection() {
+function Sponzor() {
     return (
         <>
             <SponzorContainer>
@@ -22,4 +22,4 @@ function SponzorSection() {
     )
 }
 
-export default SponzorSection
+export default Sponzor;

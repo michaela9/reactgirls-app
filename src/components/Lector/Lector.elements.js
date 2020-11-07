@@ -2,23 +2,29 @@ import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 
 export const LectorTitle = styled.h3`
-    width: 100%;
     text-align: center;
     font-size: ${sizes.sizeXXXL} ;
     font-weight: 900;
-    margin-bottom:100px;
+    margin: 0 auto;
 `;
 
-export const LectorContainer = styled.div`
-    height: 550px;
-    display: flex;
-    justify-content:space-between;
+export const CardsContainer = styled.div`
+   display: flex;
+   justify-content: space-between;
+   padding-top: 80px;
+
+`;
+export const LectorWrapper = styled.div`
+    width: 1280px;
+    padding: 80px 50px;
+    margin: 0 auto;
 `;
 
 
 export const Card = styled.div`
+    height: 550px;
     display: flex;
-    width: 370px;
+    width: 360px;
     border-radius: 30px;
     background-color: white;
     flex-direction: column;

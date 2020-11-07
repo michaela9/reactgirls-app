@@ -4,26 +4,23 @@ import {
     TitleContainer,
     ImgContainer,
     ImgTitle,
-    Wrapper,
     Title,
     SubTitle,
- } from './InfoSection.elements';
+ } from './Hero.elements';
 
-import { Container, ContainerColor, Button, ButtonContainer } from '../../globalStyles';
+import { ContainerColor, Wrapper } from '../../components/reusable/styled.js';
+import Button from '../../components/reusable/Button/Button';
 
 
-function InfoSection() {
+function Hero() {
     return (
-        <>
               <ContainerColor>
                 <Wrapper>
                     <TitleContainer>
                         <Title>Zapoj se do Mentoringu <br />a nauč se programovat v Reactu!</Title>
                         <SubTitle>#ReactGirlsPrague</SubTitle>
-                        <ButtonContainer>
                             <Button>user@gmail.com</Button>
                             <Button>ODEBÍRAT NEWSLETTER</Button>
-                        </ButtonContainer>
                     </TitleContainer>
                     <ImgContainer>
                         <ImgTitle />
@@ -31,8 +28,7 @@ function InfoSection() {
                     </ImgContainer>
                 </Wrapper>
               </ContainerColor>
-        </>
     )
 }
 
-export default InfoSection;
+export default Hero;

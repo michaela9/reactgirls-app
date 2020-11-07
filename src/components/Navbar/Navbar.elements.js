@@ -2,22 +2,16 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { sizes, colors } from '../../variables.js';
 
-
-export const Nav = styled.nav`
-  display: flex;
-  width:100%;
-  background-color: ${colors.white};
-  height: 100px;
-  position: sticky;
-  z-index:999;
-  padding: 0px 150px;
+export const NavWrapper = styled.div`
+    height: 100px;
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: space-between;
 `;
 
-export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-`;
 
 export const NavLogo = styled.img`
   height: 160px;
@@ -40,7 +34,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
-  margin-left: 20px;
+  margin-left: 30px;
 
 &:hover {
   border-bottom: 2px solid blue;
@@ -49,8 +43,6 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   display: flex;
-  align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
+  margin-left: 30px;
 `;

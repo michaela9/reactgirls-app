@@ -1,12 +1,13 @@
 import React from 'react';
-import { Title, SubTitle, NewsletterContainer, TitleContainer} from './NewsletterSection.elements';
+import { Title, SubTitle, TitleContainer} from './Newsletter.elements';
 
-import { Container, ContainerColor, Button, ButtonContainer } from '../../globalStyles';
+import { Wrapper } from '../../components/reusable/styled';
+import  Button from '../../components/reusable/Button/Button';
 
 
-function NewsletterSection() {
+function Newsletter() {
     return (
-        <NewsletterContainer>
+        <Wrapper>
             <TitleContainer>
                 <Title>
                     Zajímá Tě, kdy se bude konat další akce?
@@ -14,13 +15,11 @@ function NewsletterSection() {
                 <SubTitle>
                     Klikni na Odebírat Newsletter <br></br> a my se Ti ozveme!
                 </SubTitle>
-                <ButtonContainer>
                     <Button>user@gmail.com</Button>
                     <Button>ODEBÍREJ NEWSLETTER</Button>
-                </ButtonContainer>
             </TitleContainer>
-        </NewsletterContainer>
+        </Wrapper>
     )
 }
 
-export default NewsletterSection
+export default Newsletter;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
+import { Container } from '../../components/reusable/styled';
 
 
 export const SponzorContainer = styled.div`
