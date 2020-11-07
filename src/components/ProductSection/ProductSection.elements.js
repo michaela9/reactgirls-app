@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { sizes, colors } from '../../variables.js';
 
 export const Wrapper = styled.div`
     display:flex;
@@ -16,9 +17,8 @@ export const WrapperReverse = styled.div`
 `; 
 
 export const ProductTitle = styled.h1`
-    font-size: 48px;
+    font-size: ${sizes.sizeXXXL} ;
     font-weight: 900;
-    color: rgba(7, 92, 104, 1);
     text-align: center;
 `;
 
@@ -33,14 +33,12 @@ export const ProductInfoContainer = styled.div`
 
 export const ProductInfoTitle = styled.h2`
     line-height:2;
-    font-size: 36px;
+    font-size: ${sizes.sizeXXL};
     font-weight: 900;
 `;
 
 export const ProductInfo = styled.p`
-    font-size: 18px;
     font-weight: 300;
-    color: grey;
     line-height: 1.8;
 `;
 

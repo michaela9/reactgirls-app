@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import { sizes, colors } from '../../variables.js';
 
 export const LectorTitle = styled.h3`
     width: 100%;
     text-align: center;
-    font-size: 48px;
+    font-size: ${sizes.sizeXXXL} ;
     font-weight: 900;
-    color: rgba(7, 92, 104, 1);
     margin-bottom:100px;
 `;
 
@@ -30,8 +30,7 @@ export const Card = styled.div`
 `;
 
 export const LectorInterest = styled.h4`
-    font-size: 20px;
-    color: rgb(0,180,205);
+    color: ${colors.mainBlue};
     text-align: center;
     font-weight: 400;
 `;
@@ -43,21 +42,17 @@ export const LectorImg = styled.img`
 `;
 
 export const LectorName = styled.h3`
-    font-size: 24px;
+    font-size: ${sizes.sizeL};
     text-align: center;
 `;
 
 
 export const LectorInfo = styled.p`
-    font-size: 20px;
-    color: black;
     text-align: center;
     line-height:1.6;
 `;
 
 export const LectorJob = styled.h5`
-    font-size: 20px;
-    color: black;
     text-align: center;
     font-weight: 300;
 `;
@@ -69,7 +64,7 @@ export const LectorIn = styled.img`
     border: 4px solid white;
     width: 55px;
     height: 55px;
-    background-color: rgb(0,180,205);
+    background-color: ${colors.mainBlue};
     border-radius: 150px;
 `;
 

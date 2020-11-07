@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-//import sizes from '../../Variables.js';
-//import * as palette from './Variables.js';
+import  { sizes, colors } from '../../variables.js';
+
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -13,7 +13,6 @@ export const TitleContainer = styled.div`
 
  export const Wrapper = styled.div`
     display:flex;
-
     align-items: center;
     justify-content: space-between;
  `;
@@ -35,16 +34,13 @@ export const ImgTitle = styled.img`
  `;
 
  export const Title = styled.h1`
-
-    font-size: 48px;
+    font-size: ${sizes.sizeXXXL};
     font-weight: 900;
-    color: rgba(7, 92, 104, 1);
     margin-bottom: 25px;
  `;
 
 export const SubTitle = styled.p`
-    font-size: 18px;
     font-weight: 300;
-    color: grey;
+    color: ${colors.lightGrey};
     margin-bottom: 25px;
 `;

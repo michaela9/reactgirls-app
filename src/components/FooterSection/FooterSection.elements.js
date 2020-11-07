@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { sizes, colors } from '../../variables.js';
 
 
 export const FooterLogo = styled.h1`
@@ -15,15 +16,14 @@ export const FooterLogo = styled.h1`
 `;
 
 export const FooterContainer = styled.h1`
-    background-color: white;
+    background-color: ${colors.white};
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
 `;
 
-export const FooterInfo = styled.h1`
-    font-size: 18px;
+export const FooterInfo = styled.p`
     text-align: center;
     font-weight: 300;
 `;

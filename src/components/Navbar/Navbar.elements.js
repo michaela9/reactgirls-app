@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { sizes, colors } from '../../variables.js';
+
 
 export const Nav = styled.nav`
   display: flex;
   width:100%;
-  background: white;
+  background-color: ${colors.white};
   height: 100px;
   position: sticky;
   z-index:999;
@@ -46,8 +48,6 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: black;
-  font-size: 18px;
   display: flex;
   align-items: center;
   text-decoration: none;
