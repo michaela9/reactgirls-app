@@ -37,7 +37,7 @@ export const NavItem = styled.li`
   margin-left: 30px;
 
 &:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid ${colors.mainBlue} ;
 }
 `;
 

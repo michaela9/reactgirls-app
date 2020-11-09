@@ -10,7 +10,7 @@ import {
  } from './Product.elements';
 
 import { Container, ContainerColor, Wrapper, WrapperReverse } from '../../components/reusable/styled';
-
+import Button from '../reusable/Button/Button';
 
 
 function Product() {
@@ -33,6 +33,7 @@ function Product() {
                         ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Komunita nejen pro ženy, které se chtějí stát programátorkami za vedení profesionálních lektorů a programátorů. Zapojte se do naší komunity na Slacku a na sociálních sítích.
 
                         </ProductInfo>
+                        <Button>Zjistit více</Button>
                     </ProductInfoContainer>
                     <ProductImgContainer>
                         <ProductImg src={'images/community/photo_19.jpg'} />
@@ -82,6 +83,7 @@ function Product() {
                         Spustili jsme pro Vás projekt mentoring jeden na jednoho (mentor, mentee).  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream. 
 
                         </ProductInfo>
+                        <Button>Zjistit více</Button>
                     </ProductInfoContainer>
                     <ProductImgContainer>
                         <ProductImg src={'images/community/photo_8.jpg'} />
@@ -98,6 +100,7 @@ function Product() {
                         Připravujeme pro Vás akademii, kde se budeme intenzivně věnovat frontednovému programování HTML, CSS, JavaScript a React.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream. 
 
                         </ProductInfo>
+                        <Button>Zjistit více</Button>
                     </ProductInfoContainer>
                     <ProductImgContainer>
                         <ProductImg src={'images/community/photo_5.jpg'} />

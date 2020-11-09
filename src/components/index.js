@@ -5,3 +5,4 @@ export { default as Product} from './Product/Product';
 export { default as Newsletter} from './Newsletter/Newsletter';
 export { default as Lector} from './Lector/Lector';
 export { default as Footer} from './Footer/Footer';
+export { default as Input} from './reusable/Input/Input';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Title, SubTitle, TitleContainer} from './Newsletter.elements';
 
 import { Wrapper } from '../../components/reusable/styled';
-
+import ButtonInputGroup from '../../components/reusable/ButtonInputGroup/ButtonInputGroup';
 
 function Newsletter() {
     return (
@@ -14,6 +14,7 @@ function Newsletter() {
                 <SubTitle>
                     Klikni na Odebírat Newsletter <br></br> a my se Ti ozveme!
                 </SubTitle>
+                <ButtonInputGroup />
             </TitleContainer>
         </Wrapper>
     )

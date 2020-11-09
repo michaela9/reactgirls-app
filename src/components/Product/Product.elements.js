@@ -29,6 +29,7 @@ export const ProductInfoTitle = styled.h2`
 export const ProductInfo = styled.p`
     font-weight: 300;
     line-height: 1.8;
+    margin-bottom: 20px;
 `;
 
 export const ProductImg = styled.img`
