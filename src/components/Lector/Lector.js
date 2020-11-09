@@ -10,11 +10,14 @@ import {
     LectorName,
     LectorInfo,
     LectorJob,
-    LectorIn,
+    LectorLink,
+    LectorImgContainer,
+    IconIn,
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
  import { Container, ContainerColor, Wrapper } from '../../components/reusable/styled';
+ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function Lector() {
     return (
@@ -27,8 +30,10 @@ function Lector() {
                             return (
                                 <Card>
                                 <LectorInterest>{lector.lectorInterest}</LectorInterest>
-                                <LectorImg src={lector.lectorImg} />
-                                <LectorIn></LectorIn>
+                                <LectorImgContainer>
+                                    <LectorImg src={lector.lectorImg} />
+                                    <LectorLink to="{lector.lectorLinkedIn}"><IconIn src="/images/icons/linkedIn.svg" /></LectorLink>
+                                </LectorImgContainer>
                                 <LectorName>{lector.lectorName}</LectorName>
                                 <LectorInfo>{lector.lectorInfo}</LectorInfo>
                                 <LectorJob>{lector.lectorJob}</LectorJob>

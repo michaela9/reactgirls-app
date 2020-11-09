@@ -7,6 +7,7 @@ const lectorArr = [
         lectorName: "Branislav Benčík",
         lectorInfo: "Braňo nás provede kopletními základy kódování v HTML a CSS.",
         lectorJob: "UX Designer v Applifting Česko",
+        lectorLinkedIn: "https://cz.linkedin.com/in/branislavbencik",
     },
     {
         lectorInterest: "Workshop | Akademie ",
@@ -14,6 +15,7 @@ const lectorArr = [
         lectorName: "Zuzana Stavjaňová",
         lectorInfo: "Zuzka si pro Vás připravila lekci Reactu přizpůsobenou začátečníkům.",
         lectorJob: "React developer v Sinch s.r.o",
+        lectorLinkedIn: "https://www.linkedin.com/today/author/zuzanastavjanova",  
     },
     {
         lectorInterest: "Workshop | Akademie ",
@@ -21,6 +23,7 @@ const lectorArr = [
         lectorName: "Riki Fridrich",
         lectorInfo: "Riki je guru JavaScriptu a má mnohaleté zkušenosti s přednášením a lektorováním.",
         lectorJob: "vývojář v Mall.cz",
+        lectorLinkedIn: "https://www.linkedin.com/in/fczbkk",
     }
 ]
 

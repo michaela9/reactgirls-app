@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 export const LectorTitle = styled.h3`
     text-align: center;
@@ -41,11 +42,7 @@ export const LectorInterest = styled.h4`
     font-weight: 400;
 `;
 
-export const LectorImg = styled.img`
-    width: 180px;
-    height: 180px;
-    border-radius: 90px;
-`;
+
 
 export const LectorName = styled.h3`
     font-size: ${sizes.sizeL};
@@ -63,15 +60,37 @@ export const LectorJob = styled.h5`
     font-weight: 300;
 `;
 
-export const LectorIn = styled.img`
+export const LectorLink = styled(Link)`
     position: absolute;
-    top: 225px;
-    left: 225px;
+    bottom: 0;
+    right: 0;
     border: 4px solid white;
     width: 55px;
     height: 55px;
     background-color: ${colors.mainBlue};
     border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
+
+export const LectorImg = styled.img`
+    height: 180px;
+    border-radius: 90px;
+`;
+
+export const LectorImgContainer = styled.div`
+    width: 180px;
+    height: 180px;
+    position: relative;
+`
+
+export const IconIn = styled.img`
+    width: 22px;
+    height: 22px;
+    filter: invert(100%);
+`
+
+
 
 
