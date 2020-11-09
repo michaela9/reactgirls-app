@@ -27,7 +27,7 @@ export const Card = styled.div`
     display: flex;
     width: 360px;
     border-radius: 30px;
-    background-color: white;
+    background-color: ${colors.white} ;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -88,6 +88,7 @@ export const LectorImgContainer = styled.div`
 export const IconIn = styled.img`
     width: 22px;
     height: 22px;
+    //fill: red;
     filter: invert(100%);
 `
 

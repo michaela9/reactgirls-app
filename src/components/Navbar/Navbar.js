@@ -4,7 +4,8 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavWrapper
+    NavWrapper,
+    Nav
     } from './Navbar.elements';
 
     import { Container } from '../../components/reusable/styled';
@@ -15,6 +16,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     return (
+                <Nav>
                 <Container>
                     <NavWrapper>
                         <NavLogo />
@@ -37,6 +39,7 @@ function Navbar() {
                         </NavMenu>
                     </NavWrapper>
                 </Container>
+                </Nav>
     )
 }
 

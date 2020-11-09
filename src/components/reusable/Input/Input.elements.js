@@ -4,7 +4,7 @@ import { colors, sizes } from '../../../variables';
 
 export const InputContainer = styled.div`
     background-color: ${colors.white};
-    border: 1px solid ${colors.darkBlue} ; 
+    border: 1px solid ${colors.darkGrey} ; 
     padding: 12px 35px;
     border-radius: 25px;
     box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;

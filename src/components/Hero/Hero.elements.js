@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import  { sizes, colors } from '../../variables.js';
 
 
+
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction:column;
@@ -38,4 +39,20 @@ export const SubTitle = styled.p`
     font-weight: 300;
     color: ${colors.lightGrey};
     margin-bottom: 25px;
+`;
+
+export const Social = styled.div`
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   height: 230px;
+   justify-content: space-between;
+   top: 110px;
+   right: 70px;
+
+`;
+
+export const SocialIcon = styled.img`
+width: 30px;
+height: 30px;
 `;

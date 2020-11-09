@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import  { sizes, colors } from '../../variables.js';
 
 export const Container = styled.div`
     z-index:1;
     width: 100%;
+    background-color: ${colors.white};
 `;
 
 export const ContainerColor = styled.div`
