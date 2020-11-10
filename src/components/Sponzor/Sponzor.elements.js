@@ -11,7 +11,7 @@ align-items: center
 `;
 
 export const SponzorImg = styled.img`
-height: 120px;
-margin-right: 40px;
+height: 100px;
+margin-right: 50px;
 `;
 

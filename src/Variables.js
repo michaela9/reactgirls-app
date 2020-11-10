@@ -7,7 +7,7 @@
     sizeL: `24px`,
     sizeXL: `30px`,
     sizeXXL: `36px`,
-    sizeXXXL: `48px`,
+    sizeXXXL: `42px`,
 };
 
 export const colors = {

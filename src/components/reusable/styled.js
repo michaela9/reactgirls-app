@@ -10,7 +10,11 @@ export const Container = styled.div`
 export const ContainerColor = styled.div`
     z-index:1;
     width: 100%;
-    background-color: rgba(212, 237, 240, 0.47);
+    background-image: url('images/Beige-small-small.png');
+    background-repeat: repeat;
+    background-color: ${colors.lightBlue};
+
+
 `;
 
 export const Wrapper = styled.div`

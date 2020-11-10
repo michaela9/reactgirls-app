@@ -7,7 +7,7 @@ export const FooterLogo = styled.h1`
     width: 160px;
     border-radius:80px;
     top: 50px;
-    background-image: url('images/logo-reactgirls.png');
+    background-image: url('images/logo-blue.svg');
     position: relative;
     top: -40px;
     background-repeat: no-repeat;

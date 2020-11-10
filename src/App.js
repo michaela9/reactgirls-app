@@ -2,16 +2,12 @@ import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import { 
-  Hero, 
-  Navbar, 
-  Sponzor, 
-  Product, 
-  Newsletter,
-  Lector,
-  Footer
-} from './components';
-
+import {Navbar} from './components';
+import Home from './Home';
+import About from './About';
+import Mentoring from './Mentoring';
+import Academy from './Academy';
+import Contact from './Contact';
 
 
 function App() {
@@ -19,12 +15,13 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      <Hero />
-      <Sponzor />
-      <Product />
-      <Newsletter />
-      <Lector />
-      <Footer />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' exact component={About} />
+        <Route path='/mentoring' exact component={Mentoring} />
+        <Route path='/academy' exact component={Academy} />
+        <Route path='/contact' exact component={Contact} />
+      </Switch>
     </Router>
   );
 }

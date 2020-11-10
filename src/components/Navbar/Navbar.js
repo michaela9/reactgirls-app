@@ -25,16 +25,16 @@ function Navbar() {
                                 <NavLinks to='/'>Úvod</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/'>O nás</NavLinks>
+                                <NavLinks to='/about'>O nás</NavLinks>
                             </NavItem>                        
                             <NavItem>
-                                <NavLinks to='/'>Mentoring</NavLinks>
+                                <NavLinks to='/mentoring'>Mentoring</NavLinks>
                             </NavItem>                        
                             <NavItem>
-                                <NavLinks to='/'>Akademie</NavLinks>
+                                <NavLinks to='/academy'>Akademie</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/'>Kontakt</NavLinks>
+                                <NavLinks to='/contact'>Kontakt</NavLinks>
                             </NavItem>
                         </NavMenu>
                     </NavWrapper>

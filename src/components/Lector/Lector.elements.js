@@ -25,7 +25,7 @@ export const LectorWrapper = styled.div`
 export const Card = styled.div`
     height: 550px;
     display: flex;
-    width: 360px;
+    width: 330px;
     border-radius: 30px;
     background-color: ${colors.white} ;
     flex-direction: column;
@@ -42,17 +42,24 @@ export const LectorInterest = styled.h4`
     font-weight: 400;
 `;
 
+export const LectorArrow = styled.img`
+    color: ${colors.mainBlue};
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top:275px;
+`;
 
 
 export const LectorName = styled.h3`
-    font-size: ${sizes.sizeL};
     text-align: center;
+    font-weight: 900;
 `;
 
 
 export const LectorInfo = styled.p`
     text-align: center;
-    line-height:1.6;
+    line-height: 1.6;
 `;
 
 export const LectorJob = styled.h5`

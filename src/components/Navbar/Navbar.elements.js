@@ -4,14 +4,14 @@ import { sizes, colors } from '../../variables.js';
 
 export const Nav = styled.div`
 //position: fixed;
-top: 0;
-left: 0;
-width: 100%;
+  width: 100%;
+  box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.7);
+  z-index: 1000;
 
 `;
 
 export const NavWrapper = styled.div`
-    height: 80px;
+    height: 70px;
     width: 1280px;
     display: flex;
     margin: 0 auto;
@@ -44,6 +44,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
+  font-weight: 500;
 
 &:hover {
   border-bottom: 2px solid ${colors.mainBlue} ;
