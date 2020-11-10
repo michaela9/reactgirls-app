@@ -5,7 +5,7 @@ import { sizes, colors } from '../../variables.js';
 export const Nav = styled.div`
 //position: fixed;
   width: 100%;
-  box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.7);
+  box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.15);
   z-index: 1000;
 
 `;
@@ -54,4 +54,20 @@ export const NavItem = styled.li`
 export const NavLinks = styled(Link)`
   display: flex;
   text-decoration: none;
+`;
+
+export const Social = styled.div`
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   height: 230px;
+   justify-content: space-between;
+   top: 110px;
+   right: 70px;
+
+`;
+
+export const SocialIcon = styled.img`
+  width: 30px;
+  height: 30px;
 `;

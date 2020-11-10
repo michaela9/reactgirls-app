@@ -3,12 +3,10 @@ import GlobalStyle from './globalStyles';
 
 import { 
   Hero, 
-  Navbar, 
   Sponzor, 
   Product, 
   Newsletter,
   Lector,
-  Footer
 } from './components';
 
 
@@ -22,7 +20,6 @@ function Home() {
       <Product />
       <Newsletter />
       <Lector />
-      <Footer />
     </>
   );
 }

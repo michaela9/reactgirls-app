@@ -6,10 +6,9 @@ export const FooterLogo = styled.h1`
     height: 160px;
     width: 160px;
     border-radius:80px;
-    top: 50px;
+    top: -30px;
     background-image: url('images/logo-blue.svg');
     position: relative;
-    top: -40px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,10 +19,11 @@ export const FooterContainer = styled.h1`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 `;
 
 export const FooterInfo = styled.p`
     text-align: center;
     font-weight: 300;
+    font-size: ${sizes.sizeXS};
 `;

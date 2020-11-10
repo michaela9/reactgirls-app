@@ -1,10 +1,17 @@
 import React from 'react';
+import {
+    ContactHero, ContactPeople, ContactBank
+}  from './components';
+
+
 
 function Contact() {
     return (
-        <div>
-            <h1>Contact</h1>
-        </div>
+        <>
+            <ContactHero />
+            <ContactPeople />
+            <ContactBank />
+        </>
     )
 }
 

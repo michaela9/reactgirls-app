@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import {Navbar} from './components';
+import { Navbar, Footer } from './components';
 import Home from './Home';
 import About from './About';
 import Mentoring from './Mentoring';
@@ -22,7 +22,9 @@ function App() {
         <Route path='/academy' exact component={Academy} />
         <Route path='/contact' exact component={Contact} />
       </Switch>
+      <Footer />
     </Router>
+    
   );
 }
 
