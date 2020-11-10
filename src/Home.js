@@ -7,6 +7,7 @@ import {
   Product, 
   Newsletter,
   Lector,
+  References
 } from './components';
 
 
@@ -20,6 +21,7 @@ function Home() {
       <Product />
       <Newsletter />
       <Lector />
+      <References />
     </>
   );
 }

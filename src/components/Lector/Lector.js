@@ -22,9 +22,14 @@ import {
 
 function Lector() {
     return (
-            <ContainerColor>     
-                <LectorWrapper>
+        <>
+            <ContainerColor>
+                <Wrapper>   
                     <LectorTitle>Lektoři</LectorTitle>
+                </Wrapper>  
+            </ContainerColor>
+            <Container>
+            <LectorWrapper>
                     <CardsContainer>
                     <LectorArrow src='/images/icons/left-arrow.svg' />
                         {lectorArr.map((lector) => {
@@ -46,7 +51,8 @@ function Lector() {
                     <LectorArrow src='/images/icons/right-arrow.svg' />
                     </CardsContainer>
                 </LectorWrapper>  
-            </ContainerColor>
+            </Container>
+            </>
     )
 }
 

@@ -8,3 +8,4 @@ export { default as Footer} from './Footer/Footer';
 export { default as ContactHero} from './ContactHero/ContactHero';
 export { default as ContactPeople} from './ContactPeople/ContactPeople';
 export { default as ContactBank} from './ContactBank/ContactBank';
+export { default as References} from './References/References';

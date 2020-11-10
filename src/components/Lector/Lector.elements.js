@@ -12,7 +12,6 @@ export const LectorTitle = styled.h3`
 export const CardsContainer = styled.div`
    display: flex;
    justify-content: space-between;
-   padding-top: 80px;
 
 `;
 export const LectorWrapper = styled.div`
