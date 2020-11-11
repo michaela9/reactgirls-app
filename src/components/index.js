@@ -9,3 +9,9 @@ export { default as ContactHero} from './ContactHero/ContactHero';
 export { default as ContactPeople} from './ContactPeople/ContactPeople';
 export { default as ContactBank} from './ContactBank/ContactBank';
 export { default as References} from './References/References';
+export { default as Info} from './Info/Info';
+export { default as InfoCards} from './InfoCards/InfoCards';
+export { default as Student} from './Student/Student';
+export { default as Price} from './Price/Price';
+export { default as Questions} from './Questions/Questions';
+

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container,ContainerColor, Wrapper } from '../reusable/styled';
+import { TitleCenter,ContainerColor, Wrapper } from '../reusable/styled';
 import { 
-    ReferenceTitle,
     ReferenceArrow,
     SpeechContent,
     SpeechImg,
@@ -19,7 +18,7 @@ function References () {
                         <ContainerColor>
                             <Wrapper>
                                 <ReferenceContainer>
-                                    <ReferenceTitle>Co o nás říkají naši studenti?</ReferenceTitle>
+                                    <TitleCenter>Co o nás říkají naši studenti?</TitleCenter>
                                     <ReferenceContent>
                                         <ReferenceArrow src='/images/icons/left-arrow.svg' />
                                             <SpeechContent>

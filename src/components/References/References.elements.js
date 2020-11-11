@@ -6,23 +6,17 @@ export const ReferenceContainer = styled.div`
     flex-direction: column;
     width: 100%;
 `;
-export const ReferenceTitle = styled.h1`
-    text-align: center;
-    font-size: ${sizes.sizeXXXL} ;
-    font-weight: 900;
-    margin: 0 auto;
-`;
+
 export const ReferenceArrow = styled.img`
     width: 30px;
     height: 30px;
     position: relative;
-    top: 200px;
+    top: 90px;
 
 `;
 export const SpeechContent = styled.div`
     display: flex;
     justify-content: center;
-    padding: 100px 0;
     margin-left: 15px;
     position: relative;
     left: 20px;
@@ -42,14 +36,13 @@ export const Speech = styled.div`
     box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
 
 
-
 `;
 export const SpeechIcon = styled.img`
     width: 25px;
     height: auto;
     margin-bottom: 10px;
-
 `;
+
 export const SpeechText = styled.p`
     text-align: left;
     font-style: italic;

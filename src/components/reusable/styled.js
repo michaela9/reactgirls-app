@@ -26,6 +26,15 @@ export const Wrapper = styled.div`
     justify-content: space-between;
 `;
 
+export const WrapperColumn = styled.div`
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 80px 50px;
+    align-items: center;
+`;
+
 export const WrapperReverse = styled.div`
     width: 1280px;
     display: flex;
@@ -34,6 +43,13 @@ export const WrapperReverse = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+`; 
+
+export const TitleCenter = styled.h1`
+    text-align: center;
+    font-size: ${sizes.sizeXXXL} ;
+    font-weight: 900;
+    margin-bottom: 80px;
 `; 
 
 

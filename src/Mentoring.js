@@ -1,9 +1,24 @@
 import React from 'react';
+import { 
+    Hero,
+    Info,
+    InfoCards,
+    Student,
+    Price,
+    Newsletter,
+    Questions
+ }  from './components';
 
 function Mentoring() {
     return (
         <div>
-            <h1>Mentoring</h1>
+            <Hero />
+            <Info />
+            <InfoCards />
+            <Student />
+            <Price />
+            <Newsletter />
+            <Questions />
         </div>
     )
 }
