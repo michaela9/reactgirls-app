@@ -11,7 +11,7 @@ export const ReferenceArrow = styled.img`
     width: 30px;
     height: 30px;
     position: relative;
-    top: 90px;
+    top: 170px;
 
 `;
 export const SpeechContent = styled.div`

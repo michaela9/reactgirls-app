@@ -11,4 +11,5 @@ export const CustomButton = styled.button`
     box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
+    display: $ {({button}) => (button ? button : none)};
 `;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
+import { ParagraphS } from '../reusable/styled';
 
 export const ContactCardContainer = styled.div`
     display: flex;
@@ -32,23 +33,6 @@ export const ContactText = styled.div`
 
 `;
 
-export const ContactName = styled.h3`
-    font-weight:700;
-    margin-bottom: 10px;
-`;
-
-export const ContactInterest = styled.p`
-    font-size: ${sizes.sizeXS};
-`;
-
-export const ContactMail = styled.p`
-    font-size: ${sizes.sizeXS};
-`;
-
-export const ContactNumber = styled.p`
-    font-size: ${sizes.sizeXS};
-    margin-bottom: 15px;
-`;
 
 export const ContactSocial = styled.div`
     display: flex;
@@ -60,5 +44,10 @@ export const ContactSocial = styled.div`
 export const SocialContactIcon = styled.img`
     width: 20px;
     height: 20px;
+    margin-top: 10px;
+`;
+export const ContactInfo = styled(ParagraphS)`
+ margin-bottom: -10/px;
+ font-weight: 300;
 `;
 

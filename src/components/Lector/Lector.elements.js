@@ -41,7 +41,7 @@ export const LectorArrow = styled.img`
     width: 30px;
     height: 30px;
     position: relative;
-    right: 150px;
+    top: 275px;
 `;
 
 

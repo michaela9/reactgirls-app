@@ -23,7 +23,7 @@ export const Paragraph = styled.p`
 
 export const ParagraphS = styled.p`
     font-size: ${sizes.sizeS};
-    line-height: 1.7;
+    line-height: 1.4;
 `;
 
 
