@@ -1,15 +1,7 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
+import { Paragraph } from '../reusable/styled';
 
-
-
-
-export const ProductTitle = styled.h1`
-    font-size: ${sizes.sizeXXXL} ;
-    font-weight: 900;
-    margin: 0 auto;
-
-`;
 
 export const ProductInfoContainer = styled.div`
     display: flex;
@@ -20,16 +12,12 @@ export const ProductInfoContainer = styled.div`
     align-items: flex-start;
 `;
 
-export const ProductInfoTitle = styled.h2`
-    line-height:2;
-    font-size: ${sizes.sizeXXL};
-    font-weight: 900;
-`;
 
-export const ProductInfo = styled.p`
+export const ProductInfo = styled(Paragraph)`
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 20px;
+    margin-top: 15px;
 `;
 
 export const ProductImg = styled.img`

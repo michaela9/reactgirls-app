@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { 
-    LectorTitle,
     CardsContainer,
     Card,
     LectorWrapper,
@@ -14,27 +13,25 @@ import {
     LectorImgContainer,
     IconIn,
     LectorArrow,
+    LectorCompany
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
- import { Container, ContainerColor, Wrapper } from '../../components/reusable/styled';
- import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+ import { Container, ContainerColor, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
 
 function Lector() {
     return (
         <>
             <ContainerColor>
-                <Wrapper>   
-                    <LectorTitle>Lektoři</LectorTitle>
-                </Wrapper>  
+                <WrapperColumn>   
+                    <TitleCenter>Lektoři</TitleCenter>
+                </WrapperColumn>  
             </ContainerColor>
             <Container>
             <LectorWrapper>
                     <CardsContainer>
                     <LectorArrow src='/images/icons/left-arrow.svg' />
-                        {lectorArr.map((lector) => {
-
-                            return (
+                        {lectorArr.map((lector) => (
                                 <Card>
                                     <LectorInterest>{lector.lectorInterest}</LectorInterest>
                                     <LectorImgContainer>
@@ -44,10 +41,10 @@ function Lector() {
                                     <LectorName>{lector.lectorName}</LectorName>
                                     <LectorInfo>{lector.lectorInfo}</LectorInfo>
                                     <LectorJob>{lector.lectorJob}</LectorJob>
+                                    <LectorCompany>{lector.lectorCompany}</LectorCompany>
                                 </Card>
                             )
-                        }    
-                    )}
+                        )}
                     <LectorArrow src='/images/icons/right-arrow.svg' />
                     </CardsContainer>
                 </LectorWrapper>  

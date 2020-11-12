@@ -1,23 +1,19 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
+import { Paragraph } from '../reusable/styled';
 
-export const Title = styled.h1`
-    font-size: ${sizes.sizeXXXL};
-    font-weight: 900;
-    margin-bottom: 30px;
-    text-align: center;
-`;
-
-export const SubTitle = styled.p`
-    font-weight: 300;
-    margin-bottom: 30px;
-    text-align: center;
-`;
-
-export const TitleContainer = styled.div `
+export const NewsletterContainer = styled.div `
     display: flex;
     max-width: 680px;
+    height: 350px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
 `;
+
+export const ParagraphCenter = styled(Paragraph) `
+    text-align: center;
+`;
+
+

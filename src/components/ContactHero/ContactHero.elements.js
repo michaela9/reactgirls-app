@@ -10,8 +10,6 @@ export const ContactHeroContainer = styled.div`
     align-items: center;
 `
 
-
-
 export const ContactHeroTitle = styled.h1`
     font-size: ${sizes.sizeXXXL};
     font-weight: 900;
@@ -23,7 +21,6 @@ export const ContactHeroTitle = styled.h1`
 
 export const ContactInfo = styled.p`
     text-align: center;
-    width: 60%;
     margin: 0 auto;
     margin-bottom: 40px;
     line-height: 1.6;

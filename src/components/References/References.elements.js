@@ -20,6 +20,7 @@ export const SpeechContent = styled.div`
     margin-left: 15px;
     position: relative;
     left: 20px;
+    margin-top: 80px;
 `;
 export const SpeechImg = styled.img`
     width: 120px;

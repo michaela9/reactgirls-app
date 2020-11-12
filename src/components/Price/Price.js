@@ -1,7 +1,10 @@
 import React from 'react';
-import { ContainerColor, WrapperColumn } from '../reusable/styled';
 import { 
-    TitleLeft,
+    ContainerColor, 
+    WrapperColumn, 
+    TitleLeft 
+} from '../reusable/styled';
+import { 
     PriceContainer,
     PriceRow,
     PriceIcon,

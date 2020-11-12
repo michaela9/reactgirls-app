@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-
-export const LectorTitle = styled.h3`
-    text-align: center;
-    font-size: ${sizes.sizeXXXL} ;
-    font-weight: 900;
-    margin: 0 auto;
-`;
+import { Paragraph, ParagraphS, Name } from '../reusable/styled';
 
 export const CardsContainer = styled.div`
    display: flex;
@@ -35,10 +29,11 @@ export const Card = styled.div`
     position: relative;
 `;
 
-export const LectorInterest = styled.h4`
+export const LectorInterest = styled(Paragraph)`
     color: ${colors.mainBlue};
     text-align: center;
     font-weight: 400;
+    height: 60px;
 `;
 
 export const LectorArrow = styled.img`
@@ -46,22 +41,28 @@ export const LectorArrow = styled.img`
     width: 30px;
     height: 30px;
     position: relative;
-    top:275px;
+    right: 150px;
 `;
 
 
-export const LectorName = styled.h3`
+export const LectorName = styled(Name)`
     text-align: center;
     font-weight: 900;
 `;
 
 
-export const LectorInfo = styled.p`
+export const LectorInfo = styled(ParagraphS)`
     text-align: center;
-    line-height: 1.6;
+
 `;
 
-export const LectorJob = styled.h5`
+export const LectorJob = styled(ParagraphS)`
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: -25px;
+`;
+
+export const LectorCompany = styled(ParagraphS)`
     text-align: center;
     font-weight: 300;
 `;

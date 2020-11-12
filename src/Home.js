@@ -15,7 +15,6 @@ import {
 function Home() {
   return (
     <>
-      <GlobalStyle />
       <Hero />
       <Sponzor />
       <Product />

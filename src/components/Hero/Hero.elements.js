@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import  { sizes, colors } from '../../variables.js';
+import { Paragraph } from '../reusable/styled';
 
 
 
@@ -19,7 +20,7 @@ export const TitleContainer = styled.div`
     border-radius: 325px;
  `;
 
-export const ImgTitle = styled.img`
+export const HeroImg = styled.img`
     width: 500px;
     height: 500px;
     border-radius: 300px;
@@ -29,30 +30,9 @@ export const ImgTitle = styled.img`
     background-size: cover;
  `;
 
- export const Title = styled.h1`
-    font-size: ${sizes.sizeXXXL};
-    font-weight: 900;
-    margin-bottom: 25px;
- `;
-
-export const SubTitle = styled.p`
+export const SubTitle = styled(Paragraph)`
     font-weight: 300;
     color: ${colors.lightGrey};
     margin-bottom: 25px;
 `;
 
-export const Social = styled.div`
-   display: flex;
-   flex-direction: column;
-   position: fixed;
-   height: 230px;
-   justify-content: space-between;
-   top: 110px;
-   right: 70px;
-
-`;
-
-export const SocialIcon = styled.img`
-width: 30px;
-height: 30px;
-`;
