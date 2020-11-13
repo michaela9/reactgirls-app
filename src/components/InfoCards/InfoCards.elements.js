@@ -9,7 +9,7 @@ export const InfoCardsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: space-between;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
 `;
 
 export const InfoCard = styled.div`

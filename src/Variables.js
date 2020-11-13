@@ -1,5 +1,3 @@
-
-
 export const sizes = {
     sizeXXS: `12px`,
     sizeXS: `14px`,

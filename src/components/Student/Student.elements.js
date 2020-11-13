@@ -6,6 +6,7 @@ export const StudentContainer = styled.div`
     display: flex;
     width: 1000px;
     justify-content: space-between;
+    margin-top: 80px;
 `;
 
 export const StudentCard = styled.div`

@@ -8,14 +8,15 @@ import {
     PriceContainer,
     PriceRow,
     PriceIcon,
-    PriceText
+    PriceText,
+    PriceTitle
 } from './Price.elements';
 
 function Price() {
     return (
         <ContainerColor>
             <WrapperColumn>
-                <TitleLeft>Co vše je v ceně Mentoringu?</TitleLeft>
+                <PriceTitle>Co vše je v ceně Mentoringu?</PriceTitle>
                 <PriceContainer>
                     <PriceRow>
                         <PriceIcon src="/images/icons/done.svg" />
