@@ -57,13 +57,13 @@ export const NavLinks = styled(Link)`
 `;
 
 export const Social = styled.div`
-   display: flex;
-   flex-direction: column;
-   position: fixed;
-   height: 230px;
-   justify-content: space-between;
-   top: 110px;
-   right: 70px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 230px;
+  justify-content: space-between;
+  top: 110px;
+  right: 70px;
 
 `;
 
