@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import  { sizes, colors } from '../../variables.js';
 
 export const Heading1 = styled.h1`
@@ -23,23 +23,16 @@ export const Paragraph = styled.p`
 
 export const ParagraphS = styled.p`
     font-size: ${sizes.sizeS};
-    line-height: 1.4;
+    line-height: 1.7;
 `;
 
 
 export const Container = styled.div`
     z-index:1;
     width: 100%;
-    background-color: ${colors.white};
+    background-color: ${({lightblue}) => (lightblue ? `#EBF6F8`  : `#FFFBFA` )};
 `;
 
-export const ContainerColor = styled.div`
-    z-index:1;
-    width: 100%;
-    background-image: url('images/Beige-small-small.png');
-    background-repeat: repeat;
-    background-color: ${colors.lightBlue};
-`;
 
 export const Wrapper = styled.div`
     width: 1280px;
@@ -48,6 +41,7 @@ export const Wrapper = styled.div`
     padding: 80px 50px;
     align-items: center;
     justify-content: space-between;
+    flex-direction: ${({imgstart}) => (imgstart ? 'row-reverse' : 'row')};
 `;
 
 export const WrapperColumn = styled.div`
@@ -59,15 +53,6 @@ export const WrapperColumn = styled.div`
     align-items: center;
 `;
 
-export const WrapperReverse = styled.div`
-    width: 1280px;
-    display: flex;
-    margin: 0 auto;
-    padding: 100px 50px;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-`; 
 
 export const TitleCenter = styled(Heading1)`
     text-align: center;

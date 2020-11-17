@@ -1,21 +1,20 @@
 import React from 'react';
-import GlobalStyle from './globalStyles';
 
-import { 
-  Hero, 
+import {  
   Sponzor, 
   Product, 
   Newsletter,
   Lector,
   References
-} from './components';
-
+} from '../../components';
+import  Hero  from '../../components/reusable/Hero/Hero';
+import { heroObjOne } from './Data';
 
 
 function Home() {
   return (
     <>
-      <Hero />
+      <Hero {...heroObjOne} />
       <Sponzor />
       <Product />
       <Newsletter />

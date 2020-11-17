@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables';
+import { sizes, colors } from '../../../variables';
 
-
-export const InfoCardsContainer = styled.div`
+export const InfoCont = styled.div`
     display: flex;
     width: 1050px;
     height: 900px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-    ContainerColor, 
+    Container, 
     WrapperColumn, 
     TitleLeft 
 } from '../reusable/styled';
@@ -13,7 +13,7 @@ import {
 
 function Questions() {
     return (
-        <ContainerColor>
+        <Container lightblue>
             <WrapperColumn>
                 <TitleLeft>Q&A</TitleLeft>
                 <QuestionsContainer>
@@ -28,7 +28,7 @@ function Questions() {
                 </QuestionsContainer>
 
             </WrapperColumn>
-        </ContainerColor>
+        </Container>
     )
 }
 

@@ -9,7 +9,6 @@ import {
 
 import { 
     Container, 
-    ContainerColor, 
     Wrapper, 
     WrapperReverse, 
     TitleCenter ,
@@ -21,19 +20,19 @@ import Button from '../reusable/Button/Button';
 import productArr from './productArr';
 
 
-function Product() {
+function Product({ lightblue, imgstart, hidebutton }) {
     return (
         <>
-            <ContainerColor>
+            <Container lightblue >
                 <WrapperColumn>
                     <TitleCenter>
                         Co je ReactGirls Prague?
                     </TitleCenter>
                 </WrapperColumn>
-            </ContainerColor>
+            </Container>
             {productArr.map((product) => (
-            <Container>
-                <Wrapper> 
+            <Container lightblue={product.lightblue} >
+                <Wrapper imgstart={product.imgstart}> 
                     <ProductInfoContainer>
                         <SubTitleLeft>
                             {product.title}
@@ -41,7 +40,7 @@ function Product() {
                         <ProductInfo>
                         {product.info}
                         </ProductInfo>
-                        <Button>{product.button}</Button>
+                        <Button hidebutton={product.hidebutton} >{product.buttontext}</Button>
                     </ProductInfoContainer>
                     <ProductImgContainer>
                         <ProductImg src={product.img} />

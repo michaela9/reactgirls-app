@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-    ContainerColor, 
+    Container, 
     WrapperColumn, 
     TitleLeft 
 } from '../reusable/styled';
@@ -14,7 +14,7 @@ import {
 
 function Price() {
     return (
-        <ContainerColor>
+        <Container lightblue>
             <WrapperColumn>
                 <PriceTitle>Co vše je v ceně Mentoringu?</PriceTitle>
                 <PriceContainer>
@@ -48,7 +48,7 @@ function Price() {
                     </PriceRow>
                 </PriceContainer>
             </WrapperColumn>
-        </ContainerColor>
+        </Container>
     )
 }
 

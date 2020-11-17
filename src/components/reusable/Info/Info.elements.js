@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables.js';
+import { sizes, colors } from '../../../variables';
 
 
 export const InfoContent = styled.p`

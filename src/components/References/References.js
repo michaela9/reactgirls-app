@@ -1,5 +1,5 @@
 import React from 'react';
-import { TitleCenter,ContainerColor, Wrapper } from '../reusable/styled';
+import { TitleCenter,Container, Wrapper } from '../reusable/styled';
 import { 
     ReferenceArrow,
     SpeechContent,
@@ -15,7 +15,7 @@ import {
 function References () {
                     return (
                         <>
-                        <ContainerColor>
+                        <Container lightblue>
                             <Wrapper>
                                 <ReferenceContainer>
                                     <TitleCenter>Co o nás říkají naši studenti?</TitleCenter>
@@ -41,7 +41,7 @@ function References () {
                                     </ReferenceContent>
                                 </ReferenceContainer>
                             </Wrapper>
-                        </ContainerColor>
+                        </Container>
                         </>
     )
 }

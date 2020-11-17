@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import  { sizes, colors } from '../../variables.js';
-import { Paragraph } from '../reusable/styled';
+import  { sizes, colors } from '../../../variables';
+import { Paragraph } from '../styled';
 
 
 
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction:column;
-    max-width: 50%;
+    max-width: 53%;
     margin-right: 50px;
     justify-content: space-between;
     align-items: flex-start;
@@ -17,18 +17,16 @@ export const TitleContainer = styled.div`
  export const ImgContainer = styled.div`
     width: 500px;
     height: 500px;
-    border-radius: 325px;
+    border-radius: 250px;
+    overflow: hidden;
  `;
 
 export const HeroImg = styled.img`
-    width: 500px;
     height: 500px;
-    border-radius: 300px;
-    background-image: url('/images/community/photo_5.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: auto;
+
  `;
+
 
 export const SubTitle = styled(Paragraph)`
     font-weight: 300;

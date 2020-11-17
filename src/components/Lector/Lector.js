@@ -17,16 +17,16 @@ import {
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
- import { Container, ContainerColor, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
+ import { Container, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
 
 function Lector() {
     return (
         <>
-            <ContainerColor>
+            <Container lightblue>
                 <WrapperColumn>   
                     <TitleCenter>Lektoři</TitleCenter>
                 </WrapperColumn>  
-            </ContainerColor>
+            </Container>
             <Container>
             <LectorWrapper>
                     <CardsContainer>

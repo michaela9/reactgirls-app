@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerColor, Wrapper } from '../reusable/styled';
+import { Container, Wrapper } from '../reusable/styled';
 import { 
     ContactHeroTitle,
     ContactInfo,
@@ -15,7 +15,7 @@ import  ButtonInputGroup from '../../components/reusable/ButtonInputGroup/Button
 
 function ContactHero() {
     return (
-        <ContainerColor>
+        <Container>
             <Wrapper>
                 <ContactHeroContainer>
                     <ContactHeroTitle>Jak nás můžeš kontaktovat?</ContactHeroTitle>
@@ -29,7 +29,7 @@ function ContactHero() {
                     <ButtonInputGroup/>
                 </ContactHeroContainer>
             </Wrapper>
-        </ContainerColor>
+        </Container>
     )
 }
 

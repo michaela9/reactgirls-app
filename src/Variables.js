@@ -13,7 +13,8 @@ export const colors = {
     mainBlue: `#00B4CD`,
     lightBlue: `#EBF6F8`,
     darkBlue: `#075C68`,
-    lightGrey: `#C4C4C4`,
-    darkGrey: `#535046`,
+    lightGrey: `#B6B6B6`,
+    grey: `#535353`,
+    darkGrey: `#323232`,
     white: `#FFFBFA`,
 };

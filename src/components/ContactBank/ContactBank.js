@@ -7,11 +7,11 @@ import {
     BankHeading, 
     BankText 
 } from './ContactBank.elements';
-import { ContainerColor, Wrapper } from '../reusable/styled';
+import { Container, Wrapper } from '../reusable/styled';
 
 function ContactBank() {
     return (
-        <ContainerColor>
+        <Container>
             <Wrapper>
                 <ContentContainer>
                     <BankContainer>
@@ -50,7 +50,7 @@ function ContactBank() {
                     </BankContainer>
                 </ContentContainer>
             </Wrapper>
-        </ContainerColor>
+        </Container>
     )
 }
 

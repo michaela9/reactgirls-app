@@ -4,11 +4,14 @@ import { colors, sizes } from '../../../variables';
 
 export const InputContainer = styled.div`
     background-color: ${colors.white};
-    border: 1px solid ${colors.darkGrey} ; 
-    padding: 12px 35px;
+    border: 1px solid ${colors.lightGrey} ; 
+    padding: 0 32px;
+    height: 50px;
     border-radius: 25px;
     box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
     width: 300px;
+    display: flex;
+    align-items: center;
     `;
 
 export const CustomInput = styled.input.attrs({ 

@@ -16,8 +16,8 @@ export const ProductInfoContainer = styled.div`
 export const ProductInfo = styled(Paragraph)`
     font-weight: 300;
     line-height: 1.8;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 32px;
+    margin-top: 32px;
 `;
 
 export const ProductImg = styled.img`

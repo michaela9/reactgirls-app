@@ -1,15 +1,13 @@
 import React from 'react';
 import { InfoContent } from './Info.elements';
-import { Container, Wrapper } from '../reusable/styled';
+import { Container, Wrapper } from '../styled';
 
-function Info() {
+function Info({text}) {
     return (
         <Container>
             <Wrapper>
                 <InfoContent>
-                    Přihlaš se do Mentoringu ReactGirls
-                     a získej kouče, který Tě bude 
-                     mentorovat a rozvíjet Tvé technické dovednosti
+                    {text}
                 </InfoContent>
             </Wrapper>
         </Container>

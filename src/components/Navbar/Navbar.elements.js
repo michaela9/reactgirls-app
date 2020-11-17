@@ -7,6 +7,8 @@ export const Nav = styled.div`
   width: 100%;
   box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.15);
   z-index: 1000;
+  position: sticky;
+  top: 0;
 
 `;
 
@@ -60,14 +62,14 @@ export const Social = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 230px;
+  height: 200px;
   justify-content: space-between;
   top: 110px;
   right: 70px;
-
 `;
 
 export const SocialIcon = styled.img`
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
 `;
+

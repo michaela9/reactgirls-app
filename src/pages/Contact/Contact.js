@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     ContactHero, ContactPeople, ContactBank
-}  from './components';
+}  from '../../components';
 
 
 
