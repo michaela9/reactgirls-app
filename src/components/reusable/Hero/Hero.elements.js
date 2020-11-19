@@ -7,7 +7,7 @@ import { Paragraph } from '../styled';
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction:column;
-    max-width: 53%;
+    max-width: 45%;
     margin-right: 50px;
     justify-content: space-between;
     align-items: flex-start;

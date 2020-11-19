@@ -5,7 +5,7 @@ import { sizes, colors } from '../../variables.js';
 export const Nav = styled.div`
 //position: fixed;
   width: 100%;
-  box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.15);
+  box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.05);
   z-index: 1000;
   position: sticky;
   top: 0;

@@ -43,8 +43,9 @@ export const academyCardArr = [
 ];
 
 export const titleObjTwo = {
-    mainStudentTitle: "Pro koho je Akademie určena?",
+    mainStudentTitle: "Komu je Akademie určena?",
     mainCardsTitle: "Co Akademie nabízí?",
+    mainPriceTitle: "Co vše je v ceně Akademie?",
 };
 export const acadStudentArr = [
     {
@@ -63,3 +64,66 @@ export const acadStudentArr = [
         text: "Ženám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
     }
 ];
+
+export const acadPriceArr = [
+    {
+        text: "4 lekce",
+    },
+    {
+        text: "závěrečný workshop",
+       
+    },
+    {
+        text: "17 hodin vyučování",
+        
+    },
+    {
+        text: "celodenní hackathon",
+       
+    },
+    {
+        text: "certifikát o absolvování",
+       
+    },
+    {
+        text: "tričko ReactGirls",
+       
+    },
+    {
+        text: "možnost vyzkoušet si mock interview",
+       
+    },
+];
+
+export const programArr1 = [
+    {
+        date: "5.října 2020", 
+        topic: "HTML & CSS",
+        time: "17:00 - 20:00",
+        place: "online",
+    },
+    {
+        date: "5.října 2020", 
+        topic: "Úvod do programování",
+        time: "17:00 - 20:00",
+        place: "online",
+    },
+    {
+        date: "5.října 2020", 
+        topic: "JavaScript",
+        time: "17:00 - 20:00",
+        place: "online",
+    },
+    {
+        date: "5.října 2020", 
+        topic: "React",
+        time: "17:00 - 20:00",
+        place: "online",
+    },
+    {
+        date: "5.října 2020",
+        topic: "Hackathon, pivo",
+        time: "17:00 - 20:00",
+        place: "online",
+    },
+]

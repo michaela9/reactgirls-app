@@ -46,22 +46,49 @@ export const mentoringCardArr = [
 export const titleObjOne = {
     mainStudentTitle: "Pro koho je Mentoring určen?",
     mainCardsTitle: "Co Mentoring nabízí?",
+    mainPriceTitle: "Co vše je v ceně Mentoringu?"
 };
 
 export const mentStudentArr = [
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/woman1.svg",
         heading: "Zájemkyním",
         text: "Zájemkyním o programování, které se chtějí naučit tvorbu webových stránek v populární JavaScrtipové knihovně React.",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/woman6.svg",
         heading: "Začátečnicím",
         text: "Začatečnicím, které již mají zkušenosti s programováním a chtěly by je posunout na další úroveň s Reactem.",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/woman3.svg",
         heading: "Ženám",
         text: "Ženám, které se chtějí naučit frontendové programování a nechat se mentorovat osobnostmi z IT.",
     }
+];
+
+export const mentPriceArr = [
+    {
+        text: "kouč po dobu 3 měsíců",
+    },
+    {
+        text: "pravidelná týdenní setkávání",
+       
+    },
+    {
+        text: "pravidelné zadávání úkolů",
+        
+    },
+    {
+        text: "možnost konzultace s dalšími kouči",
+       
+    },
+    {
+        text: "vstup na celodenní workshop ReactGirls",
+       
+    },
+    {
+        text: "možnost vyzkoušet si mock interview",
+       
+    },
 ];
