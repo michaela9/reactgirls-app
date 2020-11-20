@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { Paragraph } from '../reusable/styled.js';
 
 
 export const ContactHeroContainer = styled.div`
@@ -8,6 +9,7 @@ export const ContactHeroContainer = styled.div`
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+
 `
 
 export const ContactHeroTitle = styled.h1`
@@ -19,19 +21,19 @@ export const ContactHeroTitle = styled.h1`
 
 `
 
-export const ContactInfo = styled.p`
+export const ContactInfo = styled(Paragraph)`
     text-align: center;
     margin: 0 auto;
     margin-bottom: 40px;
-    line-height: 1.6;
     width: 40%;
+    font-weight: 300;
+    color: ${colors.grey}
 
 `
 
 
 export const SlackIcon = styled.img`
-    width: 80px;
-    height: 80px;
+    width: 60px;
     margin-bottom: 40px;
 `
 

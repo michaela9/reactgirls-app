@@ -12,6 +12,6 @@ align-items: center
 
 export const SponzorImg = styled.img`
 height: 100px;
-margin-right: 50px;
+margin-right: 120px;
 `;
 

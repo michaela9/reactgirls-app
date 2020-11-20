@@ -31,15 +31,18 @@ export const InfoTitle = styled.div`
 `;
 
 export const InfoText = styled.div`
+    width: 80%;
     text-align: center;
     font-weight: 300;
     font-size: ${sizes.sizeS};
     line-height: 1.6;
+    margin: 0 auto;
+
 `;
 export const InfoIcon = styled.img`
     width: 80px;
     height: 80px;
-    margin: 50px auto 30px auto;
+    margin: 60px auto 40px auto;
 `;
 
 

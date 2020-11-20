@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import  { sizes, colors } from '../../variables.js';
+import { ParagraphS } from '../reusable/styled';
 
 
 export const ContentContainer = styled.div`
@@ -24,7 +25,9 @@ export const BankHeading = styled.h3`
     margin-bottom: 15px;
  `;
 
-export const BankText = styled.p`
+export const BankText = styled(ParagraphS)`
     font-size: ${sizes.sizeXS};
-    line-height: 1.8;
+    color: ${colors.grey};
+    font-weight: 300;
+
  `;

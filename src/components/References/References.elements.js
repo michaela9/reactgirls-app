@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables';
+import { ParagraphS } from '../reusable/styled';
 
 export const ReferenceContainer = styled.div`
     display: flex;
@@ -44,11 +45,14 @@ export const SpeechIcon = styled.img`
     margin-bottom: 10px;
 `;
 
-export const SpeechText = styled.p`
+export const SpeechText = styled(ParagraphS)`
     text-align: left;
     font-style: italic;
     margin-bottom: 15px;
-`;
+    font-size: ${sizes.sizeS};
+    color: ${colors.grey};
+    font-weight: 300;
+    `;
 export const ReferenceContent = styled.div`
     display: flex;
 
@@ -57,6 +61,7 @@ export const ReferenceContent = styled.div`
 
 export const SpeechName = styled.p`
     text-align: left;
+    font-size: ${sizes.sizeXS};
 `;
 
 

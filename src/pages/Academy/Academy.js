@@ -1,14 +1,11 @@
 import React from 'react';
-import { 
-    Price,
-    Newsletter,
-    Questions,
-    Program
- }  from '../../components';
+import { Price, Newsletter, Program }  from '../../components';
  import  Hero  from '../../components/reusable/Hero/Hero';
  import  Student  from '../../components/reusable/Student/Student';
  import  Info  from '../../components/reusable/Info/Info';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
+ import  Questions  from '../../components/reusable/Questions/Questions';
+
  import { 
     acadStudentArr, 
     academyCardArr, 
@@ -16,8 +13,11 @@ import {
     infoObjTwo, 
     titleObjTwo, 
     acadPriceArr,
-    programArr1
+    programArr1,
+    acadQuestionsArr,
     } from './Data';
+
+
 
 function Academy() {
     return (
@@ -29,7 +29,7 @@ function Academy() {
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Price data={acadPriceArr} {...titleObjTwo} />
             <Newsletter />
-            <Questions />
+            <Questions data={acadQuestionsArr} />
         </div>
     )
 }

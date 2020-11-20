@@ -18,6 +18,7 @@ export const ProductInfo = styled(Paragraph)`
     line-height: 1.8;
     margin-bottom: 32px;
     margin-top: 32px;
+    color: ${colors.grey};
 `;
 
 export const ProductImg = styled.img`

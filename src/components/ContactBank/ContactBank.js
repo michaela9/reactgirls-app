@@ -11,11 +11,11 @@ import { Container, Wrapper } from '../reusable/styled';
 
 function ContactBank() {
     return (
-        <Container>
+        <Container lightblue>
             <Wrapper>
                 <ContentContainer>
                     <BankContainer>
-                        <BankIcon src="/images/icons/home.svg" />
+                        <BankIcon src="/images/icons/location.svg" />
                         <BankHeading>Sídlo a fakturační údaje</BankHeading>
                         <BankText>
                             ReactGirls 
@@ -32,7 +32,7 @@ function ContactBank() {
                         </BankText>
                     </BankContainer>
                     <BankContainer>
-                        <BankIcon src="/images/icons/bank.svg" />
+                        <BankIcon src="/images/icons/money-bag.svg" />
                         <BankHeading>Bankovní spojení</BankHeading>
                         <BankText>
                             Fio banka a. s.,

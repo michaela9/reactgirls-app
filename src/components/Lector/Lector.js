@@ -36,12 +36,12 @@ function Lector() {
                                     <LectorInterest>{lector.lectorInterest}</LectorInterest>
                                     <LectorImgContainer>
                                         <LectorImg src={lector.lectorImg} />
-                                        <LectorLink to="{lector.lectorLinkedIn}"><IconIn src="/images/icons/linkedIn.svg" /></LectorLink>
+                                        <LectorLink to="{lector.lectorLinkedIn}"><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
                                     </LectorImgContainer>
                                     <LectorName>{lector.lectorName}</LectorName>
                                     <LectorInfo>{lector.lectorInfo}</LectorInfo>
-                                    <LectorJob>{lector.lectorJob}</LectorJob>
-                                    <LectorCompany>{lector.lectorCompany}</LectorCompany>
+                                    <LectorJob>{lector.lectorJob} {lector.lectorCompany}</LectorJob>
+  
                                 </Card>
                             )
                         )}

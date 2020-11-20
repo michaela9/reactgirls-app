@@ -13,5 +13,5 @@ export { default as Info} from './reusable/Info/Info';
 export { default as InfoCards} from './reusable/InfoCards/InfoCards';
 export { default as Student} from './reusable/Student/Student';
 export { default as Price} from './Price/Price';
-export { default as Questions} from './Questions/Questions';
+export { default as Questions} from './reusable/Questions/Questions';
 export { default as Program} from './Program/Program';

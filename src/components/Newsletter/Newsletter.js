@@ -1,7 +1,7 @@
 import React from 'react';
-import { NewsletterContainer, ParagraphCenter} from './Newsletter.elements';
+import { NewsletterContainer, ParagraphCenter, TitleCenterNews} from './Newsletter.elements';
 
-import { Container, Wrapper, TitleCenter } from '../../components/reusable/styled';
+import { Container, Wrapper } from '../../components/reusable/styled';
 import ButtonInputGroup from '../../components/reusable/ButtonInputGroup/ButtonInputGroup';
 
 function Newsletter() {
@@ -9,9 +9,9 @@ function Newsletter() {
         <Container>
             <Wrapper>
             <NewsletterContainer>
-                <TitleCenter>
+                <TitleCenterNews>
                     Zajímá Tě, kdy se bude konat další akce?
-                </TitleCenter>
+                </TitleCenterNews>
                 <ParagraphCenter>
                     Klikni na Odebírat Newsletter <br></br> a my se Ti ozveme!
                 </ParagraphCenter>

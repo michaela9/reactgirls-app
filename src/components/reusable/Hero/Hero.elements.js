@@ -30,7 +30,7 @@ export const HeroImg = styled.img`
 
 export const SubTitle = styled(Paragraph)`
     font-weight: 300;
-    color: ${colors.lightGrey};
+    color: ${colors.grey};
     margin-bottom: 25px;
 `;
 

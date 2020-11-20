@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
-import { Paragraph } from '../reusable/styled';
+import { Paragraph, TitleCenter } from '../reusable/styled';
 
 export const NewsletterContainer = styled.div `
     display: flex;
@@ -14,6 +14,12 @@ export const NewsletterContainer = styled.div `
 
 export const ParagraphCenter = styled(Paragraph) `
     text-align: center;
+    color: ${colors.grey};
+    font-weight: 300;
+`;
+
+export const TitleCenterNews = styled(TitleCenter) `
+    width: 70%;
 `;
 
 

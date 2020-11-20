@@ -47,7 +47,9 @@ export const SocialContactIcon = styled.img`
     margin-top: 10px;
 `;
 export const ContactInfo = styled(ParagraphS)`
- margin-bottom: -10/px;
- font-weight: 300;
+    font-weight: 300;
+    color:${colors.grey};   
+    line-height: 1;
+    font-size: ${sizes.sizeXS};
 `;
 

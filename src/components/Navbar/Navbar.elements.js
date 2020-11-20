@@ -46,7 +46,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
-  font-weight: 500;
+  font-weight: 400;
+  color:${colors.grey};
 
 &:hover {
   border-bottom: 2px solid ${colors.mainBlue} ;

@@ -53,19 +53,19 @@ export const LectorName = styled(Name)`
 
 export const LectorInfo = styled(ParagraphS)`
     text-align: center;
-
-`;
-
-export const LectorJob = styled(ParagraphS)`
-    text-align: center;
+    color: ${colors.grey};
     font-weight: 300;
-    margin-bottom: -25px;
+
 `;
 
-export const LectorCompany = styled(ParagraphS)`
+export const LectorJob = styled.p`
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: ${sizes.sizeXS};
+    color: ${colors.grey};
 `;
+
+
 
 export const LectorLink = styled(Link)`
     position: absolute;
@@ -95,8 +95,6 @@ export const LectorImgContainer = styled.div`
 export const IconIn = styled.img`
     width: 22px;
     height: 22px;
-    //fill: red;
-    filter: invert(100%);
 `
 
 
