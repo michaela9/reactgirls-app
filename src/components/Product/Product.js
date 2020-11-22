@@ -20,7 +20,7 @@ import Button from '../reusable/Button/Button';
 import productArr from './productArr';
 
 
-function Product({ lightblue, imgstart, hidebutton }) {
+function Product({  }) {
     return (
         <>
             <Container lightblue >
@@ -40,7 +40,9 @@ function Product({ lightblue, imgstart, hidebutton }) {
                         <ProductInfo>
                         {product.info}
                         </ProductInfo>
-                        <Button hidebutton={product.hidebutton} >{product.buttontext}</Button>
+                        {!product.hidebutton && 
+                        <Button>{product.buttontext}</Button>
+                        }
                     </ProductInfoContainer>
                     <ProductImgContainer>
                         <ProductImg src={product.img} />

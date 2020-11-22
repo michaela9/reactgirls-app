@@ -15,3 +15,8 @@ export { default as Student} from './reusable/Student/Student';
 export { default as Price} from './Price/Price';
 export { default as Questions} from './reusable/Questions/Questions';
 export { default as Program} from './Program/Program';
+export { default as AboutInfo} from './reusable/AboutInfo/AboutInfo';
+export { default as AboutHero} from './AboutHero/AboutHero';
+export { default as AboutProduct} from './AboutProduct/AboutProduct';
+export { default as Gallery} from './Gallery/Gallery';
+export { default as Thanks} from './Thanks/Thanks';

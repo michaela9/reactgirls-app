@@ -10,6 +10,7 @@ export const ProductInfoContainer = styled.div`
     margin-right: 50px;
     justify-content: center;
     align-items: flex-start;
+
 `;
 
 

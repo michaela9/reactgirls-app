@@ -8,7 +8,7 @@ export const InputContainer = styled.div`
     padding: 0 32px;
     height: 50px;
     border-radius: 25px;
-    box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
+    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
     width: 300px;
     display: flex;
     align-items: center;

@@ -3,7 +3,7 @@ import  { sizes, colors } from '../../variables.js';
 
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
-    line-height: 1.3;
+    line-height: 1.4;
 `;
 
 export const Heading2 = styled.h2`
@@ -31,7 +31,6 @@ export const Container = styled.div`
     z-index:1;
     width: 100%;
     background-color: ${({lightblue}) => (lightblue ? `#EBF6F8`  : `#FFFBFA` )};
-
 `;
 
 

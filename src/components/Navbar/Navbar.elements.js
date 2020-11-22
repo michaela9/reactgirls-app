@@ -63,7 +63,7 @@ export const Social = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 200px;
+  height: 220px;
   justify-content: space-between;
   top: 110px;
   right: 70px;

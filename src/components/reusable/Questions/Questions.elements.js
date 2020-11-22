@@ -4,11 +4,10 @@ import { ParagraphS } from '../../reusable/styled';
 
 export const QuestionsContainer = styled.div`
     width: 500px;
-    margin-top: 80px;
-    background-color: ${colors.white};
+    //margin-top: 80px;
+    //background-color: ${colors.white};
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
 
 `;
 export const QuestionCont = styled.div`

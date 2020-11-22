@@ -31,11 +31,11 @@ export const SpeechImg = styled.img`
     left: -20px;
 `;
 export const Speech = styled.div`
-    background-color: ${colors.white};
+    //background-color: ${colors.white};
     border-radius: 30px;
     padding: 15px 30px 15px 60px;
     width: 80%;
-    box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
+    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
 
 
 `;

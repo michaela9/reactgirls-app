@@ -111,15 +111,11 @@ export const mentQuestionsArr = [
         answer: "Odneseš si znalosti HTML, CSS, JavaScriptu, Reactu. Reálnou zkušenost s Reactem, motivaci, možnost vyzkoušet si interview se zkušeným HR, certifikát o absolvování a merch ReactGirls.",
     },
     {
-        question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je program pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat ↓",
-    },
-    {
         question: "Co se stane pokud bude opět karanténa?",
         answer: "V případě karantény přesuneme celou výuku do online prostředí.",
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat ↓",
+        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
     }, 
 ];

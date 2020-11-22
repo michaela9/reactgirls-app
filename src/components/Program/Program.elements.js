@@ -14,19 +14,20 @@ export const ProgramTableHead = styled.thead`
 `;
 
 export const ProgramTableRow = styled.tr`
-    border-bottom: 2px solid ${colors.lightGrey};
+    border-bottom: 1px solid #EBEBEB;
 
 `;
 
 export const ProgramTableRowH = styled.tr`
-    border-bottom: 2px solid ${colors.lightGrey} ;
+    border-bottom: 1px solid #DEDCDC;
 
 `;
 
-export const ProgramDataHead = styled.th`
-    font-weight: 900;
+export const ProgramDataHead = styled.td`
     padding: 20px;
     text-align: left;
+    color: ${colors.darkGrey};
+    font-weight: 300;
 `;
 
 export const ProgramTableBody = styled.tbody`
@@ -36,11 +37,12 @@ export const ProgramTableBody = styled.tbody`
 export const ProgramData = styled.td`
     padding: 20px;
     text-align: left;
+    color: ${colors.darkGrey};
+    font-weight: 300;
 `;
 
 export const ProgramDataTopic = styled.td`
-    color: ${colors.mainBlue};
     padding: 20px;
     text-align: left;
-    font-weight: 500;
+    font-weight: 700;
 `;

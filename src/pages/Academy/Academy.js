@@ -21,7 +21,7 @@ import { Price, Newsletter, Program }  from '../../components';
 
 function Academy() {
     return (
-        <div>
+        <>
             <Hero {...heroObjThree} />
             <Info {...infoObjTwo} />
             <Program data={programArr1}/>
@@ -30,7 +30,7 @@ function Academy() {
             <Price data={acadPriceArr} {...titleObjTwo} />
             <Newsletter />
             <Questions data={acadQuestionsArr} />
-        </div>
+        </>
     )
 }
 

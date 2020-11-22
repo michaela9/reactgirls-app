@@ -143,7 +143,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Co si z akademie odnesu? ",
-        answer: "Odneseš si znalosti HTML, CSS, JavaScriptu, Reactu. Reálnou zkušenost s Reactem, motivaci, možnost vyzkoušet si interview se zkušeným HR, certifikát o absolvování a merch ReactGirls. Ale hlavně si odneseš skvělé strávený čas se super partou! 🙂",
+        answer: "Odneseš si znalosti HTML, CSS, JavaScriptu, Reactu. Reálnou zkušenost s Reactem, motivaci, možnost vyzkoušet si interview se zkušeným HR, certifikát o absolvování a merch ReactGirls. Ale hlavně si odneseš skvělé strávený čas se super partou!",
     },
     {
         question: "Kde se bude Akademie konat? ",
@@ -155,6 +155,6 @@ export const acadQuestionsArr = [
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat ↓",
+        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
     }, 
 ];

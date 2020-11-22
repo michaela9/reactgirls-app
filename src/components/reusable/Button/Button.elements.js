@@ -13,7 +13,7 @@ export const CustomButton = styled.button`
     letter-spacing: 1px;
     font-weight: 500;
     ${({hidebutton}) => hidebutton && css`
-    display: none;
+        display: none;
     `}
 
 `;
