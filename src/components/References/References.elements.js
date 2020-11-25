@@ -8,35 +8,8 @@ export const ReferenceContainer = styled.div`
     width: 100%;
 `;
 
-export const ReferenceArrow = styled.img`
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 170px;
-
-`;
-export const SpeechContent = styled.div`
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    position: relative;
-    left: 20px;
-    margin-top: 80px;
-`;
-export const SpeechImg = styled.img`
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    position: absolute;
-    left: -20px;
-`;
 export const Speech = styled.div`
-    //background-color: ${colors.white};
-    border-radius: 30px;
-    padding: 15px 30px 15px 60px;
-    width: 80%;
-    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.2) inset;
-
+    margin-right: 50px;
 
 `;
 export const SpeechIcon = styled.img`
@@ -52,16 +25,15 @@ export const SpeechText = styled(ParagraphS)`
     font-size: ${sizes.sizeS};
     color: ${colors.grey};
     font-weight: 300;
-    `;
+`;
+
 export const ReferenceContent = styled.div`
     display: flex;
-
-
+    width: 100%;
+    margin-top: 80px;
 `;
 
 export const SpeechName = styled.p`
     text-align: left;
     font-size: ${sizes.sizeXS};
 `;
-
-

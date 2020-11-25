@@ -25,6 +25,33 @@ const lectorArr = [
         lectorJob: "vývojář",
         lectorCompany: "v Mall.cz",
         lectorLinkedIn: "https://www.linkedin.com/in/fczbkk",
+    },
+    {
+        lectorInterest: "Workshop | Akademie ",
+        lectorImg: "/images/lectors/richard.jpg",
+        lectorName: "Riki Fridrich",
+        lectorInfo: "Riki je guru JavaScriptu a má mnohaleté zkušenosti s přednášením a lektorováním.",
+        lectorJob: "vývojář",
+        lectorCompany: "v Mall.cz",
+        lectorLinkedIn: "https://www.linkedin.com/in/fczbkk",
+    },
+    {
+        lectorInterest: "Workshop | Akademie ",
+        lectorImg: "/images/lectors/richard.jpg",
+        lectorName: "Riki Fridrich",
+        lectorInfo: "Riki je guru JavaScriptu a má mnohaleté zkušenosti s přednášením a lektorováním.",
+        lectorJob: "vývojář",
+        lectorCompany: "v Mall.cz",
+        lectorLinkedIn: "https://www.linkedin.com/in/fczbkk",
+    },
+    {
+        lectorInterest: "Workshop | Akademie ",
+        lectorImg: "/images/lectors/richard.jpg",
+        lectorName: "Riki Fridrich",
+        lectorInfo: "Riki je guru JavaScriptu a má mnohaleté zkušenosti s přednášením a lektorováním.",
+        lectorJob: "vývojář",
+        lectorCompany: "v Mall.cz",
+        lectorLinkedIn: "https://www.linkedin.com/in/fczbkk",
     }
 ]
 

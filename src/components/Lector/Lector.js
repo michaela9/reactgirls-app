@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 import { 
     CardsContainer,
     Card,
@@ -19,6 +21,17 @@ import {
  import lectorArr from './lectorArr';
  import { Container, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
 
+ import ReactDOM from "react-dom";
+import Carousel from "react-elastic-carousel";
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
+
 function Lector() {
     return (
         <>
@@ -28,10 +41,10 @@ function Lector() {
                 </WrapperColumn>  
             </Container>
             <Container>
-            <LectorWrapper>
-                    <CardsContainer>
-                    <LectorArrow src='/images/icons/left-arrow.svg' />
-                        {lectorArr.map((lector) => (
+                <LectorWrapper>
+                        <CardsContainer> 
+                            <Carousel breakpoints={breakPoints}  >
+                            {lectorArr.map((lector) => (
                                 <Card>
                                     <LectorInterest>{lector.lectorInterest}</LectorInterest>
                                     <LectorImgContainer>
@@ -41,12 +54,11 @@ function Lector() {
                                     <LectorName>{lector.lectorName}</LectorName>
                                     <LectorInfo>{lector.lectorInfo}</LectorInfo>
                                     <LectorJob>{lector.lectorJob} {lector.lectorCompany}</LectorJob>
-  
                                 </Card>
-                            )
-                        )}
-                    <LectorArrow src='/images/icons/right-arrow.svg' />
-                    </CardsContainer>
+                                    )
+                                )}
+                                </Carousel>      
+                        </CardsContainer>         
                 </LectorWrapper>  
             </Container>
             </>
