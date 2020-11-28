@@ -1,4 +1,4 @@
-const sponzorArr = [
+const sponsorArr = [
     {
         logo: "/images/sponzors/techaboo.png",
         sponzorship: "community"
@@ -42,5 +42,5 @@ const sponzorArr = [
 
 ]
 
-export default sponzorArr;
+export default sponsorArr;
 

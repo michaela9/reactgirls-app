@@ -76,5 +76,4 @@ export const Name = styled(Heading3)`
     font-weight: 900;
 `;
 
-
 export default styled;

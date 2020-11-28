@@ -1,21 +1,20 @@
 import React from 'react';
 
 import {  
-  Sponzor, 
+  Sponsor, 
   Product, 
   Newsletter,
   Lector,
   References
 } from '../../components';
-import  Hero  from '../../components/reusable/Hero/Hero';
-import { heroObjOne } from './Data';
+import  HeroHome  from '../../components/HeroHome/HeroHome';
 
 
 function Home() {
   return (
     <>
-      <Hero {...heroObjOne} />
-      <Sponzor />
+      <HeroHome />
+      <Sponsor />
       <Product />
       <Newsletter />
       <Lector />

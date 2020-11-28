@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import { Paragraph, ParagraphS, Name } from '../reusable/styled';
+import Carousel from 'react-elastic-carousel';
 
 export const CardsContainer = styled.div`
    display: flex;
@@ -96,6 +97,27 @@ export const IconIn = styled.img`
     width: 22px;
     height: 22px;
 `
+
+export const CarouselLector = styled(Carousel)`
+    .rec.pagination {
+        background: red;
+    }
+    .rec.rec-dot {
+        outline: none;
+        color: red;
+        background-color: ${colors.lightBlue};
+        box-shadow: none;
+        border: 1px solid ${colors.grey};
+        width: 12px;
+        height: 12px;
+        margin-top: 10px;
+    }
+    .rec.rec-dot_active {
+        background: ${colors.mainBlue};
+        outline: none;
+        box-shadow: none;
+    }
+`;
 
 
 
