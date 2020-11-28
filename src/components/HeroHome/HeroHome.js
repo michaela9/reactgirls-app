@@ -20,7 +20,7 @@ function HeroHome( {img}) {
             <Container lightblue>
                 <Wrapper>
                     <TitleHomeContainer>
-                        <TitleLeft >"Zapoj se do Mentoringu a nauč se programovat v Reactu!"</TitleLeft>
+                        <TitleLeft >Zapoj se do Mentoringu a nauč se programovat v Reactu!</TitleLeft>
                         <SubTitle >"#ReactGirlsPrague"</SubTitle>
                         <ButtonInputGroup />
                     </TitleHomeContainer>

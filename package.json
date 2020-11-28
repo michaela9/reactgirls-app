@@ -10,10 +10,13 @@
     "react-dom": "^17.0.1",
     "react-elastic-carousel": "^0.9.5",
     "react-hook-carousel": "0.0.3",
+    "react-leaf-carousel": "^2.0.3",
     "react-multi-carousel": "^2.5.5",
     "react-responsive-carousel": "^3.2.10",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-slick": "^0.27.13",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 import { 
     CardsContainer,
     Card,
@@ -21,8 +19,9 @@ import {
 
  import lectorArr from './lectorArr';
  import { Container, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
+  
 
- import ReactDOM from "react-dom";
+
 
 
 function Lector() {
@@ -33,11 +32,10 @@ function Lector() {
                     <TitleCenter>Lektoři</TitleCenter>
                 </WrapperColumn>  
             </Container>
-            <Container>
-                <LectorWrapper>
-                        <CardsContainer> 
-                            <CarouselLector  >
-                            {lectorArr.map((lector) => (
+            <Container  >
+                <CardsContainer>  
+                <CarouselLector  itemsToShow={3} itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
+                    {lectorArr.map((lector) => (
                                 <Card>
                                     <LectorInterest>{lector.lectorInterest}</LectorInterest>
                                     <LectorImgContainer>
@@ -50,13 +48,14 @@ function Lector() {
                                 </Card>
                                     )
                                 )}
-                                </CarouselLector>      
+                         </CarouselLector>           
                         </CardsContainer>         
-                </LectorWrapper>  
+                
             </Container>
             </>
     )
 }
 
 export default Lector;
+
 

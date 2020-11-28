@@ -23,7 +23,7 @@ function Price({mainPriceTitle, data}) {
                         return(
                         <PriceRow data={data}>
                             <PriceIcon src="/images/icons/done.svg" />
-                            <PriceText>{item.data}</PriceText>
+                            <PriceText>{item.text}</PriceText>
                         </PriceRow>
                         )
                     })

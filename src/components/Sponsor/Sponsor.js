@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SponsorContainer} from './Sponsor.elements';
 import { SponsorImg} from './Sponsor.elements';
 import sponsorArr from './sponsorArr';
+  
 import Carousel from 'react-elastic-carousel';
-
 
 function Sponsor() {
     return (

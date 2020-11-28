@@ -6,11 +6,11 @@ export const ReferenceContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 80px;
 `;
 
 export const Speech = styled.div`
-    margin-right: 50px;
-
+    margin-bottom: 60px;
 `;
 export const SpeechIcon = styled.img`
     width: 25px;
@@ -27,10 +27,11 @@ export const SpeechText = styled(ParagraphS)`
     font-weight: 300;
 `;
 
-export const ReferenceContent = styled.div`
+export const SpeechCont = styled.div`
     display: flex;
-    width: 100%;
-    margin-top: 80px;
+    flex-direction: column;
+    width: 45%;
+    margin: 80px auto 0 auto;
 `;
 
 export const SpeechName = styled.p`
