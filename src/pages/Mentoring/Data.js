@@ -73,23 +73,18 @@ export const mentPriceArr = [
     },
     {
         text: "pravidelná týdenní setkávání",
-       
     },
     {
-        text: "pravidelné zadávání úkolů",
-        
+        text: "pravidelné zadávání úkolů", 
     },
     {
         text: "možnost konzultace s dalšími kouči",
-       
     },
     {
-        text: "vstup na celodenní workshop ReactGirls",
-       
+        text: "vstup na celodenní workshop ReactGirls",  
     },
     {
-        text: "možnost vyzkoušet si mock interview",
-       
+        text: "možnost vyzkoušet si mock interview",  
     },
 ];
 

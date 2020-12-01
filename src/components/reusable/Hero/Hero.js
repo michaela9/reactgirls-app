@@ -7,7 +7,7 @@ import {
     SubTitle,
  } from './Hero.elements';
 
-import { Container, Wrapper, TitleLeft } from '../styled';
+import { Container, Wrapper, TitleLeft, Button } from '../styled';
 import  ButtonInputGroup from '../ButtonInputGroup/ButtonInputGroup';
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';

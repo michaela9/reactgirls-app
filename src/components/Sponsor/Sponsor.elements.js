@@ -5,7 +5,7 @@ export const SponsorContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-   // overflow: hidden;
+    overflow: hidden;
 `;
 
 export const SponsorImg = styled.img`

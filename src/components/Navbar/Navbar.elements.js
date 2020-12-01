@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { sizes, colors } from '../../variables.js';
 
 export const Nav = styled.div`
-//position: fixed;
     width: 100%;
     box-shadow: 0px 6px 6px rgba(68, 68, 68, 0.05);
     z-index: 1000;
     position: sticky;
     top: 0;
-
 `;
 
 export const NavWrapper = styled.div`
@@ -20,9 +18,7 @@ export const NavWrapper = styled.div`
     padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
-
 `;
-
 
 export const NavLogo = styled.img`
     height: 160px;
@@ -30,16 +26,17 @@ export const NavLogo = styled.img`
     border-radius:80px;
     position: relative;
     top:80px;
-    background-image: url('images/logo-blue.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    //background-image: url('images/logo-blue.svg');
+    //background-repeat: no-repeat;
+   // background-position: center;
+   // background-size: cover;
 
     &.active {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
         position: relative;
-        top:0px;
+        top:2px;
     }
 `;
 

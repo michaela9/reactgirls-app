@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import  { sizes, colors } from '../../variables.js';
 import { SubTitle } from '../reusable/Hero/Hero.elements';
 
-import  Button  from '../reusable/Button/Button';
+import { Button } from '../reusable/styled';
 
 
 export const SubTitleAbout = styled(SubTitle)`

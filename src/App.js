@@ -8,12 +8,14 @@ import About from './pages/About/About';
 import Mentoring from './pages/Mentoring/Mentoring';
 import Academy from './pages/Academy/Academy';
 import Contact from './pages/Contact/Contact';
+import ScrollToTop from './components/reusable/ScrollToTop';
 
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />

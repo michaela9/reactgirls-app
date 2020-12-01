@@ -43,7 +43,6 @@ export const CarouselHero = styled(Carousel)`
         outline: none;
         box-shadow: none;
     }
-
 `;
 
 

@@ -32,7 +32,9 @@ function Navbar() {
         <Nav>
             <Container>
                 <NavWrapper>
-                    <NavLogo className={navLogo ? 'active' : ''} />
+                    <Link to='/'>
+                    <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                    </Link>
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
                             <NavLinks to='/'>Úvod</NavLinks>

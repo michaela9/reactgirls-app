@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from '../Input/Input';
-import Button from '../Button/Button';
+import {Button} from '../styled';
 import { ButtonInputCont } from '../ButtonInputGroup/ButtonInputGroup.elements';
 
 function ButtonInputGroup() {

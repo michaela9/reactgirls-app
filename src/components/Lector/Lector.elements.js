@@ -13,11 +13,11 @@ export const CarouselLector = styled(Carousel)`
     }
     .rec.rec-arrow:hover {
     color: ${colors.mainBlue};
-}
+    }
 
-.rec.rec-arrow:disabled {
+    .rec.rec-arrow:disabled {
     visibility: hidden;
-}  
+    }  
 `;
 
 export const CardsContainer = styled.div`
