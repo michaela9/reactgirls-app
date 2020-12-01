@@ -34,6 +34,13 @@ export const NavLogo = styled.img`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &.active {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top:0px;
+    }
 `;
 
 export const NavMenu = styled.ul`

@@ -12,18 +12,27 @@ import {
 
     import { Container } from '../../components/reusable/styled';
     import { Link } from 'react-router-dom';
-import socialArr from './socialArr';
+    import socialArr from './socialArr';
 
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [navLogo, setNavLogo] = useState(false);
 
     const handleClick = () => setClick(!click);
+    const changeLogoSize = () => {
+        if(window.scrollY >= 80) {
+            setNavLogo(true)
+        }else{
+            setNavLogo(false)
+        }
+    };
+    window.addEventListener('scroll', changeLogoSize);
     return (
         <Nav>
             <Container>
                 <NavWrapper>
-                    <NavLogo />
+                    <NavLogo className={navLogo ? 'active' : ''} />
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
                             <NavLinks to='/'>Úvod</NavLinks>
