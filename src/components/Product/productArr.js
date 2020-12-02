@@ -8,7 +8,8 @@ const productArr = [
         buttontext: "Zjistit více",
         img: "images/community/photo_19.jpg",
         imgstart: false,
-        lightblue: false
+        lightblue: false,
+        link: '/about'
     },
     {
         title: "Workshopy",
@@ -33,16 +34,18 @@ const productArr = [
         buttontext: "Zjistit více",
         img: "images/community/photo_8.jpg",
         imgstart: true,
-        lightblue: true
+        lightblue: true,
+        link: '/mentoring'
     },
     {
         title: "Akademie",
         info: "Připravujeme pro Vás akademii, kde se budeme intenzivně věnovat frontednovému programování HTML, CSS, JavaScript a React.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
-        hidebutton: findAllByDisplayValue,
+        hidebutton: false,
         buttontext: "Zjistit více",
         img: "images/community/photo_5.jpg",
         imgstart: false,
-        lightblue: false
+        lightblue: false,
+        link: '/academy'
     },
     {
         title: "Meetupy",

@@ -2,60 +2,64 @@ import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import { Paragraph, ParagraphS, Name } from '../reusable/styled';
+import Carousel from 'react-elastic-carousel';
+
+
+export const CarouselLector = styled(Carousel)`
+    .rec.rec-arrow-left, .rec.rec-arrow-right {
+        background-color: ${colors.white} ;
+        color: ${colors.grey} ;
+        box-shadow: none;
+    }
+    .rec.rec-arrow:hover {
+    color: ${colors.mainBlue};
+    }
+
+    .rec.rec-arrow:disabled {
+    visibility: hidden;
+    }  
+`;
 
 export const CardsContainer = styled.div`
-   display: flex;
-   justify-content: space-between;
-
-`;
-export const LectorWrapper = styled.div`
     width: 1280px;
-    padding: 80px 50px;
     margin: 0 auto;
+    padding: 80px 20px;
 `;
-
 
 export const Card = styled.div`
-    height: 550px;
+    height: 500px;
+    min-width: 330px;
+    max-width: 330px;
     display: flex;
-    width: 330px;
     border-radius: 30px;
     background-color: ${colors.white} ;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    padding: 25px;
+    padding: 25px 35px;
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
-    position: relative;
+    margin: 20px;
 `;
 
 export const LectorInterest = styled(Paragraph)`
     color: ${colors.mainBlue};
     text-align: center;
     font-weight: 400;
-    height: 60px;
-`;
-
-export const LectorArrow = styled.img`
-    color: ${colors.mainBlue};
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 275px;
+    height: 90px;
 `;
 
 
 export const LectorName = styled(Name)`
     text-align: center;
     font-weight: 900;
+    margin-bottom: 10px;
 `;
-
 
 export const LectorInfo = styled(ParagraphS)`
     text-align: center;
     color: ${colors.grey};
     font-weight: 300;
-
+    height: 150px;
 `;
 
 export const LectorJob = styled.p`
@@ -63,9 +67,8 @@ export const LectorJob = styled.p`
     font-weight: 500;
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
+    margin-bottom: 15px;
 `;
-
-
 
 export const LectorLink = styled(Link)`
     position: absolute;
@@ -82,20 +85,22 @@ export const LectorLink = styled(Link)`
 `;
 
 export const LectorImg = styled.img`
-    height: 180px;
-    border-radius: 90px;
+    height: 150px;
+    border-radius: 75px;
+
 `;
 
 export const LectorImgContainer = styled.div`
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     position: relative;
+    margin-bottom: 30px;
 `
 
 export const IconIn = styled.img`
     width: 22px;
     height: 22px;
-`
+`;
 
 
 

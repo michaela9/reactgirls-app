@@ -7,20 +7,20 @@ import {
     ProductImgContainer,
  } from './Product.elements';
 
+ import About from '../../pages/About/About';
+
 import { 
     Container, 
-    Wrapper, 
-    WrapperReverse, 
+    Wrapper,  
     TitleCenter ,
     WrapperColumn,
     SubTitleLeft,
-    Paragraph
+    Button
 } from '../../components/reusable/styled';
-import Button from '../reusable/Button/Button';
 import productArr from './productArr';
 
 
-function Product({  }) {
+function Product() {
     return (
         <>
             <Container lightblue >
@@ -41,7 +41,7 @@ function Product({  }) {
                         {product.info}
                         </ProductInfo>
                         {!product.hidebutton && 
-                        <Button>{product.buttontext}</Button>
+                            <Button to={product.link}>{product.buttontext}</Button>    
                         }
                     </ProductInfoContainer>
                     <ProductImgContainer>

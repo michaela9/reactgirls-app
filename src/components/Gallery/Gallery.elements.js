@@ -1,16 +1,39 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Container } from '../../components/reusable/styled';
+import Carousel from 'react-elastic-carousel';
+import { sizes, colors } from '../../variables';
 
+export const CarouselGallery = styled(Carousel)`
+    .rec.rec-arrow-left, .rec.rec-arrow-right {
+        background-color: ${colors.lightBlue} ;
+        color: ${colors.grey} ;
+        box-shadow: none;
+    }
+    .rec.rec-arrow:hover {
+        color: ${colors.mainBlue};
+    }
+
+    .rec.rec-arrow:disabled {
+        visibility: hidden;
+    } 
+`;
 
 export const GalleryContainer = styled.div`
-display: flex;
-padding-top: 80px;
-overflow: hidden;
+    width: 1280px;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
 `;
 
 export const GalleryImg = styled.img`
-height: 400px;
-margin-right: 20px;
+    height: 350px;
+    margin-right: 20px;
 `;
+
+
 
