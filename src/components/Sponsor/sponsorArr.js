@@ -32,7 +32,7 @@ const sponsorArr = [
         sponzorship: "silver"
     },
     {
-        logo: "/images/sponzors/Productboard-logo-clean-300x76.png",
+        logo: "/images/sponzors/productboard.png",
         sponzorship: "silver"
     },
     {

@@ -6,7 +6,7 @@ export const FooterLogo = styled.h1`
     height: 160px;
     width: 160px;
     border-radius:80px;
-    top: -30px;
+    top: -40px;
     background-image: url('images/logo-blue.svg');
     position: relative;
     background-repeat: no-repeat;

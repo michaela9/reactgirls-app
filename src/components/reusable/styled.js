@@ -39,7 +39,7 @@ export const Wrapper = styled.div`
     width: 1280px;
     display: flex;
     margin: 0 auto;
-    padding: 80px 50px;
+    padding: 80px 80px;
     align-items: center;
     justify-content: space-between;
     flex-direction: ${({imgstart}) => (imgstart ? 'row-reverse' : 'row')};
@@ -91,7 +91,7 @@ export const Button = styled(Link)`
     padding: 0 32px;
     border-radius: 25px;
     color: ${colors.white};
-    box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
+    //box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
     ${({hidebutton}) => hidebutton && css`
@@ -105,5 +105,8 @@ export const Button = styled(Link)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background-color: ${colors.darkBlue};
+        box-shadow: none;
+        //position: relative;
+        //top: 2px;
     }
 `;

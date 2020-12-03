@@ -10,6 +10,8 @@ export const InfoContent = styled(Heading3)`
     text-align: center;
     line-height: 1.6;
     padding: 30px 0;
+    font-weight: 300;
+    color: ${colors.grey};
 
 
 `;
