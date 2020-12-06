@@ -56,9 +56,9 @@ function Navbar() {
             </Container>
             <Social>
                 {socialArr.map((social) => (
-                    <Link to={social.link}>
+                    <a href={social.link}>
                         <SocialIcon src={social.icon} />
-                    </Link>
+                    </a>
                     )
                 )}
             </Social>
