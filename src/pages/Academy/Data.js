@@ -135,7 +135,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem Ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
     },
     {
         question: "Jak bude Akademie probíhat? ",
@@ -147,7 +147,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Kde se bude Akademie konat? ",
-        answer: "Všechny bližší informace Ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
+        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
     },
     {
         question: "Co se stane pokud bude opět karanténa?",

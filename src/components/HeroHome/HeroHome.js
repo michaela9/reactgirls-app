@@ -5,11 +5,13 @@ import {
     ImgHomeContainer,
     HeroHomeImg,
     SubTitle,
-    CarouselHero
+    CarouselHero,
+    TitleLeftHome,
+    AnimationText
  } from './HeroHome.elements';
 
 import styled from '../reusable/styled'
-import { Container, Wrapper, TitleLeft } from '../reusable/styled';
+import { Container, Wrapper } from '../reusable/styled';
 import  ButtonInputGroup from '../reusable/ButtonInputGroup/ButtonInputGroup';
 import {heroHomeArr} from './heroHomeArr';
 
@@ -20,7 +22,7 @@ function HeroHome( {img}) {
             <Container lightblue>
                 <Wrapper>
                     <TitleHomeContainer>
-                        <TitleLeft >Zapoj se do Mentoringu a nauč se programovat v Reactu!</TitleLeft>
+                        <TitleLeftHome >Zapoj se do <AnimationText>Mentoringu</AnimationText> a nauč se programovat v Reactu!</TitleLeftHome>
                         <SubTitle >"#ReactGirlsPrague"</SubTitle>
                         <ButtonInputGroup />
                     </TitleHomeContainer>

@@ -18,7 +18,7 @@ function Price({mainPriceTitle, data}) {
             <WrapperColumn>
                 <TitleCenter>{mainPriceTitle}</TitleCenter>
                 <PriceContainer>                  
-                    <PriceIconMain src="/images/icons/money.svg"/> 
+                    <PriceIconMain>xxx,-</PriceIconMain>
                     {data.map((item) => {
                         return(
                         <PriceRow data={data}>

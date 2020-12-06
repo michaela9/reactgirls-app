@@ -3,6 +3,7 @@ import { SponsorContainer} from './Sponsor.elements';
 import { SponsorImg} from './Sponsor.elements';
 import sponsorArr from './sponsorArr'; 
 import Carousel from 'react-elastic-carousel';
+import { Link } from "react-router-dom";
 
 
 function Sponsor() {
@@ -16,7 +17,9 @@ function Sponsor() {
                 pagination={false} 
                  >
                 {sponsorArr.map((sponsor) => (
-                <SponsorImg src={sponsor.logo} />
+                <Link to={sponsor.link}>
+                    <SponsorImg src={sponsor.logo} />
+                </Link>
                 )
                 )}
             </Carousel> 

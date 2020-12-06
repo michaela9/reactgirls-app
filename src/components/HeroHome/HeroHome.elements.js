@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import  { sizes, colors } from '../../variables';
-import { Paragraph } from '../reusable/styled';
+import { Heading1, Paragraph } from '../reusable/styled';
 import Carousel from 'react-elastic-carousel';
 
 export const TitleHomeContainer = styled.div`
@@ -26,6 +26,20 @@ export const TitleHomeContainer = styled.div`
 export const HeroHomeImg = styled.img`
     height: 480px;
  `;
+
+export const TitleLeftHome = styled(Heading1)`
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: 900;
+
+`;
+
+export const AnimationText = styled.strong`
+
+        color: ${colors.mainBlue};
+        font-size: ${sizes.sizeXXXL};
+    }
+`;
 
 export const CarouselHero = styled(Carousel)`
         position: relative;
