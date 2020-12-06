@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { SponsorContainer} from './Sponsor.elements';
-import { SponsorImg} from './Sponsor.elements';
+import { SponsorImg, CarouselSponsor} from './Sponsor.elements';
 import sponsorArr from './sponsorArr'; 
-import Carousel from 'react-elastic-carousel';
+
 import { Link } from "react-router-dom";
 
 
 function Sponsor() {
     return (
         <SponsorContainer>
-            <Carousel 
+            <CarouselSponsor 
                 showArrows={false} 
                 itemsToShow={5} 
                 itemsToScroll={1} 
@@ -17,12 +17,12 @@ function Sponsor() {
                 pagination={false} 
                  >
                 {sponsorArr.map((sponsor) => (
-                <Link to={sponsor.link}>
+                <a href={sponsor.link}>
                     <SponsorImg src={sponsor.logo} />
-                </Link>
+                </a>
                 )
                 )}
-            </Carousel> 
+            </CarouselSponsor> 
         </SponsorContainer>
     )
 }
