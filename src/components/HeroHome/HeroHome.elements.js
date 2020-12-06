@@ -1,41 +1,62 @@
 import styled from 'styled-components';
 import  { sizes, colors } from '../../variables';
-import { Paragraph } from '../reusable/styled';
+import { Heading1, Paragraph } from '../reusable/styled';
 import Carousel from 'react-elastic-carousel';
 
 export const TitleHomeContainer = styled.div`
-    display: flex;
-    flex-direction:column;
-    max-width: 45%;
-    margin-right: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
+   display: flex;
+   flex-direction:column;
+   max-width: 45%;
+   margin-right: 50px;
+   justify-content: space-between;
+   align-items: flex-start;
  `;
 
  export const ImgHomeContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    border-radius: 250px;
+   height: 480px;
+   width: 480px;
+   border-radius: 240px;
     overflow: hidden;
+    outline: none;
+   // position: relative;
+    //left: 30px;
+
  `;
 
 export const HeroHomeImg = styled.img`
-    height: 500px;
-
+    height: 480px;
  `;
 
+export const TitleLeftHome = styled(Heading1)`
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: 900;
+
+`;
+
+export const AnimationText = styled.strong`
+
+        color: ${colors.mainBlue};
+        font-size: ${sizes.sizeXXXL};
+    }
+`;
+
 export const CarouselHero = styled(Carousel)`
+        position: relative;
+        left: 30px;
     .rec.pagination {
         background: red;
+
+        
     }
     .rec.rec-dot {
         outline: none;
         color: red;
-        background-color: ${colors.lightBlue};
+        background-color: ${colors.middleGrey};
         box-shadow: none;
-        border: 1px solid ${colors.grey};
-        width: 12px;
-        height: 12px;
+        //border: 1px solid #DEDCDC;
+        width: 10px;
+        height: 10px;
         margin-top: 10px;
     }
     .rec.rec-dot_active {

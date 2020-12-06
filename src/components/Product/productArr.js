@@ -13,7 +13,7 @@ const productArr = [
     },
     {
         title: "Workshopy",
-        info: "Pořádáme pravidelné workshopy programování v Reactu. Naučíme Vás základy programování v HTML, CSS, JavaScriptu a Reactu. Další workshop momentálně připravujeme, aby Vám neuniklo jeho otevření sledujte Newsletter",
+        info: "Pořádáme pravidelné workshopy programování v Reactu. Naučíme vás základy programování v HTML, CSS, JavaScriptu a Reactu. Další workshop momentálně připravujeme, aby vám neuniklo jeho otevření sledujte Newsletter",
         hidebutton: true,
         img: "images/community/photo_51.jpg",
         imgstart: true,
@@ -29,7 +29,7 @@ const productArr = [
     },
     {
         title: "Mentoring",
-        info: "Spustili jsme pro Vás projekt mentoring jeden na jednoho (mentor, mentee).  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
+        info: "Spustili jsme pro vás mentoringový program pro dosažení vysněných cílů. Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
         hidebutton: false,
         buttontext: "Zjistit více",
         img: "images/community/photo_8.jpg",
@@ -39,7 +39,7 @@ const productArr = [
     },
     {
         title: "Akademie",
-        info: "Připravujeme pro Vás akademii, kde se budeme intenzivně věnovat frontednovému programování HTML, CSS, JavaScript a React.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
+        info: "Připravujeme pro vás akademii, kde se budeme intenzivně věnovat frontednovému programování HTML, CSS, JavaScript a React.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
         hidebutton: false,
         buttontext: "Zjistit více",
         img: "images/community/photo_5.jpg",
@@ -49,7 +49,7 @@ const productArr = [
     },
     {
         title: "Meetupy",
-        info: "Pořádáme pro Vás pravidlené Reactgirls meetupy s názvem Reactgirls Beer se zajímavými osobnostmi.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
+        info: "Pořádáme pro vás pravidlené Reactgirls meetupy s názvem Reactgirls Beer se zajímavými osobnostmi.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
         hidebutton: true,
         img: "images/community/photo_14.jpg",
         imgstart: true,

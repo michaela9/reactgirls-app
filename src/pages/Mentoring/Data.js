@@ -6,7 +6,7 @@ export const heroObjTwo = {
 };
 
 export const infoObjOne = {
-    text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který Tě bude mentorovat a rozvíjet Tvé technické dovednosti",
+    text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který tě bude mentorovat a rozvíjet tvé technické dovednosti",
 
 }
 
@@ -19,12 +19,12 @@ export const mentoringCardArr = [
     {
         icon: "/images/icons/coach.svg",
         title: "Kouč k dispozici",
-        text: "Na horké lince k dispozici další koučové, kteří Ti při řešení zadaných úkolů také poradí.",
+        text: "Na horké lince k dispozici další koučové, kteří ti při řešení zadaných úkolů také poradí.",
     },
     {
         icon: "/images/icons/flexible.svg",
         title: "Flexibilita",
-        text: "Forma setkávání s koučem je zcela na domluvě – online i offline, dle Tvých časových možností.",
+        text: "Forma setkávání s koučem je zcela na domluvě – online i offline, dle tvých časových možností.",
     },
     {
         icon: "/images/icons/feedback.svg",
@@ -95,7 +95,7 @@ export const mentQuestionsArr = [
     },
     {
         question: "Jak se můžu na kurz přihlásit?",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem Ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
     },
     {
         question: "Jak bude Akademie probíhat? ",

@@ -32,8 +32,11 @@ export const PriceTitle = styled(TitleLeft)`
 width: 40%;
 `;
 
-export const PriceIconMain = styled.img`
-width: 100px;
-margin: 0 auto;
-padding-bottom: 50px;
+export const PriceIconMain = styled.div`
+width: 70%;
+margin: 0 auto 40px auto;
+padding: 15px;
+text-align: center;
+font-size: ${sizes.sizeXXXL};
+font-weight: 700;
 `;

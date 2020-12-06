@@ -11,32 +11,32 @@ export const infoObjTwo = {
 
 export const academyCardArr = [
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/programming.svg",
         title: "Programování",
         text: "Seznámení se s programováním v  jazyce JavaScript a React, vhodné pro začátečníky.",
     },
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/profesional.svg",
         title: "Profesionály",
         text: "Lektoři jsou profesionálové v IT oboru a mají bohaté zkušenosti. Vybrali jsme pro Vás ty nejlepší.",
     },
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/presentation.svg",
         title: "Lekce",
         text: "Celkem 5 lekcí zaměřené na budování Vašich technických dovedností v HTML, CSS, JavaScript a React.",
     },
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/marathon.svg",
         title: "Hackathon",
         text: "Závěrečný  hackathon, kde si získané znalosti ověříte v praxi. Získáte od nás certifikát o absolvování akademie.",
     },
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/interview.svg",
         title: "Mock interview",
         text: "Po absolvování akademie budete mít možnost vyzkoušet si mock interview se zkušeným HR.",
     },
     {
-        icon: "/images/icons/week.svg",
+        icon: "/images/icons/call.svg",
         title: "Online lekce",
         text: "V případě nařízení karantény přesuneme všechny lekce do online prostředí a vy tak o nic nepříjdete!",
     },
@@ -135,7 +135,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem Ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
     },
     {
         question: "Jak bude Akademie probíhat? ",
@@ -147,7 +147,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Kde se bude Akademie konat? ",
-        answer: "Všechny bližší informace Ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
+        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
     },
     {
         question: "Co se stane pokud bude opět karanténa?",

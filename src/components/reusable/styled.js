@@ -81,6 +81,7 @@ export default styled;
 
 export const Button = styled(Link)`
     background-color: ${colors.mainBlue};
+
     border: none;
     white-space: nowrap;
     outline: none;
@@ -91,7 +92,7 @@ export const Button = styled(Link)`
     padding: 0 32px;
     border-radius: 25px;
     color: ${colors.white};
-    box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
+    //box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
     ${({hidebutton}) => hidebutton && css`
@@ -104,6 +105,8 @@ export const Button = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background-color: ${colors.darkBlue};
+        background-color: #0099AE;
+        
+        
     }
 `;

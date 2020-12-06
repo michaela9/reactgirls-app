@@ -10,10 +10,10 @@ function Newsletter() {
             <Wrapper>
             <NewsletterContainer>
                 <TitleCenterNews>
-                    Zajímá Tě, kdy se bude konat další akce?
+                    Zajímá tě, kdy se bude konat další akce?
                 </TitleCenterNews>
                 <ParagraphCenter>
-                    Klikni na Odebírat Newsletter <br></br> a my se Ti ozveme!
+                    Klikni na Odebírat Newsletter <br></br> a my se ti ozveme!
                 </ParagraphCenter>
                 <ButtonInputGroup />
             </NewsletterContainer>

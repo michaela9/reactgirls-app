@@ -37,7 +37,8 @@ export const Card = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 25px 35px;
-    box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
+    //box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.15);
     margin: 20px;
 `;
 
@@ -75,10 +76,10 @@ export const LectorLink = styled(Link)`
     bottom: 0;
     right: 0;
     border: 4px solid white;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     background-color: ${colors.mainBlue};
-    border-radius: 150px;
+    border-radius: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,8 +99,8 @@ export const LectorImgContainer = styled.div`
 `
 
 export const IconIn = styled.img`
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 `;
 
 
