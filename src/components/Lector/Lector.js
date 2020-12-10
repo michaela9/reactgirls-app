@@ -37,14 +37,15 @@ function Lector() {
                 <CarouselLector  itemsToShow={3} itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
                     {lectorArr.map((lector) => (
                                 <Card>
-                                    <LectorInterest>{lector.lectorInterest}</LectorInterest>
+                                    
                                     <LectorImgContainer>
                                         <LectorImg src={lector.lectorImg} />
                                         <LectorLink href={lector.lectorLinkedIn} target="blank" ><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
                                     </LectorImgContainer>
                                     <LectorName>{lector.lectorName}</LectorName>
                                     
-                                    <LectorJob>{lector.lectorJob} {lector.lectorCompany}</LectorJob>
+                                    <LectorJob>{lector.lectorJob}</LectorJob>
+                                    <LectorJob>{lector.lectorCompany}</LectorJob>
                                 </Card>
                                     )
                                 )}

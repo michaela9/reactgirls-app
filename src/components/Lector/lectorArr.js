@@ -142,6 +142,24 @@ const lectorArr = [
         lectorCompany: "v top vision s.r.o",
         lectorLinkedIn: "https://www.linkedin.com/in/petra-gasek-zarubova/",
     },
+    {
+        lectorInterest: "Workshop | Akademie ",
+        lectorImg: "/images/lectors/ondrejk.jpg",
+        lectorName: "Ondřej Kučera",
+        lectorInfo: "",
+        lectorJob: "senior consultant",
+        lectorCompany: "v Unicorn systems",
+        lectorLinkedIn: "https://www.linkedin.com/in/ond%C5%99ej-ku%C4%8Dera-9410167/",
+    },
+    {
+        lectorInterest: "Workshop | Akademie ",
+        lectorImg: "/images/lectors/kamilam.jpeg",
+        lectorName: "Kamila Macháčová",
+        lectorInfo: "",
+        lectorJob: "HR",
+        lectorCompany: "v Applifting Česko",
+        lectorLinkedIn: "https://www.linkedin.com/in/kamilamach%C3%A1%C4%8Dov%C3%A1/",
+    },
 ]
 
 export default lectorArr;

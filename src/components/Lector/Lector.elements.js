@@ -63,7 +63,8 @@ export const LectorJob = styled.p`
     font-weight: 400;
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+    width: 70%;
 `;
 
 export const LectorLink = styled.a`
@@ -90,7 +91,7 @@ export const LectorImgContainer = styled.div`
    // width: 150px;
    // height: 150px;
    position: relative;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
 `
 
 export const IconIn = styled.img`
