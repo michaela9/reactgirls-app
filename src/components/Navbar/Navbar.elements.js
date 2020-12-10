@@ -27,7 +27,6 @@ export const NavLogo = styled.img`
     position: relative;
     top: 80px;
     transition: all 2s ease-in-out;
-    top:80px;
 
     &.active {
         width: 50px;
