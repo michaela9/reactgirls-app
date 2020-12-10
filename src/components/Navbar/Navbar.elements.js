@@ -27,7 +27,7 @@ export const NavLogo = styled.img`
     border-radius:80px;
     position: relative;
     top: 80px;
-
+    transition: all 2s ease-in-out;
     &.active {
         width: 50px;
         height: 50px;
@@ -59,7 +59,7 @@ export const NavLinks = styled(Link)`
 &:hover {
     color: ${colors.mainBlue} ;
 }
-&:focus {
+&:target {
     text-decoration: underline ;
 }
 `;

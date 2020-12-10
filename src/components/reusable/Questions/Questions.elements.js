@@ -3,7 +3,7 @@ import { colors, sizes } from '../../../variables';
 import { ParagraphS } from '../../reusable/styled';
 
 export const QuestionsContainer = styled.div`
-    width: 500px;
+    width: 650px;
     //margin-top: 80px;
     //background-color: ${colors.white};
     padding: 40px;

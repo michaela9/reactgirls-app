@@ -27,15 +27,15 @@ function ContactPeople() {
                                 <ContactInfo>{contact.mail}</ContactInfo>
                                 <ContactInfo>{contact.phone}</ContactInfo>
                                 <ContactSocial>
-                                    <Link to={contact.linkedIn}>
+                                    <a href={contact.linkedIn}>
                                         <SocialContactIcon src="/images/icons/linkedIn.svg" />
-                                    </Link>
-                                    <Link to={contact.facebook}>
+                                    </a>
+                                    <a href={contact.facebook}>
                                         <SocialContactIcon src="/images/icons/facebook.svg" />
-                                    </Link>
-                                    <Link to={contact.twitter}>
+                                    </a>
+                                    <a href={contact.twitter}>
                                         <SocialContactIcon src="/images/icons/twitter.svg" />
-                                    </Link>
+                                    </a>
                                 </ContactSocial>
                             </ContactText>
                         </ContactCard>
