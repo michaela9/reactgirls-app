@@ -2,14 +2,18 @@ import React from 'react';
 import { 
     Container, 
     WrapperColumn, 
-    TitleCenter
+    TitleCenter,
 } from '../reusable/styled';
+
 import { 
     PriceContainer,
     PriceRow,
     PriceIcon,
     PriceText,
-    PriceIconMain
+    PriceIconMain,
+    ButtonPrice,
+    PriceRectangle,
+    PriceArea
 } from './Price.elements';
 
 function Price({mainPriceTitle, data}) {
@@ -17,8 +21,11 @@ function Price({mainPriceTitle, data}) {
         <Container lightblue>
             <WrapperColumn>
                 <TitleCenter>{mainPriceTitle}</TitleCenter>
-                <PriceContainer>                  
-                    <PriceIconMain>xxx,-</PriceIconMain>
+                <PriceRectangle>
+                    <PriceArea>
+                        590,-
+                    </PriceArea>
+                    <PriceContainer>                  
                     {data.map((item) => {
                         return(
                         <PriceRow data={data}>
@@ -28,7 +35,10 @@ function Price({mainPriceTitle, data}) {
                         )
                     })
                     } 
-                </PriceContainer>
+                    <ButtonPrice>MÁM ZÁJEM</ButtonPrice>
+                </PriceContainer> 
+               
+                </PriceRectangle>  
             </WrapperColumn>
         </Container>
     )

@@ -17,7 +17,6 @@ import { Price,Newsletter }  from '../../components';
 } from './Data';
 
 function Mentoring() {
-    let arr = mentoringCardArr;
     return (
         <div>
             <Hero {...heroObjTwo} />
@@ -25,7 +24,7 @@ function Mentoring() {
             <InfoCards data={mentoringCardArr} {...titleObjOne} />
             <Student data={mentStudentArr} {...titleObjOne} />
             <Price data={mentPriceArr} {...titleObjOne} />
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Questions data={mentQuestionsArr}/>
         </div>
     )

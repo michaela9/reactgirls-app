@@ -9,7 +9,8 @@ const productArr = [
         img: "images/community/photo_19.jpg",
         imgstart: false,
         lightblue: false,
-        link: '/about'
+        link: '/about',
+        id: "community"
     },
     {
         title: "Workshopy",
@@ -17,7 +18,8 @@ const productArr = [
         hidebutton: true,
         img: "images/community/photo_51.jpg",
         imgstart: true,
-        lightblue: true
+        lightblue: true,
+        id: "workshop"
     },
     {
         title: "Webináře",
@@ -25,7 +27,8 @@ const productArr = [
         hidebutton: true,
         img: "images/community/photo_12.jpg",
         imgstart: false,
-        lightblue: false
+        lightblue: false,
+        id: "webinar"
     },
     {
         title: "Mentoring",
@@ -35,7 +38,8 @@ const productArr = [
         img: "images/community/photo_8.jpg",
         imgstart: true,
         lightblue: true,
-        link: '/mentoring'
+        link: '/mentoring',
+        id: "mentoring"
     },
     {
         title: "Akademie",
@@ -45,7 +49,8 @@ const productArr = [
         img: "images/community/photo_5.jpg",
         imgstart: false,
         lightblue: false,
-        link: '/academy'
+        link: '/academy',
+        id: "academy"
     },
     {
         title: "Meetupy",
@@ -53,7 +58,8 @@ const productArr = [
         hidebutton: true,
         img: "images/community/photo_14.jpg",
         imgstart: true,
-        lightblue: true
+        lightblue: true,
+        id: "meetup"
     }
 ]
 

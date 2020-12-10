@@ -49,7 +49,9 @@ function HeroHome( {img}) {
                     {heroHomeArr.map((item) => { 
                      return (
                         <ImgHomeContainer>
+                        <a href={item.id}>
                             <HeroHomeImg src={item.img} />
+                        </a>
                         </ImgHomeContainer>
                         )
                     })}

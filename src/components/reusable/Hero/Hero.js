@@ -25,11 +25,11 @@ function Hero({
                     <TitleContainer>
                         <TitleLeft > {title} </TitleLeft>
                         <SubTitle > {subtitle} </SubTitle>
-                        <ButtonInputGroup />
+                        {/* <ButtonInputGroup /> */} 
+                        <Button>MÁM ZÁJEM</Button>
                     </TitleContainer>
                     <ImgContainer>
                         <HeroImg src={img} />
-
                     </ImgContainer>
 
                 </Wrapper>

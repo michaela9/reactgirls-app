@@ -1,19 +1,4 @@
-const sponsorArr = [
-    {
-        logo: "/images/sponzors/techaboo.png",
-        sponzorship: "community",
-        link: "https://techtaboo.dev/"
-    },
-    {
-        logo: "/images/sponzors/laufen.png",
-        sponzorship: "silver",
-        link: "https://www.laufen.cz/?gclid=CjwKCAjwrcH3BRApEiwAxjdPTY8h7jL-L3LkYFK1zmDFTNg4uPPDi0kAM04t3aoc6H_MCSPmSMs3vRoCHLAQAvD_BwE"
-    },
-    {
-        logo: "/images/sponzors/ng.png",
-        sponzorship: "community",
-        link: "https://www.ngparty.cz/"
-    },
+export const sponsorArrGold = [
     {
         logo: "/images/sponzors/Livesport_logo_basic-300x66.png",
         sponzorship: "gold",
@@ -29,10 +14,13 @@ const sponsorArr = [
         sponzorship: "gold",
         link: "https://www.applifting.cz/"
     },
+]
+
+export const sponsorArrSilver = [
     {
-        logo: "/images/sponzors/oakslab.png",
-        sponzorship: "community",
-        link: "https://www.oakslab.com/"
+        logo: "/images/sponzors/laufen.png",
+        sponzorship: "silver",
+        link: "https://www.laufen.cz/?gclid=CjwKCAjwrcH3BRApEiwAxjdPTY8h7jL-L3LkYFK1zmDFTNg4uPPDi0kAM04t3aoc6H_MCSPmSMs3vRoCHLAQAvD_BwE"
     },
     {
         logo: "/images/sponzors/pccbee-300x88-1.png",
@@ -44,13 +32,29 @@ const sponsorArr = [
         sponzorship: "silver",
         link: "https://www.productboard.com/"
     },
+]
+
+export const sponsorArrCommunity = [
+    {
+        logo: "/images/sponzors/techaboo.png",
+        sponzorship: "community",
+        link: "https://techtaboo.dev/"
+    },
+    {
+        logo: "/images/sponzors/ng.png",
+        sponzorship: "community",
+        link: "https://www.ngparty.cz/"
+    },
+    {
+        logo: "/images/sponzors/oakslab.png",
+        sponzorship: "community",
+        link: "https://www.oakslab.com/"
+    },
     {
         logo: "/images/sponzors/puntoverde.png",
         sponzorship: "community",
         link: "https://www.puntoverde.cz/"
     },
-
 ]
 
-export default sponsorArr;
 

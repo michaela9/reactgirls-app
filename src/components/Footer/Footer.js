@@ -11,7 +11,7 @@ function Footer() {
     return (
             <FooterContainer>
                 <FooterLogo />
-                <FooterInfo>©ReactGirlsPrague 2020</FooterInfo> 
+                <FooterInfo>© Michaela Rudolfová 2020</FooterInfo> 
             </FooterContainer>
     )
 }

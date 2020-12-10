@@ -15,7 +15,7 @@ export const NavWrapper = styled.div`
     width: 1280px;
     display: flex;
     margin: 0 auto;
-    padding: 10px 80px;
+    padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
 `;

@@ -7,7 +7,6 @@ import {
     ProductImgContainer,
  } from './Product.elements';
 
- import About from '../../pages/About/About';
 
 import { 
     Container, 
@@ -31,7 +30,7 @@ function Product() {
                 </WrapperColumn>
             </Container>
             {productArr.map((product) => (
-            <Container lightblue={product.lightblue} >
+            <Container lightblue={product.lightblue} id={product.id} >
                 <Wrapper imgstart={product.imgstart}> 
                     <ProductInfoContainer>
                         <SubTitleLeft>

@@ -40,7 +40,7 @@ function Lector() {
                                     <LectorInterest>{lector.lectorInterest}</LectorInterest>
                                     <LectorImgContainer>
                                         <LectorImg src={lector.lectorImg} />
-                                        <LectorLink to="{lector.lectorLinkedIn}"><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
+                                        <LectorLink href={lector.lectorLinkedIn} target="blank" ><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
                                     </LectorImgContainer>
                                     <LectorName>{lector.lectorName}</LectorName>
                                     
