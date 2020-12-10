@@ -4,13 +4,9 @@ import {
     WrapperColumn, 
     TitleCenter 
 } from '../../reusable/styled';
+import Accordion from './Accordion';
 import { 
     QuestionsContainer,
-    QuestionsContent,
-    QuestionsIcon,
-    QuestionsText,
-    AnswerText,
-    QuestionCont
 } from './Questions.elements';
 
 function Questions({data}) {
@@ -21,15 +17,12 @@ function Questions({data}) {
                 <QuestionsContainer>
                     {data.map((item) => {
                     return (
-                        <QuestionCont data={data}>
-                            <QuestionsIcon src="/images/icons/plus.svg" />  
-                            <QuestionsContent>  
-                                <QuestionsText>{item.question}</QuestionsText>
-                                <AnswerText>{item.answer}</AnswerText>
-                            </QuestionsContent>
-                        </QuestionCont>
+                        <Accordion 
+                            question={item.question}
+                            answer={item.answer}
+                        />
                     )
-                })}
+                    })}
                 </QuestionsContainer>
             </WrapperColumn>
         </Container>

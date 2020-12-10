@@ -130,7 +130,7 @@ export const programArr1 = [
 
 export const acadQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?.",
+        question: "Pro koho je kurz určen?",
         answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v Reactu.",
     },
     {

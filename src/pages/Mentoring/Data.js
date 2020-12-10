@@ -90,7 +90,7 @@ export const mentPriceArr = [
 
 export const mentQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?.",
+        question: "Pro koho je kurz určen?",
         answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
     },
     {

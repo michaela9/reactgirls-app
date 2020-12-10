@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { sizes, colors } from '../../variables';
 
 export const Nav = styled.div`
@@ -53,16 +53,14 @@ export const NavItem = styled.li`
 
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(NavLink)`
     display: flex;
     text-decoration: none;
 
 &:hover {
     color: ${colors.mainBlue} ;
 }
-&:target {
-    text-decoration: underline ;
-}
+
 `;
 
 export const Social = styled.div`

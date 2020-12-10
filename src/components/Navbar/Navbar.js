@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { 
     NavLogo,
     NavMenu,
@@ -11,13 +12,15 @@ import {
     } from './Navbar.elements';
 
     import { Container } from '../../components/reusable/styled';
-    import { Link } from 'react-router-dom';
+
     import socialArr from './socialArr';
 
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [navLogo, setNavLogo] = useState(false);
+    const [isMyFirstRoute, setIsMyFirstRoute] = useState(true);
+    let history = useHistory();
 
     const handleClick = () => setClick(!click);
     const changeLogoSize = () => {
@@ -27,29 +30,36 @@ function Navbar() {
             setNavLogo(false)
         }
     };
+
+   function handleRouteChange (route: string) {
+        if(isMyFirstRoute){
+            setIsMyFirstRoute(false);
+        }
+        history.push();
+    };
     window.addEventListener('scroll', changeLogoSize);
     return (
         <Nav>
             <Container>
                 <NavWrapper>
-                    <Link to='/'>
-                    <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                    </Link>
+                    <div onClick={() => handleRouteChange('/')}>
+                        <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                    </div>
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
-                            <NavLinks to='/'>Úvod</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/about'>O nás</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD'  }} to='/about'>O nás</NavLinks>
                         </NavItem>                        
                         <NavItem>
-                            <NavLinks to='/mentoring'>Mentoring</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/mentoring'>Mentoring</NavLinks>
                         </NavItem>                        
                         <NavItem>
-                            <NavLinks to='/academy'>Akademie</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/academy'>Akademie</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/contact'>Kontakt</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/contact'>Kontakt</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavWrapper>
