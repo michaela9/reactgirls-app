@@ -15,7 +15,7 @@ import  ButtonInputGroup from '../../components/reusable/ButtonInputGroup/Button
 
 function ContactHero() {
     return (
-        <Container lightblue>
+        <Container lightBlue>
             <Wrapper>
                 <ContactHeroContainer>
                     <ContactHeroTitle>Jak nás můžeš kontaktovat?</ContactHeroTitle>

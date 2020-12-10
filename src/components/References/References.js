@@ -24,7 +24,7 @@ const breakPoints = [
 function References () {
     return (
         <>
-            <Container lightblue>
+            <Container lightBlue>
                     <ReferenceContainer>
                         <TitleCenter>Co o nás říkají naši studenti?</TitleCenter>
                         <SpeechCont>               

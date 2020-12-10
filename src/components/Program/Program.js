@@ -16,7 +16,7 @@ import { Container, Wrapper, WrapperColumn, TitleCenter } from '../reusable/styl
 function Program({data}) {
     return (
         <>
-            <Container lightblue>
+            <Container lightBlue>
                 <WrapperColumn>
                     <TitleCenter>Program Akademie</TitleCenter>
                 </WrapperColumn>

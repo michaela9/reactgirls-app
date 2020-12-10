@@ -31,7 +31,7 @@ export const ParagraphS = styled.p`
 export const Container = styled.div`
     z-index:1;
     width: 100%;
-    background-color: ${({lightblue}) => (lightblue ? `#EBF6F8`  : `#FFFBFA` )};
+    background-color: ${({lightBlue}) => (lightBlue ? `#EBF6F8`  : `#FFFBFA` )};
 `;
 
 
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
     padding: 80px 50px;
     align-items: center;
     justify-content: space-between;
-    flex-direction: ${({imgstart}) => (imgstart ? 'row-reverse' : 'row')};
+    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
 export const WrapperColumn = styled.div`
@@ -81,7 +81,6 @@ export default styled;
 
 export const Button = styled(Link)`
     background-color: ${colors.mainBlue};
-
     border: none;
     white-space: nowrap;
     outline: none;
@@ -95,7 +94,7 @@ export const Button = styled(Link)`
     //box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
-    ${({hidebutton}) => hidebutton && css`
+    ${({hideButton}) => hideButton && css`
         display: none;
     `};
     display: flex;

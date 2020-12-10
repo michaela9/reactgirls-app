@@ -17,7 +17,7 @@ export const PriceArea = styled.div`
 
 export const PriceRectangle = styled.div`
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     background: ${colors.white};
     border-radius: 30px; 
     box-shadow: 0px 0px 40px rgba(68, 68, 68, 0.25), 0px 6px 6px rgba(68, 68, 68, 0.2);

@@ -4,7 +4,7 @@ import { Container } from '../reusable/styled';
 
 function Thanks() {
     return (
-        <Container lightblue>
+        <Container lightBlue>
                 <ThanksText>Poděkování patří především naším sponzorům, bez kterých by to nešlo</ThanksText>
         </Container>
     )

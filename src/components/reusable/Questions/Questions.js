@@ -11,7 +11,7 @@ import {
 
 function Questions({data}) {
     return (
-        <Container lightblue>
+        <Container lightBlue>
             <WrapperColumn>
                 <TitleCenter>Q&A</TitleCenter>
                 <QuestionsContainer>

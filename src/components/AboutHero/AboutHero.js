@@ -7,9 +7,9 @@ import { WrapperAbout, AboutText, AboutTitle } from '../reusable/AboutInfo/About
 
 
 
-function AboutHero({title, text1, text2, lightblue }) {
+function AboutHero({title, text1, text2, lightBlue }) {
     return (
-        <Container lightblue={lightblue}>
+        <Container lightBlue={lightBlue}>
             <WrapperAbout>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>

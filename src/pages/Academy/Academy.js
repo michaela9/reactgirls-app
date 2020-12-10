@@ -5,6 +5,7 @@ import { Price, Newsletter, Program }  from '../../components';
  import  Info  from '../../components/reusable/Info/Info';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
+ import  Process from '../../components/reusable/Process/Process';
 
  import { 
     acadStudentArr, 
@@ -27,6 +28,7 @@ function Academy() {
             <Program data={programArr1}/>
             <InfoCards data={academyCardArr} {...titleObjTwo} />
             <Student data={acadStudentArr} {...titleObjTwo} />
+            <Process />
             <Price data={acadPriceArr} {...titleObjTwo} />
             <Newsletter />
             <Questions data={acadQuestionsArr} />

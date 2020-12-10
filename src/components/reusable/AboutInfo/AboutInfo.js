@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from '../styled';
 import { AboutText, WrapperAbout, AboutTitle  } from './AboutInfo.elements';
 
-function AboutInfo({title, text1, text2, lightblue }) {
+function AboutInfo({title, text1, text2, lightBlue }) {
     return (
-        <Container lightblue={lightblue} >
+        <Container lightBlue={lightBlue} >
             <WrapperAbout>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>

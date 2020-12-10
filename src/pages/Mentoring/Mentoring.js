@@ -5,6 +5,7 @@ import { Price,Newsletter }  from '../../components';
  import  Info  from '../../components/reusable/Info/Info';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
+ import  Process from '../../components/reusable/Process/Process';
  
  import { 
      mentStudentArr, 
@@ -23,8 +24,8 @@ function Mentoring() {
             <Info {...infoObjOne}/>
             <InfoCards data={mentoringCardArr} {...titleObjOne} />
             <Student data={mentStudentArr} {...titleObjOne} />
+            <Process />
             <Price data={mentPriceArr} {...titleObjOne} />
-            {/* <Newsletter /> */}
             <Questions data={mentQuestionsArr}/>
         </div>
     )

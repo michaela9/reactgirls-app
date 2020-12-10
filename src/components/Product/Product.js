@@ -22,7 +22,7 @@ import productArr from './productArr';
 function Product() {
     return (
         <>
-            <Container lightblue >
+            <Container lightBlue >
                 <WrapperColumn>
                     <TitleCenter>
                         Co je ReactGirls Prague?
@@ -30,8 +30,8 @@ function Product() {
                 </WrapperColumn>
             </Container>
             {productArr.map((product) => (
-            <Container lightblue={product.lightblue} id={product.id} >
-                <Wrapper imgstart={product.imgstart}> 
+            <Container lightBlue={product.lightBlue} id={product.id} >
+                <Wrapper imgStart={product.imgStart}> 
                     <ProductInfoContainer>
                         <SubTitleLeft>
                             {product.title}
@@ -39,8 +39,8 @@ function Product() {
                         <ProductInfo>
                         {product.info}
                         </ProductInfo>
-                        {!product.hidebutton && 
-                            <Button to={product.link}>{product.buttontext}</Button>    
+                        {!product.hideButton && 
+                            <Button to={product.link}>{product.buttonText}</Button>    
                         }
                     </ProductInfoContainer>
                     <ProductImgContainer>

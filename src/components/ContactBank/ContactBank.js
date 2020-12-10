@@ -11,18 +11,20 @@ import { Container, Wrapper } from '../reusable/styled';
 
 function ContactBank() {
     return (
-        <Container lightblue>
+        <Container lightBlue>
             <Wrapper>
                 <ContentContainer>
                     <BankContainer>
                         <BankIcon src="/images/icons/location.svg" />
                         <BankHeading>Sídlo a fakturační údaje</BankHeading>
                         <BankText>
-                            ReactGirls 
+                        ReactGirls z. s.
+ 
+  
                             <br />
-                            Václavské náměstí 1
+                            V jehličí 2106/2, Krč,
                             <br />
-                            Praha 1, 110 00
+                            Praha 4, 142 00
                             <br />
                             Česká republika
                             <br />
@@ -41,11 +43,11 @@ function ContactBank() {
                             <br />
                             117 21 Praha 1
                             <br />
-                            Č. ú.: xxxxxxxxxxxxxxx/xxxx 
+                            Č. ú.: 2001890593/2010 
                             <br />
-                            IBAN: xxxxxxxxxxxxxxxxxxxxxxxxx
+                            IBAN: Z3020100000002001890593
                             <br />
-                            BIC/SWIFT: xxxxxxxxxxxxxxxxxx
+                            BIC/SWIFT: FIOBCZPPXXX
                         </BankText>
                     </BankContainer>
                 </ContentContainer>

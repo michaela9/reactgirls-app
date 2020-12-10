@@ -27,7 +27,7 @@ import {
 function Lector() {
     return (
         <>
-            <Container lightblue>
+            <Container lightBlue>
                 <WrapperColumn>   
                     <TitleCenter>Lektoři</TitleCenter>
                 </WrapperColumn>  

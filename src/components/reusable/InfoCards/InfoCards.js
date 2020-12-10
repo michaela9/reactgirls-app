@@ -8,7 +8,7 @@ function InfoCards({
     mainCardsTitle
     }) {
     return (
-            <Container lightblue>
+            <Container lightBlue>
                 <WrapperColumn>   
                     <TitleCenter>{mainCardsTitle}</TitleCenter>
                     <InfoCardsContainer data={data}  />

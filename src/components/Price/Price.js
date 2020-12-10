@@ -18,7 +18,7 @@ import {
 
 function Price({mainPriceTitle, data}) {
     return (
-        <Container lightblue>
+        <Container>
             <WrapperColumn>
                 <TitleCenter>{mainPriceTitle}</TitleCenter>
                 <PriceRectangle>

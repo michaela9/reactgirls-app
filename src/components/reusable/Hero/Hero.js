@@ -20,7 +20,7 @@ function Hero({
     img,
 } ) {
     return (
-            <Container lightblue>
+            <Container lightBlue>
                 <Wrapper>
                     <TitleContainer>
                         <TitleLeft > {title} </TitleLeft>
