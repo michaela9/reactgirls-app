@@ -43,7 +43,7 @@ function Lector() {
                                         <LectorLink to="{lector.lectorLinkedIn}"><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
                                     </LectorImgContainer>
                                     <LectorName>{lector.lectorName}</LectorName>
-                                    <LectorInfo>{lector.lectorInfo}</LectorInfo>
+                                    
                                     <LectorJob>{lector.lectorJob} {lector.lectorCompany}</LectorJob>
                                 </Card>
                                     )

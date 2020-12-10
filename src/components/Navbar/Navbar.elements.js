@@ -8,7 +8,6 @@ export const Nav = styled.div`
     z-index: 1000;
     position: sticky;
     top: 0;
-
 `;
 
 export const NavWrapper = styled.div`
@@ -29,11 +28,6 @@ export const NavLogo = styled.img`
     top: 80px;
     transition: all 2s ease-in-out;
     top:80px;
-    transition: all 2s;
-    //background-image: url('images/logo-blue.svg');
-    //background-repeat: no-repeat;
-   // background-position: center;
-   // background-size: cover;
 
     &.active {
         width: 50px;

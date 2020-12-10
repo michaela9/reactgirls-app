@@ -1,12 +1,12 @@
 export const heroObjThree = {
-    title: "Zúčastni se jedinečné Akademie s ReactGirls!",
+    title: "Zúčastni se intenzivní Akademie s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_9.jpg",
 };
 
 export const infoObjTwo = {
-    text: "Přihlaš se do intenzivní Akademie ReactGirls a nauč se programovat od základů",
+    text: "Přihlaš se do intenzivní Akademie ReactGirls a nauč se s námi programovat od základů.",
 }
 
 export const academyCardArr = [
@@ -67,18 +67,18 @@ export const acadStudentArr = [
 
 export const acadPriceArr = [
     {
-        text: "4 lekce",
+        text: "4 lekce programování",
     },
     {
         text: "závěrečný workshop",
        
     },
     {
-        text: "17 hodin vyučování",
+        text: "celkem 17 hodin vyučování",
         
     },
     {
-        text: "celodenní hackathon",
+        text: "online studijní materiály k akademii",
        
     },
     {
@@ -131,7 +131,7 @@ export const programArr1 = [
 export const acadQuestionsArr = [
     {
         question: "Pro koho je kurz určen?.",
-        answer: "Kurz je určen pro všechny ženy, které nemají žádné nebo mají malé zkušenosti s programováním a mají zájem se naučit programovat v Reactu.",
+        answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v Reactu.",
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
@@ -139,7 +139,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: "Akademie bude probíhat prezenčně, materiály budou k dispozici na Slacku a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
+        answer: "Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
     },
     {
         question: "Co si z akademie odnesu? ",
@@ -147,11 +147,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Kde se bude Akademie konat? ",
-        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
-    },
-    {
-        question: "Co se stane pokud bude opět karanténa?",
-        answer: "V případě karantény přesuneme celou výuku do online prostředí.",
+        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich partnerů v Praze.",
     },
     {
         question: "Stále si nejsi jistá?",
