@@ -64,7 +64,7 @@ export const LectorJob = styled.p`
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
     margin-bottom: 7px;
-    width: 70%;
+    width: 85%;
 `;
 
 export const LectorLink = styled.a`

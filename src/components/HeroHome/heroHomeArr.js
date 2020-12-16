@@ -1,26 +1,26 @@
 export const heroHomeArr = [ 
     { 
-        img: "/images/community/photo_5.jpg",
+        img: "/images/products/community.jpg",
         id: "#community"
     },
     { 
-        img: "/images/community/photo_9.jpg",
+        img: "/images/products/workshop.jpg",
         id: "#workshop" 
     },
     { 
-        img: "/images/community/photo_20.jpg",
+        img: "/images/products/webinar.jpg",
         id: "#webinar" 
     },
     { 
-        img: "/images/community/photo_5.jpg",
+        img: "/images/products/mentoring.jpg",
         id: "#mentoring" 
     },
     { 
-        img: "/images/community/photo_24.jpg",
+        img: "/images/products/academy.jpg",
         id: "#academy" 
     },
     { 
-        img: "/images/community/photo_5.jpg",
+        img: "/images/products/meetup.jpg",
         id: "#meetup" 
     }
 ]

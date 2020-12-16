@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { SponsorContainer, SponsorImgContainer, GoldStripe, GoldSponsorship,SilverSponsorship, CommunitySponsorship, SilverStripe, CommunityStripe, SponsorshipRow, ContainerMain } from './Sponsor.elements';
+import { SponsorContainer, SponsorImgContainer, GoldStripe, GoldSponsorship,SilverSponsorship, CommunitySponsorship, ContainerMain } from './Sponsor.elements';
 import { SponsorImg } from './Sponsor.elements';
+import { Container, TitleCenter } from '../reusable/styled';
 
 
 
 function Sponsor() {
     return (
-        <ContainerMain>
+        <Container>
             <SponsorContainer>
-                <GoldSponsorship>
-                    
+                <TitleCenter>Naši partneři</TitleCenter>
+                <GoldSponsorship>GOLD
                     <SponsorImgContainer>
                         <a href="https://www.livesport.eu/" target="blank">
                             <SponsorImg src="/images/sponsors/Livesport_logo_basic-300x66.png"/>
@@ -21,10 +22,9 @@ function Sponsor() {
                             <SponsorImg src="/images/sponsors/logo_applifting-300x135.png"/>
                         </a>
                     </SponsorImgContainer>
-                    <GoldStripe>Gold</GoldStripe>
+
                 </GoldSponsorship>
-                <SilverSponsorship>
-                    
+                <SilverSponsorship>SILVER
                     <SponsorImgContainer>
                         <a href="https://www.laufen.cz/?gclid=CjwKCAjwrcH3BRApEiwAxjdPTY8h7jL-L3LkYFK1zmDFTNg4uPPDi0kAM04t3aoc6H_MCSPmSMs3vRoCHLAQAvD_BwE" target="blank">
                             <SponsorImg src="/images/sponsors/laufen.png"/>
@@ -36,12 +36,8 @@ function Sponsor() {
                             <SponsorImg src="/images/sponsors/productboard.png"/>
                         </a>
                     </SponsorImgContainer>
-                    <SilverStripe>Silver</SilverStripe>
                 </SilverSponsorship>
-            </SponsorContainer>
-            <SponsorContainer>
-                <CommunitySponsorship>
-                    
+                <CommunitySponsorship>COMMUNITY 
                     <SponsorImgContainer>
                         <a href="https://techtaboo.dev/" target="blank">
                             <SponsorImg src="/images/sponsors/techaboo.png"/>
@@ -56,10 +52,9 @@ function Sponsor() {
                             <SponsorImg src="/images/sponsors/puntoverde.png"/>
                         </a>
                     </SponsorImgContainer>
-                    <CommunityStripe>Community</CommunityStripe>
                 </CommunitySponsorship>  
             </SponsorContainer>
-        </ContainerMain>
+        </Container>
     )
 }
 

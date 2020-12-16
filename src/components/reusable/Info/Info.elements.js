@@ -12,6 +12,4 @@ export const InfoContent = styled(Heading3)`
     padding: 30px 0;
     font-weight: 300;
     color: ${colors.grey};
-
-
 `;
