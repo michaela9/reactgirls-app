@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 import { sizes, colors } from './variables';
 
 const GlobalStyle = createGlobalStyle`
@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     //font-family: 'Roboto', sans-serif;
     font-family: 'Fira Sans', sans-serif;
-    //font-family: 'Poppins', sans-serif;
     font-size: ${sizes.sizeM};
     color: ${colors.darkGrey};
 }

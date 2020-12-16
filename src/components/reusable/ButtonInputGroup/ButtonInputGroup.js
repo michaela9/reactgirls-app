@@ -7,7 +7,7 @@ function ButtonInputGroup() {
     return (
         <ButtonInputCont>
             <Input />
-            <Button>ODEBÍRAT NEWSLETTER</Button>
+            <Button href="">ODEBÍRAT NEWSLETTER</Button>
         </ButtonInputCont>
     )
 }

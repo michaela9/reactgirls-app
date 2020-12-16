@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Paragraph, TitleCenter } from '../styled';
-import { colors, sizes } from '../../../variables';
+import { colors } from '../../../variables';
 
 export const AboutText = styled(Paragraph)`
     text-align: center;
@@ -8,6 +8,7 @@ export const AboutText = styled(Paragraph)`
     color: ${colors.grey};
     font-weight: 300;
 `;
+
 export const WrapperAbout = styled.div`
     max-width: 1280px;
     padding: 80px 300px;

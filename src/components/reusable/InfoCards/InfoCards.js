@@ -14,7 +14,7 @@ function InfoCards({
                     <InfoCardsContainer data={data}  />
                 </WrapperColumn> 
             </Container>
-            )
+    )
 }
 
 export default InfoCards;

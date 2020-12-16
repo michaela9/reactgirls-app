@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Carousel from 'react-elastic-carousel';
-import { sizes, colors } from '../../variables';
+import { sizes } from '../../variables';
 
 export const SponsorContainer = styled.div`
     display: flex;
@@ -13,8 +12,7 @@ export const SponsorContainer = styled.div`
 `;
 
 export const SponsorImg = styled.img`
-    height: 100px;
-    
+    height: 100px;  
 `;
 
 export const SponsorImgContainer = styled.div`
@@ -25,7 +23,6 @@ export const SponsorImgContainer = styled.div`
     margin: 0 auto;
     padding: 50px;
 `;
-
 
 export const GoldSponsorship = styled.div`
     border-left: 5px solid gold;

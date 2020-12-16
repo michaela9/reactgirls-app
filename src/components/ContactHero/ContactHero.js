@@ -3,15 +3,12 @@ import { Container, Wrapper } from '../reusable/styled';
 import { 
     ContactHeroTitle,
     ContactInfo,
-    ContactText,
     ContactHeroContainer,
     SlackIcon,
-    ContactTitleContainer
 } from './ContactHero.elements';
 
 import { Link } from 'react-router-dom';
 import  ButtonInputGroup from '../../components/reusable/ButtonInputGroup/ButtonInputGroup';
-
 
 function ContactHero() {
     return (

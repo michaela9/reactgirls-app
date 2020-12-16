@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import { Paragraph, ParagraphS, Name } from '../reusable/styled';
+import { Paragraph, Name } from '../reusable/styled';
 import Carousel from 'react-elastic-carousel';
-
 
 export const CarouselLector = styled(Carousel)`
     .rec.rec-arrow-left, .rec.rec-arrow-right {
@@ -14,7 +12,6 @@ export const CarouselLector = styled(Carousel)`
     .rec.rec-arrow:hover {
     color: ${colors.mainBlue};
     }
-
     .rec.rec-arrow:disabled {
     visibility: hidden;
     }  
@@ -43,20 +40,11 @@ export const Card = styled.div`
     outline: none;
 `;
 
-export const LectorInterest = styled(Paragraph)`
-    color: ${colors.mainBlue};
-    text-align: center;
-    font-weight: 400;
-    height: 80px;
-`;
-
-
 export const LectorName = styled(Name)`
     text-align: center;
     font-weight: 900;
     margin-bottom: 10px;
 `;
-
 
 export const LectorJob = styled.p`
     text-align: center;
@@ -84,7 +72,6 @@ export const LectorLink = styled.a`
 export const LectorImg = styled.img`
     height: 160px;
     border-radius: 80px;
-
 `;
 
 export const LectorImgContainer = styled.div`

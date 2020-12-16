@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../../variables';
+import { sizes } from '../../../variables';
 
 
 export const StudentContainer = styled.div`

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Wrapper, Name, Paragraph, ParagraphS } from '../reusable/styled';
-import { Link } from 'react-router-dom';
+import { Container, Wrapper, Name } from '../reusable/styled';
 import contactArr from './contactArr';
 
 import {

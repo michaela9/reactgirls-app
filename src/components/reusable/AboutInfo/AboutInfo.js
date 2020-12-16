@@ -10,7 +10,6 @@ function AboutInfo({title, text1, text2, lightBlue }) {
                     <AboutText>{text1}</AboutText>
                     <AboutText>{text2}</AboutText>
             </WrapperAbout>
-         
         </Container>
     )
 }

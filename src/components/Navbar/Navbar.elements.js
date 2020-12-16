@@ -26,8 +26,9 @@ export const NavLogo = styled.img`
     border-radius:80px;
     position: relative;
     top: 80px;
-    transition: all 2s ease-in-out;
-    top:80px;
+    transition: all 0.8s ease-in-out;
+    top: 80px;
+    cursor: pointer;
 
     &.active {
         width: 50px;
@@ -50,7 +51,6 @@ export const NavItem = styled.li`
     border-bottom: 2px solid transparent;
     font-weight: 400;
     color:${colors.grey};
-
 `;
 
 export const NavLinks = styled(NavLink)`

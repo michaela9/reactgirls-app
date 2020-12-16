@@ -1,26 +1,22 @@
 import styled from 'styled-components';
-import { colors, sizes } from '../../variables';
+import { colors } from '../../variables';
 
 export const ProgramTable = styled.table`
     margin: 0 auto;
     width: 800px;
     border-collapse: collapse; 
     border: none;
-
 `;
 
 export const ProgramTableHead = styled.thead`
- 
 `;
 
 export const ProgramTableRow = styled.tr`
     border-bottom: 1px solid #EBEBEB;
-
 `;
 
 export const ProgramTableRowH = styled.tr`
     border-bottom: 1px solid #DEDCDC;
-
 `;
 
 export const ProgramDataHead = styled.td`
@@ -31,7 +27,6 @@ export const ProgramDataHead = styled.td`
 `;
 
 export const ProgramTableBody = styled.tbody`
-
 `;
 
 export const ProgramData = styled.td`

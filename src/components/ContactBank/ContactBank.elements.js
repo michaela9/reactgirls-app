@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import  { sizes, colors } from '../../variables.js';
 import { ParagraphS } from '../reusable/styled';
 
-
 export const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
@@ -29,5 +28,4 @@ export const BankText = styled(ParagraphS)`
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
     font-weight: 300;
-
  `;

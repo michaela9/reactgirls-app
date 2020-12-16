@@ -12,7 +12,6 @@ export const PriceArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
 `;
 
 export const PriceRectangle = styled.div`
@@ -22,7 +21,6 @@ export const PriceRectangle = styled.div`
     border-radius: 30px; 
     box-shadow: 0px 0px 40px rgba(68, 68, 68, 0.25), 0px 6px 6px rgba(68, 68, 68, 0.2);
 `;
-
 
 export const PriceContainer = styled.div`
     padding: 60px;

@@ -20,7 +20,6 @@ export const InfoCard = styled.div`
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
     display: flex;
     flex-direction: column;
-
 `;
 
 export const InfoTitle = styled.div`
@@ -37,8 +36,8 @@ export const InfoText = styled.div`
     font-size: ${sizes.sizeS};
     line-height: 1.6;
     margin: 0 auto;
-
 `;
+
 export const InfoIcon = styled.img`
     width: 80px;
     height: 80px;

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
     FooterContainer,
     FooterLogo,
     FooterInfo
     } from './Footer.elements';
 
-    import {   } from '../../globalStyles';
+import {   } from '../../globalStyles';
 
 function Footer() {
     return (

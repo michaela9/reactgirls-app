@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
-    Container, 
     WrapperColumn, 
     TitleCenter 
 } from '../../reusable/styled';
 import Accordion from './Accordion';
 import { 
     QuestionsContainer,
+    ContainerQuestion
 } from './Questions.elements';
 
-function Questions({data}) {
+function Questions({ data }) {
+    const [indexOpen, setIndexOpen] = useState(0);
     return (
-        <Container lightBlue>
+        <ContainerQuestion lightBlue>
             <WrapperColumn>
                 <TitleCenter>Q&A</TitleCenter>
                 <QuestionsContainer>
-                    {data.map((item) => {
+                    {data.map((item, index) => {
                     return (
                         <Accordion 
                             question={item.question}
                             answer={item.answer}
+                            open={indexOpen === index}
+                            setOpen={() => setIndexOpen(index)}
                         />
                     )
                     })}
                 </QuestionsContainer>
             </WrapperColumn>
-        </Container>
+        </ContainerQuestion>
     )
 }
 

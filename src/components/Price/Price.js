@@ -10,7 +10,6 @@ import {
     PriceRow,
     PriceIcon,
     PriceText,
-    PriceIconMain,
     ButtonPrice,
     PriceRectangle,
     PriceArea
@@ -35,9 +34,8 @@ function Price({mainPriceTitle, data}) {
                         )
                     })
                     } 
-                    <ButtonPrice>MÁM ZÁJEM</ButtonPrice>
+                    <ButtonPrice >MÁM ZÁJEM</ButtonPrice>
                 </PriceContainer> 
-               
                 </PriceRectangle>  
             </WrapperColumn>
         </Container>

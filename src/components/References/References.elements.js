@@ -12,6 +12,7 @@ export const ReferenceContainer = styled.div`
 export const Speech = styled.div`
     margin-bottom: 60px;
 `;
+
 export const SpeechIcon = styled.img`
     width: 25px;
     height: auto;

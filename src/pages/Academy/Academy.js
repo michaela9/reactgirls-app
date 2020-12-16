@@ -18,8 +18,6 @@ import { Price, Newsletter, Program }  from '../../components';
     acadQuestionsArr,
     } from './Data';
 
-
-
 function Academy() {
     return (
         <>

@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { SponsorContainer, SponsorImgContainer, GoldStripe, GoldSponsorship,SilverSponsorship, CommunitySponsorship, ContainerMain } from './Sponsor.elements';
+import React from 'react';
+import { SponsorContainer, SponsorImgContainer, GoldSponsorship,SilverSponsorship, CommunitySponsorship } from './Sponsor.elements';
 import { SponsorImg } from './Sponsor.elements';
 import { Container, TitleCenter } from '../reusable/styled';
-
-
 
 function Sponsor() {
     return (

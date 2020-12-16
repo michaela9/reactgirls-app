@@ -1,6 +1,5 @@
 import styled, {css} from "styled-components";
 import  { sizes, colors } from '../../variables.js';
-import { Link } from 'react-router-dom'
 
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
@@ -27,13 +26,11 @@ export const ParagraphS = styled.p`
     line-height: 1.7;
 `;
 
-
 export const Container = styled.div`
     z-index:1;
     width: 100%;
     background-color: ${({lightBlue}) => (lightBlue ? `#EBF6F8`  : `#FFFBFA` )};
 `;
-
 
 export const Wrapper = styled.div`
     width: 1280px;
@@ -54,7 +51,6 @@ export const WrapperColumn = styled.div`
     align-items: center;
 `;
 
-
 export const TitleCenter = styled(Heading1)`
     text-align: center;
     font-weight: 700;
@@ -71,15 +67,12 @@ export const SubTitleLeft = styled(Heading2)`
     font-weight: 700;
 `;
 
-
 export const Name = styled(Heading3)`
     text-align: center;
     font-weight: 700;
 `;
 
-export default styled;
-
-export const Button = styled(Link)`
+export const Button = styled.a`
     background-color: ${colors.mainBlue};
     border: none;
     white-space: nowrap;
@@ -104,8 +97,8 @@ export const Button = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background-color: #0099AE;
-        
-        
+        background-color: #0099AE;  
     }
 `;
+
+export default styled;

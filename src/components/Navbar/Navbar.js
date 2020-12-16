@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { 
     NavLogo,
     NavMenu,
@@ -11,40 +11,28 @@ import {
     SocialIcon
     } from './Navbar.elements';
 
-    import { Container } from '../../components/reusable/styled';
-
-    import socialArr from './socialArr';
-
+import { Container } from '../../components/reusable/styled';
+import socialArr from './socialArr';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [navLogo, setNavLogo] = useState(false);
-    const [isMyFirstRoute, setIsMyFirstRoute] = useState(true);
-    let history = useHistory();
-
     const handleClick = () => setClick(!click);
+    
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     const changeLogoSize = () => {
-        if(window.scrollY >= 80) {
-            setNavLogo(true)
-        }else{
-            setNavLogo(false)
-        }
-    };
-
-   function handleRouteChange (route: string) {
-        if(isMyFirstRoute){
-            setIsMyFirstRoute(false);
-        }
-        history.push();
-    };
-    window.addEventListener('scroll', changeLogoSize);
+        setNavLogo(true);
+    }
+    window.addEventListener("scroll", changeLogoSize);
     return (
         <Nav>
             <Container>
                 <NavWrapper>
-                    <div onClick={() => handleRouteChange('/')}>
-                        <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                    </div>
+                    <Link  to="/" spy={true} smooth={true} duration={500}>    
+                        <NavLogo onClick={toggleHome} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                    </Link>
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
                             <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>

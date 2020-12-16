@@ -27,7 +27,6 @@ const contactArr = [
         facebook: "https://www.facebook.com/",
         twitter: "https://www.twitter.com"    
     },
-
 ]
 
 export default contactArr;

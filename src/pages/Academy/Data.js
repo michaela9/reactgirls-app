@@ -3,6 +3,7 @@ export const heroObjThree = {
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_9.jpg",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform"
 };
 
 export const infoObjTwo = {
@@ -70,29 +71,23 @@ export const acadPriceArr = [
         text: "4 lekce programování",
     },
     {
-        text: "závěrečný workshop",
-       
+        text: "závěrečný workshop",   
     },
     {
-        text: "celkem 17 hodin vyučování",
-        
+        text: "celkem 17 hodin vyučování",   
     },
     {
-        text: "online studijní materiály k akademii",
-       
+        text: "online studijní materiály k akademii", 
     },
     {
-        text: "certifikát o absolvování",
-       
+        text: "certifikát o absolvování",  
     },
     {
-        text: "tričko ReactGirls",
-       
+        text: "tričko ReactGirls",  
     },
     {
-        text: "možnost vyzkoušet si mock interview",
-       
-    },
+        text: "možnost vyzkoušet si mock interview", 
+    }
 ];
 
 export const programArr1 = [
@@ -135,11 +130,11 @@ export const acadQuestionsArr = [
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: <>Stačí kliknout <a>ZDE</a> a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: "Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
+        answer: <>Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
     },
     {
         question: "Co si z akademie odnesu? ",
@@ -151,6 +146,6 @@ export const acadQuestionsArr = [
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
+        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
     }, 
 ];

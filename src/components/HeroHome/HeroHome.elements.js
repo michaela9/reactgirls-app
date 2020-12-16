@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import  { sizes, colors } from '../../variables';
 import { Heading1, Paragraph } from '../reusable/styled';
-import Carousel, { consts } from 'react-elastic-carousel';
+import Carousel from 'react-elastic-carousel';
 
 export const TitleHomeContainer = styled.div`
     display: flex;
@@ -49,7 +49,6 @@ export const AnimationText = styled.strong`
     font-size: ${sizes.sizeXXXL};
 `;
 
-
 export const CarouselText = styled(Carousel)`
     display: flex;
     justify-content: center;
@@ -58,7 +57,6 @@ export const CarouselText = styled(Carousel)`
     padding: 0;
     position: relative;
     right: 20px;
-
 `;
 
 export const CarouselHero = styled(Carousel)`
@@ -79,7 +77,6 @@ export const CarouselHero = styled(Carousel)`
         box-shadow: none;
     }
 `;
-
 
 export const SubTitle = styled(Paragraph)`
     font-weight: 300;

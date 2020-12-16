@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors, sizes } from '../../../variables';
-import { ParagraphS } from '../../reusable/styled';
+import { ParagraphS, Container } from '../../reusable/styled';
 
 export const QuestionsContainer = styled.div`
     width: 650px;
@@ -27,6 +27,11 @@ export const QuestionsIcon = styled.img`
     position: relative;
     top: 3px;
 `;
+
+export const ContainerQuestion = styled(Container)`
+    height:750px;
+`
+
 export const QuestionsText = styled.div`
     margin-left: 15px;
     margin-bottom: 5px;
@@ -43,6 +48,13 @@ export const AnswerText = styled(ParagraphS)`
     color: ${colors.grey};
     font-weight: 300;
     padding: 4px;
+    a{
+        font-size: ${sizes.sizeS};
+        color: ${colors.mainBlue};
+        font-weight: 500;
+    //font-family: 'Fira Sans', sans-serif;
+     cursor: pointer; 
+    }
 `;
 
 

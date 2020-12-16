@@ -7,7 +7,6 @@ import Newsletter from '../../components/Newsletter/Newsletter';
 import Gallery from '../../components/Gallery/Gallery';
 import  Thanks  from '../../components/Thanks/Thanks';
 
-
 function About() {
     return (
         <>

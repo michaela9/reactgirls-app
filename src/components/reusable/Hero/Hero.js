@@ -9,8 +9,6 @@ import {
 
 import { Container, Wrapper, TitleLeft, Button } from '../styled';
 import  ButtonInputGroup from '../ButtonInputGroup/ButtonInputGroup';
-import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 
 
 function Hero({
@@ -18,6 +16,7 @@ function Hero({
     subtitle,
     buttonText,
     img,
+    form
 } ) {
     return (
             <Container lightBlue>
@@ -26,7 +25,7 @@ function Hero({
                         <TitleLeft > {title} </TitleLeft>
                         <SubTitle > {subtitle} </SubTitle>
                         {/* <ButtonInputGroup /> */} 
-                        <Button>MÁM ZÁJEM</Button>
+                        <Button href={form} target="blank">MÁM ZÁJEM</Button> 
                     </TitleContainer>
                     <ImgContainer>
                         <HeroImg src={img} />

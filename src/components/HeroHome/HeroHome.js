@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 import { 
     TitleHomeContainer,
@@ -13,16 +14,18 @@ import {
     TitleCont
  } from './HeroHome.elements';
 
-import styled from '../reusable/styled'
 import { Container, Wrapper } from '../reusable/styled';
 import  ButtonInputGroup from '../reusable/ButtonInputGroup/ButtonInputGroup';
 import {heroHomeArr} from './heroHomeArr';
 
-import Carousel, { consts } from 'react-elastic-carousel';
+import { consts } from 'react-elastic-carousel';
 
 
 
 function HeroHome( {img}) {
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     return (
             <Container lightBlue>
                 <Wrapper>
@@ -49,7 +52,7 @@ function HeroHome( {img}) {
                     {heroHomeArr.map((item) => { 
                      return (
                         <ImgHomeContainer>
-                        <a href={item.id}>
+                        <a href={item.id} onClick={toggleHome}>
                             <HeroHomeImg src={item.img} />
                         </a>
                         </ImgHomeContainer>

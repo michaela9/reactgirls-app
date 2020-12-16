@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables';
-import { TitleLeft } from '../reusable/styled';
-
+import { sizes } from '../../variables';
 
 export const ItemContainer = styled.div`
     display: flex;
@@ -9,7 +7,6 @@ export const ItemContainer = styled.div`
     flex-direction: column;
     position: relative;
     left: 8px;
-
 `;
 
 export const ItemRow = styled.div`

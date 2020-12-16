@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Container } from '../../components/reusable/styled';
 import Carousel from 'react-elastic-carousel';
-import { sizes, colors } from '../../variables';
+import { colors } from '../../variables';
 
 export const CarouselGallery = styled(Carousel)`
     .rec.rec-arrow-left, .rec.rec-arrow-right {
@@ -13,7 +11,6 @@ export const CarouselGallery = styled(Carousel)`
     .rec.rec-arrow:hover {
         color: ${colors.mainBlue};
     }
-
     .rec.rec-arrow:disabled {
         visibility: hidden;
     } 

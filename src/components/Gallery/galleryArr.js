@@ -1,9 +1,8 @@
 export const galleryArr = [
-    { url: "/images/community/photo_5.jpg" },
-    { url: "/images/community/photo_9.jpg" },
-    { url: "/images/community/photo_12.jpg" },
-    { url: "/images/community/photo_13.jpg" },
-    { url: "/images/community/photo_14.jpg" },
-    { url: "/images/community/photo_24.jpg" },
-    { url: "/images/community/photo_27.jpg" },
+    { url: "/images/products/community.jpg" },
+    { url: "/images/products/workshop.jpg" },
+    { url: "/images/products/webinar.jpg" },
+    { url: "/images/products/mentoring.jpg" },
+    { url: "/images/products/academy.jpg" },
+    { url: "/images/products/meetup.jpg" },
 ]

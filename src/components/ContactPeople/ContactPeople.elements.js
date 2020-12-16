@@ -9,12 +9,10 @@ export const ContactCardContainer = styled.div`
     justify-content: space-around;
 `;
 
-
 export const ContactCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
 `;
 
 export const ContactImg = styled.img`
@@ -30,9 +28,7 @@ export const ContactText = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 150px;
-
 `;
-
 
 export const ContactSocial = styled.div`
     display: flex;
@@ -46,6 +42,7 @@ export const SocialContactIcon = styled.img`
     height: 20px;
     margin-top: 10px;
 `;
+
 export const ContactInfo = styled(ParagraphS)`
     font-weight: 300;
     color:${colors.grey};   

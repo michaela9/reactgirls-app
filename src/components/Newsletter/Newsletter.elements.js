@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables.js';
+import { colors } from '../../variables.js';
 import { Paragraph, TitleCenter } from '../reusable/styled';
 
 export const NewsletterContainer = styled.div `

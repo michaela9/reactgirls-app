@@ -1,5 +1,3 @@
-import { findAllByDisplayValue } from "@testing-library/react";
-
 const productArr = [ 
     {
         title: "Komunita",

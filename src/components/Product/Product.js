@@ -7,7 +7,6 @@ import {
     ProductImgContainer,
  } from './Product.elements';
 
-
 import { 
     Container, 
     Wrapper,  
@@ -17,7 +16,6 @@ import {
     Button
 } from '../../components/reusable/styled';
 import productArr from './productArr';
-
 
 function Product() {
     return (

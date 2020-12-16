@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
     QuestionsContent,
     QuestionsIcon,
@@ -7,15 +7,15 @@ import {
     QuestionCont
 } from './Questions.elements';
 
-function Accordion({question, answer}) {
-    const[isOpen, setIsOpen] = useState(false);
+function Accordion({question, answer, open, setOpen}) {
+   
     return (
         <QuestionCont>
-            <QuestionsIcon onClick={() => setIsOpen(!isOpen)} src={isOpen ? "/images/icons/minus.svg" : "/images/icons/plus.svg"}>
+            <QuestionsIcon onClick={setOpen} src={open ? "/images/icons/minus.svg" : "/images/icons/plus.svg"}>
             </QuestionsIcon>  
             <QuestionsContent>  
                 <QuestionsText>{question}</QuestionsText>
-                {isOpen && (
+                {open && (
                 <AnswerText>{answer}</AnswerText>
                 )}
             </QuestionsContent>
