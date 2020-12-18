@@ -3,18 +3,20 @@ import { sizes, colors } from '../../variables';
 import { TitleLeft, Button } from '../reusable/styled';
 
 export const PriceArea = styled.div`
-    background-color: ${colors.mainBlue};
-    height: 180px;
+    border-bottom: 2px solid ${colors.mainBlue};
     border-radius: 30px 30px 0px 0px;
-    font-size: 56px;
-    color: ${colors.white};
-    font-weight: 300;
+    font-size: ${sizes.sizeXXXL} ;
+    color: ${colors.darkGrey};
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px;
+    padding-bottom: 40px;
 `;
 
 export const PriceRectangle = styled.div`
+    width: 380px;
     margin-top: 80px;
     margin-bottom: 40px;
     background: ${colors.white};
@@ -23,22 +25,23 @@ export const PriceRectangle = styled.div`
 `;
 
 export const PriceContainer = styled.div`
-    padding: 60px;
+    padding: 10px 40px 50px 40px;
 `;
 
 export const PriceRow = styled.div`
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 `;
 
 export const PriceIcon = styled.img`
     width: 18px;
     height: 18px;
-    margin-right: 15px;
+    margin-right: 10px;
 `;
 
 export const PriceText = styled.div`
     font-size: ${sizes.sizeXS};
+    color: ${colors.grey};
 `;
 
 export const PriceTitle = styled(TitleLeft)`
@@ -55,7 +58,7 @@ export const PriceIconMain = styled.div`
 `;
 
 export const ButtonPrice = styled(Button)`
-    margin-top: 50px;
+    margin-top: 45px;
 `;
 
 

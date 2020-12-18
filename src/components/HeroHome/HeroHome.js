@@ -1,5 +1,5 @@
 import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { 
     TitleHomeContainer,
@@ -51,10 +51,17 @@ function HeroHome( {img}) {
                     <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
                     {heroHomeArr.map((item) => { 
                      return (
-                        <ImgHomeContainer>
-                        <a href={item.id} onClick={toggleHome}>
+                        <ImgHomeContainer key={item.id} >
+                        <Link to={item.id}
+                         smooth={true}
+                         duration={item.duration}
+                         spy={true}
+                         exact='true'
+                         offset={-80}
+ 
+                         >
                             <HeroHomeImg src={item.img} />
-                        </a>
+                        </Link>
                         </ImgHomeContainer>
                         )
                     })}

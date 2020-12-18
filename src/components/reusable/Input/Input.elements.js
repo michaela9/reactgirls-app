@@ -3,7 +3,7 @@ import { colors, sizes } from '../../../variables';
 
 export const InputContainer = styled.div`
     background-color: ${colors.white};
-    border: 1px solid ${colors.lightGrey} ; 
+    border: 1px solid ${colors.veryLightGrey} ; 
     padding: 0 32px;
     height: 50px;
     border-radius: 25px;

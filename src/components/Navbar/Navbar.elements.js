@@ -26,7 +26,7 @@ export const NavLogo = styled.img`
     border-radius:80px;
     position: relative;
     top: 80px;
-    transition: all 0.8s ease-in-out;
+    transition: all 1.5s ease-in-out;
     top: 80px;
     cursor: pointer;
 

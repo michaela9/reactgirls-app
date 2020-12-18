@@ -18,7 +18,7 @@ function ContactPeople() {
             <Wrapper>
                 <ContactCardContainer>
                     {contactArr.map((contact) => (
-                        <ContactCard>
+                        <ContactCard key={contact.name} >
                             <ContactImg src={contact.photo}/>
                             <ContactText>
                                 <Name>{contact.name}</Name>

@@ -22,12 +22,12 @@ function Price({mainPriceTitle, data}) {
                 <TitleCenter>{mainPriceTitle}</TitleCenter>
                 <PriceRectangle>
                     <PriceArea>
-                        590,-
+                        590 CZK
                     </PriceArea>
                     <PriceContainer>                  
                     {data.map((item) => {
                         return(
-                        <PriceRow data={data}>
+                        <PriceRow key={item.text} data={data}>
                             <PriceIcon src="/images/icons/done.svg" />
                             <PriceText>{item.text}</PriceText>
                         </PriceRow>

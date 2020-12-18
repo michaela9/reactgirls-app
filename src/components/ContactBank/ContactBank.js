@@ -19,8 +19,6 @@ function ContactBank() {
                         <BankHeading>Sídlo a fakturační údaje</BankHeading>
                         <BankText>
                         ReactGirls z. s.
- 
-  
                             <br />
                             V jehličí 2106/2, Krč,
                             <br />

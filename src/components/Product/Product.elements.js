@@ -17,6 +17,12 @@ export const ProductInfo = styled(Paragraph)`
     margin-bottom: 32px;
     margin-top: 32px;
     color: ${colors.grey};
+    a{
+        color: ${colors.mainBlue};
+        font-weight: 500;
+        cursor: pointer; 
+
+    }
 `;
 
 export const ProductImg = styled.img`

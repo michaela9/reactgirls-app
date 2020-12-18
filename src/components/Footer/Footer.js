@@ -1,4 +1,5 @@
 import React from 'react';
+import {  animateScroll as scroll } from 'react-scroll';
 import { 
     FooterContainer,
     FooterLogo,
@@ -8,9 +9,12 @@ import {
 import {   } from '../../globalStyles';
 
 function Footer() {
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     return (
             <FooterContainer>
-                <FooterLogo />
+                <FooterLogo onClick={toggleHome} smooth={true} duration={5000} />
                 <FooterInfo>© Michaela Rudolfová 2020</FooterInfo> 
             </FooterContainer>
     )

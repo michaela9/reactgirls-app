@@ -1,7 +1,5 @@
 import React from 'react';
-import Mailchimp from 'react-mailchimp-form'
-
-import React from 'react'
+import Mailchimp from 'react-mailchimp-form';
 
 function MailChimpComp() {
     return (

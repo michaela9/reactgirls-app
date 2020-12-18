@@ -28,7 +28,7 @@ function Product() {
                 </WrapperColumn>
             </Container>
             {productArr.map((product) => (
-            <Container lightBlue={product.lightBlue} id={product.id} >
+            <Container key={product.title} lightBlue={product.lightBlue} id={product.id} >
                 <Wrapper imgStart={product.imgStart}> 
                     <ProductInfoContainer>
                         <SubTitleLeft>

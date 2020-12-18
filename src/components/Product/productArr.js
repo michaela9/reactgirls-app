@@ -1,7 +1,7 @@
 const productArr = [ 
     {
         title: "Komunita",
-        info: "ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na Slacku a na sociálních sítích.",
+        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na <a>Slacku</a> a ostatních sociálních sítích.</>,
         hideButton: false,
         buttonText: "Zjistit více",
         img: "images/products/community.jpg",
@@ -12,7 +12,7 @@ const productArr = [
     },
     {
         title: "Workshopy",
-        info: "Pořádáme pravidelné workshopy plné programování a přednášek na nejen technické témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš newsletter.",
+        info: <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technické témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš <a>newsletter</a>.</>,
         hideButton: true,
         img: "images/products/workshop.jpg",
         imgStart: true,
@@ -21,7 +21,7 @@ const productArr = [
     },
     {
         title: "Webináře",
-        info: "Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem Youtube. O dalších se dozvíte v Newsletteru a na sociálních sítích.",
+        info: <>Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <a>Youtube</a>. O dalších se dozvíte v <a>Newsletteru</a> a na sociálních sítích.</>,
         hideButton: true,
         img: "images/products/webinar.jpg",
         imgStart: false,
@@ -30,7 +30,7 @@ const productArr = [
     },
     {
         title: "Mentoring",
-        info: "Vyzkoušejte si náš jedinečný mentoringový program. Jedná se o intenzivní několikatýdenní školení, ve kterém má mentee k dispozici svého individuálního mentora. Ten ji vede k tvorbě komplexního webového projektu od základů a předává ji užitečné know-how. Na konci je mentee připravena sama zvládnout tvorbu dalších projektů v Reactu.",
+        info: "Vyzkoušejte si náš jedinečný mentoringový program. Mentor vede mentee během několikatýdenního školení k tvorbě komplexního webového projektu a předává ji užitečné know-how. Na konci je mentee připravena sama zvládnout tvorbu dalších projektů v Reactu.",
         hideButton: false,
         buttonText: "Zjistit více",
         img: "images/products/mentoring.jpg",

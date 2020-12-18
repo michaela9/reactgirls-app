@@ -5,7 +5,6 @@ export const SponsorContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 1280px;
-    padding: 80px;
     margin: 0 auto;
     padding: 80px 50px;
     align-items: center;
@@ -32,7 +31,7 @@ export const GoldSponsorship = styled.div`
     width: 100%;
     padding-left: 15px;
     margin-bottom: 15px;  
-    margin-top: 40px; 
+    margin-top: 50px; 
 `;
 
 export const SilverSponsorship = styled.div`
@@ -46,8 +45,8 @@ export const SilverSponsorship = styled.div`
 `;
 
 export const CommunitySponsorship = styled.div`
-    border-left: 5px solid burlywood;
-    color: burlywood;
+    border-left: 5px solid peru;
+    color: peru;
     font-size: ${sizes.sizeS};
     font-weight: 500;
     width: 100%;

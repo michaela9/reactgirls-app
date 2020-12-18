@@ -12,6 +12,7 @@ export const FooterLogo = styled.h1`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 `;
 
 export const FooterContainer = styled.h1`

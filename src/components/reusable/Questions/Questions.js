@@ -19,6 +19,7 @@ function Questions({ data }) {
                     {data.map((item, index) => {
                     return (
                         <Accordion 
+                            key={item.question}
                             question={item.question}
                             answer={item.answer}
                             open={indexOpen === index}

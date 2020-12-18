@@ -4,8 +4,7 @@ import { Paragraph, TitleCenter } from '../reusable/styled';
 
 export const NewsletterContainer = styled.div `
     display: flex;
-    max-width: 680px;
-    height: 350px;
+    height: 320px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +18,7 @@ export const ParagraphCenter = styled(Paragraph) `
 `;
 
 export const TitleCenterNews = styled(TitleCenter) `
-    width: 70%;
+    width: 100%;
 `;
 
 

@@ -27,7 +27,7 @@ function Lector() {
                 <CardsContainer>  
                 <CarouselLector  itemsToShow={3} itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
                     {lectorArr.map((lector) => (
-                                <Card> 
+                                <Card key={lector.lectorName} > 
                                     <LectorImgContainer>
                                         <LectorImg src={lector.lectorImg} />
                                         <LectorLink href={lector.lectorLinkedIn} target="blank" ><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>

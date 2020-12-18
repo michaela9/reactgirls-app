@@ -23,9 +23,8 @@ export const SpeechText = styled(ParagraphS)`
     text-align: left;
     font-style: italic;
     margin-bottom: 15px;
-    font-size: ${sizes.sizeS};
-    color: ${colors.grey};
-    font-weight: 300;
+    //color: ${colors.darkGrey};
+    font-weight: 400;
 `;
 
 export const SpeechCont = styled.div`
@@ -35,7 +34,9 @@ export const SpeechCont = styled.div`
     margin: 80px auto 0 auto;
 `;
 
-export const SpeechName = styled.p`
+export const SpeechName = styled(ParagraphS)`
     text-align: left;
     font-size: ${sizes.sizeXS};
+    color: ${colors.grey};
+    font-weight: 300;
 `;

@@ -10,7 +10,7 @@ function AboutProduct({data}) {
                 <ItemContainer>                  
                     {data.map((item) => {
                         return(
-                        <ItemRow data={data}>
+                        <ItemRow key={item.text} data={data}>
                             <ItemIcon src="/images/blue logo_cut.svg" />
                             <ItemText>{item.text}</ItemText>
                         </ItemRow>

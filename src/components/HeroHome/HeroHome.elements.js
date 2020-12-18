@@ -26,6 +26,7 @@ export const TitleCont = styled.div`
 
 export const HeroHomeImg = styled.img`
     height: 480px;
+    cursor: pointer;
  `;
 
 export const FirstTitleRow = styled.div`
@@ -65,7 +66,7 @@ export const CarouselHero = styled(Carousel)`
 
     .rec.rec-dot {
         outline: none;
-        background-color: ${colors.middleGrey};
+        background-color: ${colors.veryLightGrey};
         box-shadow: none;
         width: 10px;
         height: 10px;

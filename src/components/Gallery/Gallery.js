@@ -12,7 +12,7 @@ function Gallery() {
                 <GalleryContainer>
                 <CarouselGallery  itemsToShow={2} itemsToScroll={1} pagination={false}  >
                     {galleryArr.map((picture) => (
-                        <GalleryImg src={picture.url} />
+                        <GalleryImg key={picture.url} src={picture.url} />
                         )
                     )} 
                 </ CarouselGallery>

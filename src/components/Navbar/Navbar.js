@@ -29,10 +29,9 @@ function Navbar() {
     return (
         <Nav>
             <Container>
-                <NavWrapper>
-                    <Link  to="/" spy={true} smooth={true} duration={500}>    
-                        <NavLogo onClick={toggleHome} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                    </Link>
+                <NavWrapper>  
+                        <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                    
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
                             <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
@@ -54,7 +53,7 @@ function Navbar() {
             </Container>
             <Social>
                 {socialArr.map((social) => (
-                    <a href={social.link} target="blank">
+                    <a key={social.link} href={social.link} target="blank">
                         <SocialIcon src={social.icon} />
                     </a>
                     )

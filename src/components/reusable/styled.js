@@ -53,23 +53,23 @@ export const WrapperColumn = styled.div`
 
 export const TitleCenter = styled(Heading1)`
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
 `; 
 
 export const TitleLeft = styled(Heading1)`
     text-align: left;
     margin-bottom: 25px;
-    font-weight: 700;
+    font-weight: 500;
 `;
 
 export const SubTitleLeft = styled(Heading2)`
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
 `;
 
 export const Name = styled(Heading3)`
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
 `;
 
 export const Button = styled.a`
