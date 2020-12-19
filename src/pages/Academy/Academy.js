@@ -1,5 +1,6 @@
 import React from 'react';
-import { Price, Newsletter, Program }  from '../../components';
+import { Price, Program }  from '../../components';
+import NewsletterSection from '../../components/reusable/Newsletter/NewsletterSection';
  import  Hero  from '../../components/reusable/Hero/Hero';
  import  Student  from '../../components/reusable/Student/Student';
  import  Info  from '../../components/reusable/Info/Info';
@@ -28,7 +29,7 @@ function Academy() {
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Process />
             <Price data={acadPriceArr} {...titleObjTwo} />
-            <Newsletter />
+            <NewsletterSection />
             <Questions data={acadQuestionsArr} />
         </>
     )

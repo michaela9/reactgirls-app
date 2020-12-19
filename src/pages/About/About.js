@@ -3,7 +3,7 @@ import AboutInfo from '../../components/reusable/AboutInfo/AboutInfo';
 import { aboutInfoObj1,aboutInfoObj2, aboutInfoObj3, aboutInfoObj4, aboutInfoObj5, aboutProductArr } from './Data';
 import AboutHero from '../../components/AboutHero/AboutHero';
 import AboutProduct from '../../components/AboutProduct/AboutProduct';
-import Newsletter from '../../components/Newsletter/Newsletter';
+import NewsletterSection from '../../components/reusable/Newsletter/NewsletterSection';
 import Gallery from '../../components/Gallery/Gallery';
 import  Thanks  from '../../components/Thanks/Thanks';
 
@@ -15,7 +15,7 @@ function About() {
             <AboutInfo {...aboutInfoObj2} />
             <AboutInfo {...aboutInfoObj3} />
             <AboutInfo {...aboutInfoObj4} />
-            <Newsletter />
+            <NewsletterSection />
             <Gallery />
             <Thanks />
         </>

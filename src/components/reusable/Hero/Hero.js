@@ -8,7 +8,6 @@ import {
  } from './Hero.elements';
 
 import { Container, Wrapper, TitleLeft, Button } from '../styled';
-import  ButtonInputGroup from '../ButtonInputGroup/ButtonInputGroup';
 
 
 function Hero({

@@ -2,7 +2,7 @@ export { default as Navbar} from './Navbar/Navbar';
 export { default as Hero } from './reusable/Hero/Hero';
 export { default as Sponsor} from './Sponsor/Sponsor';
 export { default as Product} from './Product/Product';
-export { default as Newsletter} from './Newsletter/Newsletter';
+export { default as Newsletter} from './reusable/Newsletter/Newsletter';
 export { default as Lector} from './Lector/Lector';
 export { default as Footer} from './Footer/Footer';
 export { default as ContactHero} from './ContactHero/ContactHero';

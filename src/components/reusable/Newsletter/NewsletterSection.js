@@ -1,10 +1,9 @@
 import React from 'react';
 import { NewsletterContainer, ParagraphCenter, TitleCenterNews} from './Newsletter.elements';
+import Newsletter from './Newsletter';
+import { Container, Wrapper } from '../styled';
 
-import { Container, Wrapper } from '../../components/reusable/styled';
-import ButtonInputGroup from '../../components/reusable/ButtonInputGroup/ButtonInputGroup';
-
-function Newsletter() {
+function NewsletterSection() {
     return (
         <Container>
             <Wrapper>
@@ -15,11 +14,12 @@ function Newsletter() {
                 <ParagraphCenter>
                     Klikni na Odebírat Newsletter <br></br> a my se ti ozveme!
                 </ParagraphCenter>
-                <ButtonInputGroup />
+                <Newsletter />
+
             </NewsletterContainer>
             </Wrapper>
         </Container>
     )
 }
 
-export default Newsletter;
+export default NewsletterSection;

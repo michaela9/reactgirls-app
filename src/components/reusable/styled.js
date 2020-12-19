@@ -101,4 +101,36 @@ export const Button = styled.a`
     }
 `;
 
+export const InputContainer = styled.div`
+    background-color: ${colors.white};
+    border: 1px solid ${colors.veryLightGrey} ; 
+    padding: 0 32px;
+    height: 50px;
+    border-radius: 25px;
+    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    `;
+
+export const CustomInput = styled.input`
+    color: ${colors.lightGrey};
+    font-weight: 300;
+    outline: none;
+    font-size:${sizes.sizeM};
+    transition: all 0.2s ease;
+    z-index: 500;
+    border-color: transparent;
+    background: none;
+    cursor: text;
+  }
+`;
+
+export const ButtonInputCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+`;
+
 export default styled;

@@ -15,10 +15,10 @@ import {
  } from './HeroHome.elements';
 
 import { Container, Wrapper } from '../reusable/styled';
-import  ButtonInputGroup from '../reusable/ButtonInputGroup/ButtonInputGroup';
 import {heroHomeArr} from './heroHomeArr';
 
 import { consts } from 'react-elastic-carousel';
+import Newsletter from '../reusable/Newsletter/Newsletter';
 
 
 
@@ -46,7 +46,7 @@ function HeroHome( {img}) {
                             <TitleLeftHome >v Reactu!</TitleLeftHome>
                         </TitleCont>
                         <SubTitle >#ReactGirlsPrague</SubTitle>
-                        <ButtonInputGroup />
+                        <Newsletter />
                     </TitleHomeContainer>
                     <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
                     {heroHomeArr.map((item) => { 

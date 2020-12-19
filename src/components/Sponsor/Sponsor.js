@@ -2,6 +2,7 @@ import React from 'react';
 import { SponsorContainer, SponsorImgContainer, GoldSponsorship,SilverSponsorship, CommunitySponsorship } from './Sponsor.elements';
 import { SponsorImg } from './Sponsor.elements';
 import { Container, TitleCenter } from '../reusable/styled';
+import { sponsorArrGold } from './sponsorArr';
 
 function Sponsor() {
     return (
@@ -10,17 +11,14 @@ function Sponsor() {
                 <TitleCenter>Naši partneři</TitleCenter>
                 <GoldSponsorship>GOLD
                     <SponsorImgContainer>
-                        <a href="https://www.livesport.eu/" target="blank">
-                            <SponsorImg src="/images/sponsors/Livesport_logo_basic-300x66.png"/>
-                        </a>
-                        <a href="https://edupunk.cz/" target="blank">
-                            <SponsorImg src="/images/sponsors/edupunk-150x150.jpg"/>
-                        </a>
-                        <a href="https://www.applifting.cz/" target="blank">
-                            <SponsorImg src="/images/sponsors/logo_applifting-300x135.png"/>
-                        </a>
+                        {sponsorArrGold.map((sponsor) => {
+                                return(
+                                    <a  href={sponsor.link} target="blank">
+                                        <SponsorImg src={sponsor.logo} key={sponsor.link}  />
+                                    </a>
+                                ) 
+                        })}  
                     </SponsorImgContainer>
-
                 </GoldSponsorship>
                 <SilverSponsorship>SILVER
                     <SponsorImgContainer>

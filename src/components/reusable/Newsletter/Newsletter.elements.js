@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { colors } from '../../variables.js';
-import { Paragraph, TitleCenter } from '../reusable/styled';
+import { colors } from '../../../variables';
+import { Paragraph, TitleCenter } from '../styled';
 
 export const NewsletterContainer = styled.div `
     display: flex;
@@ -19,6 +19,19 @@ export const ParagraphCenter = styled(Paragraph) `
 
 export const TitleCenterNews = styled(TitleCenter) `
     width: 100%;
+`;
+
+export const MyForm = styled.div`
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+`;
+
+export const ButtonInputCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
 `;
 
 
