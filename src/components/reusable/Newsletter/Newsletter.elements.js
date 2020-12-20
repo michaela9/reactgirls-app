@@ -4,7 +4,6 @@ import { Paragraph, TitleCenter } from '../styled';
 
 export const NewsletterContainer = styled.div `
     display: flex;
-    height: 320px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -15,10 +14,12 @@ export const ParagraphCenter = styled(Paragraph) `
     text-align: center;
     color: ${colors.grey};
     font-weight: 300;
+    margin-bottom: 40px;
 `;
 
 export const TitleCenterNews = styled(TitleCenter) `
     width: 100%;
+    margin-bottom: 30px;
 `;
 
 export const MyForm = styled.div`

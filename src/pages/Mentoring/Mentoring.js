@@ -1,11 +1,11 @@
 import React from 'react';
-import { Price,Newsletter }  from '../../components';
  import  Hero  from '../../components/reusable/Hero/Hero';
  import  Student  from '../../components/reusable/Student/Student';
  import  Info  from '../../components/reusable/Info/Info';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
  import  Process from '../../components/reusable/Process/Process';
+ import Price from '../../components/reusable/Process/Process';
  
  import { 
      mentStudentArr, 

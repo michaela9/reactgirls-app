@@ -12,7 +12,7 @@ function NewsletterSection() {
                     Zajímá tě, kdy se bude konat další akce?
                 </TitleCenterNews>
                 <ParagraphCenter>
-                    Klikni na Odebírat Newsletter <br></br> a my se ti ozveme!
+                    Klikni na Odebírat Newsletter a my se ti ozveme!
                 </ParagraphCenter>
                 <Newsletter />
 

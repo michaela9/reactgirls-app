@@ -1,7 +1,10 @@
+import React from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 const productArr = [ 
     {
         title: "Komunita",
-        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na <a>Slacku</a> a ostatních sociálních sítích.</>,
+        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na <a href="https://app.slack.com/client/TL2R6BTPA/CL5002YES" target="blank">Slacku</a> a ostatních sociálních sítích.</>,
         hideButton: false,
         buttonText: "Zjistit více",
         img: "images/products/community.jpg",
@@ -12,7 +15,11 @@ const productArr = [
     },
     {
         title: "Workshopy",
-        info: <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technické témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš <a>newsletter</a>.</>,
+        info: 
+            <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technická témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš 
+                <Link to="#newsletterHero" > Newsletter
+                </Link>.
+            </>,
         hideButton: true,
         img: "images/products/workshop.jpg",
         imgStart: true,
@@ -21,7 +28,7 @@ const productArr = [
     },
     {
         title: "Webináře",
-        info: <>Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <a>Youtube</a>. O dalších se dozvíte v <a>Newsletteru</a> a na sociálních sítích.</>,
+        info: <>Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <a href="https://www.youtube.com/channel/UCO8WGBzS6J00zlXroeTf90g" target="blank">Youtube</a>. O dalších se dozvíte v <a>Newsletteru</a> a na ostatních sociálních sítích.</>,
         hideButton: true,
         img: "images/products/webinar.jpg",
         imgStart: false,

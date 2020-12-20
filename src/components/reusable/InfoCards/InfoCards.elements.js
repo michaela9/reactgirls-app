@@ -17,7 +17,7 @@ export const InfoCard = styled.div`
     padding: 0 30px;
     background-color: ${colors.white};
     border-radius: 30px;
-    box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.1), 0px 0px 4px rgba(68, 68, 68, 0.1);
     display: flex;
     flex-direction: column;
 `;

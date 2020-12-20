@@ -38,7 +38,7 @@ function Product() {
                         {product.info}
                         </ProductInfo>
                         {!product.hideButton && 
-                            <Button to={product.link}>{product.buttonText}</Button>    
+                            <Button href={product.link}>{product.buttonText}</Button>    
                         }
                     </ProductInfoContainer>
                     <ProductImgContainer>

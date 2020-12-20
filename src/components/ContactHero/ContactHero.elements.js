@@ -14,7 +14,7 @@ export const ContactHeroTitle = styled.h1`
     font-weight: 900;
     text-align: center;
     margin-bottom: 40px;
-    width: 40%;
+    width: 100%;
 `
 
 export const ContactInfo = styled(Paragraph)`

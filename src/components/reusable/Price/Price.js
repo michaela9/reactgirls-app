@@ -3,7 +3,7 @@ import {
     Container, 
     WrapperColumn, 
     TitleCenter,
-} from '../reusable/styled';
+} from '../styled';
 
 import { 
     PriceContainer,

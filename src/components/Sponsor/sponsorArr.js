@@ -48,7 +48,7 @@ export const sponsorArrCommunity = [
     {
         logo: "/images/sponsors/ng.png",
         sponsorship: "community",
-        link: "https://www.ngparty.cz/"
+        link: "https://www.ngparty.cz"
     },
     {
         logo: "/images/sponsors/oakslab.png",

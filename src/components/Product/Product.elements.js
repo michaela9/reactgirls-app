@@ -20,7 +20,8 @@ export const ProductInfo = styled(Paragraph)`
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
-        cursor: pointer; 
+        cursor: pointer;
+        text-decoration: none;
 
     }
 `;

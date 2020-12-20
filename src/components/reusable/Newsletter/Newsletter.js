@@ -18,7 +18,8 @@ import  CustomForm  from './CustomForm';
     )}
   />
   )
-}*/
+}
+*/
 
 function Newsletter() {
     const url = ""

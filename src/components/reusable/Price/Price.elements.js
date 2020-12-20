@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables';
-import { TitleLeft, Button } from '../reusable/styled';
+import { sizes, colors } from '../../../variables';
+import { TitleLeft, Button } from '../styled';
 
 export const PriceArea = styled.div`
     border-bottom: 2px solid ${colors.mainBlue};
@@ -21,7 +21,7 @@ export const PriceRectangle = styled.div`
     margin-bottom: 40px;
     background: ${colors.white};
     border-radius: 30px; 
-    box-shadow: 0px 0px 40px rgba(68, 68, 68, 0.25), 0px 6px 6px rgba(68, 68, 68, 0.2);
+    box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.10), 0px 0px 4px rgba(68, 68, 68, 0.1);
 `;
 
 export const PriceContainer = styled.div`

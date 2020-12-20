@@ -46,7 +46,7 @@ function HeroHome( {img}) {
                             <TitleLeftHome >v Reactu!</TitleLeftHome>
                         </TitleCont>
                         <SubTitle >#ReactGirlsPrague</SubTitle>
-                        <Newsletter />
+                        <Newsletter id="newsletterHero" />
                     </TitleHomeContainer>
                     <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
                     {heroHomeArr.map((item) => { 

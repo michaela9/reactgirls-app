@@ -1,34 +1,19 @@
 export const aboutInfoObj1 = 
     {
         title: "O ReactGirls",
-        text1: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  gggggggggggg",
-        text2: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggg",
+        text1: "ReactGirls je komunita lidí, kteří pomáhají ženám v jejich cestě do IT světa.",
         lightBlue: true,
     }
     export const aboutInfoObj2 = 
     {
-        title: "Proč to děláme",
-        text1: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg",
-        text2: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  ggggggggggggggg ggg ggg",
+        title: "Co děláme",
+        text1: "Nabízíme akademie, workshopy, mentoring, webináře a meetupy, kde naučíme programovat jak úplné začátečnice, tak i zkušenější programátorky.",
         lightBlue: true,
     }
-    export const aboutInfoObj3 = 
-    {
-        title: "Co máme za sebou",
-        text1: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  ggggggggggggggg g",
-        text2: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  ggggggggggggggg g",
-        lightBlue: false,
-    }
-    export const aboutInfoObj4 = 
-    {
-        title: "Co máme v plánu",
-        text1: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  ggggggg",
-        text2: "ghfjdggg ggggggg ggggggggggggggg gggggggggggggggggggggg ggggggg gggg gggg gggggg gggggg gg ggggggg gggg gg ggggggg ggggggggg gggggg ggggggg ggggggggggggg ggggggggg gggggggggggg  gggg",
-        lightBlue: true,
-    }
+
     export const aboutInfoObj5 = 
     {
-        text1: "Poděkování patří především naším sponzorům, bez kterých by to nešlo",
+        text1: "Děkujeme našim partnerům za jejich podporu.",
         lightBlue: false,
     }
 
