@@ -45,10 +45,7 @@ function HeroHome( {img}) {
                             <TitleLeftHome >a nauč se programovat</TitleLeftHome>
                             <TitleLeftHome >v Reactu!</TitleLeftHome>
                         </TitleCont>
-                        <SubTitle >#ReactGirlsPrague</SubTitle>
-                        <Newsletter id="newsletterHero" />
-                    </TitleHomeContainer>
-                    <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
+                        <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
                     {heroHomeArr.map((item) => { 
                      return (
                         <ImgHomeContainer key={item.id} >
@@ -66,6 +63,10 @@ function HeroHome( {img}) {
                         )
                     })}
                     </CarouselHero>
+                        <SubTitle >#ReactGirlsPrague</SubTitle>
+                        <Newsletter id="newsletterHero" />
+                    </TitleHomeContainer>
+                    
                 </Wrapper>
             </Container>
     )

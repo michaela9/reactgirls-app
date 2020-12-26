@@ -1,15 +1,16 @@
 import styled from 'styled-components';
-import  { sizes, colors } from '../../variables';
+import  { sizes, colors, breakpoints } from '../../variables';
 import { Heading1, Paragraph } from '../reusable/styled';
 import Carousel from 'react-elastic-carousel';
 
 export const TitleHomeContainer = styled.div`
     display: flex;
-    flex-direction:column;
-    margin-right: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 900px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    max-width: 400px;
+
  `;
 
 export const TitleCont = styled.div`
@@ -17,16 +18,19 @@ export const TitleCont = styled.div`
 `;
 
  export const ImgHomeContainer = styled.div`
-    height: 480px;
-    width: 480px;
-    border-radius: 240px;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
     overflow: hidden;
     outline: none;
  `;
 
 export const HeroHomeImg = styled.img`
-    height: 480px;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
  `;
 
 export const FirstTitleRow = styled.div`
@@ -37,9 +41,24 @@ export const FirstTitleRow = styled.div`
 `;
 
 export const TitleLeftHome = styled(Heading1)`
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     width: 100%;
+
+    @media only screen and (max-width: ${breakpoints.smartphone}) {
+        max-width: 360px;
+        font-size: ${sizes.sizeXL};
+    }
+    @media only screen and (min-width: ${breakpoints.smartphone}) and (max-width: ${breakpoints.tablet}) {
+        max-width: 360px; 
+        font-size: ${sizes.sizeXL};
+    }
+    @media only screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+        font-size: ${sizes.sizeXXXL};
+    }
+    @media only screen and (min-width: ${breakpoints.desktop})  {
+        font-size: ${sizes.sizeXXXL};
+    }
 `;
 
 export const AnimationText = styled.strong`
@@ -47,7 +66,20 @@ export const AnimationText = styled.strong`
     padding: 0;
     font-weight: 500;
     color: ${colors.mainBlue};
-    font-size: ${sizes.sizeXXXL};
+
+
+    @media only screen and (max-width: ${breakpoints.smartphone}) {
+        font-size: ${sizes.sizeXL};
+    }
+    @media only screen and (min-width: ${breakpoints.smartphone}) and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeXL};
+    }
+    @media only screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+        font-size: ${sizes.sizeXXXL};
+    }
+    @media only screen and (min-width: ${breakpoints.desktop})  {
+        font-size: ${sizes.sizeXXXL};
+    }
 `;
 
 export const CarouselText = styled(Carousel)`
@@ -57,12 +89,15 @@ export const CarouselText = styled(Carousel)`
     margin: 0;
     padding: 0;
     position: relative;
-    right: 20px;
+    right: 5px;
+    max-width: 46%;
+
+
 `;
 
 export const CarouselHero = styled(Carousel)`
-    position: relative;
-    left: 30px;
+
+
 
     .rec.rec-dot {
         outline: none;

@@ -34,16 +34,16 @@ function Product() {
                         <SubTitleLeft>
                             {product.title}
                         </SubTitleLeft>
+                        <ProductImgContainer>
+                            <ProductImg src={product.img} />
+                        </ProductImgContainer> 
                         <ProductInfo>
                         {product.info}
                         </ProductInfo>
                         {!product.hideButton && 
                             <Button href={product.link}>{product.buttonText}</Button>    
-                        }
+                        } 
                     </ProductInfoContainer>
-                    <ProductImgContainer>
-                        <ProductImg src={product.img} />
-                    </ProductImgContainer>  
                 </Wrapper>
             </Container>
             )

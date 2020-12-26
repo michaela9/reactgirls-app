@@ -1,14 +1,27 @@
 import styled from 'styled-components';
-import { colors } from '../../variables.js';
+import { colors, sizes, breakpoints } from '../../variables.js';
 import { Paragraph } from '../reusable/styled';
 
 export const ProductInfoContainer = styled.div`
     display: flex;
-    flex-direction:column;
-    max-width: 50%;
-    margin-right: 50px;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+
+    
+    @media only screen and (max-width: ${breakpoints.smartphone}) {
+        padding: 40px;
+
+    }
+    @media only screen and (min-width: ${breakpoints.smartphone}) and (max-width: ${breakpoints.tablet}) {
+        padding: 40px; 
+    }
+    @media only screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
+        max-width: 50%;
+    }
+    @media only screen and (min-width: ${breakpoints.desktop})  {
+        max-width: 50%;
+    }
 `;
 
 export const ProductInfo = styled(Paragraph)`
@@ -17,6 +30,8 @@ export const ProductInfo = styled(Paragraph)`
     margin-bottom: 32px;
     margin-top: 32px;
     color: ${colors.grey};
+    text-align: center;
+    max-width: 380px;
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
@@ -27,15 +42,19 @@ export const ProductInfo = styled(Paragraph)`
 `;
 
 export const ProductImg = styled.img`
-    width: auto;
-    height: 380px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `;
 
 export const ProductImgContainer = styled.div`
-    width: 380px;
-    height: 380px;
-    border-radius: 240px;
-    overflow: hidden;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-top: 40px;
+   margin-bottom: 20px;
+   width: 380px;
+   height: 380px;
 `;
 
 

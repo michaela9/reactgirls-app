@@ -65,7 +65,7 @@ export const NavLinks = styled(NavLink)`
 export const Social = styled.div`
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     top: 110px;
     right: 70px;
