@@ -7,8 +7,6 @@ import {
     ProductImgContainer,
  } from './Product.elements';
 
- import About from '../../pages/About/About';
-
 import { 
     Container, 
     Wrapper,  
@@ -19,11 +17,10 @@ import {
 } from '../../components/reusable/styled';
 import productArr from './productArr';
 
-
 function Product() {
     return (
         <>
-            <Container lightblue >
+            <Container lightBlue >
                 <WrapperColumn>
                     <TitleCenter>
                         Co je ReactGirls Prague?
@@ -31,8 +28,8 @@ function Product() {
                 </WrapperColumn>
             </Container>
             {productArr.map((product) => (
-            <Container lightblue={product.lightblue} >
-                <Wrapper imgstart={product.imgstart}> 
+            <Container key={product.title} lightBlue={product.lightBlue} id={product.id} >
+                <Wrapper imgStart={product.imgStart}> 
                     <ProductInfoContainer>
                         <SubTitleLeft>
                             {product.title}
@@ -40,8 +37,8 @@ function Product() {
                         <ProductInfo>
                         {product.info}
                         </ProductInfo>
-                        {!product.hidebutton && 
-                            <Button to={product.link}>{product.buttontext}</Button>    
+                        {!product.hideButton && 
+                            <Button href={product.link}>{product.buttonText}</Button>    
                         }
                     </ProductInfoContainer>
                     <ProductImgContainer>

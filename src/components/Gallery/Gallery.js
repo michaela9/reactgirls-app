@@ -6,13 +6,13 @@ import { Container, TitleCenter, WrapperColumn } from '../reusable/styled';
 
 function Gallery() {
     return (
-        <Container lightblue>
+        <Container lightBlue>
             <WrapperColumn>
                 <TitleCenter>Fotogalerie</TitleCenter>
                 <GalleryContainer>
                 <CarouselGallery  itemsToShow={2} itemsToScroll={1} pagination={false}  >
                     {galleryArr.map((picture) => (
-                        <GalleryImg src={picture.url} />
+                        <GalleryImg key={picture.url} src={picture.url} />
                         )
                     )} 
                 </ CarouselGallery>

@@ -1,59 +1,70 @@
-import { findAllByDisplayValue } from "@testing-library/react";
+import React from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const productArr = [ 
     {
         title: "Komunita",
-        info: "ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Komunita nejen pro ženy, které se chtějí stát programátorkami za vedení profesionálních lektorů a programátorů. Zapojte se do naší komunity na Slacku a na sociálních sítích.",
-        hidebutton: false,
-        buttontext: "Zjistit více",
-        img: "images/community/photo_19.jpg",
-        imgstart: false,
-        lightblue: false,
-        link: '/about'
+        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na <a href="https://app.slack.com/client/TL2R6BTPA/CL5002YES" target="blank">Slacku</a> a ostatních sociálních sítích.</>,
+        hideButton: false,
+        buttonText: "Zjistit více",
+        img: "images/products/community.jpg",
+        imgStart: false,
+        lightBlue: false,
+        link: '/about',
+        id: "community"
     },
     {
         title: "Workshopy",
-        info: "Pořádáme pravidelné workshopy programování v Reactu. Naučíme vás základy programování v HTML, CSS, JavaScriptu a Reactu. Další workshop momentálně připravujeme, aby vám neuniklo jeho otevření sledujte Newsletter",
-        hidebutton: true,
-        img: "images/community/photo_51.jpg",
-        imgstart: true,
-        lightblue: true
+        info: 
+            <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technická témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš 
+                <Link to="#newsletterHero" > Newsletter
+                </Link>.
+            </>,
+        hideButton: true,
+        img: "images/products/workshop.jpg",
+        imgStart: true,
+        lightBlue: true,
+        id: "workshop"
     },
     {
         title: "Webináře",
-        info: "Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem Youtube. O dalších se dozvíte v Newsletteru a na sociálních sítích.",
-        hidebutton: true,
-        img: "images/community/photo_12.jpg",
-        imgstart: false,
-        lightblue: false
+        info: <>Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <a href="https://www.youtube.com/channel/UCO8WGBzS6J00zlXroeTf90g" target="blank">Youtube</a>. O dalších se dozvíte v <a>Newsletteru</a> a na ostatních sociálních sítích.</>,
+        hideButton: true,
+        img: "images/products/webinar.jpg",
+        imgStart: false,
+        lightBlue: false,
+        id: "webinar"
     },
     {
         title: "Mentoring",
-        info: "Spustili jsme pro vás mentoringový program pro dosažení vysněných cílů. Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
-        hidebutton: false,
-        buttontext: "Zjistit více",
-        img: "images/community/photo_8.jpg",
-        imgstart: true,
-        lightblue: true,
-        link: '/mentoring'
+        info: "Vyzkoušejte si náš jedinečný mentoringový program. Mentor vede mentee během několikatýdenního školení k tvorbě komplexního webového projektu a předává ji užitečné know-how. Na konci je mentee připravena sama zvládnout tvorbu dalších projektů v Reactu.",
+        hideButton: false,
+        buttonText: "Zjistit více",
+        img: "images/products/mentoring.jpg",
+        imgStart: true,
+        lightBlue: true,
+        link: '/mentoring',
+        id: "mentoring"
     },
     {
         title: "Akademie",
-        info: "Připravujeme pro vás akademii, kde se budeme intenzivně věnovat frontednovému programování HTML, CSS, JavaScript a React.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
-        hidebutton: false,
-        buttontext: "Zjistit více",
-        img: "images/community/photo_5.jpg",
-        imgstart: false,
-        lightblue: false,
-        link: '/academy'
+        info: "ReactGirls Akademie je program určený pro začátečnice, které se chtějí seznámit s komplexním frontendovým programováním. Od kódování webové aplikace v HTML a CSS, přes seznámení se s principy programování v JavaScriptu, až po první krůčky s Reactem.",
+        hideButton: false,
+        buttonText: "Zjistit více",
+        img: "images/products/academy.jpg",
+        imgStart: false,
+        lightBlue: false,
+        link: '/academy',
+        id: "academy"
     },
     {
         title: "Meetupy",
-        info: "Pořádáme pro vás pravidlené Reactgirls meetupy s názvem Reactgirls Beer se zajímavými osobnostmi.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.  Caramels bonbon sweet roll ice cream.",
-        hidebutton: true,
-        img: "images/community/photo_14.jpg",
-        imgstart: true,
-        lightblue: true
+        info: "Pořádáme pro Vás pravidelné ReactGirls meetupy pod názvem ReactGirls Beer. Na meetupech se kromě seznámení se s komunitou můžete také těšit na zajímavé přednášky jak ze světa technologií, tak i na mnoho dalších aktuálních témat.",
+        hideButton: true,
+        img: "images/products/meetup.jpg",
+        imgStart: true,
+        lightBlue: true,
+        id: "meetup"
     }
 ]
 

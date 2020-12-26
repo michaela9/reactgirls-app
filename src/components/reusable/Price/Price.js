@@ -2,33 +2,41 @@ import React from 'react';
 import { 
     Container, 
     WrapperColumn, 
-    TitleCenter
-} from '../reusable/styled';
+    TitleCenter,
+} from '../styled';
+
 import { 
     PriceContainer,
     PriceRow,
     PriceIcon,
     PriceText,
-    PriceIconMain
+    ButtonPrice,
+    PriceRectangle,
+    PriceArea
 } from './Price.elements';
 
 function Price({mainPriceTitle, data}) {
     return (
-        <Container lightblue>
+        <Container>
             <WrapperColumn>
                 <TitleCenter>{mainPriceTitle}</TitleCenter>
-                <PriceContainer>                  
-                    <PriceIconMain>xxx,-</PriceIconMain>
+                <PriceRectangle>
+                    <PriceArea>
+                        590 CZK
+                    </PriceArea>
+                    <PriceContainer>                  
                     {data.map((item) => {
                         return(
-                        <PriceRow data={data}>
+                        <PriceRow key={item.text} data={data}>
                             <PriceIcon src="/images/icons/done.svg" />
                             <PriceText>{item.text}</PriceText>
                         </PriceRow>
                         )
                     })
                     } 
-                </PriceContainer>
+                    <ButtonPrice >MÁM ZÁJEM</ButtonPrice>
+                </PriceContainer> 
+                </PriceRectangle>  
             </WrapperColumn>
         </Container>
     )

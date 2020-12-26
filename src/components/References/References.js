@@ -1,30 +1,18 @@
 import React from 'react';
-import { TitleCenter,Container, Wrapper } from '../reusable/styled';
+import { TitleCenter,Container } from '../reusable/styled';
 import { 
-    ReferenceArrow,
     SpeechCont,
-    SpeechImg,
     Speech,
     SpeechIcon,
     SpeechText,
     ReferenceContainer,
-    ReferenceContent,
     SpeechName,
-    Item1,
-    ItemCont
 } from './References.elements';
-
-const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
 
 function References () {
     return (
         <>
-            <Container lightblue>
+            <Container lightBlue>
                     <ReferenceContainer>
                         <TitleCenter>Co o nás říkají naši studenti?</TitleCenter>
                         <SpeechCont>               

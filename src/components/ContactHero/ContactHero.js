@@ -3,19 +3,16 @@ import { Container, Wrapper } from '../reusable/styled';
 import { 
     ContactHeroTitle,
     ContactInfo,
-    ContactText,
     ContactHeroContainer,
     SlackIcon,
-    ContactTitleContainer
 } from './ContactHero.elements';
 
 import { Link } from 'react-router-dom';
-import  ButtonInputGroup from '../../components/reusable/ButtonInputGroup/ButtonInputGroup';
-
+import Newsletter from '../reusable/Newsletter/Newsletter';
 
 function ContactHero() {
     return (
-        <Container lightblue>
+        <Container lightBlue>
             <Wrapper>
                 <ContactHeroContainer>
                     <ContactHeroTitle>Jak nás můžeš kontaktovat?</ContactHeroTitle>
@@ -23,10 +20,10 @@ function ContactHero() {
                         Napiš nám přes Slack, ostatní sociální sítě nebo nás kontaktuj přímo.
                         Můžeš také odebírat náš newsletter a my tě budeme o všem informovat.
                     </ContactInfo>
-                    <Link to="https://www.slack.com/">
+                    <a href="https://app.slack.com/client/TL2R6BTPA/CL5002YES" target="blank">
                         <SlackIcon src="/images/icons/slack-color.svg" />
-                    </Link>
-                    <ButtonInputGroup/>
+                    </a>
+                    <Newsletter />
                 </ContactHeroContainer>
             </Wrapper>
         </Container>

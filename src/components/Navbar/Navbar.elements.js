@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { sizes, colors } from '../../variables';
+import { NavLink } from 'react-router-dom';
+import { colors } from '../../variables';
 
 export const Nav = styled.div`
     width: 100%;
@@ -8,7 +8,6 @@ export const Nav = styled.div`
     z-index: 1000;
     position: sticky;
     top: 0;
-
 `;
 
 export const NavWrapper = styled.div`
@@ -16,7 +15,7 @@ export const NavWrapper = styled.div`
     width: 1280px;
     display: flex;
     margin: 0 auto;
-    padding: 10px 80px;
+    padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
 `;
@@ -27,7 +26,11 @@ export const NavLogo = styled.img`
     border-radius:80px;
     position: relative;
     top: 80px;
-    transition: all 2s ease-in-out;
+
+    transition: all 1.5s ease-in-out;
+    top: 80px;
+    cursor: pointer;
+
     &.active {
         width: 50px;
         height: 50px;
@@ -49,18 +52,14 @@ export const NavItem = styled.li`
     border-bottom: 2px solid transparent;
     font-weight: 400;
     color:${colors.grey};
-
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(NavLink)`
     display: flex;
     text-decoration: none;
 
 &:hover {
     color: ${colors.mainBlue} ;
-}
-&:target {
-    text-decoration: underline ;
 }
 `;
 

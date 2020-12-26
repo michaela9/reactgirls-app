@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { 
     NavLogo,
     NavMenu,
@@ -10,53 +11,49 @@ import {
     SocialIcon
     } from './Navbar.elements';
 
-    import { Container } from '../../components/reusable/styled';
-    import { Link } from 'react-router-dom';
-    import socialArr from './socialArr';
-
+import { Container } from '../../components/reusable/styled';
+import socialArr from './socialArr';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [navLogo, setNavLogo] = useState(false);
-
     const handleClick = () => setClick(!click);
+    
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     const changeLogoSize = () => {
-        if(window.scrollY >= 80) {
-            setNavLogo(true)
-        }else{
-            setNavLogo(false)
-        }
-    };
-    window.addEventListener('scroll', changeLogoSize);
+        setNavLogo(true);
+    }
+    window.addEventListener("scroll", changeLogoSize);
     return (
         <Nav>
             <Container>
-                <NavWrapper>
-                    <Link to='/'>
-                    <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                    </Link>
+                <NavWrapper>  
+                        <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                    
                     <NavMenu onClick = {handleClick}>
                         <NavItem>
-                            <NavLinks to='/'>Úvod</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/about'>O nás</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD'  }} to='/about'>O nás</NavLinks>
                         </NavItem>                        
                         <NavItem>
-                            <NavLinks to='/mentoring'>Mentoring</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/mentoring'>Mentoring</NavLinks>
                         </NavItem>                        
                         <NavItem>
-                            <NavLinks to='/academy'>Akademie</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/academy'>Akademie</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/contact'>Kontakt</NavLinks>
+                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/contact'>Kontakt</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavWrapper>
             </Container>
             <Social>
                 {socialArr.map((social) => (
-                    <a href={social.link}>
+                    <a key={social.link} href={social.link} target="blank">
                         <SocialIcon src={social.icon} />
                     </a>
                     )

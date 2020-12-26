@@ -3,11 +3,11 @@ import React from 'react';
 import {  
   Sponsor, 
   Product, 
-  Newsletter,
   Lector,
   References
 } from '../../components';
 import  HeroHome  from '../../components/HeroHome/HeroHome';
+import NewsletterSection from '../../components/reusable/Newsletter/NewsletterSection';
 
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
       <HeroHome />
       <Sponsor />
       <Product />
-      <Newsletter />
+      <NewsletterSection />
       <Lector />
       <References />
     </>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables.js';
+import { colors } from '../../variables.js';
 import { Paragraph } from '../reusable/styled';
-
 
 export const ProductInfoContainer = styled.div`
     display: flex;
@@ -10,9 +9,7 @@ export const ProductInfoContainer = styled.div`
     margin-right: 50px;
     justify-content: center;
     align-items: flex-start;
-
 `;
-
 
 export const ProductInfo = styled(Paragraph)`
     font-weight: 300;
@@ -20,6 +17,13 @@ export const ProductInfo = styled(Paragraph)`
     margin-bottom: 32px;
     margin-top: 32px;
     color: ${colors.grey};
+    a{
+        color: ${colors.mainBlue};
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
 `;
 
 export const ProductImg = styled.img`

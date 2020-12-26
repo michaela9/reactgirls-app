@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import  { sizes, colors } from '../../../variables';
+import  { colors } from '../../../variables';
 import { Paragraph } from '../styled';
-
-
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -12,7 +10,6 @@ export const TitleContainer = styled.div`
     justify-content: space-between;
     align-items: flex-start;
  `;
-
 
  export const ImgContainer = styled.div`
     width: 500px;
@@ -24,7 +21,6 @@ export const TitleContainer = styled.div`
 export const HeroImg = styled.img`
     height: 500px;
     width: auto;
-
  `;
 
 

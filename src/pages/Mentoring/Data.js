@@ -3,11 +3,11 @@ export const heroObjTwo = {
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_48.jpg",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform"
 };
 
 export const infoObjOne = {
     text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který tě bude mentorovat a rozvíjet tvé technické dovednosti",
-
 }
 
 export const mentoringCardArr = [
@@ -90,16 +90,16 @@ export const mentPriceArr = [
 
 export const mentQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?.",
+        question: "Pro koho je kurz určen?",
         answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
     },
     {
         question: "Jak se můžu na kurz přihlásit?",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: <>Stačí kliknout <a>ZDE </a>a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: "Akademie bude probíhat prezenčně, materiály budou k dispozici na Slacku a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
+        answer: <>Akademie bude probíhat prezenčně, materiály budou k dispozici na <a>Slacku</a> a <a>Google Disku</a>. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
     },
     {
         question: "Co si z kurzu odnesu?",
@@ -111,6 +111,6 @@ export const mentQuestionsArr = [
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
+        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
     }, 
 ];

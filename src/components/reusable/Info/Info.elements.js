@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { sizes, colors } from '../../../variables';
 import { Heading3 } from '../styled';
 
-
 export const InfoContent = styled(Heading3)`
     font-size: ${sizes.sizeL} ;
     margin: 0 auto;
@@ -12,6 +11,4 @@ export const InfoContent = styled(Heading3)`
     padding: 30px 0;
     font-weight: 300;
     color: ${colors.grey};
-
-
 `;

@@ -1,6 +1,5 @@
 import styled, {css} from "styled-components";
 import  { sizes, colors } from '../../variables.js';
-import { Link } from 'react-router-dom'
 
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
@@ -27,13 +26,11 @@ export const ParagraphS = styled.p`
     line-height: 1.7;
 `;
 
-
 export const Container = styled.div`
     z-index:1;
     width: 100%;
-    background-color: ${({lightblue}) => (lightblue ? `#EBF6F8`  : `#FFFBFA` )};
+    background-color: ${({lightBlue}) => (lightBlue ? `#EBF6F8`  : `#FFFBFA` )};
 `;
-
 
 export const Wrapper = styled.div`
     width: 1280px;
@@ -42,7 +39,7 @@ export const Wrapper = styled.div`
     padding: 80px 50px;
     align-items: center;
     justify-content: space-between;
-    flex-direction: ${({imgstart}) => (imgstart ? 'row-reverse' : 'row')};
+    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
 export const WrapperColumn = styled.div`
@@ -54,34 +51,29 @@ export const WrapperColumn = styled.div`
     align-items: center;
 `;
 
-
 export const TitleCenter = styled(Heading1)`
     text-align: center;
-    font-weight: 900;
+    font-weight: 500;
 `; 
 
 export const TitleLeft = styled(Heading1)`
     text-align: left;
     margin-bottom: 25px;
-    font-weight: 900;
+    font-weight: 500;
 `;
 
 export const SubTitleLeft = styled(Heading2)`
     text-align: left;
-    font-weight: 900;
+    font-weight: 500;
 `;
-
 
 export const Name = styled(Heading3)`
     text-align: center;
-    font-weight: 900;
+    font-weight: 500;
 `;
 
-export default styled;
-
-export const Button = styled(Link)`
+export const Button = styled.a`
     background-color: ${colors.mainBlue};
-
     border: none;
     white-space: nowrap;
     outline: none;
@@ -95,7 +87,7 @@ export const Button = styled(Link)`
     //box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
-    ${({hidebutton}) => hidebutton && css`
+    ${({hideButton}) => hideButton && css`
         display: none;
     `};
     display: flex;
@@ -105,8 +97,40 @@ export const Button = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background-color: #0099AE;
-        
-        
+        background-color: #0099AE;  
     }
 `;
+
+export const InputContainer = styled.div`
+    background-color: ${colors.white};
+    border: 1px solid ${colors.veryLightGrey} ; 
+    padding: 0 32px;
+    height: 50px;
+    border-radius: 25px;
+    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    `;
+
+export const CustomInput = styled.input`
+    color: ${colors.lightGrey};
+    font-weight: 300;
+    outline: none;
+    font-size:${sizes.sizeM};
+    transition: all 0.2s ease;
+    z-index: 500;
+    border-color: transparent;
+    background: none;
+    cursor: text;
+  }
+`;
+
+export const ButtonInputCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+`;
+
+export default styled;

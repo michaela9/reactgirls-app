@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { 
     TitleHomeContainer,
@@ -7,30 +8,60 @@ import {
     SubTitle,
     CarouselHero,
     TitleLeftHome,
-    AnimationText
+    AnimationText,
+    CarouselText,
+    FirstTitleRow,
+    TitleCont
  } from './HeroHome.elements';
 
-import styled from '../reusable/styled'
 import { Container, Wrapper } from '../reusable/styled';
-import  ButtonInputGroup from '../reusable/ButtonInputGroup/ButtonInputGroup';
 import {heroHomeArr} from './heroHomeArr';
+
+import { consts } from 'react-elastic-carousel';
+import Newsletter from '../reusable/Newsletter/Newsletter';
 
 
 
 function HeroHome( {img}) {
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     return (
-            <Container lightblue>
+            <Container lightBlue>
                 <Wrapper>
                     <TitleHomeContainer>
-                        <TitleLeftHome >Zapoj se do <AnimationText>Mentoringu</AnimationText> a nauč se programovat v Reactu!</TitleLeftHome>
-                        <SubTitle >"#ReactGirlsPrague"</SubTitle>
-                        <ButtonInputGroup />
+                        <TitleCont>
+                            <FirstTitleRow>
+                                <TitleLeftHome >Zapoj se do </TitleLeftHome>
+                                <CarouselText showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={false} autoPlaySpeed={3000} verticalMode={true} itemPosition={consts.START} itemPadding={[0, 0]} >
+                                    <AnimationText>Komunity</AnimationText>
+                                    <AnimationText>Workshopu</AnimationText>
+                                    <AnimationText>Webináře</AnimationText>
+                                    <AnimationText>Mentoringu</AnimationText>
+                                    <AnimationText>Akademie</AnimationText>
+                                    <AnimationText>Meetupu</AnimationText>
+                                </CarouselText>
+                            </FirstTitleRow>
+                            <TitleLeftHome >a nauč se programovat</TitleLeftHome>
+                            <TitleLeftHome >v Reactu!</TitleLeftHome>
+                        </TitleCont>
+                        <SubTitle >#ReactGirlsPrague</SubTitle>
+                        <Newsletter id="newsletterHero" />
                     </TitleHomeContainer>
-                    <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={6000}>
+                    <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
                     {heroHomeArr.map((item) => { 
                      return (
-                        <ImgHomeContainer>
+                        <ImgHomeContainer key={item.id} >
+                        <Link to={item.id}
+                         smooth={true}
+                         duration={item.duration}
+                         spy={true}
+                         exact='true'
+                         offset={-80}
+ 
+                         >
                             <HeroHomeImg src={item.img} />
+                        </Link>
                         </ImgHomeContainer>
                         )
                     })}
