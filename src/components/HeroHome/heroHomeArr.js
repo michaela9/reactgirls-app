@@ -31,3 +31,30 @@ export const heroHomeArr = [
     }
 ]
 
+export const animationText = [
+{
+    text: "Komunity",
+    id: "community-01"
+},
+{
+    text: "Workshopu",
+    id: "workshop-01"
+},
+{
+    text: "Webináře",
+    id: "webinar-01"
+},
+{
+    text: "Mentoringu",
+    id: "mentoring-01"
+},
+{
+    text: "Akademie",
+    id: "academy-01"
+},
+{
+    text: "Meetupu",
+    id: "meetup-01"
+},
+]
+

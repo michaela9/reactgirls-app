@@ -15,7 +15,7 @@ import {
  } from './HeroHome.elements';
 
 import { Container, Wrapper } from '../reusable/styled';
-import {heroHomeArr} from './heroHomeArr';
+import {animationText, heroHomeArr} from './heroHomeArr';
 
 import { consts } from 'react-elastic-carousel';
 import Newsletter from '../reusable/Newsletter/Newsletter';
@@ -34,12 +34,12 @@ function HeroHome( {img}) {
                             <FirstTitleRow>
                                 <TitleLeftHome >Zapoj se do </TitleLeftHome>
                                 <CarouselText showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={false} autoPlaySpeed={3000} verticalMode={true} itemPosition={consts.START} itemPadding={[0, 0]} >
-                                    <AnimationText>Komunity</AnimationText>
-                                    <AnimationText>Workshopu</AnimationText>
-                                    <AnimationText>Webináře</AnimationText>
-                                    <AnimationText>Mentoringu</AnimationText>
-                                    <AnimationText>Akademie</AnimationText>
-                                    <AnimationText>Meetupu</AnimationText>
+                                {animationText.map((text) => {
+                                    return (
+                                        <AnimationText id={text.id}>{text.text}</AnimationText>
+                                    )
+                                })}
+                                    
                                 </CarouselText>
                             </FirstTitleRow>
                             <TitleLeftHome >a nauč se programovat</TitleLeftHome>
