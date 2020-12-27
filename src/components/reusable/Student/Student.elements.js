@@ -1,20 +1,42 @@
 import styled from 'styled-components';
 import { sizes } from '../../../variables';
 
+export const StudentWrapper = styled.div`
+padding-top: 80px;
+padding-bottom: 80px;
+
+`;
 
 export const StudentContainer = styled.div`
     display: flex;
-    width: 1000px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 90%;
     justify-content: space-between;
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
+    
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 40px;
+        align-items: center;
+        
+    }
 `;
 
 export const StudentCard = styled.div`
-    width: 250px;
-    height: 350px;
+    width: 30%;
+    max-width: 250px;
+    //height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        width: 75%;
+        
+    }
+
 `;
 
 export const StudentHeading = styled.h3`

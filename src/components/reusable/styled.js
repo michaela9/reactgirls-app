@@ -1,6 +1,9 @@
 import styled, {css} from "styled-components";
 import  { sizes, colors, breakpoints } from '../../variables.js';
 
+
+/*Typography */
+
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
     line-height: 1.4;
@@ -26,6 +29,8 @@ export const ParagraphS = styled.p`
     line-height: 1.7;
 `;
 
+/*Layout */
+
 export const Container = styled.div`
     z-index:1;
     width: 100%;
@@ -33,51 +38,19 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center;
+    z-index:1;
+    width: 80%;
+    max-width: 1280px; 
     border: 2px solid blue;
+    margin: 0 auto;
 
-
-    @media only screen and (max-width: ${breakpoints.smartphone}) {
-        
-    }
-    @media only screen and (min-width: ${breakpoints.smartphone}) and (max-width: ${breakpoints.tablet}) {
-        
-    }
-    @media only screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
-        width: 1280px;
-        padding: 80px 50px;   
-    }
-    @media only screen and (min-width: ${breakpoints.desktop})  {
-        width: 1280px;
-        padding: 80px 50px;
-        flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};   
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 85%;
     }
 `;
 
 export const WrapperColumn = styled.div`
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-    @media only screen and (max-width: ${breakpoints.smartphone}) {
-        
-    }
-    @media only screen and (min-width: ${breakpoints.smartphone}) and (max-width: ${breakpoints.tablet}) {
-        
-    }
-    @media only screen and (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop}) {
-        width: 1280px;
-        padding: 80px 50px;   
-    }
-    @media only screen and (min-width: ${breakpoints.desktop})  {
-        width: 1280px;
-        padding: 80px 50px;   
-    }
+    
 `;
 
 export const TitleCenter = styled(Heading1)`

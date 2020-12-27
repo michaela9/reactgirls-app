@@ -52,6 +52,7 @@ export const NewsletterButton = styled.input`
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    max-width: 300px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -66,7 +67,7 @@ export const InputContainer = styled.div`
     height: 50px;
     border-radius: 25px;
     //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
-    width: 300px;
+    max-width: 300px;
     display: flex;
     align-items: center;
     `;

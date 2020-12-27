@@ -7,6 +7,7 @@ export const ReferenceContainer = styled.div`
     flex-direction: column;
     width: 100%;
     padding: 80px;
+
 `;
 
 export const Speech = styled.div`
@@ -32,6 +33,11 @@ export const SpeechCont = styled.div`
     flex-direction: column;
     width: 45%;
     margin: 80px auto 0 auto;
+    justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+        width: 80%; 
+    }
 `;
 
 export const SpeechName = styled(ParagraphS)`
