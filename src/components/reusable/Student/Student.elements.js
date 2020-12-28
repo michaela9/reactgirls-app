@@ -19,8 +19,7 @@ export const StudentContainer = styled.div`
     @media only screen and (max-width: 768px) {
         flex-direction: column;
         padding-bottom: 40px;
-        align-items: center;
-        
+        align-items: center;  
     }
 `;
 

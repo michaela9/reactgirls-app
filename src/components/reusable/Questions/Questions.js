@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-    WrapperColumn, 
+    Wrapper, 
     TitleCenter 
 } from '../../reusable/styled';
 import Accordion from './Accordion';
@@ -13,7 +13,7 @@ function Questions({ data }) {
     const [indexOpen, setIndexOpen] = useState(0);
     return (
         <ContainerQuestion lightBlue>
-            <WrapperColumn>
+            <Wrapper>
                 <TitleCenter>Q&A</TitleCenter>
                 <QuestionsContainer>
                     {data.map((item, index) => {
@@ -28,7 +28,7 @@ function Questions({ data }) {
                     )
                     })}
                 </QuestionsContainer>
-            </WrapperColumn>
+            </Wrapper>
         </ContainerQuestion>
     )
 }
