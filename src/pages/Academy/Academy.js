@@ -17,6 +17,7 @@ import { Program }  from '../../components';
     acadPriceArr,
     programArr1,
     acadQuestionsArr,
+    processArrAcad
     } from './Data';
 
 function Academy() {
@@ -27,8 +28,8 @@ function Academy() {
             <Program data={programArr1}/>
             <InfoCards data={academyCardArr} {...titleObjTwo} />
             <Student data={acadStudentArr} {...titleObjTwo} />
-            <Process />
-            <Price data={acadPriceArr} {...titleObjTwo} />
+            <Process data={processArrAcad} />
+            <Price data={acadPriceArr} />
             <Questions data={acadQuestionsArr} />
         </>
     )

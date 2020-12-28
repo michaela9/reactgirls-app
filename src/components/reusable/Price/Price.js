@@ -15,25 +15,22 @@ import {
     PriceArea
 } from './Price.elements';
 
-function Price({mainPriceTitle, data}) {
+function Price() {
     return (
         <Container>
             <WrapperColumn>
-                <TitleCenter>{mainPriceTitle}</TitleCenter>
+                <TitleCenter>co vše je v cene</TitleCenter>
                 <PriceRectangle>
                     <PriceArea>
                         590 CZK
                     </PriceArea>
                     <PriceContainer>                  
-                    {data.map((item) => {
-                        return(
-                        <PriceRow key={item.text} data={data}>
+
+                        <PriceRow >
                             <PriceIcon src="/images/icons/done.svg" />
-                            <PriceText>{item.text}</PriceText>
+                            <PriceText>blblb</PriceText>
                         </PriceRow>
-                        )
-                    })
-                    } 
+  
                     <ButtonPrice >MÁM ZÁJEM</ButtonPrice>
                 </PriceContainer> 
                 </PriceRectangle>  

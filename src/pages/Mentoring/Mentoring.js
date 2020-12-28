@@ -14,7 +14,8 @@ import React from 'react';
      mentoringCardArr, 
      titleObjOne, 
      mentPriceArr,
-     mentQuestionsArr, 
+     mentQuestionsArr,
+     processArrMent
 } from './Data';
 
 function Mentoring() {
@@ -24,8 +25,8 @@ function Mentoring() {
             <Info {...infoObjOne}/>
             <InfoCards data={mentoringCardArr} {...titleObjOne} />
             <Student data={mentStudentArr} {...titleObjOne} />
-            <Process />
-            <Price data={mentPriceArr} {...titleObjOne} />
+            <Process data={processArrMent} />
+            <Price data={mentPriceArr}  />
             <Questions data={mentQuestionsArr}/>
         </div>
     )

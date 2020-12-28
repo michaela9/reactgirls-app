@@ -14,27 +14,34 @@ import {
     ProcessHeading,
     ProcessInfo,
     ProcessGraphic,
-    ProcessLine
+    ProcessLine,
+    ProcessWrapper
 } from './Process.elements';
 
-function Process() {
+function Process({data}) {
     return (
         <Container lightBlue>
             <Wrapper>
-                <TitleCenter>Jak probíhá přihlašování?</TitleCenter>
-                    <ProcessContainer>
-                        <ProcessRow>
-                            <ProcessNumber>1</ProcessNumber>
-                            <ProcessGraphic>
-                                <ProcessPoint/>
-                                <ProcessLine/>
-                            </ProcessGraphic>
-                            <ProcessCont>
-                                <ProcessHeading>MÁM ZÁJEM</ProcessHeading>
-                                <ProcessInfo>Klikni na tlačítko Mám zájem</ProcessInfo>
-                            </ProcessCont>
-                        </ProcessRow>
-                    </ProcessContainer>
+                <ProcessWrapper>
+                    <TitleCenter>Jak probíhá přihlašování?</TitleCenter>
+                        <ProcessContainer>
+                        {data.map((process) => {
+                        return (
+                            <ProcessRow reversed={process.reversed}>
+                                <ProcessNumber reversed={process.reversed}>{process.number}</ProcessNumber>
+                                <ProcessGraphic>
+                                    <ProcessPoint/>
+                                    <ProcessLine/>
+                                </ProcessGraphic>
+                                <ProcessCont>
+                                    <ProcessHeading reversed={process.reversed}>{process.heading}</ProcessHeading>
+                                    <ProcessInfo reversed={process.reversed}>{process.text}</ProcessInfo>
+                                </ProcessCont>
+                            </ProcessRow>
+                            )}
+                        )}
+                        </ProcessContainer>
+                    </ProcessWrapper>
             </Wrapper>
         </Container>
     )
