@@ -6,7 +6,7 @@ import { Program }  from '../../components';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
  import  Process from '../../components/reusable/Process/Process';
- import Price from '../../components/reusable/Process/Process';
+
 
  import { 
     acadStudentArr, 
@@ -14,7 +14,7 @@ import { Program }  from '../../components';
     heroObjThree, 
     infoObjTwo, 
     titleObjTwo, 
-    acadPriceArr,
+
     programArr1,
     acadQuestionsArr,
     processArrAcad
@@ -29,7 +29,6 @@ function Academy() {
             <InfoCards data={academyCardArr} {...titleObjTwo} />
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Process data={processArrAcad} />
-            <Price data={acadPriceArr} />
             <Questions data={acadQuestionsArr} />
         </>
     )

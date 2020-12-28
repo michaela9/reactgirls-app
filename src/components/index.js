@@ -12,7 +12,6 @@ export { default as References} from './References/References';
 export { default as Info} from './reusable/Info/Info';
 export { default as InfoCards} from './reusable/InfoCards/InfoCards';
 export { default as Student} from './reusable/Student/Student';
-export { default as Price} from './reusable/Price/Price';
 export { default as Questions} from './reusable/Questions/Questions';
 export { default as Program} from './Program/Program';
 export { default as AboutInfo} from './reusable/AboutInfo/AboutInfo';
