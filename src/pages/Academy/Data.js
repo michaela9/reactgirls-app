@@ -90,6 +90,11 @@ export const acadPriceArr = [
     }
 ];
 
+export const acadPrice = {
+    price: "470 CZK",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
+}
+
 export const programArr1 = [
     {
         date: "5.října 2020", 
@@ -160,7 +165,7 @@ export const processArrAcad = [
     {
         number: 2,
         heading: "VYPLŇ FORMULÁŘ",
-        text: "Po kliknutí na tlčátko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň přiložit odkaz na GitHub nebo jiné úložiště tvých kódů",
+        text: "Po kliknutí na tlačítko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň vyplnit motivaci, vybíráme i na základě té. K formuláři přilož odkaz na GitHub nebo jiné úložiště tvých kódů, pokud máš.",
         reversed: true
     },
     {

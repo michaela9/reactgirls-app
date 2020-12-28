@@ -14,7 +14,7 @@ export const NavWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid pink;
+    //border: 1px solid pink;
    // padding: 0.5em 0;
     height: 80px;
 `;
@@ -42,7 +42,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    border: 1px solid pink;
+    //border: 1px solid pink;
 `;
 
 export const NavItem = styled.li`

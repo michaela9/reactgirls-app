@@ -1,60 +1,66 @@
 export const heroHomeArr = [ 
     { 
         img: "/images/products/community.jpg",
-        id: "community",
-        duration: 800
+        id: "community01",
+        
     },
     { 
         img: "/images/products/workshop.jpg",
-        id: "workshop",
-        duration: 900
+        id: "workshop01",
+        
     },
     { 
         img: "/images/products/webinar.jpg",
-        id: "webinar",
-        duration: 1000
+        id: "webinar01",
+        
     },
     { 
         img: "/images/products/mentoring.jpg",
-        id: "mentoring",
-        duration: 1100
+        id: "mentoring01",
+        
     },
     { 
         img: "/images/products/academy.jpg",
-        id: "academy",
-        duration: 1200 
+        id: "academy01",
+        
     },
     { 
         img: "/images/products/meetup.jpg",
-        id: "meetup",
-        duration: 1300 
+        id: "meetup01",
+        
     }
 ]
 
 export const animationText = [
 {
     text: "Komunity",
-    id: "community-01"
+    id: "community",
+    duration: 800
 },
 {
     text: "Workshopu",
-    id: "workshop-01"
+    id: "workshop",
+    duration: 900
 },
 {
     text: "Webináře",
-    id: "webinar-01"
+    id: "webinar",
+    duration: 1000
 },
 {
     text: "Mentoringu",
-    id: "mentoring-01"
+    id: "mentoring",
+    duration: 1100
 },
 {
     text: "Akademie",
-    id: "academy-01"
+    id: "academy",
+    duration: 1200 
 },
 {
     text: "Meetupu",
-    id: "meetup-01"
+    id: "meetup",
+    duration: 1300 
 },
 ]
 

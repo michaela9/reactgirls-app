@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container } from '../reusable/styled';
-import { SubTitleAbout, ButtonAbout } from './AboutHero.elements';
-import { WrapperAbout, AboutText, AboutTitle } from '../reusable/AboutInfo/AboutInfo.elements';
+import { SubTitleAbout, ButtonAbout, WrapperAbout, AboutText, AboutTitle } from './AboutHero.elements';
 
-function AboutHero({title, text1, text2, lightBlue }) {
+
+function AboutHero({title, text1, text2 }) {
     return (
-        <Container lightBlue={lightBlue}>
+        <Container >
             <WrapperAbout>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>

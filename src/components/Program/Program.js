@@ -8,21 +8,19 @@ import {
     ProgramTableRowH,
     ProgramTableBody,
     ProgramData,
-    ProgramDataTopic
+    ProgramDataTopic,
+    ProgramWrapper
 } from './Program.elements';
 
-import { Container, Wrapper, WrapperColumn, TitleCenter } from '../reusable/styled';
+import { Container, Wrapper, TitleCenter } from '../reusable/styled';
 
 function Program({data}) {
     return (
         <>
-            <Container lightBlue>
-                <WrapperColumn>
-                    <TitleCenter>Program Akademie</TitleCenter>
-                </WrapperColumn>
-            </ Container>
-            <Container>
+            <Container >
                 <Wrapper>
+                    <ProgramWrapper>
+                    <TitleCenter>Program Akademie</TitleCenter>
                     <ProgramTable>
                         <ProgramTableHead>
                             <ProgramTableRowH>
@@ -46,6 +44,7 @@ function Program({data}) {
                             }
                         </ProgramTableBody>
                     </ProgramTable>
+                    </ProgramWrapper>
                 </Wrapper>
             </Container>
         </>

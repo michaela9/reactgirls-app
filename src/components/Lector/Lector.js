@@ -9,11 +9,12 @@ import {
     LectorLink,
     LectorImgContainer,
     IconIn,
-    CarouselLector
+    CarouselLector,
+    WrapperLector
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
- import { Container, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
+ import { Container, Wrapper, TitleCenter } from '../../components/reusable/styled';
   
 
 
@@ -26,9 +27,11 @@ function Lector() {
     return (
         <>
             <Container lightBlue>
-                <WrapperColumn>   
-                    <TitleCenter>Lektoři</TitleCenter>
-                </WrapperColumn>  
+                <Wrapper>
+                    <WrapperLector>
+                        <TitleCenter>Lektoři</TitleCenter>
+                    </WrapperLector>  
+                </Wrapper>  
             </Container>
             <Container  >
                 <CardsContainer>  

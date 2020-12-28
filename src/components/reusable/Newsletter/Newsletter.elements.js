@@ -3,11 +3,11 @@ import { colors, sizes } from '../../../variables';
 import { Paragraph, TitleCenter } from '../styled';
 
 export const NewsletterContainer = styled.div `
+    margin: 80px auto 80px auto;  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
 `;
 
 export const ParagraphCenter = styled(Paragraph) `

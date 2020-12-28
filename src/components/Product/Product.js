@@ -42,9 +42,9 @@ function Product() {
                             <ProductButton href={product.link}>{product.buttonText}</ProductButton>    
                             }
                         </ProductInfoColumn>
-                            <ProductImgContainer imgStart={product.imgStart}>
-                                <ProductImg src={product.img} />
-                            </ProductImgContainer >
+                        <ProductImgContainer imgStart={product.imgStart}>
+                            <ProductImg src={product.img} />
+                        </ProductImgContainer >
                     </ProductInfoRow>
                 </Wrapper>
             </Container>

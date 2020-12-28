@@ -4,7 +4,7 @@ import { Heading3 } from '../styled';
 
 export const InfoContent = styled(Heading3)`
     font-size: ${sizes.sizeL} ;
-    margin: 0 auto;
+    margin: 50px auto 50px auto;
     width: 45%;
     text-align: center;
     line-height: 1.6;

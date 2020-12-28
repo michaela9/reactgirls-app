@@ -42,7 +42,15 @@ function HeroHome( {img}) {
                                         <CarouselText showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={false} autoPlaySpeed={3000} verticalMode={true} itemPosition={consts.START} itemPadding={[0, 0]} >
                                         {animationText.map((text) => {
                                         return (
-                                            <AnimationText id={text.id}>{text.text}</AnimationText>
+                                            <Link to={text.id}
+                                            smooth={true}
+                                            duration={text.duration}
+                                            spy={true}
+                                            exact='true'
+                                            offset={-80}
+                                            >
+                                                <AnimationText >{text.text}</AnimationText>
+                                            </Link>
                                         )
                                     })}   
                                         </CarouselText>
@@ -62,15 +70,7 @@ function HeroHome( {img}) {
                             {heroHomeArr.map((item) => { 
                             return (
                                 <ImgHomeContainer key={item.id} >
-                                    <Link to={item.id}
-                                        smooth={true}
-                                        duration={item.duration}
-                                        spy={true}
-                                        exact='true'
-                                        offset={-80}
-                                    >
                                         <HeroHomeImg src={item.img} />
-                                    </Link>
                                 </ImgHomeContainer>
                                 )
                             })}

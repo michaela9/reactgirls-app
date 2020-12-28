@@ -2,12 +2,19 @@ import styled from 'styled-components';
 import  { colors } from '../../../variables';
 import { Paragraph } from '../styled';
 
+export const HeroWrapper = styled.div`
+    display: flex;
+    padding: 80px 0 80px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ `;
+
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction:column;
     max-width: 45%;
     margin-right: 50px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
  `;
 

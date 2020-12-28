@@ -1,23 +1,25 @@
 import React from 'react';
-import { GalleryContainer, GalleryImg, CarouselGallery } from './Gallery.elements';
+import { GalleryContainer, GalleryImg, CarouselGallery, WrapperGallery } from './Gallery.elements';
 import { galleryArr } from './galleryArr';
-import { Container, TitleCenter, WrapperColumn } from '../reusable/styled';
+import { Container, TitleCenter, Wrapper } from '../reusable/styled';
 
 
 function Gallery() {
     return (
-        <Container lightBlue>
-            <WrapperColumn>
-                <TitleCenter>Fotogalerie</TitleCenter>
-                <GalleryContainer>
-                <CarouselGallery  itemsToShow={2} itemsToScroll={1} pagination={false}  >
-                    {galleryArr.map((picture) => (
-                        <GalleryImg key={picture.url} src={picture.url} />
-                        )
-                    )} 
-                </ CarouselGallery>
-                </GalleryContainer>
-            </WrapperColumn>
+        <Container >
+            <Wrapper>
+                <WrapperGallery>
+                    <TitleCenter>Fotogalerie</TitleCenter>
+                    <GalleryContainer>
+                        <CarouselGallery  itemsToShow={2} itemsToScroll={1} pagination={false}  >
+                            {galleryArr.map((picture) => (
+                                <GalleryImg key={picture.url} src={picture.url} />
+                                )
+                            )} 
+                        </ CarouselGallery>
+                    </GalleryContainer>
+                </WrapperGallery>
+            </Wrapper>
         </Container>
     )
 }

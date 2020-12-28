@@ -62,9 +62,11 @@ export const AnimationText = styled.div`
     color: ${colors.mainBlue};
     border: 1px solid red;
     font-size: ${sizes.sizeXXXL};
+    cursor: pointer;
         font-weight: 400;
     @media only screen and (max-width: ${breakpoints.tablet}) {
     font-size: ${sizes.sizeXXL};
+
 
  }
 `;
@@ -112,7 +114,6 @@ export const ImgHomeContainer = styled.div`
 `;
 
 export const HeroHomeImg = styled.img`
-    cursor: pointer;
     height: 100%;
     object-fit: cover;
     max-width: 100%;

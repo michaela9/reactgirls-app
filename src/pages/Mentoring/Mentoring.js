@@ -5,6 +5,7 @@ import React from 'react';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
  import  Process from '../../components/reusable/Process/Process';
+ import Price from '../../components/reusable/Price/Price';
 
  
  import { 
@@ -13,9 +14,10 @@ import React from 'react';
      infoObjOne, 
      mentoringCardArr, 
      titleObjOne, 
-
+     mentPriceArr,
      mentQuestionsArr,
-     processArrMent
+     processArrMent,
+     mentPrice
 } from './Data';
 
 function Mentoring() {
@@ -26,6 +28,7 @@ function Mentoring() {
             <InfoCards data={mentoringCardArr} {...titleObjOne} />
             <Student data={mentStudentArr} {...titleObjOne} />
             <Process data={processArrMent} />
+            <Price data={mentPriceArr} {...titleObjOne} {...mentPrice} />
             <Questions data={mentQuestionsArr}/>
         </div>
     )

@@ -17,6 +17,12 @@ export const QuestionsContainer = styled.div`
     }
 `;
 
+export const QuestionWrapper = styled.div`
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 750px;
+`;
+
 export const QuestionCont = styled.div`
     padding: 15px;
     display: flex;
@@ -38,9 +44,6 @@ export const QuestionsIcon = styled.img`
     top: 3px;
 `;
 
-export const ContainerQuestion = styled(Container)`
-    height:750px;
-`
 
 export const QuestionsText = styled.div`
     margin-left: 15px;

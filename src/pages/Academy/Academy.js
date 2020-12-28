@@ -6,7 +6,7 @@ import { Program }  from '../../components';
  import  InfoCards  from '../../components/reusable/InfoCards/InfoCards';
  import  Questions  from '../../components/reusable/Questions/Questions';
  import  Process from '../../components/reusable/Process/Process';
-
+ import Price from '../../components/reusable/Price/Price';
 
  import { 
     acadStudentArr, 
@@ -14,10 +14,11 @@ import { Program }  from '../../components';
     heroObjThree, 
     infoObjTwo, 
     titleObjTwo, 
-
+    acadPriceArr,
     programArr1,
     acadQuestionsArr,
-    processArrAcad
+    processArrAcad,
+    acadPrice
     } from './Data';
 
 function Academy() {
@@ -29,6 +30,7 @@ function Academy() {
             <InfoCards data={academyCardArr} {...titleObjTwo} />
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Process data={processArrAcad} />
+            <Price data={acadPriceArr} {...titleObjTwo} {...acadPrice} />
             <Questions data={acadQuestionsArr} />
         </>
     )

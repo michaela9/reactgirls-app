@@ -1,13 +1,13 @@
 export const aboutInfoObj1 = 
     {
         title: "O ReactGirls",
-        text1: "ReactGirls je komunita lidí, kteří pomáhají ženám v jejich cestě do IT světa.",
+        text1: "ReactGirls je komunita lidí, která pomáhá ženám v jejich cestě do IT světa. Snažíme se motivovat, dodávat odvahu a propojovat ty správné lidi.Naučíme programovat jak úplné začátečnice, tak i zkušenější programátorky.",
         lightBlue: true,
     }
     export const aboutInfoObj2 = 
     {
         title: "Co děláme",
-        text1: "Nabízíme akademie, workshopy, mentoring, webináře a meetupy, kde naučíme programovat jak úplné začátečnice, tak i zkušenější programátorky.",
+        text1: "Pomáháme ženám objevovat svět webdesignu. Kromě akademie, workshopů a mentoringového programu pořádáme webináře na nejrůznější témata. Společně pořádáme meetupy, kde se mohou účastnící s lektory lépe poznat. ",
         lightBlue: true,
     }
 

@@ -67,6 +67,11 @@ export const mentStudentArr = [
     }
 ];
 
+export const mentPrice = {
+    price: "2700 CZK",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform",
+}
+
 export const mentPriceArr = [
     {
         text: "kouč po dobu 3 měsíců",
@@ -79,9 +84,6 @@ export const mentPriceArr = [
     },
     {
         text: "možnost konzultace s dalšími kouči",
-    },
-    {
-        text: "vstup na celodenní workshop ReactGirls",  
     },
     {
         text: "možnost vyzkoušet si mock interview",  
@@ -125,7 +127,7 @@ export const processArrMent = [
     {
         number: 2,
         heading: "VYPLŇ FORMULÁŘ",
-        text: "Po kliknutí na tlčátko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň přiložit odkaz na GitHub nebo jiné úložiště tvých kódů",
+        text: "Po kliknutí na tlačítko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň vyplnit motivaci, vybíráme i na základě té. K formuláři přilož odkaz na GitHub nebo jiné úložiště tvých kódů, pokud máš.",
         reversed: true
     },
     {

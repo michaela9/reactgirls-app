@@ -11,7 +11,7 @@ export const ProductInfo = styled(Paragraph)`
     color: ${colors.grey};
     text-align: left;
     width: 90%;
-    border: 1px solid green;
+    //border: 1px solid green;
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
@@ -25,6 +25,10 @@ export const ProductInfo = styled(Paragraph)`
 
 export const ProductMainTitle = styled(TitleCenter)`
     padding: 80px;
+    width: 90%;
+    //text-align: left;
+    //border: 1px solid red;
+    margin: 0 auto;
 `;
 
 export const ProductInfoRow = styled.div`
@@ -35,24 +39,31 @@ export const ProductInfoRow = styled.div`
     flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
     padding-top: 80px;
     padding-bottom: 80px;
-    border: 1px solid green;
+    //border: 1px solid green;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+    
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const ProductInfoColumn = styled.div`
     flex: 1;
-    width: 50%;
+    max-width: 60%;
     flex-basis: 50%;
-    border: 1px solid green;
+    //border: 1px solid yellow;
     display: flex;
-    //justify-content: center;
-    align-items: center;
+    justify-content: center;
+    //align-items: center;
     flex-direction: column;
     
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        width: 100%;
+        max-width: 90%;
         flex-basis: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 `;
 

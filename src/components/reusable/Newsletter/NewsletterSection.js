@@ -15,7 +15,6 @@ function NewsletterSection() {
                     Klikni na Odebírat Newsletter a my se ti ozveme!
                 </ParagraphCenter>
                 <Newsletter />
-
             </NewsletterContainer>
             </Wrapper>
         </Container>
