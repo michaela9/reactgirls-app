@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
     z-index:1;
     width: 80%;
     max-width: 1280px; 
-    border: 2px solid blue;
+   // border: 2px solid blue;
     margin: 0 auto;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
