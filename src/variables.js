@@ -17,11 +17,11 @@ export const colors = {
     lightGrey: `#737373`,
     grey: `#616161`,
     darkGrey: `#323232`,
-    white: `#FFFBFA`,
+    white: `#FFFFFF`,
 };
 
 export const breakpoints = {
-    smartphone: `480px` ,
+    smartphone: `450px` ,
     tablet: `768px` ,
     desktop: `1280px`
 };

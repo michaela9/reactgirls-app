@@ -1,4 +1,11 @@
 import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+//import { Image } from "semantic-ui-react";
 
 import { 
     CardsContainer,
@@ -9,21 +16,58 @@ import {
     LectorLink,
     LectorImgContainer,
     IconIn,
-    CarouselLector,
-    WrapperLector
+    SliderLector,
+    WrapperLector,
+    LeftArrow,
+    RightArrow
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
  import { Container, Wrapper, TitleCenter } from '../../components/reusable/styled';
-  
 
+function Lector({ deviceType }) {  
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: (
+            <div>
+              <div className="next-slick-arrow"> <RightArrow src="/images/icons/right-arrow.svg" /> </div>
+            </div>
+          ),
+          prevArrow: (
+            <div>
+              <div className="prev-slick-arrow"> <LeftArrow src="/images/icons/left-arrow.svg" /> </div>
+            </div>
+          ),
+        responsive: [
+            {
+            breakpoint: 1500,
+            settings: {
+                arrows: true,
+                slidesToShow: 3
+                }
+            },
+            {
+            breakpoint: 1120,
+            settings: {
+                arrows: true,
+                slidesToShow: 2
+                }
+            },
+            {
+            breakpoint: 700,
+            settings: {
+                arrows: true,
+                slidesToShow: 1
+                }
+            }
+        ]
+        }       
+      
 
-function Lector() {
-    const breakPoints = [
-        { width: 200, itemsToShow: 1 },
-        { width: 600, itemsToShow: 2 },
-        { width: 800, itemsToShow: 3 },
-      ];
     return (
         <>
             <Container lightBlue>
@@ -35,22 +79,22 @@ function Lector() {
             </Container>
             <Container  >
                 <CardsContainer>  
-                <CarouselLector breakPoints={breakPoints}  itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
-                    {lectorArr.map((lector) => (
-                                <Card key={lector.lectorName} > 
-                                    <LectorImgContainer>
-                                        <LectorImg src={lector.lectorImg} />
-                                        <LectorLink href={lector.lectorLinkedIn} target="blank" ><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
-                                    </LectorImgContainer>
-                                    <LectorName>{lector.lectorName}</LectorName>
-                                    <LectorJob>{lector.lectorJob}</LectorJob>
-                                    <LectorJob>{lector.lectorCompany}</LectorJob>
-                                </Card>
-                                    )
-                                )}
-                         </CarouselLector>           
-                        </CardsContainer>         
-                
+                    <SliderLector  {...settings}>
+                        {lectorArr.map((lector) => (
+                            <Card key={lector.lectorName} > 
+                                <LectorImgContainer>
+                                    <LectorImg src={lector.lectorImg} />
+                                    <LectorLink href={lector.lectorLinkedIn} target="blank" ><IconIn src="/images/icons/linkedIn_white.svg" /></LectorLink>
+                                </LectorImgContainer>
+                                
+                                <LectorName>{lector.lectorName}</LectorName>
+                                <LectorJob>{lector.lectorJob}</LectorJob>
+                                <LectorJob>{lector.lectorCompany}</LectorJob>
+                            </Card>
+                            )
+                         )}
+                    </SliderLector>           
+                </CardsContainer>                        
             </Container>
         </>
     )

@@ -37,12 +37,15 @@ export const TextWrapperHome = styled.div`
 
 export const HeadingHome = styled.div`
  border: 1px solid red;
- margin: 0 auto;
+ //margin: 0 auto;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
 `;
 
 export const TitleLeftHome = styled(Heading1)`
  border: 1px solid red;
- display: inline-block;
+ //display: inline-block;
  font-weight: 400;
  
 @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -51,7 +54,9 @@ export const TitleLeftHome = styled(Heading1)`
 `;
 
 export const FirstHomeRow = styled.div`
-    display: flex
+    display: flex;
+    width: 100%;
+    justify-content: center;
 `;
 
 

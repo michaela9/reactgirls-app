@@ -41,13 +41,14 @@ export const ProcessGraphic = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
+    position: relative;
 `;
 
 export const ProcessLine = styled.div`
-   background-color: ${colors.mainBlue};
+   background-color: ${colors.lightGrey};
    width: 3px;
    //border: 1px solid red;
-   height: 200px;
+   height: 220px;
    position: relative;
    
 `;
@@ -59,7 +60,7 @@ export const ProcessPoint = styled.h1`
     background-color: ${colors.mainBlue};
     margin-right: 25px;
     margin-left: 25px;
-    position: relative;
+    position: absolute;
     top: 100px;
     //border: 1px solid red;
 

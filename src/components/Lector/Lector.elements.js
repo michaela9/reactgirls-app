@@ -1,31 +1,82 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
 import { Paragraph, Name } from '../reusable/styled';
-import Carousel from 'react-elastic-carousel';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const WrapperLector = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
 `;
+export const RightArrow = styled.img`
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 47px;
+    bottom: 20px;
+    border: 1px solid red;
 
-export const CarouselLector = styled(Carousel)`
-    .rec.rec-arrow-left, .rec.rec-arrow-right {
-        background-color: ${colors.white} ;
-        color: ${colors.grey} ;
-        box-shadow: none;
+`;
+export const LeftArrow = styled.img`
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 0px;
+    bottom: 20px;
+    border: 1px solid red;   
+`;
+
+
+export const SliderLector = styled(Slider)`
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+
+    .slider-wrapper {
+    margin: auto;
     }
-    .rec.rec-arrow:hover {
-    color: ${colors.mainBlue};
+    .slick-slide {
+    text-align: center;
+    position: relative;
     }
-    .rec.rec-arrow:disabled {
-    visibility: hidden;
-    }  
+    .slick-prev {
+    left: 25px !important;
+}
+        .slick-next:before {
+        content: "";
+        //color: red;
+        width: 50px;
+        //font-weight: bold;
+        //background-image: url("/images/icons/right-arrow.svg");
+        right: -50px;
+        }
+        .slick-prev:before{
+        content: "<";
+        background-color: red;
+        width: 50px;
+        left: 25px;
+        //background-image: url("/images/icons/left-arrow.svg");
+        }
+        .thumbnail-slider-wrap {
+        margin-top: 15px;
+        height: 85px;
+        }
+        .thumbnail-slider-wrap .slick-track .slick-slide {
+        text-align: center;
+        }
+        .thumbnail-slider-wrap .slick-track .slick-slide img {
+        width: 70%;
+        }
+
 `;
 
 export const CardsContainer = styled.div`
-    width: 1180px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 80px 20px;
+    //border: 1px solid blue;
 `;
 
 export const Card = styled.div`
@@ -49,6 +100,7 @@ export const LectorName = styled(Name)`
     text-align: center;
     font-weight: 900;
     margin-bottom: 10px;
+    //border: 1px solid red;
 `;
 
 export const LectorJob = styled.p`
@@ -56,8 +108,9 @@ export const LectorJob = styled.p`
     font-weight: 400;
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
-    margin-bottom: 7px;
+    margin: 5px auto;
     width: 85%;
+    //border: 1px solid red;
 `;
 
 export const LectorLink = styled.a`
@@ -75,20 +128,22 @@ export const LectorLink = styled.a`
 `;
 
 export const LectorImg = styled.img`
-    height: 160px;
+    height: 150px;
     border-radius: 80px;
-`;
+    //border: 1px solid green;
+    `;
 
 export const LectorImgContainer = styled.div`
-   // width: 150px;
-   // height: 150px;
+   width: 150px;
+   height: 150px;
+    margin: 20px auto 40px auto;
    position: relative;
-   margin-bottom: 40px;
 `
 
 export const IconIn = styled.img`
     width: 18px;
     height: 18px;
+    //border: 1px solid red;
 `;
 
 

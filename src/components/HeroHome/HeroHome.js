@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { 
     HeroHomeRow, 
@@ -27,7 +30,15 @@ import Newsletter from '../reusable/Newsletter/Newsletter';
 function HeroHome( {img}) {
     const toggleHome = () => {
         scroll.scrollToTop()
-    }
+    };
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+
+      };
     return (
             <Container lightBlue>
                 <Wrapper>
@@ -66,7 +77,7 @@ function HeroHome( {img}) {
                             </TextWrapperHome>
                         </HeroHomeColumn>
                         <HeroHomeColumn>
-                            <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={3000}>
+                        <Slider {...settings}>
                             {heroHomeArr.map((item) => { 
                             return (
                                 <ImgHomeContainer key={item.id} >
@@ -74,7 +85,7 @@ function HeroHome( {img}) {
                                 </ImgHomeContainer>
                                 )
                             })}
-                            </CarouselHero>
+                        </Slider>
                         </HeroHomeColumn>
                     </HeroHomeRow>                           
                 </Wrapper>
