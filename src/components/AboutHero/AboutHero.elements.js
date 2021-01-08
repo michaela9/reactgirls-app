@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import  { colors } from '../../variables.js';
-import { SubTitle } from '../reusable/Hero/Hero.elements';
-import { Button, Paragraph, TitleCenter } from '../reusable/styled';
+import { Button, Paragraph, TitleCenter, Subtitle } from '../reusable/styled';
 
-export const SubTitleAbout = styled(SubTitle)`
-    color: ${colors.darkGrey};
+export const SubTitleAbout = styled(Subtitle)`
     text-align: center;
  `;
  

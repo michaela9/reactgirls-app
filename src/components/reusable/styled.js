@@ -7,6 +7,11 @@ import  { sizes, colors, breakpoints } from '../../variables.js';
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
     line-height: 1.4;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeXL} ;
+        line-height: 1.5;
+    }
 `;
 
 export const Heading2 = styled.h2`
@@ -17,6 +22,7 @@ export const Heading2 = styled.h2`
 export const Heading3 = styled.h3`
     font-size: ${sizes.sizeM};
     line-height: 1.6;
+
 `;
 
 export const Paragraph = styled.p`
@@ -49,9 +55,6 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const WrapperColumn = styled.div`
-    
-`;
 
 export const TitleCenter = styled(Heading1)`
     text-align: center;
@@ -60,13 +63,16 @@ export const TitleCenter = styled(Heading1)`
 
 export const TitleLeft = styled(Heading1)`
     text-align: left;
-    margin-bottom: 25px;
     font-weight: 500;
 `;
 
-export const SubTitleLeft = styled(Heading2)`
-    text-align: center;
-    font-weight: 500;
+export const Subtitle = styled.h5`
+    font-weight: 300;
+    color: ${colors.grey};
+    font-size: ${sizes.sizeM};
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeS};
+    }
 `;
 
 export const Name = styled(Heading3)`

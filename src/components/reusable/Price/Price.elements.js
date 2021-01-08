@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../../variables';
+import { sizes, colors, breakpoints } from '../../../variables';
 import { TitleLeft, Button } from '../styled';
 
 export const PriceWrapper = styled.div`
@@ -19,6 +19,11 @@ export const PriceArea = styled.div`
     margin: 40px;
     padding-bottom: 40px;
     padding-top: 40px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        margin: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
 `;
 
 export const PriceRectangle = styled.div`
@@ -27,15 +32,27 @@ export const PriceRectangle = styled.div`
     background: ${colors.white};
     border-radius: 30px; 
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.10), 0px 0px 4px rgba(68, 68, 68, 0.1);
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        width: 320px;
+        margin: 20px auto 10px auto;
+    }
 `;
 
 export const PriceContainer = styled.div`
     padding: 10px 40px 50px 40px;
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 0 40px 30px 40px;
+    }
 `;
 
 export const PriceRow = styled.div`
     display: flex;
     margin-bottom: 28px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        margin-bottom: 20px;
+    }
 `;
 
 export const PriceIcon = styled.img`

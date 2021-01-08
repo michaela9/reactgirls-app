@@ -8,7 +8,10 @@ import {
     NavWrapper,
     Nav,
     Social,
-    SocialIcon
+    SocialIcon,
+    MobileIcon,
+    MobileIconMenu,
+    MobileIconClose
     } from './Navbar.elements';
 
 import { Container, Wrapper } from '../../components/reusable/styled';
@@ -17,6 +20,7 @@ import socialArr from './socialArr';
 function Navbar() {
     const [click, setClick] = useState(false);
     const [navLogo, setNavLogo] = useState(false);
+
     const handleClick = () => setClick(!click);
     
     const toggleHome = () => {
@@ -32,8 +36,11 @@ function Navbar() {
                 <Wrapper>
                     <NavWrapper> 
                         <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                        <MobileIcon onClick={handleClick}>
+                            {click ? <MobileIconClose src="/images/icons/close.svg"/> : <MobileIconMenu src="/images/icons/menu.svg"/> }
+                        </MobileIcon>
                     
-                        <NavMenu onClick = {handleClick}>
+                        <NavMenu onClick = {handleClick} click={click}>
                             <NavItem>
                                 <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
                             </NavItem>

@@ -1,10 +1,14 @@
 import styled from 'styled-components';
-import { sizes } from '../../../variables';
+import { sizes, breakpoints } from '../../../variables';
 
 export const StudentWrapper = styled.div`
-padding-top: 80px;
-padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        padding-top: 60px;
+        padding-bottom: 60px;      
+    }
 `;
 
 export const StudentContainer = styled.div`
@@ -16,10 +20,11 @@ export const StudentContainer = styled.div`
     margin: 80px auto 0 auto;
     
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
         flex-direction: column;
-        padding-bottom: 40px;
-        align-items: center;  
+        padding-bottom: 20px;
+        align-items: center;
+        margin: 20px auto 0 auto;  
     }
 `;
 

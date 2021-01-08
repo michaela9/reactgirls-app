@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { 
     TitleContainer,
     ImgContainer,
     HeroImg,
-    SubTitle,
-    HeroWrapper
+    SubtitleHero,
+    HeroWrapper,
+    HeroTitle
  } from './Hero.elements';
 
-import { Container, Wrapper, TitleLeft, Button } from '../styled';
+import { Container, Wrapper, Button } from '../styled';
 
 
 function Hero({
@@ -18,13 +19,19 @@ function Hero({
     img,
     form
 } ) {
+    const [logoPadding, setLogoPadding] = useState(false);
+
+    const changePadding = () => {
+        setLogoPadding(true);
+    }
+    window.addEventListener("scroll", changePadding);
     return (
             <Container lightBlue>
                 <Wrapper>
-                    <HeroWrapper>
+                    <HeroWrapper className={logoPadding ? 'active' : ''} >
                         <TitleContainer>
-                            <TitleLeft > {title} </TitleLeft>
-                            <SubTitle > {subtitle} </SubTitle>
+                            <HeroTitle > {title} </HeroTitle>
+                            <SubtitleHero > {subtitle} </SubtitleHero>
                             {/* <ButtonInputGroup /> */} 
                             <Button href={form} target="blank">MÁM ZÁJEM</Button> 
                         </TitleContainer>

@@ -4,7 +4,7 @@ export const sizes = {
     sizeS: `16px`,
     sizeM: `18px`,
     sizeL: `24px`,
-    sizeXL: `30px`,
+    sizeXL: `32px`,
     sizeXXL: `36px`,
     sizeXXXL: `42px`,
 };
@@ -22,6 +22,6 @@ export const colors = {
 
 export const breakpoints = {
     smartphone: `450px` ,
-    tablet: `768px` ,
+    tablet: `960px` ,
     desktop: `1280px`
 };

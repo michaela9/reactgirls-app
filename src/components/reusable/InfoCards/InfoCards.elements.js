@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../../variables';
+import { sizes, colors, breakpoints } from '../../../variables';
 
 export const InfoCont = styled.div`
     display: flex;
@@ -14,6 +14,7 @@ export const InfoCont = styled.div`
         flex-direction: column;
         padding-bottom: 40px;
         align-items: center;
+        margin: 60px auto 0 auto;
         
     }
 `;
@@ -21,6 +22,10 @@ export const InfoCont = styled.div`
 export const WrapperInfoSection = styled.div`
     padding-top: 80px;
     padding-bottom: 40px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
 `;
 
 
@@ -34,6 +39,13 @@ export const InfoCard = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+
+    
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 0 10px;
+        width: 280px;
+        height: 380px;
+    }
 `;
 
 export const InfoTitle = styled.div`

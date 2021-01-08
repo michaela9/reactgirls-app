@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, sizes } from '../../../variables';
+import { colors, sizes, breakpoints } from '../../../variables';
 import { ParagraphS, Container } from '../../reusable/styled';
 
 export const QuestionsContainer = styled.div`
@@ -10,10 +10,12 @@ export const QuestionsContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    //border: 1px  solid red;
 
 
-    @media only screen and (max-width: 768px) {
+    @media screen and (max-width: ${breakpoints.tablet}) {
         width: 90%;
+        padding: 10px;
     }
 `;
 
@@ -21,6 +23,12 @@ export const QuestionWrapper = styled.div`
     padding-top: 80px;
     padding-bottom: 40px;
     height: 750px;
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 `;
 
 export const QuestionCont = styled.div`
@@ -34,6 +42,8 @@ export const QuestionsContent = styled.div`
     display:flex;
     flex-direction: column;
     justify-content: center;
+
+
 
 `;
 
@@ -54,7 +64,8 @@ export const QuestionsText = styled.div`
     font-weight: 500;
     color: ${colors.mainBlue};
     padding: 4px;
-    @media only screen and (max-width: 768px) {
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
         text-align: left;
     }
 `;
