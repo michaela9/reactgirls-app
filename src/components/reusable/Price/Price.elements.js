@@ -34,7 +34,7 @@ export const PriceRectangle = styled.div`
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.10), 0px 0px 4px rgba(68, 68, 68, 0.1);
 
     @media screen and (max-width: ${breakpoints.tablet}) {
-        width: 320px;
+        width: 300px;
         margin: 20px auto 10px auto;
     }
 `;

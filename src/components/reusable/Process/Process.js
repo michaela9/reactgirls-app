@@ -15,7 +15,9 @@ import {
     ProcessInfo,
     ProcessGraphic,
     ProcessLine,
-    ProcessWrapper
+    ProcessWrapper,
+    ProcessContOpp,
+    ProcessLineMobile
 } from './Process.elements';
 
 function Process({data}) {
@@ -28,10 +30,11 @@ function Process({data}) {
                         {data.map((process) => {
                         return (
                             <ProcessRow reversed={process.reversed}>
-                                <ProcessNumber reversed={process.reversed}>{process.number}</ProcessNumber>
-                                <ProcessGraphic>
-                                    <ProcessPoint/>
-                                    <ProcessLine/>
+                            <ProcessContOpp/>                                
+                                <ProcessGraphic >
+                                    
+                                    <ProcessPoint>{process.number} </ProcessPoint>
+                                    <ProcessLine last={process.last} />
                                 </ProcessGraphic>
                                 <ProcessCont>
                                     <ProcessHeading reversed={process.reversed}>{process.heading}</ProcessHeading>

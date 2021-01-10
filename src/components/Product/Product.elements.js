@@ -42,9 +42,11 @@ export const ProductInfoRow = styled.div`
     //border: 1px solid green;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-    
         justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 `;
 
@@ -90,6 +92,13 @@ export const ProductImgContainer = styled.div`
    height: 380px;
    display: flex;
    justify-content: ${({imgStart}) => (imgStart ? 'flex-start' : 'flex-end')};
+
+   @media only screen and (max-width: ${breakpoints.tablet}) {
+    width: 320px;
+    height: 320px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    }
 `;
 
 

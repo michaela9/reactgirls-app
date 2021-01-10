@@ -33,7 +33,8 @@ function Program({data}) {
                         <ProgramTableBody>
                             {data.map((item) => {
                                 return(
-                                    <ProgramTableRow key={item.topic} data={data}>
+                                    <ProgramTableRow key={item.topic} data={data} 
+                                    border={item.border}>
                                         <ProgramData>{item.date}</ProgramData>
                                         <ProgramDataTopic>{item.topic}</ProgramDataTopic>
                                         <ProgramData>{item.time}</ProgramData>

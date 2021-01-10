@@ -121,25 +121,25 @@ export const processArrMent = [
     {
         number: 1,
         heading: "MÁM ZÁJEM",
-        text: " Klikni na tlačítko MÁM ZÁJEM",
-        reversed: false
+        text: "Klikni na tlačítko MÁM ZÁJEM",
+        reversed: false,
+        last: false,
+        first: true
     },
     {
         number: 2,
         heading: "VYPLŇ FORMULÁŘ",
-        text: "Po kliknutí na tlačítko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň vyplnit motivaci, vybíráme i na základě té. K formuláři přilož odkaz na GitHub nebo jiné úložiště tvých kódů, pokud máš.",
-        reversed: true
+        text: "Po kliknutí na tlačítko REGISTRACE se objeví formulář, ten vyplň a nezapomeň zejména na vyplnění motivaci a přiložení odkazu na GitHub či jiné úložiště tvých kódů.",
+        reversed: true,
+        last: false,
+        first: false
     },
     {
         number: 3,
         heading: "KONTAKTUJEME TĚ",
-        text: " 2 týdny před spuštěním běhu, tě budeme kontaktovat a sdělíme ti, zda jsem tě vybrali.",
-        reversed: false
-    },
-    {
-        number: 4,
-        heading: "ZAČÍNÁME",
-        text: " Pokud jsme tě vybrali, pošleme ti všechny potřebné informace společně s  informacemi o platbě. Už teď se na tebe těšíme!",
-        reversed: true
+        text: "2 týdny před spuštěním běhu tě budeme kontaktovat a sdělíme ti, zda jsme vybrali právě tebe. Pošleme ti taky všechny potřebné informace o mentoringovom programu společně s informacemi o platbě.",
+        reversed: false,
+        last: true,
+        first: false
     }
 ]
