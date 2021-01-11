@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components';
-import { colors, sizes } from '../../../variables';
+import { colors, sizes, breakpoints } from '../../../variables';
 import { Paragraph, TitleCenter } from '../styled';
 
 export const NewsletterContainer = styled.div `
@@ -8,6 +8,8 @@ export const NewsletterContainer = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid red;
+    
 `;
 
 export const ParagraphCenter = styled(Paragraph) `
@@ -90,5 +92,11 @@ export const ButtonInputCont = styled.div`
     flex-direction: column;
     height: 120px;
     justify-content: space-between;
+    border: 1px solid blue;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        align-items: center;
+        margin-bottom: 40px;
+    }
 `;
 

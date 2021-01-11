@@ -27,8 +27,7 @@ export const ProgramTable = styled.table`
 export const ProgramTableHead = styled.thead`
 
 @media screen and (max-width: ${breakpoints.tablet}) {
-        display: none;
-       
+        display: none;   
     }
 `;
 

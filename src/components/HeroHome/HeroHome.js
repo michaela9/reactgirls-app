@@ -16,7 +16,11 @@ import {
     CarouselText,
     HeadingHome,
     TitleLeftHome,
-    FirstHomeRow
+    FirstHomeRow,
+    SliderImg,
+    SliderText,
+    SubtitleHero
+    
  } from './HeroHome.elements';
 
 import { Container, Wrapper } from '../reusable/styled';
@@ -31,14 +35,31 @@ function HeroHome( {img}) {
     const toggleHome = () => {
         scroll.scrollToTop()
     };
-    const settings = {
+    const settingsImg = {
         dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
-
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+            <div className="slickCustomDots">
+            </div>
+            )
       };
+
+      const settingsText = {
+        vertical: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        
+      };
+
     return (
             <Container lightBlue>
                 <Wrapper>
@@ -50,7 +71,7 @@ function HeroHome( {img}) {
                                         <TitleLeftHome>
                                             Zapoj se do
                                         </TitleLeftHome>
-                                        <CarouselText showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={false} autoPlaySpeed={3000} verticalMode={true} itemPosition={consts.START} itemPadding={[0, 0]} >
+                                        <SliderText {...settingsText}>
                                         {animationText.map((text) => {
                                         return (
                                             <Link to={text.id}
@@ -63,8 +84,8 @@ function HeroHome( {img}) {
                                                 <AnimationText >{text.text}</AnimationText>
                                             </Link>
                                         )
-                                    })}   
-                                        </CarouselText>
+                                        })}   
+                                        </SliderText>
                                     </FirstHomeRow>
                                     <TitleLeftHome>
                                     a nauč se programovat
@@ -72,20 +93,32 @@ function HeroHome( {img}) {
                                     <TitleLeftHome> v Reactu!
                                     </TitleLeftHome>     
                                 </HeadingHome>
-                                <SubTitle >#ReactGirlsPrague</SubTitle>
+                            <SliderImg className="hideDesktop" {...settingsImg}> 
+                            {heroHomeArr.map((item) => { 
+                            return ( 
+                                <ImgHomeContainer key={item.id} >
+                                        <HeroHomeImg src={item.img} />
+                                </ImgHomeContainer>
+                                
+                                )
+                            })}
+                       </SliderImg>
+                               
+                                <SubtitleHero >#ReactGirlsPrague</SubtitleHero>
                                 <Newsletter id="newsletterHero" /> 
                             </TextWrapperHome>
                         </HeroHomeColumn>
                         <HeroHomeColumn>
-                        <Slider {...settings}>
+                      <SliderImg className="hideMobile" {...settingsImg}> 
                             {heroHomeArr.map((item) => { 
-                            return (
+                            return ( 
                                 <ImgHomeContainer key={item.id} >
                                         <HeroHomeImg src={item.img} />
                                 </ImgHomeContainer>
+                                
                                 )
                             })}
-                        </Slider>
+                       </SliderImg>
                         </HeroHomeColumn>
                     </HeroHomeRow>                           
                 </Wrapper>
