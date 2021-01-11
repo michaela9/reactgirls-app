@@ -8,7 +8,11 @@ export const NewsletterContainer = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    //border: 1px solid red;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        margin: 40px auto 40px auto; 
+        width: 90%; 
+    }
     
 `;
 
@@ -92,7 +96,7 @@ export const ButtonInputCont = styled.div`
     flex-direction: column;
     height: 120px;
     justify-content: space-between;
-    border: 1px solid blue;
+   // border: 1px solid blue;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         align-items: center;

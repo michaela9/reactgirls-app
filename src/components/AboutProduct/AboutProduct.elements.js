@@ -1,12 +1,15 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables';
+import { sizes, colors, breakpoints } from '../../variables';
 import { Paragraph } from '../reusable/styled';
 
 
 export const WrapperAbout = styled.div`
     padding-top: 80px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+   @media only screen and (max-width: ${breakpoints.tablet}) {
+    padding-top: 40px;
+    }
 `;
 
 export const ItemContainer = styled.div`
@@ -19,6 +22,12 @@ export const ItemContainer = styled.div`
     margin: 0 auto;
     //border: 1px solid red;
     width: 20%;
+    //border: 1px solid red;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 63%;
+        padding: 20px 0 40px 0;
+}
 
 `;
 
@@ -29,6 +38,11 @@ export const AboutText = styled(Paragraph)`
     font-weight: 300;
     width: 60%;
     margin: 0 auto;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 85%;
+        padding-top: 30px;
+}
     `;
 
 export const ItemRow = styled.div`

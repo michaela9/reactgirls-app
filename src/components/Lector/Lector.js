@@ -25,13 +25,16 @@ import {
  import lectorArr from './lectorArr';
  import { Container, Wrapper, TitleCenter } from '../../components/reusable/styled';
 
+
 function Lector({ deviceType }) {  
+   
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: true,
         nextArrow: (
             <div>
               <div className="next-slick-arrow"> <RightArrow src="/images/icons/right-arrow.svg" /> </div>
@@ -46,28 +49,24 @@ function Lector({ deviceType }) {
             {
             breakpoint: 1500,
             settings: {
-                arrows: true,
                 slidesToShow: 3
                 }
             },
             {
             breakpoint: 1120,
             settings: {
-                arrows: true,
                 slidesToShow: 2
                 }
             },
             {
             breakpoint: 700,
             settings: {
-                arrows: true,
                 slidesToShow: 1
                 }
             }
         ]
-        }       
-      
-
+        }
+     
     return (
         <>
             <Container lightBlue>

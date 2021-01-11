@@ -1,23 +1,35 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables';
-import { Paragraph } from '../reusable/styled';
+import { sizes, colors, breakpoints } from '../../variables';
+import { Paragraph , TitleCenter} from '../reusable/styled';
 
+export const TitleAboutMore = styled(TitleCenter)`
+ margin-bottom: 30px;
 
+`;
 export const WrapperAboutMore = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 `;
 
 export const TextAboutMore = styled(Paragraph)`
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 15px;
+    //padding-top: 40px;
     color: ${colors.grey};
     font-weight: 300;
     width: 60%;
     margin: 0 auto;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 80%;
+    }
 
     a{
         text-decoration: none;

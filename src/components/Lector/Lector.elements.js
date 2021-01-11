@@ -15,60 +15,53 @@ export const RightArrow = styled.img`
     position: relative;
     right: 47px;
     bottom: 20px;
-    border: 1px solid red;
 
 `;
 export const LeftArrow = styled.img`
     width: 30px;
     height: 30px;
     position: relative;
-    left: 0px;
-    bottom: 20px;
-    border: 1px solid red;   
+    left: 37px;
+    bottom: 20px;  
 `;
-
 
 export const SliderLector = styled(Slider)`
     width: 100%;
-    margin: 0 auto;
-    border: 1px solid red;
 
     .slider-wrapper {
-    margin: auto;
     }
     .slick-slide {
     text-align: center;
-    position: relative;
     }
     .slick-prev {
-    left: 25px !important;
-}
-        .slick-next:before {
-        content: "";
-        //color: red;
-        width: 50px;
-        //font-weight: bold;
-        //background-image: url("/images/icons/right-arrow.svg");
-        right: -50px;
-        }
-        .slick-prev:before{
-        content: "<";
-        background-color: red;
-        width: 50px;
-        left: 25px;
-        //background-image: url("/images/icons/left-arrow.svg");
-        }
-        .thumbnail-slider-wrap {
-        margin-top: 15px;
-        height: 85px;
-        }
-        .thumbnail-slider-wrap .slick-track .slick-slide {
-        text-align: center;
-        }
-        .thumbnail-slider-wrap .slick-track .slick-slide img {
-        width: 70%;
-        }
+        left: -5px;
+        background-color: green;
+    }
+    .slick-prev:before{
+        color: red;
+        left: 15px;
+        position: relative;
+        left: 38px;
+    }
+    .slick-next:before {
+        display: none;
+    }
 
+    .slick-arrow .slick-left {
+        color: green;
+        position: relative;
+        left: 38px;
+        border: 1px solid red;
+    }
+    .prev-slick-arrow{
+        background-color: aquamarine;
+        width: 50px;
+    }
+
+    .slick-left{
+        background-color: gold;
+        width: 50px;
+    }
 `;
 
 export const CardsContainer = styled.div`
@@ -76,7 +69,6 @@ export const CardsContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 80px 20px;
-    //border: 1px solid blue;
 `;
 
 export const Card = styled.div`
@@ -90,7 +82,6 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     padding: 25px 35px;
-    //box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
     box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.15);
     margin: 20px;
     outline: none;
@@ -100,7 +91,6 @@ export const LectorName = styled(Name)`
     text-align: center;
     font-weight: 900;
     margin-bottom: 10px;
-    //border: 1px solid red;
 `;
 
 export const LectorJob = styled.p`
@@ -110,7 +100,6 @@ export const LectorJob = styled.p`
     color: ${colors.grey};
     margin: 5px auto;
     width: 85%;
-    //border: 1px solid red;
 `;
 
 export const LectorLink = styled.a`
@@ -130,7 +119,6 @@ export const LectorLink = styled.a`
 export const LectorImg = styled.img`
     height: 150px;
     border-radius: 80px;
-    //border: 1px solid green;
     `;
 
 export const LectorImgContainer = styled.div`
@@ -143,7 +131,6 @@ export const LectorImgContainer = styled.div`
 export const IconIn = styled.img`
     width: 18px;
     height: 18px;
-    //border: 1px solid red;
 `;
 
 

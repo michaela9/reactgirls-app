@@ -38,8 +38,8 @@ export const SponsorImgContainer = styled.div`
 `;
 
 export const GoldSponsorship = styled.div`
-    border-left: 5px solid gold;
-    color: gold;
+    border-left: 5px solid #b8860b;
+    color: #b8860b;
     font-size: ${sizes.sizeM};
     font-weight: 500;
     width: 100%;
@@ -56,9 +56,9 @@ export const GoldSponsorship = styled.div`
 `;
 
 export const SilverSponsorship = styled.div`
-    border-left: 5px solid silver;
-    color: silver;
-    font-size: ${sizes.sizeS};
+    border-left: 5px solid #838996;
+    color: #838996;
+    font-size: ${sizes.sizeM};
     font-weight: 500;
     width: 100%;
     padding-left: 15px;
@@ -70,9 +70,9 @@ export const SilverSponsorship = styled.div`
 `;
 
 export const CommunitySponsorship = styled.div`
-    border-left: 5px solid peru;
-    color: peru;
-    font-size: ${sizes.sizeS};
+    border-left: 5px solid #003399;
+    color: #003399;
+    font-size: ${sizes.sizeM};
     font-weight: 500;
     width: 100%;
     padding-left: 15px;
