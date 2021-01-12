@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import  { sizes, colors, breakpoints } from '../../variables';
-import { Heading1, Paragraph, Wrapper, Subtitle } from '../reusable/styled';
+import { TitleCenter, Subtitle } from '../reusable/styled';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,14 +13,18 @@ export const HeroHomeRow = styled.div`
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    //border: 1px solid yellow;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
 `;
 
 export const HeroHomeColumn = styled.div`
     flex: 1;
     max-width: 50%;
     flex-basis: 50%;
-   //border: 1px solid pink;
+
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         max-width: 100%;
@@ -33,40 +37,30 @@ export const HeroHomeColumn = styled.div`
 export const TextWrapperHome = styled.div`
     max-width: 540px;
 
-@media only screen and (max-width: ${breakpoints.tablet}) {
-    margin: 0 auto;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        margin: 0 auto;
     }
 `;
 
 export const HeadingHome = styled.div`
- //border: 1px solid red;
- //margin: 0 auto;
- display: flex;
- //align-items: center;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
- @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: ${breakpoints.tablet}) {
         align-items: center; 
     }
 `;
 
-export const TitleLeftHome = styled(Heading1)`
- //border: 1px solid red;
- //display: inline-block;
- font-weight: 400;
+export const TitleLeftHome = styled(TitleCenter)`
 
- 
-@media only screen and (max-width: ${breakpoints.tablet}) {
-    font-size: ${sizes.sizeXXL};
-    text-align: center;
-    
- }
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        text-align: center;   
+    }
 `;
 
 export const FirstHomeRow = styled.div`
     display: flex;
     width: 100%;
-   // justify-content: center;
 
    @media only screen and (max-width: ${breakpoints.tablet}) {
         flex-direction: column;
@@ -79,14 +73,16 @@ export const AnimationText = styled.div`
     padding: 0;
     font-weight: 500;
     color: ${colors.mainBlue};
-    //border: 1px solid red;
     font-size: ${sizes.sizeXXXL};
     cursor: pointer;
     font-weight: 400;
     @media only screen and (max-width: ${breakpoints.tablet}) {
-    font-size: ${sizes.sizeXXL};
+    font-size: ${sizes.sizeXL};
     text-align: center;
- }
+    margin-top: -10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
 `;
 
 
@@ -105,11 +101,11 @@ export const ImgHomeContainer = styled.div`
     border-radius: 50%;
     overflow: hidden;
     outline: none;
-   // border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         height: 320px;
         width: 320px; 
+        margin-top: 30px;
     }
 `;
 
@@ -117,12 +113,12 @@ export const HeroHomeImg = styled.img`
     object-fit: cover;
     height: 100%;
  `;
+
  export const SliderImg = styled(Slider)`
     width: 480px;
     margin: 0 auto;
   .slick-dots li {
     width: 10px;
-    //margin: 0 2px;
     transition: width 0.3s ease-in-out;
   }
 
@@ -134,36 +130,35 @@ export const HeroHomeImg = styled.img`
     margin-top: 30px;
   }
   .slick-dots .slick-active .slickCustomDots {
-    //margin-top: 100px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     position: relative;
     top: 0px;
-    //overflow: hidden;
     background-color: ${colors.mainBlue};
     .loading {   
     }
-  }
-  @media only screen and (max-width: ${breakpoints.tablet}) { 
+    }
+    @media only screen and (max-width: ${breakpoints.tablet}) { 
         width: 320px; 
     }
 
     .hideDesktop {
-    @media only screen and (min-width: ${breakpoints.tablet}) {
-        display: none;
-     }
-}
+        @media only screen and (min-width: ${breakpoints.tablet}) {
+            display: none;
+        }
+    }
     .hideMobile {
-    @media only screen and (max-width: ${breakpoints.tablet}) {
-        display: none;
-     }
-}
+        @media only screen and (max-width: ${breakpoints.tablet}) {
+            display: none;
+        }
+    }
 `;
 
 export const SubtitleHero = styled(Subtitle)`
     margin-top: 20px;    
     margin-bottom: 30px;
+    
     @media only screen and (max-width: ${breakpoints.tablet}) { 
         text-align: center;
     }   

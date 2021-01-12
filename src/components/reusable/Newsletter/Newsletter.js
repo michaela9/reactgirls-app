@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import React from 'react';
 import { NewsletterButton, InputContainer, CustomInput, ButtonInputCont } from './Newsletter.elements';
 
 function Newsletter() {

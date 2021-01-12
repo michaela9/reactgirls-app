@@ -8,7 +8,6 @@ import {
 import {
     ProcessContainer,
     ProcessRow,
-    ProcessNumber,
     ProcessPoint,
     ProcessCont,
     ProcessHeading,
@@ -17,7 +16,6 @@ import {
     ProcessLine,
     ProcessWrapper,
     ProcessContOpp,
-    ProcessLineMobile
 } from './Process.elements';
 
 function Process({data}) {

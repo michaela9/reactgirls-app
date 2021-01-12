@@ -13,6 +13,11 @@ export const SponsorContainer = styled.div`
     margin: 0 auto;
     padding: 80px 50px;
     align-items: center;
+
+    
+    @media only screen and (max-width: 768px) {
+    padding: 40px 50px;
+    }
 `;
 
 export const SponsorImg = styled.img`

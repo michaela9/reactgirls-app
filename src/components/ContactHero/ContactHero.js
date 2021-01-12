@@ -7,7 +7,6 @@ import {
     SlackIcon,
 } from './ContactHero.elements';
 
-import { Link } from 'react-router-dom';
 import Newsletter from '../reusable/Newsletter/Newsletter';
 
 function ContactHero() {

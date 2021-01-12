@@ -4,7 +4,7 @@ export const sizes = {
     sizeS: `16px`,
     sizeM: `18px`,
     sizeL: `24px`,
-    sizeXL: `32px`,
+    sizeXL: `27px`,
     sizeXXL: `36px`,
     sizeXXXL: `42px`,
 };

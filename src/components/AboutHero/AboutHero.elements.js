@@ -27,13 +27,9 @@ export const WrapperAbout = styled.div`
     flex-direction: column;
     margin: 0 auto;
     padding: 80px 300px;
-    //display: flex;
-    //flex-direction: column;
-   // margin: 0 auto;
-
+    
    @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 75%;
-
         padding: 40px 0px;
     }
 `;

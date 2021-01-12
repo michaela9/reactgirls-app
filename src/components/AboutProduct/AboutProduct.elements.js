@@ -13,22 +13,14 @@ export const WrapperAbout = styled.div`
 `;
 
 export const ItemContainer = styled.div`
-   // display: flex;
-   // padding-top: 20px;
-   // flex-direction: column;
-   // position: relative;
-    //left: 8px;
     padding: 40px 0 80px 0;
     margin: 0 auto;
-    //border: 1px solid red;
     width: 20%;
-    //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 63%;
         padding: 20px 0 40px 0;
 }
-
 `;
 
 export const AboutText = styled(Paragraph)`
@@ -43,7 +35,7 @@ export const AboutText = styled(Paragraph)`
         width: 85%;
         padding-top: 30px;
 }
-    `;
+`;
 
 export const ItemRow = styled.div`
     display: flex;

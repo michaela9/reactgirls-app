@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors } from '../../variables.js';
-import { Paragraph, Name } from '../reusable/styled';
+import { Name } from '../reusable/styled';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -29,6 +29,10 @@ export const ProductMainTitle = styled(TitleCenter)`
     //text-align: left;
     //border: 1px solid red;
     margin: 0 auto;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding: 40px ;
+    }
 `;
 
 export const ProductInfoRow = styled.div`

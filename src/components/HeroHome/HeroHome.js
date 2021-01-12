@@ -1,6 +1,6 @@
 import React from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -9,27 +9,45 @@ import {
     HeroHomeColumn,
     ImgHomeContainer,
     HeroHomeImg,
-    SubTitle,
-    CarouselHero,
     TextWrapperHome,
     AnimationText,
-    CarouselText,
     HeadingHome,
     TitleLeftHome,
     FirstHomeRow,
     SliderImg,
     SliderText,
-    SubtitleHero
-    
+    SubtitleHero  
  } from './HeroHome.elements';
 
 import { Container, Wrapper } from '../reusable/styled';
 import {animationText, heroHomeArr} from './heroHomeArr';
-
-import { consts } from 'react-elastic-carousel';
 import Newsletter from '../reusable/Newsletter/Newsletter';
 
-
+const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
 
 function HeroHome( {img}) {
     const toggleHome = () => {
@@ -37,6 +55,20 @@ function HeroHome( {img}) {
     };
     const settingsImg = {
         dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+            <div className="slickCustomDots">
+            </div>
+            )
+      };
+
+      const settingsImgMobile = {
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -59,7 +91,7 @@ function HeroHome( {img}) {
         arrows: false,
         
       };
-
+      const isBreakpoint = useMediaQuery(768)
     return (
             <Container lightBlue>
                 <Wrapper>
@@ -93,22 +125,24 @@ function HeroHome( {img}) {
                                     <TitleLeftHome> v Reactu!
                                     </TitleLeftHome>     
                                 </HeadingHome>
-                            <SliderImg className="hideDesktop" {...settingsImg}> 
-                            {heroHomeArr.map((item) => { 
-                            return ( 
-                                <ImgHomeContainer key={item.id} >
-                                        <HeroHomeImg src={item.img} />
-                                </ImgHomeContainer>
-                                
-                                )
-                            })}
-                       </SliderImg>
-                               
+        
+                            { isBreakpoint &&   
+                                <SliderImg className="hideDesktop" {...settingsImgMobile}> 
+                                {heroHomeArr.map((item) => { 
+                                return ( 
+                                    <ImgHomeContainer key={item.id} >
+                                            <HeroHomeImg src={item.img} />
+                                    </ImgHomeContainer>                              
+                                    )
+                                })}    
+                                </SliderImg>
+                            }
                                 <SubtitleHero >#ReactGirlsPrague</SubtitleHero>
                                 <Newsletter id="newsletterHero" /> 
                             </TextWrapperHome>
                         </HeroHomeColumn>
                         <HeroHomeColumn>
+                        { !isBreakpoint && 
                       <SliderImg className="hideMobile" {...settingsImg}> 
                             {heroHomeArr.map((item) => { 
                             return ( 
@@ -119,6 +153,7 @@ function HeroHome( {img}) {
                                 )
                             })}
                        </SliderImg>
+                       }
                         </HeroHomeColumn>
                     </HeroHomeRow>                           
                 </Wrapper>

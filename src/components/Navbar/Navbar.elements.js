@@ -14,8 +14,6 @@ export const NavWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //border: 1px solid pink;
-   // padding: 0.5em 0;
     height: 80px;
 `;
 
@@ -59,7 +57,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    //border: 1px solid pink;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         display: flex;
@@ -98,7 +95,6 @@ export const NavLinks = styled(NavLink)`
         width: 100%;
         padding: 37px;
         display: table;
-        //box-shadow: 0px 1px 1px rgba(68, 68, 68, 0.1);
         &:hover {
             color: ${colors.mainBlue};
             transition: all 0.3 ease;
@@ -141,10 +137,10 @@ export const MobileIcon = styled.div`
 `;
 
 export const MobileIconClose = styled.img`
-            height: 30px;
+    height: 30px;
 `;
 
 export const MobileIconMenu = styled.img`
-            height: 45px;
+    height: 45px;
 `;
 

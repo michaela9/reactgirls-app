@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import  { colors, breakpoints } from '../../../variables';
-import { Paragraph, TitleLeft, Subtitle } from '../styled';
+import  { breakpoints } from '../../../variables';
+import { TitleLeft, Subtitle } from '../styled';
 
 export const HeroWrapper = styled.div`
     display: flex;
     padding: 80px 0 80px 0;
     justify-content: space-between;
     flex-wrap: wrap;
-    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 140px 0 60px 0;
@@ -64,7 +63,6 @@ export const HeroImg = styled.img`
         height: 350px; 
     }
  `;
-
 
 export const SubtitleHero = styled(Subtitle)`
     margin-bottom: 25px;

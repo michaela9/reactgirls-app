@@ -21,12 +21,12 @@ export const ProgramTable = styled.table`
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin: 40px auto 0 auto;
-
-`;
+    }
+    `;
 
 export const ProgramTableHead = styled.thead`
 
-@media screen and (max-width: ${breakpoints.tablet}) {
+    @media screen and (max-width: ${breakpoints.tablet}) {
         display: none;   
     }
 `;
@@ -39,7 +39,6 @@ export const ProgramTableRow = styled.tr`
         flex-direction: column;
         width: 100%;
         padding: 10px; 
-        //border-bottom: none;
        border-bottom: ${({border}) => (border ? `1px solid #EBEBEB`  : `none` )};
 
     }

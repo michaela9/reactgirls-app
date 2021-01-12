@@ -4,8 +4,8 @@ import { Paragraph , TitleCenter} from '../reusable/styled';
 
 export const TitleAboutMore = styled(TitleCenter)`
  margin-bottom: 30px;
-
 `;
+
 export const WrapperAboutMore = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
@@ -39,28 +39,27 @@ export const TextAboutMore = styled(Paragraph)`
 `;
 
 export const ArticleContainer = styled.div`
- display: flex;
- justify-content: center;
- align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 `;
 
 export const AboutMoreArticle = styled.div`
- background-color: ${colors.mainBlue};
- border-radius: 50%;
- width: 50px;
- height: 50px;
- display: flex;
- justify-content: center;
- align-items: center;
- margin-left: 25px;
- margin-right: 25px;
+    background-color: ${colors.mainBlue};
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
 `;
 
 export const AboutMoreLink = styled.a`
     color: ${colors.white};
     font-size: ${sizes.sizeXL};
     text-decoration: none;
-
 `;
 
