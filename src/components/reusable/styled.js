@@ -28,6 +28,11 @@ export const Heading3 = styled.h3`
 export const Paragraph = styled.p`
     font-size: ${sizes.sizeM};
     line-height: 1.6;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeS};
+        line-height: 1.5;
+    }
 `;
 
 export const ParagraphS = styled.p`

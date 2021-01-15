@@ -59,7 +59,11 @@ export const AboutMoreArticle = styled.div`
 
 export const AboutMoreLink = styled.a`
     color: ${colors.white};
-    font-size: ${sizes.sizeXL};
+    font-size: ${sizes.sizeM};
     text-decoration: none;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeS};
+    }
 `;
 

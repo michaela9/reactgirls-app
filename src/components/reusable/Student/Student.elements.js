@@ -17,7 +17,7 @@ export const StudentContainer = styled.div`
     max-width: 1000px;
     width: 90%;
     justify-content: space-between;
-    margin: 80px auto 0 auto;
+    margin: 40px auto 20px auto;
     
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {

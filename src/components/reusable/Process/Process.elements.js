@@ -49,8 +49,8 @@ export const ProcessGraphic = styled.div`
 
 export const ProcessLine = styled.div`
     background-color: ${colors.mainBlue} ;
-    width: 5px;
-    height: 150px;
+    width: 3px;
+    height: 130px;
     display: ${({last}) => (last ? `none`  : `block` )};
     @media screen and (max-width: ${breakpoints.tablet}) {
         height: 200px;
@@ -70,14 +70,14 @@ export const ProcessLineMobile = styled.div`
 `;
 
 export const ProcessPoint = styled.h1`
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 5px solid ${colors.mainBlue};
+    border: 3px solid ${colors.mainBlue};
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 300;
     color: ${colors.mainBlue};
 
@@ -91,7 +91,7 @@ export const ProcessPoint = styled.h1`
 
 export const ProcessCont = styled.div`
     width: 45%;
-    padding: 15px;
+    //padding: 15px;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         width: 65%;

@@ -8,12 +8,10 @@ export const NewsletterContainer = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    //border: 1px solid red;
     @media only screen and (max-width: ${breakpoints.tablet}) {
         margin: 40px auto 40px auto; 
         width: 90%; 
-    }
-    
+    }   
 `;
 
 export const ParagraphCenter = styled(Paragraph) `
@@ -33,7 +31,6 @@ export const MyForm = styled.div`
     height: 300px;
     border: 1px solid red;
 `;
-
 
 export const NewsletterButton = styled.input`
     width: 100%;
@@ -72,7 +69,6 @@ export const InputContainer = styled.div`
     padding: 0 32px;
     height: 50px;
     border-radius: 25px;
-    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
     max-width: 300px;
     display: flex;
     align-items: center;
@@ -96,7 +92,6 @@ export const ButtonInputCont = styled.div`
     flex-direction: column;
     height: 120px;
     justify-content: space-between;
-   // border: 1px solid blue;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         align-items: center;

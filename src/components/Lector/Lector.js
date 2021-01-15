@@ -29,6 +29,7 @@ function Lector({ deviceType }) {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
+        accessibility: true,
         nextArrow: (
             <div>
               <div className="next-slick-arrow"> <RightArrow src="/images/icons/right-arrow.svg" /> </div>

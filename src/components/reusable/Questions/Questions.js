@@ -7,7 +7,6 @@ import {
 import Accordion from './Accordion';
 import { 
     QuestionsContainer,
-    ContainerQuestion,
     QuestionWrapper
 } from './Questions.elements';
 

@@ -6,8 +6,9 @@ export const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
     width: 90%;
-    padding: 80px 0 80px 0;
-
+    padding: 80px 0 80px;
+    position: relative;
+    left: 70px; 
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;

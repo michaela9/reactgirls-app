@@ -6,7 +6,7 @@ export const ContactCardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     justify-content: space-around;
     padding: 80px 0;

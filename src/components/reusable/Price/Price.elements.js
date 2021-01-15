@@ -64,7 +64,6 @@ export const PriceIcon = styled.img`
 export const PriceText = styled.div`
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
-
 `;
 
 export const PriceTitle = styled(TitleLeft)`

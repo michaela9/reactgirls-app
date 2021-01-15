@@ -60,6 +60,8 @@ function HeroHome( {img}) {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
+        speed: 500,
+        pauseOnHover: true,
         appendDots: dots => <ul>{dots}</ul>,
         customPaging: i => (
             <div className="slickCustomDots">
@@ -73,7 +75,9 @@ function HeroHome( {img}) {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        speed: 500,
         autoplaySpeed: 1000,
+        pauseOnHover: true,
         appendDots: dots => <ul>{dots}</ul>,
         customPaging: i => (
             <div className="slickCustomDots">
@@ -89,6 +93,8 @@ function HeroHome( {img}) {
         autoplay: true,
         autoplaySpeed: 1000,
         arrows: false,
+        speed: 500,
+        pauseOnHover: true,
         
       };
       const isBreakpoint = useMediaQuery(768)

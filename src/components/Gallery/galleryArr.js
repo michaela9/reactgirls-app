@@ -1,8 +1,8 @@
 export const galleryArr = [
-    { url: "/images/products/community.jpg" },
-    { url: "/images/products/workshop.jpg" },
-    { url: "/images/products/webinar.jpg" },
-    { url: "/images/products/mentoring.jpg" },
-    { url: "/images/products/academy.jpg" },
-    { url: "/images/products/meetup.jpg" },
+    { url: "/images/gallery/community.jpg" },
+    { url: "/images/gallery/workshop.jpg" },
+    { url: "/images/gallery/webinar.jpg" },
+    { url: "/images/gallery/mentoring.jpg" },
+    { url: "/images/gallery/academy.jpg" },
+    { url: "/images/gallery/meetup.jpg" },
 ]

@@ -51,12 +51,12 @@ export const titleObjOne = {
 
 export const mentStudentArr = [
     {
-        icon: "/images/icons/woman1.svg",
+        icon: "/images/icons/website.svg",
         heading: "Zájemkyním",
         text: "Zájemkyním o programování, které se chtějí naučit tvorbu webových stránek v populární JavaScrtipové knihovně React.",
     },
     {
-        icon: "/images/icons/woman6.svg",
+        icon: "/images/icons/victory.svg",
         heading: "Začátečnicím",
         text: "Začatečnicím, které již mají zkušenosti s programováním a chtěly by je posunout na další úroveň s Reactem.",
     },

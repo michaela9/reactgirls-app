@@ -4,7 +4,7 @@ import { colors, breakpoints, sizes } from '../../variables';
 export const ProgramWrapper = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
-    border-top: 3px solid ${colors.lightBlue};
+    border-top: 2px solid #EBEBEB;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 60px;
@@ -14,7 +14,7 @@ export const ProgramWrapper = styled.div`
 
 export const ProgramTable = styled.table`
     margin: 80px auto 0 auto;
-    max-width: 800px;
+    max-width: 960px;
     width: 100%;
     border-collapse: collapse; 
     border: none;
@@ -40,7 +40,6 @@ export const ProgramTableRow = styled.tr`
         width: 100%;
         padding: 10px; 
        border-bottom: ${({border}) => (border ? `1px solid #EBEBEB`  : `none` )};
-
     }
 `;
 

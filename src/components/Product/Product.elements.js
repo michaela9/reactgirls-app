@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, sizes, breakpoints } from '../../variables.js';
+import { colors, breakpoints } from '../../variables.js';
 import { Paragraph, TitleCenter, TitleLeft, Button } from '../reusable/styled';
 
 
@@ -11,7 +11,6 @@ export const ProductInfo = styled(Paragraph)`
     color: ${colors.grey};
     text-align: left;
     width: 90%;
-    //border: 1px solid green;
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
@@ -26,8 +25,6 @@ export const ProductInfo = styled(Paragraph)`
 export const ProductMainTitle = styled(TitleCenter)`
     padding: 80px;
     width: 90%;
-    //text-align: left;
-    //border: 1px solid red;
     margin: 0 auto;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -38,12 +35,10 @@ export const ProductMainTitle = styled(TitleCenter)`
 export const ProductInfoRow = styled.div`
     display: flex;
     flex-wrap: wrap;
-   // align-items: center;
     justify-content: space-between;
     flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
     padding-top: 80px;
     padding-bottom: 80px;
-    //border: 1px solid green;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         justify-content: center;
@@ -58,10 +53,8 @@ export const ProductInfoColumn = styled.div`
     flex: 1;
     max-width: 60%;
     flex-basis: 50%;
-    //border: 1px solid yellow;
     display: flex;
     justify-content: center;
-    //align-items: center;
     flex-direction: column;
     
     @media only screen and (max-width: ${breakpoints.tablet}) {

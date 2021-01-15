@@ -50,17 +50,17 @@ export const titleObjTwo = {
 };
 export const acadStudentArr = [
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/website.svg",
         heading: "Zájemkyním",
         text: "Zájemkyním o programováním, které se chtějí naučit tvorbu webových stránek a vytvořit si svou vlastní aplikaci v Reactu",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/victory.svg",
         heading: "Začátečnicím",
         text: "Začatečnicím, které mají základní nebo žádné zkušenosti s programováním a chtěly by se seznámit se s HTML, CSS, JavaScriptem a Reactem",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/woman3.svg",
         heading: "Ženám",
         text: "Ženám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
     }

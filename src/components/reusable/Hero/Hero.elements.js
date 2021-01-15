@@ -47,6 +47,8 @@ export const TitleContainer = styled.div`
     height: 500px;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
+    right: 100px;
     //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {

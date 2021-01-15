@@ -52,7 +52,7 @@ export const HeadingHome = styled.div`
 `;
 
 export const TitleLeftHome = styled(TitleCenter)`
-
+        text-align: left; 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         text-align: center;   
     }
@@ -77,11 +77,12 @@ export const AnimationText = styled.div`
     cursor: pointer;
     font-weight: 400;
     @media only screen and (max-width: ${breakpoints.tablet}) {
-    font-size: ${sizes.sizeXL};
-    text-align: center;
-    margin-top: -10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+        font-size: ${sizes.sizeXL};
+        font-weight: 400;
+        text-align: center;
+        margin-top: -10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 `;
 
