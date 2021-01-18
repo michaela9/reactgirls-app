@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../variables.js';
+import { sizes, colors, breakpoints } from '../../variables.js';
 import { Name } from '../reusable/styled';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,83 +8,91 @@ import "slick-carousel/slick/slick-theme.css";
 export const WrapperLector = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
-`;
-export const RightArrow = styled.img`
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 47px;
-    bottom: 20px;
-
-`;
-export const LeftArrow = styled.img`
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 37px;
-    bottom: 20px;  
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 `;
 
 export const SliderLector = styled(Slider)`
-    width: 100%;
-
+    //width: 100%;
     .slider-wrapper {
     }
     .slick-slide {
     text-align: center;
     }
-    .slick-prev {
-        left: -5px;
-        background-color: green;
-    }
-    .slick-prev:before{
-        color: red;
-        left: 15px;
-        position: relative;
-        left: 38px;
-    }
-    .slick-next:before {
-        display: none;
-    }
-
-    .slick-arrow .slick-left {
-        color: green;
-        position: relative;
-        left: 38px;
-        border: 1px solid red;
-    }
-    .prev-slick-arrow{
-        background-color: aquamarine;
-        width: 50px;
-    }
-
-    .slick-left{
-        background-color: gold;
-        width: 50px;
-    }
 `;
 
 export const CardsContainer = styled.div`
-    max-width: 1280px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     padding: 80px 20px;
+
+    @media only screen and (max-width: 1280px) {
+        padding: 60px 40px;
+        max-width: 1000px;
+    }
+    @media only screen and (max-width: 1200px) {
+        padding: 60px 40px;
+        max-width: 950px;
+    }
+    @media only screen and (max-width: 1130px) {
+        padding: 60px 40px;
+        max-width: 680px;
+    }
+    @media only screen and (max-width: 700px) {
+        padding: 60px 20px;
+        max-width: 350px;
+    }
+    @media only screen and (max-width: 420px) {
+        padding: 60px 10px;
+        max-width: 300px;
+    }
+    @media only screen and (max-width: 380px) {
+        padding: 60px 10px;
+        max-width: 250px;
+    }
+    @media only screen and (max-width: 320px) {
+        padding: 60px 10px;
+        max-width: 200px;
+    }
 `;
 
 export const Card = styled.div`
     height: 400px;
-    min-width: 300px;
-    max-width: 300px;
+    width: 290px;
+    max-width: 290px;
+    width: 290px;
     display: flex;
     border-radius: 30px;
     background-color: ${colors.white} ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px 35px;
+    padding: 25px 25px;
     box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.15);
     margin: 20px;
     outline: none;
+    @media only screen and (max-width: 1280px) {
+        height: 400px;
+        width: 260px;
+        max-width: 260px;
+        width: 260px;
+        padding: 25px 25px;
+    }
+    @media only screen and (max-width: 700px) {
+        width: 220px;
+        padding: 25px 5px;
+        box-shadow: none;
+        height: 350px;
+    }
+    @media only screen and (max-width: 380px) {
+        padding: 0px 0px;
+        margin: 0px;
+        width: 200px;
+        height: 300px;
+    }
 `;
 
 export const LectorName = styled(Name)`
@@ -100,6 +108,9 @@ export const LectorJob = styled.p`
     color: ${colors.grey};
     margin: 5px auto;
     width: 85%;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 100%;
+    }
 `;
 
 export const LectorLink = styled.a`

@@ -16,6 +16,8 @@ function Gallery() {
         slidesToScroll: 1,
         arrows: true,
         accessibility: true,
+        nextArrow: <img src="/images/icons/right-arrow.svg" />,
+        prevArrow: <img src="/images/icons/left-arrow.svg" />,
         responsive: [
             {
             breakpoint: 1500,
@@ -30,9 +32,10 @@ function Gallery() {
                 }
             },
             {
-            breakpoint: 700,
+            breakpoint: 960,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                arrows: false,
                 }
             }
         ]

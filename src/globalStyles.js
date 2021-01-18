@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Fira Sans', sans-serif;
     font-size: ${sizes.sizeM};
     color: ${colors.darkGrey};
+    outline: none;
 }
 `;
 

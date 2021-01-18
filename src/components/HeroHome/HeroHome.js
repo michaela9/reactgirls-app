@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 
 import { 
     HeroHomeRow, 
@@ -54,12 +55,14 @@ function HeroHome( {img}) {
         scroll.scrollToTop()
     };
     const settingsImg = {
+        arrows: false,
         dots: true,
         infinite: true,
         slidesToShow: 1,
+        fade:true,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1350,
         speed: 500,
         pauseOnHover: true,
         appendDots: dots => <ul>{dots}</ul>,
@@ -70,13 +73,15 @@ function HeroHome( {img}) {
       };
 
       const settingsImgMobile = {
+        arrows: false,
         dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         speed: 500,
-        autoplaySpeed: 1000,
+        fade: true,
+        autoplaySpeed: 1350,
         pauseOnHover: true,
         appendDots: dots => <ul>{dots}</ul>,
         customPaging: i => (
@@ -91,17 +96,19 @@ function HeroHome( {img}) {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1350,
         arrows: false,
         speed: 500,
         pauseOnHover: true,
         
       };
-      const isBreakpoint = useMediaQuery(768)
+      const isBreakpoint = useMediaQuery(1250);
+      const navLogo = useTheme();
+      const changeLogoSize = useThemeUpdate();
     return (
             <Container lightBlue>
                 <Wrapper>
-                    <HeroHomeRow>
+                    <HeroHomeRow className={navLogo ? 'active' : ''}>
                         <HeroHomeColumn>
                             <TextWrapperHome>
                                 <HeadingHome>

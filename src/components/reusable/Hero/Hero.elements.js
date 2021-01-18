@@ -10,10 +10,9 @@ export const HeroWrapper = styled.div`
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 140px 0 60px 0;
-
         &.active {
-        padding: 60px 0 60px 0;
-    }
+            padding: 40px 0 20px 0; 
+        }
     }
  `;
 
@@ -47,14 +46,13 @@ export const TitleContainer = styled.div`
     height: 500px;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    right: 100px;
+    margin: 0 5% 0 0;
     //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         width: 350px;
         height: 350px;
-        margin: 0 auto;
+        margin: 0 auto 0 auto;
     }
  `;
 

@@ -18,9 +18,24 @@ export const aboutInfoObj1 =
     }
 
     export const aboutProductArr = [
-        { text: "vytváříme komunitu"}, 
-        { text: "pořádáme workshopy"},
-        { text: "pořádáme webináře"},
-        { text: "provozujeme Mentoring"}, 
-        { text: "organizujeme Meetupy"},
+        { 
+            text: "vytváříme komunitu",
+            productStart: true,
+        }, 
+        { 
+            text: "pořádáme workshopy",
+            productStart: false,
+        },
+        { 
+            text: "pořádáme webináře",
+            productStart: true,
+        },
+        { 
+            text: "provozujeme Mentoring",
+            productStart: false,
+        }, 
+        { 
+            text: "organizujeme Meetupy",
+            productStart: true,
+        },
       ];

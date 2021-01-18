@@ -13,11 +13,20 @@ export const HeroHomeRow = styled.div`
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    transition: all 1.5s ease-in-out;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 40px;
-        padding-bottom: 20px;
+    @media only screen and (max-width: 1250px) {
+        padding-top: 150px;
+        padding-bottom: 40px;
+        &.active{
+            padding-top: 40px;
+
+        }
+    @media only screen and (max-width: 325px) {
+        margin-left: 16px;
+        margin-right: 16px;
     }
+}
 `;
 
 export const HeroHomeColumn = styled.div`
@@ -25,8 +34,7 @@ export const HeroHomeColumn = styled.div`
     max-width: 50%;
     flex-basis: 50%;
 
-
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px) {
         max-width: 100%;
         flex-basis: 100%;
         display: flex;
@@ -38,7 +46,9 @@ export const TextWrapperHome = styled.div`
     max-width: 540px;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        margin: 0 auto;
+        width: 100%;
+        margin-right: 16px;
+        margin-left: 16px;
     }
 `;
 
@@ -46,67 +56,88 @@ export const HeadingHome = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px) {
         align-items: center; 
     }
 `;
 
 export const TitleLeftHome = styled(TitleCenter)`
         text-align: left; 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px)  {
         text-align: center;   
     }
 `;
 
 export const FirstHomeRow = styled.div`
     display: flex;
-    width: 100%;
+   // width: 100%;
 
-   @media only screen and (max-width: ${breakpoints.tablet}) {
+   @media only screen and (max-width:325px) {
         flex-direction: column;
-        align-items: center; 
+        justify-content: center; 
     }
 `;
 
 export const AnimationText = styled.div`
-    margin: 0;
-    padding: 0;
     font-weight: 500;
     color: ${colors.mainBlue};
     font-size: ${sizes.sizeXXXL};
     cursor: pointer;
     font-weight: 400;
+    height: 100%;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         font-size: ${sizes.sizeXL};
         font-weight: 400;
-        text-align: center;
-        margin-top: -10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        //text-align: left;
     }
 `;
 
-
 export const SliderText = styled(Slider)`
-    width: 220px;
-    height: 100%;
+    margin-left: 12px;
+    width: 225px;
     position: relative;
     top: 2px;
-    left: 6px;
+  
+    .slick-slide {
+        @media only screen and (max-width: ${breakpoints.tablet}) {
+            height: 37px;
+        }     
+    }
+    
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 140px;
+        margin-left: 8px;
+        top:2px; 
+    }
 `;
 
-
 export const ImgHomeContainer = styled.div`
-    height: 480px;
-    width: 480px;
     border-radius: 50%;
     overflow: hidden;
     outline: none;
+    margin-top: 20px;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
-        height: 320px;
-        width: 320px; 
-        margin-top: 30px;
+    @media only screen and (max-width: 319px) { 
+        width: 240px;
+        height: 240px; 
+    }
+    @media only screen and (min-width:319px) and (max-width: 370px) { 
+        width: 280px;
+        height: 280px; 
+    }
+    @media only screen and (min-width:370px) and (max-width: 420px) { 
+        width: 338px; 
+        height: 338px;
+    }
+    @media only screen and (min-width: 420px) and (max-width: 1130px) { 
+        width: 380px; 
+        height: 380px;
+    }
+
+    @media only screen and (min-width: 1130px) { 
+        width: 480px; 
+        height: 480px;
     }
 `;
 
@@ -116,7 +147,6 @@ export const HeroHomeImg = styled.img`
  `;
 
  export const SliderImg = styled(Slider)`
-    width: 480px;
     margin: 0 auto;
   .slick-dots li {
     width: 10px;
@@ -140,8 +170,21 @@ export const HeroHomeImg = styled.img`
     .loading {   
     }
     }
-    @media only screen and (max-width: ${breakpoints.tablet}) { 
-        width: 320px; 
+    @media only screen and (max-width: 319px) { 
+        width: 240px;
+    }
+
+    @media only screen and (min-width:319px) and (max-width: 370px) { 
+        width: 280px; 
+    }
+    @media only screen and (min-width:370px) and (max-width: 420px) { 
+        width: 338px; 
+    }
+    @media only screen and (min-width: 420px) and (max-width: 1130px) { 
+        width: 380px; 
+    }
+    @media only screen and (min-width: 1130px) { 
+        width: 480px; 
     }
 
     .hideDesktop {
@@ -160,7 +203,7 @@ export const SubtitleHero = styled(Subtitle)`
     margin-top: 20px;    
     margin-bottom: 30px;
     
-    @media only screen and (max-width: ${breakpoints.tablet}) { 
+    @media only screen and (max-width: 1250px) { 
         text-align: center;
     }   
 `;

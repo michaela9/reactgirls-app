@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 import { 
     NavLogo,
     NavMenu,
@@ -18,18 +19,40 @@ import { Container, Wrapper } from '../../components/reusable/styled';
 import socialArr from './socialArr';
 
 function Navbar() {
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
     const [click, setClick] = useState(false);
-    const [navLogo, setNavLogo] = useState(false);
-
-    const handleClick = () => setClick(!click);
-    
+    const handleClick = () => setClick(!click); 
     const toggleHome = () => {
         scroll.scrollToTop()
     }
-    const changeLogoSize = () => {
-        setNavLogo(true);
-    }
-    window.addEventListener("scroll", changeLogoSize);
+
+    const useMediaQuery = (width) => {
+        const [targetReached, setTargetReached] = useState(false);
+      
+        const updateTarget = useCallback((e) => {
+          if (e.matches) {
+            setTargetReached(true);
+          } else {
+            setTargetReached(false);
+          }
+        }, []);
+      
+        useEffect(() => {
+          const media = window.matchMedia(`(max-width: ${width}px)`);
+          media.addListener(updateTarget);
+      
+          // Check on mount (callback is not called until a change occurs)
+          if (media.matches) {
+            setTargetReached(true);
+          }
+      
+          return () => media.removeListener(updateTarget);
+        }, []);
+      
+        return targetReached;
+      };
+      const isBreakpoint = useMediaQuery(960)
     return (
         <Nav>
             <Container>
@@ -60,6 +83,7 @@ function Navbar() {
                     </NavWrapper> 
                 </Wrapper>
             </Container>
+            { !isBreakpoint &&   
             <Social>
                 {socialArr.map((social) => (
                     <a key={social.link} href={social.link} target="blank">
@@ -68,6 +92,7 @@ function Navbar() {
                     )
                 )}
             </Social>
+            }
         </Nav>
     )
 }

@@ -17,7 +17,7 @@ export const WrapperThanks = styled(Paragraph)`
     border-bottom: 2px solid #EBEBEB;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 40px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
 `;

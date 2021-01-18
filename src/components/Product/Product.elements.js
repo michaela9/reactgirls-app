@@ -10,25 +10,30 @@ export const ProductInfo = styled(Paragraph)`
     margin-top: 32px;
     color: ${colors.grey};
     text-align: left;
-    width: 90%;
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
         cursor: pointer;
         text-decoration: none;
     }
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1130px) {
         text-align: center;
+    }
+    @media only screen and (max-width: ${breakpoints.tablet} ) { 
+        //width: 100%;
+        margin-right: 16px;
+        margin-left: 16px;
     }
 `;
 
 export const ProductMainTitle = styled(TitleCenter)`
     padding: 80px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding: 40px ;
+    @media only screen and (max-width: 1130px) {
+        padding: 40px;
+        text-align: center;
     }
 `;
 
@@ -40,7 +45,7 @@ export const ProductInfoRow = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1130px) {
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
@@ -51,14 +56,13 @@ export const ProductInfoRow = styled.div`
 
 export const ProductInfoColumn = styled.div`
     flex: 1;
-    max-width: 60%;
+    //max-width: 60%;
     flex-basis: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     
-    @media only screen and (max-width: ${breakpoints.tablet}) {
-        max-width: 90%;
+    @media only screen and (max-width: 1130px) {
         flex-basis: 100%;
         display: flex;
         justify-content: center;
@@ -68,6 +72,9 @@ export const ProductInfoColumn = styled.div`
 
 export const ProductTitle = styled(TitleLeft)`
     margin-bottom: -15px;
+    @media only screen and (max-width: 1130px) {
+        text-align: center;
+    }
 `;
 
 export const ProductButton = styled(Button)`
@@ -83,18 +90,37 @@ export const ProductImg = styled.img`
 export const ProductImgContainer = styled.div`
    border-radius: 50%;
    overflow: hidden;
-   margin-top: 40px;
-   margin-bottom: 20px;
-   width: 380px;
-   height: 380px;
+   margin-bottom: 30px;
    display: flex;
    justify-content: ${({imgStart}) => (imgStart ? 'flex-start' : 'flex-end')};
 
-   @media only screen and (max-width: ${breakpoints.tablet}) {
-    width: 320px;
-    height: 320px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+   @media only screen and (max-width: 319px) { 
+        width: 240px;
+        height: 240px; 
+    }
+    @media only screen and (min-width:319px) and (max-width: 370px) { 
+        width: 280px;
+        height: 280px; 
+    }
+    @media only screen and (min-width:370px) and (max-width: 420px) { 
+        width: 338px; 
+        height: 338px;
+    }
+    @media only screen and (min-width: 420px) and (max-width: 960px) { 
+        width: 380px; 
+        height: 380px;
+    }
+    @media only screen and (min-width: 960px)   and (max-width: 1130px) { 
+        width: 380px; 
+        height: 380px;
+    }
+
+    @media only screen and (min-width: 1130px) { 
+        width: 400px; 
+        height: 400px;
+        margin-right: ${({imgStart}) => (imgStart ? '50px' : '0px')};
+        margin-left: ${({imgStart}) => (imgStart ? '0px' : '50px')};
+        margin-bottom: 0px;
     }
 `;
 

@@ -5,7 +5,7 @@ import { ParagraphS } from '../reusable/styled';
 export const ContactCardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     justify-content: space-around;

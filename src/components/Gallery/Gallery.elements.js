@@ -31,7 +31,7 @@ export const GalleryContainer = styled.div`
     //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding: 40px 20px 0px 20px;
+        padding: 40px 0px 0px 0px;
     }
 `;
 

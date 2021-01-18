@@ -11,6 +11,7 @@ export const SubTitleAbout = styled(Subtitle)`
 export const ButtonAbout = styled(Button)`
     align-items: center;
     align-self: center;
+    max-width: 180px;
 `;
 
 export const AboutText = styled(Paragraph)`

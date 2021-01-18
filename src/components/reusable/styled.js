@@ -56,7 +56,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        width: 85%;
+        width: 100%;
     }
 `;
 
@@ -86,6 +86,7 @@ export const Name = styled(Heading3)`
 `;
 
 export const Button = styled.a`
+    width: 100%;
     background-color: ${colors.mainBlue};
     border: none;
     white-space: nowrap;

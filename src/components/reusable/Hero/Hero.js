@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTheme, useThemeUpdate } from '../../../ThemeContext';
 
 import { 
     TitleContainer,
@@ -19,16 +20,13 @@ function Hero({
     img,
     form
 } ) {
-    const [logoPadding, setLogoPadding] = useState(false);
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
 
-    const changePadding = () => {
-        setLogoPadding(true);
-    }
-    window.addEventListener("scroll", changePadding);
     return (
             <Container lightBlue>
                 <Wrapper>
-                    <HeroWrapper className={logoPadding ? 'active' : ''} >
+                    <HeroWrapper className={navLogo ? 'active' : ''} >
                         <TitleContainer>
                             <HeroTitle > {title} </HeroTitle>
                             <SubtitleHero > {subtitle} </SubtitleHero>

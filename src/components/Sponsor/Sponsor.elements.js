@@ -11,7 +11,7 @@ export const SponsorContainer = styled.div`
     align-items: center;
     
     @media only screen and (max-width: 768px) {
-    padding: 40px 50px;
+    padding: 40px 0px;
     }
 `;
 
@@ -20,8 +20,8 @@ export const SponsorImg = styled.img`
     margin: 40px; 
 
     @media only screen and (max-width: 768px) {
-        height: 58px;
-        margin: 10px;
+        height: 60px;
+        margin: 15px;
     }
 `;
 
@@ -34,6 +34,10 @@ export const SponsorImgContainer = styled.div`
     margin: 0 auto;
     padding: 15px
     10px 15px 10px; 
+    @media only screen and (max-width: 768px) {
+        //padding: 10px
+    8px 10px 8px; 
+    }
 `;
 
 export const GoldSponsorship = styled.div`
@@ -51,6 +55,9 @@ export const GoldSponsorship = styled.div`
         padding-left: 10px;
         margin-bottom: 10px;  
         margin-top: 40px;
+        padding-bottom: 15px;
+        //margin-left: 16px;
+        border-left: 15px solid #b8860b;
     }
 `;
 
@@ -66,7 +73,9 @@ export const SilverSponsorship = styled.div`
     @media only screen and (max-width: 768px) {
         border-left: 3px solid #838996;
         padding-left: 10px;
-        margin-bottom: 10px;  
+        margin-bottom: 10px; 
+        border-left: 15px solid #838996; 
+        padding-bottom: 15px;
     }
 `;
 
@@ -81,6 +90,8 @@ export const CommunitySponsorship = styled.div`
     @media only screen and (max-width: 768px) {
         border-left: 3px solid #003399;
         padding-left: 10px;
+        padding-bottom: 15px;
         margin-bottom: 10px; 
+        border-left: 15px solid #003399;
     }
 `;

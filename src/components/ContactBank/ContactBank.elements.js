@@ -14,7 +14,7 @@ export const ContentContainer = styled.div`
         flex-direction: column;
         align-items: center;
         position: relative;
-        left: 40px;  
+        left: 20px;  
     }
  `;
 

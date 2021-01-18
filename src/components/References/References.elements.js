@@ -8,15 +8,18 @@ export const ReferenceContainer = styled.div`
     width: 100%;
     padding: 80px;
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        padding: 60px; 
+        padding: 60px 16px; 
     }
-
 `;
 
 export const Speech = styled.div`
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
 `;
 
 export const SpeechIcon = styled.img`
@@ -30,7 +33,11 @@ export const SpeechText = styled(ParagraphS)`
     font-style: italic;
     margin-bottom: 15px;
     //color: ${colors.darkGrey};
-    font-weight: 400;
+    font-weight: 300;
+
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        margin-bottom: 15px;
+    }
 `;
 
 export const SpeechImgContainer = styled.div`
@@ -38,7 +45,8 @@ export const SpeechImgContainer = styled.div`
     width: 150px;
     height: 150px;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    //margin: 0 auto;
 `;
 
 export const SpeechImg = styled.img`
@@ -55,7 +63,7 @@ export const SpeechCont = styled.div`
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         width: 90%; 
-        margin: 40px auto 0 auto;
+        margin: 0 auto 0 auto;
     }
 `;
 

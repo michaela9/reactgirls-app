@@ -8,9 +8,12 @@ export const NewsletterContainer = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    //border: 1px solid red;
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        margin: 40px auto 40px auto; 
-        width: 90%; 
+        margin: 40px auto 40px auto;
+        padding-right: 16px;
+        padding-left: 16px;
+        width: 100%; 
     }   
 `;
 
@@ -36,7 +39,7 @@ export const NewsletterButton = styled.input`
     width: 100%;
     background-color: ${colors.mainBlue};
     border: none;
-    white-space: nowrap;
+    //white-space: nowrap;
     outline: none;
     border: none;
     cursor: pointer;
@@ -55,11 +58,18 @@ export const NewsletterButton = styled.input`
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    max-width: 300px;
-
+    width: 300px;
+    //border: 1px solid red;
     &:hover {
         transition: all 0.2s ease-in-out;
         background-color: #0099AE;  
+    }
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding: 0;
+        width: 280px;
+    }
+    @media only screen and (max-width: 325px) {
+        width: 240px;
     }
 `;
 
@@ -69,9 +79,17 @@ export const InputContainer = styled.div`
     padding: 0 32px;
     height: 50px;
     border-radius: 25px;
-    max-width: 300px;
+    width: 300px;
+    //max-width: 300px;
     display: flex;
-    align-items: center;
+    //align-items: center;
+    //border:1px solid blue;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 280px;
+    }
+    @media only screen and (max-width: 325px) {
+        width: 240px;
+    }
     `;
 
 export const CustomInput = styled.input`
@@ -84,18 +102,30 @@ export const CustomInput = styled.input`
     border-color: transparent;
     background: none;
     cursor: text;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+    }
   }
 `;
 
 export const ButtonInputCont = styled.div`
+    //width: 300px;
     display: flex;
     flex-direction: column;
     height: 120px;
     justify-content: space-between;
+    align-items: flex-start;
+    //border: 1px solid red;
+    margin: 0 0;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px) {
         align-items: center;
-        margin-bottom: 40px;
+        //margin-bottom: 40px;
+        width: 280px;
+        margin: 0 auto;
+    }
+    @media only screen and (max-width: 325px) {
+        width: 240px;
     }
 `;
 

@@ -15,6 +15,12 @@ export const NavWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 80px;
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        margin-right: 16px;
+        margin-left: 16px
+    }
+
 `;
 
 export const NavLogo = styled.img`
@@ -25,30 +31,28 @@ export const NavLogo = styled.img`
     transition: all 1.5s ease-in-out;
     top: 80px;
     cursor: pointer;
+    transition: all 1.5s ease-in-out;
+    
 
     &.active {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        position: relative;
-        top: 0;
+        position: static;
     }
 
     @media screen and (max-width: ${breakpoints.tablet}) {
-        margin: 0 auto;
-        position: relative;
-        left: 5%;
         border-radius: 50%;
-        transition: all 1.5s ease-in-out;
         cursor: pointer;
+        justify-self: center;
+        position: relative;
+        left: 25%;
         &.active {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            position: relative;
-            top: 0;
-            left: -39%;
-    }
+            position: static;
+        }
     }
 `;
 
@@ -137,10 +141,10 @@ export const MobileIcon = styled.div`
 `;
 
 export const MobileIconClose = styled.img`
-    height: 30px;
+    width: 20px;
 `;
 
 export const MobileIconMenu = styled.img`
-    height: 45px;
+    width: 25px;
 `;
 
