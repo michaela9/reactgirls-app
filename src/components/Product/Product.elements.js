@@ -118,8 +118,8 @@ export const ProductImgContainer = styled.div`
     @media only screen and (min-width: 1130px) { 
         width: 400px; 
         height: 400px;
-        margin-right: ${({imgStart}) => (imgStart ? '50px' : '0px')};
-        margin-left: ${({imgStart}) => (imgStart ? '0px' : '50px')};
+        margin-right: ${({imgStart}) => (imgStart ? '80px' : '0px')};
+        margin-left: ${({imgStart}) => (imgStart ? '0px' : '80px')};
         margin-bottom: 0px;
     }
 `;

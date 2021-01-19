@@ -40,17 +40,25 @@ export const SpeechText = styled(ParagraphS)`
     }
 `;
 
+export const SpeechNameContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+`;
+
 export const SpeechImgContainer = styled.div`
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
-    margin-bottom: 15px;
+    //margin-bottom: 15px;
     //margin: 0 auto;
+    margin-right: 15px;
+
 `;
 
 export const SpeechImg = styled.img`
-    width: 160px;
+    width: 70px;
     object-fit: cover;
 `;
 
@@ -69,7 +77,8 @@ export const SpeechCont = styled.div`
 
 export const SpeechName = styled(ParagraphS)`
     text-align: left;
-    font-size: ${sizes.sizeS};
+    font-size: ${sizes.sizeXS};
     color: ${colors.grey};
-    font-weight: 300;
+    font-weight: 500;
+    font-style: italic;
 `;

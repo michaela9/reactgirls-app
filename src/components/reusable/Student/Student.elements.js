@@ -7,7 +7,9 @@ export const StudentWrapper = styled.div`
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         padding-top: 60px;
-        padding-bottom: 60px;      
+        padding-bottom: 60px;   
+        margin-right: 16px;
+        margin-left: 16px;   
     }
 `;
 
@@ -15,7 +17,7 @@ export const StudentContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     margin: 40px auto 20px auto;
     
@@ -36,8 +38,8 @@ export const StudentCard = styled.div`
     flex-direction: column;
     align-items: center;
 
-    @media only screen and (max-width: 768px) {
-        width: 75%;
+    @media only screen and (max-width: ${breakpoints.tablet})  {
+        width: 100%;
         
     }
 

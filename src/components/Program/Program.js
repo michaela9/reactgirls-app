@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 
 import {
     ProgramTable,
@@ -9,12 +9,40 @@ import {
     ProgramTableBody,
     ProgramData,
     ProgramDataTopic,
-    ProgramWrapper
+    ProgramWrapper,
+    ProgramDataRow
 } from './Program.elements';
 
 import { Container, Wrapper, TitleCenter } from '../reusable/styled';
 
+const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  }; 
+
 function Program({data}) {
+    const isBreakpoint = useMediaQuery(960);
     return (
         <>
             <Container >
@@ -30,6 +58,7 @@ function Program({data}) {
                                 <ProgramDataHead >Místo</ProgramDataHead>
                             </ProgramTableRowH>
                         </ProgramTableHead>
+                        { !isBreakpoint &&  
                         <ProgramTableBody>
                             {data.map((item) => {
                                 return(
@@ -44,6 +73,27 @@ function Program({data}) {
                                 })
                             }
                         </ProgramTableBody>
+                        }
+                        { isBreakpoint &&  
+                        <ProgramTableBody>
+                            {data.map((item) => {
+                                return(
+                                    <ProgramTableRow key={item.topic} data={data} 
+                                    border={item.border}>
+                                        <ProgramDataRow>
+                                            <ProgramData>{item.date}</ProgramData>
+                                            <ProgramData>{item.time}</ProgramData>
+                                        </ProgramDataRow>
+                                        <ProgramDataRow>
+                                            <ProgramDataTopic>{item.topic}</ProgramDataTopic>
+                                            <ProgramData>{item.place} </ProgramData>
+                                        </ProgramDataRow>
+                                    </ProgramTableRow>
+                                    )
+                                })
+                            }
+                        </ProgramTableBody>
+                        }
                     </ProgramTable>
                     </ProgramWrapper>
                 </Wrapper>

@@ -3,18 +3,19 @@ import { sizes, colors, breakpoints } from '../../../variables';
 
 export const InfoCont = styled.div`
     display: flex;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1100px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: space-between;
     margin: 80px auto 0 auto;
+    //border: 1px solid red;
 
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
         padding-bottom: 40px;
-        align-items: center;
-        margin: 60px auto 0 auto;
+        margin: 60px auto 0 auto;  
+    }
+    @media only screen and (min-width: ${breakpoints.tablet} ) and (max-width: 1250px ) {
         
     }
 `;
@@ -22,9 +23,12 @@ export const InfoCont = styled.div`
 export const WrapperInfoSection = styled.div`
     padding-top: 80px;
     padding-bottom: 40px;
+    //border: 1px solid blue;
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 60px;
         padding-bottom: 0;
+        margin-right: 16px;
+        margin-left: 16px;
     }
 `;
 
@@ -39,7 +43,8 @@ export const InfoCard = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-
+    margin-right: 20px;
+    margin-left: 20px;
     
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 0 10px;

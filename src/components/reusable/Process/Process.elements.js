@@ -10,13 +10,16 @@ export const ProcessWrapper = styled.div`
 export const ProcessContainer = styled.div`
     width: 100%;
     margin-top: 80px;
+    //align-items: flex-start;
 `;
 
 export const ProcessRow = styled.div`
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: ${({reversed}) => (reversed ? `row-reverse`  : `row` )};
+    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         flex-direction: ${({reversed}) => (reversed ? `row`  : `row` )};
@@ -48,8 +51,8 @@ export const ProcessGraphic = styled.div`
 `;
 
 export const ProcessLine = styled.div`
-    background-color: ${colors.mainBlue} ;
-    width: 3px;
+    background-color: ${colors.veryLightGrey} ;
+    width: 1px;
     height: 130px;
     display: ${({last}) => (last ? `none`  : `block` )};
     @media screen and (max-width: ${breakpoints.tablet}) {
@@ -71,15 +74,17 @@ export const ProcessLineMobile = styled.div`
 
 export const ProcessPoint = styled.h1`
     width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 3px solid ${colors.mainBlue};
+    height: 120px;
+    //border-radius: 50%;
+    //border: 3px solid ${colors.mainBlue};
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 60px;
+    align-items: flex-end;
+    font-size: 120px;
     font-weight: 300;
     color: ${colors.mainBlue};
+    //border: 1px solid red;
+    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         width: 80px;
@@ -92,6 +97,7 @@ export const ProcessPoint = styled.h1`
 export const ProcessCont = styled.div`
     width: 45%;
     //padding: 15px;
+    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         width: 65%;

@@ -24,14 +24,14 @@ export const SliderLector = styled(Slider)`
 `;
 
 export const CardsContainer = styled.div`
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     padding: 80px 20px;
 
     @media only screen and (max-width: 1280px) {
         padding: 60px 40px;
-        max-width: 1000px;
+        max-width: 960px;
     }
     @media only screen and (max-width: 1200px) {
         padding: 60px 40px;

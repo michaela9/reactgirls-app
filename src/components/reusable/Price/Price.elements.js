@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors, breakpoints } from '../../../variables';
-import { TitleLeft, Button } from '../styled';
+import { TitleLeft, Button, ParagraphS } from '../styled';
 
 export const PriceWrapper = styled.div`
     padding-top: 80px;
@@ -8,7 +8,7 @@ export const PriceWrapper = styled.div`
 `;
 
 export const PriceArea = styled.div`
-    border-bottom: 2px solid ${colors.mainBlue};
+    border-bottom: 2px solid ${colors.veryLightGrey};
     border-radius: 30px 30px 0px 0px;
     font-size: ${sizes.sizeXXXL} ;
     color: ${colors.darkGrey};
@@ -33,9 +33,15 @@ export const PriceRectangle = styled.div`
     border-radius: 30px; 
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.10), 0px 0px 4px rgba(68, 68, 68, 0.1);
 
-    @media screen and (max-width: ${breakpoints.tablet}) {
+    @media screen and (max-width: 481px) {
         width: 300px;
         margin: 20px auto 10px auto;
+    }
+    @media screen and (max-width: 380px) {
+        width: 240px;
+        margin: 20px auto 10px auto;
+        background: none;
+        box-shadow: none;
     }
 `;
 
@@ -50,6 +56,7 @@ export const PriceContainer = styled.div`
 export const PriceRow = styled.div`
     display: flex;
     margin-bottom: 28px;
+    align-items: flex-start;
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin-bottom: 20px;
     }
@@ -59,9 +66,10 @@ export const PriceIcon = styled.img`
     width: 18px;
     height: 18px;
     margin-right: 10px;
+    margin-top: 3px;
 `;
 
-export const PriceText = styled.div`
+export const PriceText = styled(ParagraphS)`
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
 `;

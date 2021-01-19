@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 import  { breakpoints } from '../../../variables';
-import { TitleLeft, Subtitle } from '../styled';
+import { TitleLeft, Subtitle, Button } from '../styled';
 
 export const HeroWrapper = styled.div`
     display: flex;
     padding: 80px 0 80px 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    //border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 140px 0 60px 0;
@@ -14,27 +18,37 @@ export const HeroWrapper = styled.div`
             padding: 40px 0 20px 0; 
         }
     }
+
+    @media only screen and (min-width: 1250px) { 
+        flex-direction: row;
+    }
  `;
 
 export const HeroTitle = styled(TitleLeft)`
 
-@media screen and (max-width: ${breakpoints.tablet}) {
+@media screen and (max-width: 1250px) {
         text-align: center;
     }
+`;
+
+export const ButtonHero = styled(Button)`
+    max-width: 180px;
 `;
 
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction:column;
-    width: 45%;
+    width: 50%;
     margin-right: 50px;
     justify-content: center;
     align-items: flex-start;
     //border: 1px solid red;
 
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        width: 85%;
+    @media screen and (max-width: 1250px) {
+        width: 100%;
         margin: 0 auto 40px auto;
+        padding-left: 16px;
+        padding-right: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,25 +56,66 @@ export const TitleContainer = styled.div`
  `;
 
  export const ImgContainer = styled.div`
-    width: 500px;
-    height: 500px;
+    width: 45px;
+    height: 450px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 5% 0 0;
+
+
+
+
     //border: 1px solid red;
 
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        width: 350px;
-        height: 350px;
-        margin: 0 auto 0 auto;
+    @media only screen and (max-width: 319px) { 
+        width: 240px;
+        height: 240px;         
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    @media only screen and (min-width:319px) and (max-width: 370px) { 
+        width: 280px;
+        height: 280px; 
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    @media only screen and (min-width:370px) and (max-width: 420px) { 
+        width: 320px; 
+        height: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @media only screen and (min-width: 420px) and (max-width: 1250px) { 
+        width: 360px; 
+        height: 360px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width: 1250px) { 
+        width: 450px; 
+        height: 450px;
+
     }
  `;
 
 export const HeroImg = styled.img`
-    height: 500px;
+    height: 450px;
     width: auto;
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        height: 350px; 
+    @media only screen and (max-width: 319px) { 
+        height: 240px; 
+    }
+    @media only screen and (min-width:319px) and (max-width: 370px) { 
+        height: 280px; 
+    }
+    @media only screen and (min-width:370px) and (max-width: 420px) { 
+        height: 320px;
+    }
+    @media only screen and (min-width: 420px) and (max-width: 1250px) { 
+        height: 360px;
+    }
+
+    @media only screen and (min-width: 1250px) { 
+        height: 450px;
     }
  `;
 

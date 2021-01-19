@@ -116,7 +116,8 @@ export const ImgHomeContainer = styled.div`
     border-radius: 50%;
     overflow: hidden;
     outline: none;
-    margin-top: 20px;
+    margin-top: 0px;
+
 
     @media only screen and (max-width: 319px) { 
         width: 240px;
@@ -138,6 +139,7 @@ export const ImgHomeContainer = styled.div`
     @media only screen and (min-width: 1130px) { 
         width: 480px; 
         height: 480px;
+        margin-top: 20px;
     }
 `;
 
