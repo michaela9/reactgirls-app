@@ -17,6 +17,7 @@ import {
 
 import { Container, Wrapper } from '../../components/reusable/styled';
 import socialArr from './socialArr';
+import SvgFacebook from '../../iconComponents/SvgFacebook';
 
 function Navbar() {
     const navLogo = useTheme();

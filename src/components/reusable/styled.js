@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import  { sizes, colors, breakpoints } from '../../variables.js';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 
 /*Typography */
@@ -38,6 +39,26 @@ export const Paragraph = styled.p`
 export const ParagraphS = styled.p`
     font-size: ${sizes.sizeS};
     line-height: 1.7;
+`;
+
+export const LinkA = styled.a `
+    font-size: ${sizes.sizeM};
+    color: ${colors.mainBlue};
+    font-weight: 500;  
+    
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeS};
+    }
+`;
+
+export const LinkScroll = styled(Link) `
+    font-size: ${sizes.sizeM};
+    color: ${colors.mainBlue};
+    font-weight: 500;  
+    
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeS};
+    }
 `;
 
 /*Layout */
@@ -114,6 +135,5 @@ export const Button = styled.a`
         background-color: #0099AE;  
     }
 `;
-
 
 export default styled;

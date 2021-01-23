@@ -1,5 +1,5 @@
 import React from 'react';
-import { GalleryContainer, GalleryImg, CarouselGallery, WrapperGallery, SliderGallery } from './Gallery.elements';
+import { GalleryContainer, GalleryImg, CarouselGallery, WrapperGallery, SliderGallery, NextArrow, PrevArrow } from './Gallery.elements';
 import { galleryArr } from './galleryArr';
 import { Container, TitleCenter, Wrapper } from '../reusable/styled';
 import "slick-carousel/slick/slick.css";
@@ -16,8 +16,8 @@ function Gallery() {
         slidesToScroll: 1,
         arrows: true,
         accessibility: true,
-        nextArrow: <img src="/images/icons/right-arrow.svg" />,
-        prevArrow: <img src="/images/icons/left-arrow.svg" />,
+        nextArrow: <NextArrow src="/images/icons/right-arrow.svg" />,
+        prevArrow: <PrevArrow src="/images/icons/left-arrow.svg" />,
         responsive: [
             {
             breakpoint: 1500,
@@ -35,7 +35,7 @@ function Gallery() {
             breakpoint: 960,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
+                
                 }
             }
         ]

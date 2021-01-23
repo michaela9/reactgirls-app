@@ -17,7 +17,7 @@ export const HeroHomeRow = styled.div`
 
     @media only screen and (max-width: 1250px) {
         padding-top: 150px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         &.active{
             padding-top: 40px;
 
@@ -25,6 +25,7 @@ export const HeroHomeRow = styled.div`
     @media only screen and (max-width: 325px) {
         margin-left: 16px;
         margin-right: 16px;
+        padding-bottom: 40px;
     }
 }
 `;
@@ -62,15 +63,21 @@ export const HeadingHome = styled.div`
 `;
 
 export const TitleLeftHome = styled(TitleCenter)`
+//border: 1px solid red;
         text-align: left; 
     @media only screen and (max-width: 1250px)  {
         text-align: center;   
+    }
+    @media only screen and (max-width: 330px) {
+        font-size: 22px;
+        font-weight: 700;
     }
 `;
 
 export const FirstHomeRow = styled.div`
     display: flex;
    // width: 100%;
+   //border: 1px solid red;
 
    @media only screen and (max-width:325px) {
         flex-direction: column;
@@ -85,11 +92,20 @@ export const AnimationText = styled.div`
     cursor: pointer;
     font-weight: 400;
     height: 100%;
+    //border: 1px solid red;
+    :hover{
+        filter: saturate(50%) contrast(75%);
+    }
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         font-size: ${sizes.sizeXL};
         font-weight: 400;
         //text-align: left;
+    }
+    @media only screen and (max-width: 330px) {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
     }
 `;
 
@@ -98,25 +114,38 @@ export const SliderText = styled(Slider)`
     width: 225px;
     position: relative;
     top: 2px;
+    //border: 1px solid red;
   
     .slick-slide {
         @media only screen and (max-width: ${breakpoints.tablet}) {
             height: 37px;
-        }     
+        } 
+        @media only screen and (max-width: 330px) {
+            height: 28px;
+        } 
     }
     
     @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 140px;
-        margin-left: 8px;
-        top:2px; 
+        //margin-left: 8px;
+        top: 2px; 
+        margin: 0 auto 0 8px;
     }
+    @media only screen and (max-width: 330px) {
+        //margin-left: 12px;
+        height: 28px;
+        width: 150px;
+        position: relative;
+        top: 2px;
+        margin: 0 auto;
+    }    
 `;
 
 export const ImgHomeContainer = styled.div`
     border-radius: 50%;
     overflow: hidden;
     outline: none;
-    margin-top: 0px;
+    margin-top: 20px;
 
 
     @media only screen and (max-width: 319px) { 
@@ -125,7 +154,7 @@ export const ImgHomeContainer = styled.div`
     }
     @media only screen and (min-width:319px) and (max-width: 370px) { 
         width: 280px;
-        height: 280px; 
+        height: 280px;
     }
     @media only screen and (min-width:370px) and (max-width: 420px) { 
         width: 338px; 
@@ -134,12 +163,13 @@ export const ImgHomeContainer = styled.div`
     @media only screen and (min-width: 420px) and (max-width: 1130px) { 
         width: 380px; 
         height: 380px;
+
     }
 
     @media only screen and (min-width: 1130px) { 
         width: 480px; 
         height: 480px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 `;
 

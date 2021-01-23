@@ -49,8 +49,8 @@ export const ProductInfoRow = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 `;
 

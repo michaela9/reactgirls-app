@@ -70,6 +70,8 @@ export const NewsletterButton = styled.input`
     }
     @media only screen and (max-width: 325px) {
         width: 240px;
+        font-size: ${sizes.sizeS};
+        height: 42px;
     }
 `;
 
@@ -89,6 +91,8 @@ export const InputContainer = styled.div`
     }
     @media only screen and (max-width: 325px) {
         width: 240px;
+        padding: 0 25px;
+        height: 42px;
     }
     `;
 
@@ -104,6 +108,10 @@ export const CustomInput = styled.input`
     cursor: text;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
+    }
+    @media only screen and (max-width: 325px) {
+        width: 240px;
+        font-size: ${sizes.sizeS};
     }
   }
 `;
@@ -126,6 +134,7 @@ export const ButtonInputCont = styled.div`
     }
     @media only screen and (max-width: 325px) {
         width: 240px;
+        height: 100px;
     }
 `;
 

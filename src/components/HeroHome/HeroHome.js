@@ -99,8 +99,7 @@ function HeroHome( {img}) {
         autoplaySpeed: 1350,
         arrows: false,
         speed: 500,
-        pauseOnHover: true,
-        
+        pauseOnHover: true, 
       };
       const isBreakpoint = useMediaQuery(1250);
       const navLogo = useTheme();

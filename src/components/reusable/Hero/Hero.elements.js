@@ -29,6 +29,10 @@ export const HeroTitle = styled(TitleLeft)`
 @media screen and (max-width: 1250px) {
         text-align: center;
     }
+    @media only screen and (max-width: 330px) {
+        font-size: 22px;
+        font-weight: 700;
+    }
 `;
 
 export const ButtonHero = styled(Button)`

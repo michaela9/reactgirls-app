@@ -51,6 +51,10 @@ export const InfoCard = styled.div`
         width: 280px;
         height: 380px;
     }
+    @media screen and (max-width: 320px) {
+        padding: 0 5px 20px 5px;
+        height: auto;
+    }
 `;
 
 export const InfoTitle = styled.div`

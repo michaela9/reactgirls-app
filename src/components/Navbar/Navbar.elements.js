@@ -42,6 +42,8 @@ export const NavLogo = styled.img`
     }
 
     @media screen and (max-width: ${breakpoints.tablet}) {
+        height: 140px;
+        width: 140px;
         border-radius: 50%;
         cursor: pointer;
         justify-self: center;
@@ -129,6 +131,9 @@ export const SocialIcon = styled.img`
         height: 20px;
         margin-bottom: 14px;
     }
+    :hover{
+        filter: invert(100%);
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -137,6 +142,9 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: ${breakpoints.tablet}) {
         display: flex;
         cursor: pointer;
+    }
+    :hover{
+        filter: invert(100%);
     }
 `;
 
@@ -147,4 +155,5 @@ export const MobileIconClose = styled.img`
 export const MobileIconMenu = styled.img`
     width: 25px;
 `;
+
 

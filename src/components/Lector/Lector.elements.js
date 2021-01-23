@@ -51,11 +51,11 @@ export const CardsContainer = styled.div`
     }
     @media only screen and (max-width: 380px) {
         padding: 60px 10px;
-        max-width: 250px;
+        max-width: 260px;
     }
     @media only screen and (max-width: 320px) {
         padding: 60px 10px;
-        max-width: 200px;
+        max-width: 220px;
     }
 `;
 

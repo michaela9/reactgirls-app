@@ -47,7 +47,53 @@ export const SliderGallery = styled(Slider)`
 export const GalleryImg = styled.img`
     //height: 350px;
     //border: 1px solid red;
+    padding: 10px;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        padding: 0px; 
+    }
 `;
+
+export const NextArrow = styled.img`
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        position: absolute;
+        right: 25px;
+        z-index: 100;
+        width: 30px;
+        height: 30px;   
+        filter: invert(0%) contrast(500%) drop-shadow(0px 0px 14px black);
+    }
+    @media only screen and (max-width: 651px) {
+        right: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    :hover{
+        filter: invert(50%);
+    }
+`;
+
+export const PrevArrow = styled.img`
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        position: absolute;
+        left: 25px;
+        z-index: 100;
+        width: 30px;
+        height: 30px;
+        filter: invert(0%) contrast(500%) drop-shadow(0px 0px 14px black);
+    }
+    @media only screen and (max-width: 651px) {
+        left: 15px;
+        width: 20px;
+        height: 20px;
+
+    }
+    :hover{
+        filter: invert(50%);
+    }
+`;
+
 
 
 

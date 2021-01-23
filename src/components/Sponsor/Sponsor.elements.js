@@ -9,6 +9,7 @@ export const SponsorContainer = styled.div`
     margin: 0 auto;
     padding: 80px 50px;
     align-items: center;
+    //border: 1px solid red;
     
     @media only screen and (max-width: 768px) {
     padding: 40px 0px;
@@ -18,6 +19,7 @@ export const SponsorContainer = styled.div`
 export const SponsorImg = styled.img`
     height: 100px;
     margin: 40px; 
+    //border: 1px solid red;
 
     @media only screen and (max-width: 768px) {
         height: 60px;
@@ -26,6 +28,7 @@ export const SponsorImg = styled.img`
 `;
 
 export const SponsorImgContainer = styled.div`
+//border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,24 +38,26 @@ export const SponsorImgContainer = styled.div`
     padding: 15px
     10px 15px 10px; 
     @media only screen and (max-width: 768px) {
-        //padding: 10px
-    8px 10px 8px; 
+        //padding: 10px 8px 10px 8px; 
     }
 `;
 
 export const GoldSponsorship = styled.div`
+//border: 1px solid red;
     border-left: 5px solid #b8860b;
     color: #b8860b;
     font-size: ${sizes.sizeM};
     font-weight: 500;
     width: 100%;
     padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 15px;  
     margin-top: 50px;
 
     @media only screen and (max-width: 768px) {
         border-left: 3px solid #b8860b;
         padding-left: 10px;
+        padding-right: 10px;
         margin-bottom: 10px;  
         margin-top: 40px;
         padding-bottom: 15px;
@@ -68,11 +73,13 @@ export const SilverSponsorship = styled.div`
     font-weight: 500;
     width: 100%;
     padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 15px; 
 
     @media only screen and (max-width: 768px) {
         border-left: 3px solid #838996;
         padding-left: 10px;
+        padding-right: 10px;
         margin-bottom: 10px; 
         border-left: 15px solid #838996; 
         padding-bottom: 15px;
@@ -86,10 +93,12 @@ export const CommunitySponsorship = styled.div`
     font-weight: 500;
     width: 100%;
     padding-left: 15px;
+    padding-right: 15px;
     
     @media only screen and (max-width: 768px) {
         border-left: 3px solid #003399;
         padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 15px;
         margin-bottom: 10px; 
         border-left: 15px solid #003399;

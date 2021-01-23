@@ -2,7 +2,6 @@ import React from 'react';
 import { 
     Container, 
     Wrapper, 
-    TitleCenter,
 } from '../styled';
 
 import { 
@@ -14,6 +13,7 @@ import {
     PriceRectangle,
     PriceArea,
     PriceWrapper,
+    TitlePrice
 } from './Price.elements';
 
 function Price({mainPriceTitle, data, price, form }) {
@@ -21,7 +21,7 @@ function Price({mainPriceTitle, data, price, form }) {
         <Container>
             <Wrapper>
                 <PriceWrapper>
-                    <TitleCenter>{mainPriceTitle}</TitleCenter>
+                    <TitlePrice>{mainPriceTitle}</TitlePrice>
                     <PriceRectangle>
                         <PriceArea>
                             {price}

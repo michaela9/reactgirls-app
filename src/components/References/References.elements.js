@@ -17,7 +17,7 @@ export const Speech = styled.div`
     display: flex;
     flex-direction: column;
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        margin-top: 80px;
+        margin-top: 60px;
         margin-bottom: 0px;
     }
 `;
@@ -37,6 +37,7 @@ export const SpeechText = styled(ParagraphS)`
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         margin-bottom: 15px;
+        font-size: ${sizes.sizeXS};
     }
 `;
 
@@ -79,6 +80,10 @@ export const SpeechName = styled(ParagraphS)`
     text-align: left;
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
+
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        font-size: 13px;
+    }
 `;

@@ -5,133 +5,130 @@ import { Heading3, ParagraphS } from '../styled';
 export const ProcessWrapper = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
+    //border: 1px solid red;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-right: 16px;
+        margin-left: 16px;
+
+    }
 `;
 
 export const ProcessContainer = styled.div`
     width: 100%;
+    //border: 1px solid yellow;
     margin-top: 80px;
-    //align-items: flex-start;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        margin-top: 40px;
+    }
 `;
 
 export const ProcessRow = styled.div`
-    width: 100%;
+    //width: 100%;
+    //height: 25%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: ${({reversed}) => (reversed ? `row-reverse`  : `row` )};
     //border: 1px solid red;
-
     @media screen and (max-width: ${breakpoints.tablet}) {
-        flex-direction: ${({reversed}) => (reversed ? `row`  : `row` )};
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 32px;
+
     }
 `;
 
 export const ProcessNumber = styled.div`
-    width: 40%;
+    width: 45%;
     font-size: 150px;
     color: ${colors.mainBlue};
     text-align: ${({reversed}) => (reversed ? `left`  : `right` )};
-    border-right: 1px solid ${colors.mainBlue};
-
+    //border-right: 1px solid ${colors.mainBlue};
+    //border: 1px solid red;
     @media screen and (max-width: ${breakpoints.tablet}) {
-        text-align: ${({reversed}) => (reversed ? `left`  : `left` )};
+        text-align: left;
+        width: 25%;
+        font-size: 100px;
+        order: 3;
+        text-align: center;
+        position: relative;
+        top: -4px;
+
+
     }
 `;
 
 export const ProcessGraphic = styled.div`
-    width: 20%;
+   // border: 1px solid blue;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    @media screen and (max-width: ${breakpoints.tablet}) {
-       
-    }
-`;
-
-export const ProcessLine = styled.div`
-    background-color: ${colors.veryLightGrey} ;
-    width: 1px;
-    height: 130px;
-    display: ${({last}) => (last ? `none`  : `block` )};
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        height: 200px;
-        width: 3px;
-    }
-`;
-
-export const ProcessLineMobile = styled.div`
-    display: none; 
-
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        display: ${({first}) => (first ? `none`  : `block` )};
-        background-color: ${colors.mainBlue} ;
-        width: 5px;
-        height: 150px;
-    } 
-`;
-
-export const ProcessPoint = styled.h1`
-    width: 90px;
-    height: 120px;
-    //border-radius: 50%;
-    //border: 3px solid ${colors.mainBlue};
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 120px;
-    font-weight: 300;
-    color: ${colors.mainBlue};
-    //border: 1px solid red;
-    //border: 1px solid red;
-
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        width: 80px;
-        height: 80px;
-        font-size: 50px;
-        border: 3px solid ${colors.mainBlue};
-    }
-`;
-
-export const ProcessCont = styled.div`
-    width: 45%;
-    //padding: 15px;
-    //border: 1px solid red;
-
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        width: 65%;
-    }
-`;
-
-export const ProcessContOpp = styled.div`
-    width: 45%;
-    padding: 15px;
-
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
     @media screen and (max-width: ${breakpoints.tablet}) {
         display: none;
     }
 `;
 
+export const ProcessLine = styled.div`
+   //background-color: ${colors.veryLightGrey};
+   display: ${({last}) => (last ? `none`  : `` )};
+   width: 1px;
+   border-left: 2px dotted ${colors.veryLightGrey};
+   height: 190px;
+   position: absolute;
+    top: 0px;
+
+
+   
+`;
+
+export const ProcessPoint = styled.h1`
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: ${colors.mainBlue};
+
+    //position: absolute;
+    //top: 100px;
+    z-index: 100;
+    //border: 1px solid red;
+`;
+
+export const ProcessCont = styled.div`
+    width: 45%;
+    //border: 1px solid red;
+    padding: 15px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        width: 100%;
+        order:4;
+        padding: 15px 0 15px 15px;
+    }
+`;
+
 export const ProcessHeading = styled(Heading3)`
+   //border: 1px solid red;
    font-weight: 500;
    text-align: ${({reversed}) => (reversed ? `right`  : `left` )};
-
    @media screen and (max-width: ${breakpoints.tablet}) {
-        text-align: ${({reversed}) => (reversed ? `left`  : `left` )};
+        text-align: left;
     }
-
-
 `;
 
 export const ProcessInfo = styled(ParagraphS)`
+   //border: 1px solid red;
    font-size: ${sizes.sizeS};
    color: ${colors.grey};
    font-weight: 300;
    text-align: ${({reversed}) => (reversed ? `right`  : `left` )};
-
    @media screen and (max-width: ${breakpoints.tablet}) {
-    text-align: ${({reversed}) => (reversed ? `left`  : `left` )};
+        text-align: left;
     }
-
 `;
