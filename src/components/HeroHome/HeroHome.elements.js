@@ -16,7 +16,7 @@ export const HeroHomeRow = styled.div`
     transition: all 1.5s ease-in-out;
 
     @media only screen and (max-width: 1250px) {
-        padding-top: 150px;
+        padding-top: 120px;
         padding-bottom: 60px;
         &.active{
             padding-top: 40px;
@@ -65,8 +65,12 @@ export const HeadingHome = styled.div`
 export const TitleLeftHome = styled(TitleCenter)`
 //border: 1px solid red;
         text-align: left; 
+        font-size: ${sizes.sizeXXXL};
+        font-weight: 500;
     @media only screen and (max-width: 1250px)  {
-        text-align: center;   
+        text-align: center; 
+        font-size: ${sizes.sizeXL};
+        font-weight: 500;  
     }
     @media only screen and (max-width: 330px) {
         font-size: 22px;
@@ -90,16 +94,14 @@ export const AnimationText = styled.div`
     color: ${colors.mainBlue};
     font-size: ${sizes.sizeXXXL};
     cursor: pointer;
-    font-weight: 400;
-    height: 100%;
-    //border: 1px solid red;
+
     :hover{
         filter: saturate(50%) contrast(75%);
     }
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px) {
         font-size: ${sizes.sizeXL};
-        font-weight: 400;
+        font-weight: 500;
         //text-align: left;
     }
     @media only screen and (max-width: 330px) {
@@ -118,14 +120,14 @@ export const SliderText = styled(Slider)`
   
     .slick-slide {
         @media only screen and (max-width: ${breakpoints.tablet}) {
-            height: 37px;
+            //height: 37px;
         } 
         @media only screen and (max-width: 330px) {
-            height: 28px;
+            //height: 28px;
         } 
     }
     
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 1250px) {
         width: 140px;
         //margin-left: 8px;
         top: 2px; 
@@ -133,7 +135,7 @@ export const SliderText = styled(Slider)`
     }
     @media only screen and (max-width: 330px) {
         //margin-left: 12px;
-        height: 28px;
+        //height: 28px;
         width: 150px;
         position: relative;
         top: 2px;

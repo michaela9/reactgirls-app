@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../variables.js';
+import { colors, breakpoints } from '../../variables.js';
 import { Paragraph, TitleCenter } from '../reusable/styled.js';
 
 export const ContactHeroContainer = styled.div`
@@ -8,6 +8,13 @@ export const ContactHeroContainer = styled.div`
     margin: 0 auto;
     align-items: center;
     padding: 80px 0;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 120px 0 60px 0;
+        transition: all 1.5s ease-in-out;
+        &.active {
+            padding: 60px 0 20px 0; 
+        }
+    }
 `;
 
 export const ContactHeroTitle = styled(TitleCenter)`   

@@ -13,11 +13,11 @@ export const ReferenceContainer = styled.div`
 `;
 
 export const Speech = styled.div`
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        margin-top: 60px;
+        margin-top: 80px;
         margin-bottom: 0px;
     }
 `;

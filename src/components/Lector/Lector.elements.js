@@ -144,6 +144,12 @@ export const IconIn = styled.img`
     height: 18px;
 `;
 
+export const Arrow = styled.img`
+    :hover{
+        filter: invert(20%);
+    }
+`;
+
 
 
 

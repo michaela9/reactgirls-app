@@ -5,15 +5,13 @@ import { TitleLeft, Subtitle, Button } from '../styled';
 export const HeroWrapper = styled.div`
     display: flex;
     padding: 80px 0 80px 0;
-    //flex-wrap: wrap;
-    //border: 1px solid red;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding: 140px 0 60px 0;
+        padding: 120px 0 60px 0;
+        transition: all 1.5s ease-in-out;
         &.active {
             padding: 40px 0 20px 0; 
         }

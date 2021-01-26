@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Wrapper } from '../reusable/styled';
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 import { 
     ContactHeroTitle,
     ContactInfo,
@@ -10,10 +11,12 @@ import {
 import Newsletter from '../reusable/Newsletter/Newsletter';
 
 function ContactHero() {
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
     return (
         <Container lightBlue>
             <Wrapper>
-                <ContactHeroContainer>
+                <ContactHeroContainer  className={navLogo ? 'active' : ''}>
                     <ContactHeroTitle>Jak nás můžeš kontaktovat?</ContactHeroTitle>
                     <ContactInfo>
                         Napiš nám přes Slack, ostatní sociální sítě nebo nás kontaktuj přímo.

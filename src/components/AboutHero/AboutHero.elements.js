@@ -30,8 +30,13 @@ export const WrapperAbout = styled.div`
     padding: 80px 300px;
     
    @media only screen and (max-width: ${breakpoints.tablet}) {
-        width: 75%;
-        padding: 40px 0px;
+    }
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 120px 16px 60px 16px;
+        transition: all 1.5s ease-in-out;
+        &.active {
+            padding: 60px 16px 20px 16px; 
+        }
     }
 `;
 

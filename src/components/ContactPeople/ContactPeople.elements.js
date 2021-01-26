@@ -52,6 +52,9 @@ export const SocialContactIcon = styled.img`
     width: 20px;
     height: 20px;
     margin-top: 10px;
+    :hover{
+        filter: invert(100%);
+    }
 `;
 
 export const ContactInfo = styled(ParagraphS)`

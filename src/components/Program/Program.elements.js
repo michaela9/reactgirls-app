@@ -9,11 +9,16 @@ export const ProgramWrapper = styled.div`
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+
 `;
 
 export const ProgramDataRow= styled.div`
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+       
+    }
 `;
 
 export const ProgramTable = styled.table`
@@ -85,4 +90,11 @@ export const ProgramDataTopic = styled.td`
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 10px;
     }
+`;
+
+export const ProgramIcon = styled.img`
+    width: 15px;
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
 `;

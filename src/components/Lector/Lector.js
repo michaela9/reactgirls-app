@@ -13,6 +13,7 @@ import {
     IconIn,
     SliderLector,
     WrapperLector,
+    Arrow
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
@@ -28,8 +29,9 @@ function Lector({ deviceType }) {
         slidesToScroll: 1,
         arrows: true,
         accessibility: true,
-        nextArrow: <img src="/images/icons/right-arrow.svg" />,
-        prevArrow: <img src="/images/icons/left-arrow.svg" />,
+        swipeToSlide: true,
+        nextArrow: <Arrow src="/images/icons/right-arrow.svg" />,
+        prevArrow: <Arrow src="/images/icons/left-arrow.svg" />,
         responsive: [
             {
             breakpoint: 1500,

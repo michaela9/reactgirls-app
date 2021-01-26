@@ -21,3 +21,4 @@ export { default as Thanks} from './Thanks/Thanks';
 export { default as Price } from './reusable/Price/Price';
 export { default as Process} from './reusable/Process/Process';
 export { default as AboutMore} from './AboutMore/AboutMore';
+export { default as SocialMobile} from './SocialMobile/SocialMobile';

@@ -10,7 +10,8 @@ import {
     ProgramData,
     ProgramDataTopic,
     ProgramWrapper,
-    ProgramDataRow
+    ProgramDataRow,
+    ProgramIcon
 } from './Program.elements';
 
 import { Container, Wrapper, TitleCenter } from '../reusable/styled';
@@ -81,12 +82,12 @@ function Program({data}) {
                                     <ProgramTableRow key={item.topic} data={data} 
                                     border={item.border}>
                                         <ProgramDataRow>
-                                            <ProgramData>{item.date}</ProgramData>
-                                            <ProgramData>{item.time}</ProgramData>
+                                            <ProgramData><ProgramIcon src='/images/icons/calendar.svg' />{item.date}</ProgramData>
+                                            <ProgramData><ProgramIcon src='/images/icons/clock.svg' />{item.time}</ProgramData>
                                         </ProgramDataRow>
                                         <ProgramDataRow>
                                             <ProgramDataTopic>{item.topic}</ProgramDataTopic>
-                                            <ProgramData>{item.place} </ProgramData>
+                                            <ProgramData><ProgramIcon src='/images/icons/gps.svg' />{item.place} </ProgramData>
                                         </ProgramDataRow>
                                     </ProgramTableRow>
                                     )

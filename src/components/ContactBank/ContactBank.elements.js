@@ -1,27 +1,28 @@
 import styled from 'styled-components';
-import  { sizes, colors } from '../../variables.js';
+import  { sizes, colors, breakpoints } from '../../variables.js';
 import { ParagraphS } from '../reusable/styled';
 
 export const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
     width: 90%;
-    padding: 80px 0 80px;
+    padding: 80px 0 80px 0;
     position: relative;
     left: 70px; 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: ${breakpoints.tablet}) {
         flex-direction: column;
         align-items: center;
         position: relative;
         left: 20px;  
+        padding: 80px 0 0 0;
     }
  `;
 
 export const BankContainer = styled.div`
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: ${breakpoints.tablet}) {
         margin-bottom: 60px;
     }
  `;

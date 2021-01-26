@@ -17,7 +17,6 @@ import {
 
 import { Container, Wrapper } from '../../components/reusable/styled';
 import socialArr from './socialArr';
-import SvgFacebook from '../../iconComponents/SvgFacebook';
 
 function Navbar() {
     const navLogo = useTheme();
@@ -58,7 +57,7 @@ function Navbar() {
         <Nav>
             <Container>
                 <Wrapper>
-                    <NavWrapper> 
+                    <NavWrapper className={navLogo ? 'active' : ''} > 
                         <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
                         <MobileIcon onClick={handleClick}>
                             {click ? <MobileIconClose src="/images/icons/close.svg"/> : <MobileIconMenu src="/images/icons/menu.svg"/> }
