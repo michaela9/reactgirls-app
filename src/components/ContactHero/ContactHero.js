@@ -20,7 +20,7 @@ function ContactHero() {
                     <ContactHeroTitle>Jak nás můžeš kontaktovat?</ContactHeroTitle>
                     <ContactInfo>
                         Napiš nám přes Slack, ostatní sociální sítě nebo nás kontaktuj přímo.
-                        Můžeš také odebírat náš newsletter a my tě budeme o všem informovat.
+                        Můžeš také odebírat náš Newsletter a my tě budeme o všem informovat.
                     </ContactInfo>
                     <a href="https://app.slack.com/client/TL2R6BTPA/CL5002YES" target="blank">
                         <SlackIcon src="/images/icons/slack-color.svg" />

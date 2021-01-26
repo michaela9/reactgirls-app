@@ -8,8 +8,9 @@ import {
     SubtitleHero,
     HeroWrapper,
     HeroTitle, 
-    ButtonHero
+    ButtonHero,
  } from './Hero.elements';
+ import Newsletter from '../Newsletter/Newsletter';
 
 import { Container, Wrapper } from '../styled';
 
@@ -62,8 +63,8 @@ function Hero({
                             </ImgContainer>
                             }
                             <SubtitleHero > {subtitle} </SubtitleHero>
-                            {/* <ButtonInputGroup /> */} 
-                            <ButtonHero href={form} target="blank">MÁM ZÁJEM</ButtonHero> 
+                               {/*<Newsletter /> */} 
+                            <ButtonHero href={form} target="blank">MÁM ZÁJEM</ButtonHero>
                         </TitleContainer>
                         { !isBreakpoint && 
                         <ImgContainer>
