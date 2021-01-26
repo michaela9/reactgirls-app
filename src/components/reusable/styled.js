@@ -1,5 +1,8 @@
 import styled, {css} from "styled-components";
-import  { sizes, colors } from '../../variables.js';
+import  { sizes, colors, breakpoints } from '../../variables.js';
+
+
+/*Typography */
 
 export const Heading1 = styled.h1`
     font-size: ${sizes.sizeXXXL} ;
@@ -26,6 +29,8 @@ export const ParagraphS = styled.p`
     line-height: 1.7;
 `;
 
+/*Layout */
+
 export const Container = styled.div`
     z-index:1;
     width: 100%;
@@ -33,22 +38,19 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    width: 1280px;
-    display: flex;
+    z-index:1;
+    width: 80%;
+    max-width: 1280px; 
+   // border: 2px solid blue;
     margin: 0 auto;
-    padding: 80px 50px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 85%;
+    }
 `;
 
 export const WrapperColumn = styled.div`
-    width: 1280px;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    padding: 80px 50px;
-    align-items: center;
+    
 `;
 
 export const TitleCenter = styled(Heading1)`
@@ -63,7 +65,7 @@ export const TitleLeft = styled(Heading1)`
 `;
 
 export const SubTitleLeft = styled(Heading2)`
-    text-align: left;
+    text-align: center;
     font-weight: 500;
 `;
 
@@ -101,36 +103,5 @@ export const Button = styled.a`
     }
 `;
 
-export const InputContainer = styled.div`
-    background-color: ${colors.white};
-    border: 1px solid ${colors.veryLightGrey} ; 
-    padding: 0 32px;
-    height: 50px;
-    border-radius: 25px;
-    //box-shadow: 0px 2px 5px rgba(68, 68, 68, 0.1) inset;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    `;
-
-export const CustomInput = styled.input`
-    color: ${colors.lightGrey};
-    font-weight: 300;
-    outline: none;
-    font-size:${sizes.sizeM};
-    transition: all 0.2s ease;
-    z-index: 500;
-    border-color: transparent;
-    background: none;
-    cursor: text;
-  }
-`;
-
-export const ButtonInputCont = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 120px;
-    justify-content: space-between;
-`;
 
 export default styled;

@@ -1,35 +1,39 @@
 import React, { useState } from 'react';
 import { 
-    WrapperColumn, 
-    TitleCenter 
+    Wrapper, 
+    TitleCenter,
+    Container 
 } from '../../reusable/styled';
 import Accordion from './Accordion';
 import { 
     QuestionsContainer,
-    ContainerQuestion
+    ContainerQuestion,
+    QuestionWrapper
 } from './Questions.elements';
 
 function Questions({ data }) {
     const [indexOpen, setIndexOpen] = useState(0);
     return (
-        <ContainerQuestion lightBlue>
-            <WrapperColumn>
+        <Container lightBlue>
+            <Wrapper>
+                <QuestionWrapper>
                 <TitleCenter>Q&A</TitleCenter>
-                <QuestionsContainer>
-                    {data.map((item, index) => {
-                    return (
-                        <Accordion 
-                            key={item.question}
-                            question={item.question}
-                            answer={item.answer}
-                            open={indexOpen === index}
-                            setOpen={() => setIndexOpen(index)}
-                        />
-                    )
-                    })}
-                </QuestionsContainer>
-            </WrapperColumn>
-        </ContainerQuestion>
+                    <QuestionsContainer>
+                        {data.map((item, index) => {
+                        return (
+                            <Accordion 
+                                key={item.question}
+                                question={item.question}
+                                answer={item.answer}
+                                open={indexOpen === index}
+                                setOpen={() => setIndexOpen(index)}
+                            />
+                        )
+                        })}
+                    </QuestionsContainer>
+                </QuestionWrapper>
+            </Wrapper>
+        </Container>
     )
 }
 

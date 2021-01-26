@@ -1,15 +1,7 @@
 import styled from 'styled-components';
-import { colors } from '../../variables.js';
-import { Paragraph } from '../reusable/styled';
+import { colors, sizes, breakpoints } from '../../variables.js';
+import { Paragraph, TitleCenter, TitleLeft, Button } from '../reusable/styled';
 
-export const ProductInfoContainer = styled.div`
-    display: flex;
-    flex-direction:column;
-    max-width: 50%;
-    margin-right: 50px;
-    justify-content: center;
-    align-items: flex-start;
-`;
 
 export const ProductInfo = styled(Paragraph)`
     font-weight: 300;
@@ -17,25 +9,87 @@ export const ProductInfo = styled(Paragraph)`
     margin-bottom: 32px;
     margin-top: 32px;
     color: ${colors.grey};
+    text-align: left;
+    width: 90%;
+    //border: 1px solid green;
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
         cursor: pointer;
         text-decoration: none;
-
+    }
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        text-align: center;
     }
 `;
 
+export const ProductMainTitle = styled(TitleCenter)`
+    padding: 80px;
+    width: 90%;
+    //text-align: left;
+    //border: 1px solid red;
+    margin: 0 auto;
+`;
+
+export const ProductInfoRow = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+   // align-items: center;
+    justify-content: space-between;
+    flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+    padding-top: 80px;
+    padding-bottom: 80px;
+    //border: 1px solid green;
+
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+    
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export const ProductInfoColumn = styled.div`
+    flex: 1;
+    max-width: 60%;
+    flex-basis: 50%;
+    //border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+    
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        max-width: 90%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export const ProductTitle = styled(TitleLeft)`
+    margin-bottom: -15px;
+`;
+
+export const ProductButton = styled(Button)`
+    width: 160px;
+`;
+
 export const ProductImg = styled.img`
-    width: auto;
-    height: 380px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `;
 
 export const ProductImgContainer = styled.div`
-    width: 380px;
-    height: 380px;
-    border-radius: 240px;
-    overflow: hidden;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-top: 40px;
+   margin-bottom: 20px;
+   width: 380px;
+   height: 380px;
+   display: flex;
+   justify-content: ${({imgStart}) => (imgStart ? 'flex-start' : 'flex-end')};
 `;
 
 

@@ -4,15 +4,26 @@ import { ParagraphS } from '../reusable/styled';
 
 export const ContactCardContainer = styled.div`
     display: flex;
-    width: 1000px;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 900px;
     margin: 0 auto;
     justify-content: space-around;
+    padding: 80px 0;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 40px 0;
+        
+    }
 `;
 
 export const ContactCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px 50px; 
+
 `;
 
 export const ContactImg = styled.img`

@@ -19,3 +19,9 @@ export const colors = {
     darkGrey: `#323232`,
     white: `#FFFBFA`,
 };
+
+export const breakpoints = {
+    smartphone: `480px` ,
+    tablet: `768px` ,
+    desktop: `1280px`
+};

@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 import { colors } from '../../variables';
 
+export const ProgramWrapper = styled.div`
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 3px solid ${colors.lightBlue};
+`;
+
 export const ProgramTable = styled.table`
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     width: 800px;
     border-collapse: collapse; 
     border: none;
+
 `;
 
 export const ProgramTableHead = styled.thead`

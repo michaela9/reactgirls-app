@@ -3,13 +3,26 @@ import { sizes, colors } from '../../../variables';
 
 export const InfoCont = styled.div`
     display: flex;
-    width: 1050px;
-    height: 900px;
+    width: 90%;
+    max-width: 1000px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: space-between;
     margin: 80px auto 0 auto;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 40px;
+        align-items: center;
+        
+    }
 `;
+
+export const WrapperInfoSection = styled.div`
+    padding-top: 80px;
+    padding-bottom: 40px;
+`;
+
 
 export const InfoCard = styled.div`
     width: 300px;
@@ -20,6 +33,7 @@ export const InfoCard = styled.div`
     box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.1), 0px 0px 4px rgba(68, 68, 68, 0.1);
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 `;
 
 export const InfoTitle = styled.div`

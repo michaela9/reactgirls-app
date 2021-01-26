@@ -3,6 +3,11 @@ import { sizes, colors } from '../../variables.js';
 import { Paragraph, Name } from '../reusable/styled';
 import Carousel from 'react-elastic-carousel';
 
+export const WrapperLector = styled.div`
+    padding-top: 80px;
+    padding-bottom: 80px;
+`;
+
 export const CarouselLector = styled(Carousel)`
     .rec.rec-arrow-left, .rec.rec-arrow-right {
         background-color: ${colors.white} ;

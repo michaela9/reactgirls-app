@@ -11,7 +11,7 @@ import {
     SocialIcon
     } from './Navbar.elements';
 
-import { Container } from '../../components/reusable/styled';
+import { Container, Wrapper } from '../../components/reusable/styled';
 import socialArr from './socialArr';
 
 function Navbar() {
@@ -29,27 +29,29 @@ function Navbar() {
     return (
         <Nav>
             <Container>
-                <NavWrapper>  
+                <Wrapper>
+                    <NavWrapper> 
                         <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
                     
-                    <NavMenu onClick = {handleClick}>
-                        <NavItem>
-                            <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks activeStyle={{ color: '#00B4CD'  }} to='/about'>O nás</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/mentoring'>Mentoring</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/academy'>Akademie</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks activeStyle={{ color: '#00B4CD' }} to='/contact'>Kontakt</NavLinks>
-                        </NavItem>
-                    </NavMenu>
-                </NavWrapper>
+                        <NavMenu onClick = {handleClick}>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD'  }} to='/about'>O nás</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/mentoring'>Mentoring</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/academy'>Akademie</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/contact'>Kontakt</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                    </NavWrapper> 
+                </Wrapper>
             </Container>
             <Social>
                 {socialArr.map((social) => (

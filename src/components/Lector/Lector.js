@@ -9,23 +9,33 @@ import {
     LectorLink,
     LectorImgContainer,
     IconIn,
-    CarouselLector
+    CarouselLector,
+    WrapperLector
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
- import { Container, WrapperColumn, TitleCenter } from '../../components/reusable/styled';
+ import { Container, Wrapper, TitleCenter } from '../../components/reusable/styled';
   
+
+
 function Lector() {
+    const breakPoints = [
+        { width: 200, itemsToShow: 1 },
+        { width: 600, itemsToShow: 2 },
+        { width: 800, itemsToShow: 3 },
+      ];
     return (
         <>
             <Container lightBlue>
-                <WrapperColumn>   
-                    <TitleCenter>Lektoři</TitleCenter>
-                </WrapperColumn>  
+                <Wrapper>
+                    <WrapperLector>
+                        <TitleCenter>Lektoři</TitleCenter>
+                    </WrapperLector>  
+                </Wrapper>  
             </Container>
             <Container  >
                 <CardsContainer>  
-                <CarouselLector  itemsToShow={3} itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
+                <CarouselLector breakPoints={breakPoints}  itemsToScroll={1} enableAutoPlay={false}  pagination={false}  >
                     {lectorArr.map((lector) => (
                                 <Card key={lector.lectorName} > 
                                     <LectorImgContainer>

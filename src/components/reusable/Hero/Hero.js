@@ -5,6 +5,7 @@ import {
     ImgContainer,
     HeroImg,
     SubTitle,
+    HeroWrapper
  } from './Hero.elements';
 
 import { Container, Wrapper, TitleLeft, Button } from '../styled';
@@ -20,18 +21,18 @@ function Hero({
     return (
             <Container lightBlue>
                 <Wrapper>
-                    <TitleContainer>
-                        <TitleLeft > {title} </TitleLeft>
-                        <SubTitle > {subtitle} </SubTitle>
-                        {/* <ButtonInputGroup /> */} 
-                        <Button href={form} target="blank">MÁM ZÁJEM</Button> 
-                    </TitleContainer>
-                    <ImgContainer>
-                        <HeroImg src={img} />
-                    </ImgContainer>
-
+                    <HeroWrapper>
+                        <TitleContainer>
+                            <TitleLeft > {title} </TitleLeft>
+                            <SubTitle > {subtitle} </SubTitle>
+                            {/* <ButtonInputGroup /> */} 
+                            <Button href={form} target="blank">MÁM ZÁJEM</Button> 
+                        </TitleContainer>
+                        <ImgContainer>
+                            <HeroImg src={img} />
+                        </ImgContainer>
+                    </HeroWrapper>
                 </Wrapper>
-
             </Container>
     )
 }

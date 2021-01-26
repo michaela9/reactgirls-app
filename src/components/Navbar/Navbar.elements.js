@@ -10,14 +10,13 @@ export const Nav = styled.div`
     top: 0;
 `;
 
-export const NavWrapper = styled.div`
-    height: 70px;
-    width: 1280px;
+export const NavWrapper = styled.div` 
     display: flex;
-    margin: 0 auto;
-    padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
+    //border: 1px solid pink;
+   // padding: 0.5em 0;
+    height: 80px;
 `;
 
 export const NavLogo = styled.img`
@@ -25,18 +24,17 @@ export const NavLogo = styled.img`
     width: 160px;
     border-radius:80px;
     position: relative;
-    top: 80px;
 
     transition: all 1.5s ease-in-out;
     top: 80px;
     cursor: pointer;
 
     &.active {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 30px;
         position: relative;
-        top: 2.5px;
+        top: 0;
     }
 `;
 
@@ -44,14 +42,15 @@ export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     list-style: none;
-    width: 50%;
     justify-content: space-between;
+    //border: 1px solid pink;
 `;
 
 export const NavItem = styled.li`
     border-bottom: 2px solid transparent;
     font-weight: 400;
     color:${colors.grey};
+    margin-left: 2em;
 `;
 
 export const NavLinks = styled(NavLink)`
@@ -66,15 +65,25 @@ export const NavLinks = styled(NavLink)`
 export const Social = styled.div`
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     top: 110px;
     right: 70px;
+
+    @media only screen and (max-width: 768px) {
+        right: 20px;
+    }
 `;
 
 export const SocialIcon = styled.img`
     width: 22px;
     height: 22px;
     margin-bottom: 18px;
+
+    @media only screen and (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 14px;
+    }
 `;
 

@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import { sizes, colors } from '../../../variables';
 import { TitleLeft, Button } from '../styled';
 
+export const PriceWrapper = styled.div`
+    padding-top: 80px;
+    padding-bottom: 60px;
+`;
+
 export const PriceArea = styled.div`
     border-bottom: 2px solid ${colors.mainBlue};
     border-radius: 30px 30px 0px 0px;
@@ -13,12 +18,12 @@ export const PriceArea = styled.div`
     align-items: center;
     margin: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
 `;
 
 export const PriceRectangle = styled.div`
     width: 380px;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin: 80px auto 40px auto;
     background: ${colors.white};
     border-radius: 30px; 
     box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.10), 0px 0px 4px rgba(68, 68, 68, 0.1);
@@ -42,6 +47,7 @@ export const PriceIcon = styled.img`
 export const PriceText = styled.div`
     font-size: ${sizes.sizeXS};
     color: ${colors.grey};
+
 `;
 
 export const PriceTitle = styled(TitleLeft)`
@@ -60,7 +66,3 @@ export const PriceIconMain = styled.div`
 export const ButtonPrice = styled(Button)`
     margin-top: 45px;
 `;
-
-
-
-

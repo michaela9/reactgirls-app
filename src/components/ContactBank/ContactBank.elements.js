@@ -5,13 +5,24 @@ import { ParagraphS } from '../reusable/styled';
 export const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    padding: 0 80px;
+    width: 90%;
+    padding: 80px 0 80px 0;
+
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 40px;  
+    }
  `;
 
 export const BankContainer = styled.div`
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
  `;
 
 export const BankIcon = styled.img`

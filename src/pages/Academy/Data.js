@@ -90,6 +90,11 @@ export const acadPriceArr = [
     }
 ];
 
+export const acadPrice = {
+    price: "470 CZK",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
+}
+
 export const programArr1 = [
     {
         date: "5.října 2020", 
@@ -149,3 +154,30 @@ export const acadQuestionsArr = [
         answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
     }, 
 ];
+
+export const processArrAcad = [
+    {
+        number: 1,
+        heading: "MÁM ZÁJEM",
+        text: " Klikni na tlačítko MÁM ZÁJEM",
+        reversed: false
+    },
+    {
+        number: 2,
+        heading: "VYPLŇ FORMULÁŘ",
+        text: "Po kliknutí na tlačítko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň vyplnit motivaci, vybíráme i na základě té. K formuláři přilož odkaz na GitHub nebo jiné úložiště tvých kódů, pokud máš.",
+        reversed: true
+    },
+    {
+        number: 3,
+        heading: "KONTAKTUJEME TĚ",
+        text: " 2 týdny před spuštěním běhu, tě budeme kontaktovat a sdělíme ti, zda jsem tě vybrali.",
+        reversed: false
+    },
+    {
+        number: 4,
+        heading: "ZAČÍNÁME",
+        text: " Pokud jsme tě vybrali, pošleme ti všechny potřebné informace společně s  informacemi o platbě. Už teď se na tebe těšíme!",
+        reversed: true
+    }
+]
