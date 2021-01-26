@@ -1,6 +1,6 @@
 import React from 'react';
-import { WrapperColumn, Container, TitleCenter } from '../styled';
-
+import { Wrapper, Container, TitleCenter } from '../styled';
+import {StudentWrapper} from './Student.elements';
 import StudentCont from './StudentCont';
 
 function Student({
@@ -9,10 +9,12 @@ function Student({
 }) {
     return (
         <Container>
-        <WrapperColumn>   
-            <TitleCenter>{mainStudentTitle}</TitleCenter>
-            <StudentCont data={data} />
-        </WrapperColumn> 
+        <Wrapper>
+            <StudentWrapper> 
+                <TitleCenter>{mainStudentTitle}</TitleCenter>
+                <StudentCont data={data} />
+            </StudentWrapper>  
+        </Wrapper> 
     </Container>
     )
 }

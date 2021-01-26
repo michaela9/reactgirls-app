@@ -1,11 +1,15 @@
 import React from 'react';
-import { ThanksText } from './Thanks.elements';
-import { Container } from '../reusable/styled';
+import { ThanksText, WrapperThanks } from './Thanks.elements';
+import { Container, Wrapper } from '../reusable/styled';
 
 function Thanks() {
     return (
-        <Container lightblue>
-                <ThanksText>Poděkování patří především naším sponzorům, bez kterých by to nešlo</ThanksText>
+        <Container>
+            <Wrapper>
+                <WrapperThanks>
+                    <ThanksText>Děkujeme našim partnerům za jejich podporu.</ThanksText>
+                </WrapperThanks>
+            </Wrapper>
         </Container>
     )
 }

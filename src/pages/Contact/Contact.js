@@ -3,8 +3,6 @@ import {
     ContactHero, ContactPeople, ContactBank
 }  from '../../components';
 
-
-
 function Contact() {
     return (
         <>

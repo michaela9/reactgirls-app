@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 
 import {
     ProgramTable,
@@ -8,21 +8,48 @@ import {
     ProgramTableRowH,
     ProgramTableBody,
     ProgramData,
-    ProgramDataTopic
+    ProgramDataTopic,
+    ProgramWrapper,
+    ProgramDataRow,
+    ProgramIcon
 } from './Program.elements';
 
-import { Container, Wrapper, WrapperColumn, TitleCenter } from '../reusable/styled';
+import { Container, Wrapper, TitleCenter } from '../reusable/styled';
+
+const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  }; 
 
 function Program({data}) {
+    const isBreakpoint = useMediaQuery(960);
     return (
         <>
-            <Container lightblue>
-                <WrapperColumn>
-                    <TitleCenter>Program Akademie</TitleCenter>
-                </WrapperColumn>
-            </ Container>
-            <Container>
+            <Container >
                 <Wrapper>
+                    <ProgramWrapper>
+                    <TitleCenter>Program Akademie</TitleCenter>
                     <ProgramTable>
                         <ProgramTableHead>
                             <ProgramTableRowH>
@@ -32,10 +59,12 @@ function Program({data}) {
                                 <ProgramDataHead >Místo</ProgramDataHead>
                             </ProgramTableRowH>
                         </ProgramTableHead>
+                        { !isBreakpoint &&  
                         <ProgramTableBody>
                             {data.map((item) => {
                                 return(
-                                    <ProgramTableRow data={data}>
+                                    <ProgramTableRow key={item.topic} data={data} 
+                                    border={item.border}>
                                         <ProgramData>{item.date}</ProgramData>
                                         <ProgramDataTopic>{item.topic}</ProgramDataTopic>
                                         <ProgramData>{item.time}</ProgramData>
@@ -45,7 +74,29 @@ function Program({data}) {
                                 })
                             }
                         </ProgramTableBody>
+                        }
+                        { isBreakpoint &&  
+                        <ProgramTableBody>
+                            {data.map((item) => {
+                                return(
+                                    <ProgramTableRow key={item.topic} data={data} 
+                                    border={item.border}>
+                                        <ProgramDataRow>
+                                            <ProgramData><ProgramIcon src='/images/icons/calendar.svg' />{item.date}</ProgramData>
+                                            <ProgramData><ProgramIcon src='/images/icons/clock.svg' />{item.time}</ProgramData>
+                                        </ProgramDataRow>
+                                        <ProgramDataRow>
+                                            <ProgramDataTopic>{item.topic}</ProgramDataTopic>
+                                            <ProgramData><ProgramIcon src='/images/icons/gps.svg' />{item.place} </ProgramData>
+                                        </ProgramDataRow>
+                                    </ProgramTableRow>
+                                    )
+                                })
+                            }
+                        </ProgramTableBody>
+                        }
                     </ProgramTable>
+                    </ProgramWrapper>
                 </Wrapper>
             </Container>
         </>

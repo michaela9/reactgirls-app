@@ -1,15 +1,37 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../../variables';
+import { sizes, colors, breakpoints } from '../../../variables';
 
 export const InfoCont = styled.div`
     display: flex;
-    width: 1050px;
-    height: 900px;
+    width: 100%;
+    max-width: 1100px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: space-between;
     margin: 80px auto 0 auto;
+    //border: 1px solid red;
+
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        padding-bottom: 40px;
+        margin: 60px auto 0 auto;  
+    }
+    @media only screen and (min-width: ${breakpoints.tablet} ) and (max-width: 1250px ) {
+        
+    }
 `;
+
+export const WrapperInfoSection = styled.div`
+    padding-top: 80px;
+    padding-bottom: 40px;
+    //border: 1px solid blue;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding-top: 60px;
+        padding-bottom: 0;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+`;
+
 
 export const InfoCard = styled.div`
     width: 300px;
@@ -17,10 +39,22 @@ export const InfoCard = styled.div`
     padding: 0 30px;
     background-color: ${colors.white};
     border-radius: 30px;
-    box-shadow: 0px 0px 20px rgba(68, 68, 68, 0.15), 0px 6px 6px rgba(68, 68, 68, 0.1);
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.1), 0px 0px 4px rgba(68, 68, 68, 0.1);
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 0 10px;
+        width: 280px;
+        height: 380px;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 0 5px 20px 5px;
+        height: auto;
+    }
 `;
 
 export const InfoTitle = styled.div`
@@ -37,8 +71,8 @@ export const InfoText = styled.div`
     font-size: ${sizes.sizeS};
     line-height: 1.6;
     margin: 0 auto;
-
 `;
+
 export const InfoIcon = styled.img`
     width: 80px;
     height: 80px;

@@ -1,26 +1,23 @@
 import React from 'react'
-import { Container, TitleLeft } from '../reusable/styled';
-import { SubTitleAbout, ButtonAbout } from './AboutHero.elements';
-import { WrapperAbout, AboutText, AboutTitle } from '../reusable/AboutInfo/AboutInfo.elements';
+import { Container } from '../reusable/styled';
+import { SubTitleAbout, ButtonAbout, WrapperAbout, AboutText, AboutTitle } from './AboutHero.elements';
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 
 
-
-
-
-function AboutHero({title, text1, text2, lightblue }) {
+function AboutHero({title, text1, text2 }) {
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
     return (
-        <Container lightblue={lightblue}>
-            <WrapperAbout>
+        <Container >
+            <WrapperAbout className={navLogo ? 'active' : ''}>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>
                     <AboutText>{text2}</AboutText>
                     <SubTitleAbout>#ReactGirls Prague</SubTitleAbout>
                     <ButtonAbout>KONTAKT</ButtonAbout>
             </WrapperAbout>
-         
         </Container>
     )
 }
-
 
 export default AboutHero;

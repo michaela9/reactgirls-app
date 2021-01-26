@@ -1,40 +1,173 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { useState, useCallback, useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 
 import { 
-    TitleHomeContainer,
+    HeroHomeRow, 
+    HeroHomeColumn,
     ImgHomeContainer,
     HeroHomeImg,
-    SubTitle,
-    CarouselHero,
+    TextWrapperHome,
+    AnimationText,
+    HeadingHome,
     TitleLeftHome,
-    AnimationText
+    FirstHomeRow,
+    SliderImg,
+    SliderText,
+    SubtitleHero  
  } from './HeroHome.elements';
 
-import styled from '../reusable/styled'
 import { Container, Wrapper } from '../reusable/styled';
-import  ButtonInputGroup from '../reusable/ButtonInputGroup/ButtonInputGroup';
-import {heroHomeArr} from './heroHomeArr';
+import {animationText, heroHomeArr} from './heroHomeArr';
+import Newsletter from '../reusable/Newsletter/Newsletter';
 
-
+const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
 
 function HeroHome( {img}) {
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    };
+    const settingsImg = {
+        arrows: false,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        fade:true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1350,
+        speed: 500,
+        pauseOnHover: true,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+            <div className="slickCustomDots">
+            </div>
+            )
+      };
+
+      const settingsImgMobile = {
+        arrows: false,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        fade: true,
+        autoplaySpeed: 1350,
+        pauseOnHover: true,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+            <div className="slickCustomDots">
+            </div>
+            )
+      };
+
+      const settingsText = {
+        vertical: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1350,
+        arrows: false,
+        speed: 500,
+        pauseOnHover: true, 
+      };
+      const isBreakpoint = useMediaQuery(1250);
+      const navLogo = useTheme();
+      const changeLogoSize = useThemeUpdate();
     return (
-            <Container lightblue>
+            <Container lightBlue>
                 <Wrapper>
-                    <TitleHomeContainer>
-                        <TitleLeftHome >Zapoj se do <AnimationText>Mentoringu</AnimationText> a nauč se programovat v Reactu!</TitleLeftHome>
-                        <SubTitle >"#ReactGirlsPrague"</SubTitle>
-                        <ButtonInputGroup />
-                    </TitleHomeContainer>
-                    <CarouselHero showArrows={false} itemsToShow={1} itemsToScroll={1} enableAutoPlay={true} pagination={true} autoPlaySpeed={6000}>
-                    {heroHomeArr.map((item) => { 
-                     return (
-                        <ImgHomeContainer>
-                            <HeroHomeImg src={item.img} />
-                        </ImgHomeContainer>
-                        )
-                    })}
-                    </CarouselHero>
+                    <HeroHomeRow className={navLogo ? 'active' : ''}>
+                        <HeroHomeColumn>
+                            <TextWrapperHome>
+                                <HeadingHome>
+                                    <FirstHomeRow>
+                                        <TitleLeftHome>
+                                            Zapoj se do
+                                        </TitleLeftHome>
+                                        <SliderText {...settingsText}>
+                                        {animationText.map((text) => {
+                                        return (
+                                            <Link to={text.id}
+                                            smooth={true}
+                                            duration={text.duration}
+                                            spy={true}
+                                            exact='true'
+                                            offset={-80}
+                                            >
+                                                <AnimationText >{text.text}</AnimationText>
+                                            </Link>
+                                        )
+                                        })}   
+                                        </SliderText>
+                                    </FirstHomeRow>
+                                    <TitleLeftHome>
+                                    a nauč se programovat
+                                    </TitleLeftHome>
+                                    <TitleLeftHome> v Reactu!
+                                    </TitleLeftHome>     
+                                </HeadingHome>
+        
+                            { isBreakpoint &&   
+                                <SliderImg className="hideDesktop" {...settingsImgMobile}> 
+                                {heroHomeArr.map((item) => { 
+                                return ( 
+                                    <ImgHomeContainer key={item.id} >
+                                            <HeroHomeImg src={item.img} />
+                                    </ImgHomeContainer>                              
+                                    )
+                                })}    
+                                </SliderImg>
+                            }
+                                <SubtitleHero >#ReactGirlsPrague</SubtitleHero>
+                                <Newsletter id="newsletterHero" /> 
+                            </TextWrapperHome>
+                        </HeroHomeColumn>
+                        <HeroHomeColumn>
+                        { !isBreakpoint && 
+                      <SliderImg className="hideMobile" {...settingsImg}> 
+                            {heroHomeArr.map((item) => { 
+                            return ( 
+                                <ImgHomeContainer key={item.id} >
+                                        <HeroHomeImg src={item.img} />
+                                </ImgHomeContainer>
+                                
+                                )
+                            })}
+                       </SliderImg>
+                       }
+                        </HeroHomeColumn>
+                    </HeroHomeRow>                           
                 </Wrapper>
             </Container>
     )

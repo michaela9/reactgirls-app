@@ -1,12 +1,13 @@
 export const heroObjThree = {
-    title: "Zúčastni se jedinečné Akademie s ReactGirls!",
+    title: "Zúčastni se intenzivní Akademie s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_9.jpg",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform"
 };
 
 export const infoObjTwo = {
-    text: "Přihlaš se do intenzivní Akademie ReactGirls a nauč se programovat od základů",
+    text: "Přihlaš se do intenzivní Akademie ReactGirls a nauč se s námi programovat od základů.",
 }
 
 export const academyCardArr = [
@@ -49,17 +50,17 @@ export const titleObjTwo = {
 };
 export const acadStudentArr = [
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/website.svg",
         heading: "Zájemkyním",
         text: "Zájemkyním o programováním, které se chtějí naučit tvorbu webových stránek a vytvořit si svou vlastní aplikaci v Reactu",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/victory.svg",
         heading: "Začátečnicím",
         text: "Začatečnicím, které mají základní nebo žádné zkušenosti s programováním a chtěly by se seznámit se s HTML, CSS, JavaScriptem a Reactem",
     },
     {
-        icon: "/images/icons/coach.svg",
+        icon: "/images/icons/woman3.svg",
         heading: "Ženám",
         text: "Ženám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
     }
@@ -67,33 +68,32 @@ export const acadStudentArr = [
 
 export const acadPriceArr = [
     {
-        text: "4 lekce",
+        text: "4 lekce programování",
     },
     {
-        text: "závěrečný workshop",
-       
+        text: "závěrečný workshop",   
     },
     {
-        text: "17 hodin vyučování",
-        
+        text: "celkem 17 hodin vyučování",   
     },
     {
-        text: "celodenní hackathon",
-       
+        text: "online studijní materiály k akademii", 
     },
     {
-        text: "certifikát o absolvování",
-       
+        text: "certifikát o absolvování",  
     },
     {
-        text: "tričko ReactGirls",
-       
+        text: "tričko ReactGirls",  
     },
     {
-        text: "možnost vyzkoušet si mock interview",
-       
-    },
+        text: "možnost vyzkoušet si mock interview", 
+    }
 ];
+
+export const acadPrice = {
+    price: "470 CZK",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
+}
 
 export const programArr1 = [
     {
@@ -101,45 +101,50 @@ export const programArr1 = [
         topic: "HTML & CSS",
         time: "17:00 - 20:00",
         place: "online",
+        border: true
     },
     {
         date: "5.října 2020", 
         topic: "Úvod do programování",
         time: "17:00 - 20:00",
         place: "online",
+        border: true
     },
     {
         date: "5.října 2020", 
         topic: "JavaScript",
         time: "17:00 - 20:00",
         place: "online",
+        border: true
     },
     {
         date: "5.října 2020", 
         topic: "React",
         time: "17:00 - 20:00",
         place: "online",
+        border: true
     },
     {
         date: "5.října 2020",
         topic: "Hackathon, pivo",
         time: "17:00 - 20:00",
         place: "online",
+        border: false
     },
 ]
 
 export const acadQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?.",
-        answer: "Kurz je určen pro všechny ženy, které nemají žádné nebo mají malé zkušenosti s programováním a mají zájem se naučit programovat v Reactu.",
+        question: "Pro koho je kurz určen?",
+        answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v Reactu.",
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: <>Stačí kliknout <a>ZDE</a> a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: "Akademie bude probíhat prezenčně, materiály budou k dispozici na Slacku a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
+        answer: <>Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
     },
     {
         question: "Co si z akademie odnesu? ",
@@ -147,14 +152,46 @@ export const acadQuestionsArr = [
     },
     {
         question: "Kde se bude Akademie konat? ",
-        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich sponzorů v Praze.",
-    },
-    {
-        question: "Co se stane pokud bude opět karanténa?",
-        answer: "V případě karantény přesuneme celou výuku do online prostředí.",
+        answer: "Všechny bližší informace ti pošleme e-mailem, akademie se bude konat v kancelářích jednoho z našich partnerů v Praze.",
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
+        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
     }, 
 ];
+
+export const processArrAcad = [
+    {
+        number: 1,
+        heading: "MÁM ZÁJEM",
+        text: "Klikni na tlačítko MÁM ZÁJEM",
+        reversed: false,
+        last: false,
+        first: true
+    },
+    {
+        number: 2,
+        heading: "VYPLŇ FORMULÁŘ",
+        text: "Po kliknutí na tlačítko MÁM ZÁJEM se objeví formulář, ten vyplň a nezapomeň vyplnit motivaci, vybíráme i na základě té. Přihlásit se je možné dokud se nám nezaplní kapacita, proto s přihlašováním neváhej!",
+        reversed: true,
+        last: false,
+        first: false
+    },
+    {
+        number: 3,
+        heading: "KONTAKTUJEME TĚ",
+        text: "Po přihlášení tě kontaktujeme s bližšími informacemi ohledně akademie a platby.",
+        reversed: false,
+        last: false,
+        first: false
+    },
+    {
+        number: 4,
+        heading: "ZAČÍNÁME",
+        text: "Konkrétní informace na co se připravit na jednotlivé hodiny zasíláme pár dní před každou lekcí.",
+        reversed: true,
+        last: true,
+        first: false
+
+    }
+]

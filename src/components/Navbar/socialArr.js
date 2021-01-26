@@ -1,26 +1,26 @@
 const socialArr = [
     {
-        link: "https://www.slack.com/",
-        icon: "/images/icons/slack-color.svg"
+        link: "https://app.slack.com/client/TL2R6BTPA/CL5002YES",
+        icon: "/images/icons/slack.svg"
     },
     {
-        link: "https://www.linkedin.com/",
+        link: "https://www.linkedin.com/company/reactgirlsprague/",
         icon: "/images/icons/linkedIn.svg"
     },
     {
-        link: "https://www.facebook.com/",
+        link: "https://www.facebook.com/ReactGirlsPrague",
         icon: "/images/icons/facebook.svg"
     },
     {
-        link: "https://www.instagram.com/",
+        link: "https://www.instagram.com/reactgirlsprague/",
         icon: "/images/icons/instagram.svg"
     },
     {
-        link: "https://www.youtube.com/",
+        link: "https://www.youtube.com/channel/UCO8WGBzS6J00zlXroeTf90g",
         icon: "/images/icons/youtube.svg"
     },
     {
-        link: "https://www.twitter.com/",
+        link: "https://twitter.com/ReactGirlsPraha",
         icon: "/images/icons/twitter.svg"
     },
 ]

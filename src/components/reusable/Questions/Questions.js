@@ -1,37 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
-    Container, 
-    WrapperColumn, 
-    TitleCenter 
+    Wrapper, 
+    TitleCenter,
+    Container 
 } from '../../reusable/styled';
+import Accordion from './Accordion';
 import { 
     QuestionsContainer,
-    QuestionsContent,
-    QuestionsIcon,
-    QuestionsText,
-    AnswerText,
-    QuestionCont
+    QuestionWrapper
 } from './Questions.elements';
 
-function Questions({data}) {
+function Questions({ data }) {
+    const [indexOpen, setIndexOpen] = useState(0);
     return (
-        <Container lightblue>
-            <WrapperColumn>
+        <Container lightBlue>
+            <Wrapper>
+                <QuestionWrapper>
                 <TitleCenter>Q&A</TitleCenter>
-                <QuestionsContainer>
-                    {data.map((item) => {
-                    return (
-                        <QuestionCont data={data}>
-                            <QuestionsIcon src="/images/icons/plus.svg" />  
-                            <QuestionsContent>  
-                                <QuestionsText>{item.question}</QuestionsText>
-                                <AnswerText>{item.answer}</AnswerText>
-                            </QuestionsContent>
-                        </QuestionCont>
-                    )
-                })}
-                </QuestionsContainer>
-            </WrapperColumn>
+                    <QuestionsContainer>
+                        {data.map((item, index) => {
+                        return (
+                            <Accordion 
+                                key={item.question}
+                                question={item.question}
+                                answer={item.answer}
+                                open={indexOpen === index}
+                                setOpen={() => setIndexOpen(index)}
+                            />
+                        )
+                        })}
+                    </QuestionsContainer>
+                </QuestionWrapper>
+            </Wrapper>
         </Container>
     )
 }

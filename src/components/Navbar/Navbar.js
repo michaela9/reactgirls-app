@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import { useTheme, useThemeUpdate } from '../../ThemeContext';
 import { 
     NavLogo,
     NavMenu,
@@ -7,61 +9,90 @@ import {
     NavWrapper,
     Nav,
     Social,
-    SocialIcon
+    SocialIcon,
+    MobileIcon,
+    MobileIconMenu,
+    MobileIconClose
     } from './Navbar.elements';
 
-    import { Container } from '../../components/reusable/styled';
-    import { Link } from 'react-router-dom';
-    import socialArr from './socialArr';
-
+import { Container, Wrapper } from '../../components/reusable/styled';
+import socialArr from './socialArr';
 
 function Navbar() {
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
     const [click, setClick] = useState(false);
-    const [navLogo, setNavLogo] = useState(false);
+    const handleClick = () => setClick(!click); 
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
 
-    const handleClick = () => setClick(!click);
-    const changeLogoSize = () => {
-        if(window.scrollY >= 80) {
-            setNavLogo(true)
-        }else{
-            setNavLogo(false)
-        }
-    };
-    window.addEventListener('scroll', changeLogoSize);
+    const useMediaQuery = (width) => {
+        const [targetReached, setTargetReached] = useState(false);
+      
+        const updateTarget = useCallback((e) => {
+          if (e.matches) {
+            setTargetReached(true);
+          } else {
+            setTargetReached(false);
+          }
+        }, []);
+      
+        useEffect(() => {
+          const media = window.matchMedia(`(max-width: ${width}px)`);
+          media.addListener(updateTarget);
+      
+          // Check on mount (callback is not called until a change occurs)
+          if (media.matches) {
+            setTargetReached(true);
+          }
+      
+          return () => media.removeListener(updateTarget);
+        }, []);
+      
+        return targetReached;
+      };
+      const isBreakpoint = useMediaQuery(960)
     return (
         <Nav>
             <Container>
-                <NavWrapper>
-                    <Link to='/'>
-                    <NavLogo src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                    </Link>
-                    <NavMenu onClick = {handleClick}>
-                        <NavItem>
-                            <NavLinks to='/'>Úvod</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='/about'>O nás</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks to='/mentoring'>Mentoring</NavLinks>
-                        </NavItem>                        
-                        <NavItem>
-                            <NavLinks to='/academy'>Akademie</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='/contact'>Kontakt</NavLinks>
-                        </NavItem>
-                    </NavMenu>
-                </NavWrapper>
+                <Wrapper>
+                    <NavWrapper className={navLogo ? 'active' : ''} > 
+                        <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
+                        <MobileIcon onClick={handleClick}>
+                            {click ? <MobileIconClose src="/images/icons/close.svg"/> : <MobileIconMenu src="/images/icons/menu.svg"/> }
+                        </MobileIcon>
+                    
+                        <NavMenu onClick = {handleClick} click={click}>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD'  }} to='/about'>O nás</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/mentoring'>Mentoring</NavLinks>
+                            </NavItem>                        
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/academy'>Akademie</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks activeStyle={{ color: '#00B4CD' }} to='/contact'>Kontakt</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                    </NavWrapper> 
+                </Wrapper>
             </Container>
+            { !isBreakpoint &&   
             <Social>
                 {socialArr.map((social) => (
-                    <a href={social.link}>
+                    <a key={social.link} href={social.link} target="blank">
                         <SocialIcon src={social.icon} />
                     </a>
                     )
                 )}
             </Social>
+            }
         </Nav>
     )
 }

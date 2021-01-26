@@ -1,52 +1,51 @@
 import React from 'react';
 
 import { 
-    ProductInfoContainer,
+    ProductInfoRow,
+    ProductInfoColumn,
     ProductInfo,
     ProductImg,
     ProductImgContainer,
+    ProductTitle, 
+    ProductMainTitle,
+    ProductButton
  } from './Product.elements';
-
- import About from '../../pages/About/About';
 
 import { 
     Container, 
     Wrapper,  
-    TitleCenter ,
-    WrapperColumn,
-    SubTitleLeft,
-    Button
 } from '../../components/reusable/styled';
 import productArr from './productArr';
-
 
 function Product() {
     return (
         <>
-            <Container lightblue >
-                <WrapperColumn>
-                    <TitleCenter>
+            <Container lightBlue >
+                <Wrapper>
+                    <ProductMainTitle>
                         Co je ReactGirls Prague?
-                    </TitleCenter>
-                </WrapperColumn>
+                    </ProductMainTitle>
+                </Wrapper>
             </Container>
             {productArr.map((product) => (
-            <Container lightblue={product.lightblue} >
-                <Wrapper imgstart={product.imgstart}> 
-                    <ProductInfoContainer>
-                        <SubTitleLeft>
-                            {product.title}
-                        </SubTitleLeft>
-                        <ProductInfo>
-                        {product.info}
-                        </ProductInfo>
-                        {!product.hidebutton && 
-                            <Button to={product.link}>{product.buttontext}</Button>    
-                        }
-                    </ProductInfoContainer>
-                    <ProductImgContainer>
-                        <ProductImg src={product.img} />
-                    </ProductImgContainer>  
+            <Container key={product.title} lightBlue={product.lightBlue} id={product.id} >
+                <Wrapper > 
+                    <ProductInfoRow imgStart={product.imgStart}>
+                        <ProductInfoColumn>
+                            <ProductTitle>
+                                {product.title}
+                            </ProductTitle> 
+                            <ProductInfo>
+                            {product.info}
+                            </ProductInfo>
+                            {!product.hideButton && 
+                            <ProductButton href={product.link}>{product.buttonText}</ProductButton>    
+                            }
+                        </ProductInfoColumn>
+                        <ProductImgContainer imgStart={product.imgStart}>
+                            <ProductImg src={product.img} />
+                        </ProductImgContainer >
+                    </ProductInfoRow>
                 </Wrapper>
             </Container>
             )

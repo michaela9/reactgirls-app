@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import { useTheme, useThemeUpdate } from '../../../ThemeContext';
 
 import { 
     TitleContainer,
     ImgContainer,
     HeroImg,
-    SubTitle,
+    SubtitleHero,
+    HeroWrapper,
+    HeroTitle, 
+    ButtonHero
  } from './Hero.elements';
 
-import { Container, Wrapper, TitleLeft, Button } from '../styled';
-import  ButtonInputGroup from '../ButtonInputGroup/ButtonInputGroup';
-import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+import { Container, Wrapper } from '../styled';
 
 
 function Hero({
@@ -18,22 +19,60 @@ function Hero({
     subtitle,
     buttonText,
     img,
+    form
 } ) {
+    const useMediaQuery = (width) => {
+        const [targetReached, setTargetReached] = useState(false);
+      
+        const updateTarget = useCallback((e) => {
+          if (e.matches) {
+            setTargetReached(true);
+          } else {
+            setTargetReached(false);
+          }
+        }, []);
+      
+        useEffect(() => {
+          const media = window.matchMedia(`(max-width: ${width}px)`);
+          media.addListener(updateTarget);
+      
+          // Check on mount (callback is not called until a change occurs)
+          if (media.matches) {
+            setTargetReached(true);
+          }
+      
+          return () => media.removeListener(updateTarget);
+        }, []);
+      
+        return targetReached;
+      };
+    const navLogo = useTheme();
+    const changeLogoSize = useThemeUpdate();
+    const isBreakpoint = useMediaQuery(1250);
+
     return (
-            <Container lightblue>
+            <Container lightBlue>
                 <Wrapper>
-                    <TitleContainer>
-                        <TitleLeft > {title} </TitleLeft>
-                        <SubTitle > {subtitle} </SubTitle>
-                        <ButtonInputGroup />
-                    </TitleContainer>
-                    <ImgContainer>
-                        <HeroImg src={img} />
+                    <HeroWrapper className={navLogo ? 'active' : ''} >
+                        <TitleContainer>
+                            <HeroTitle > {title} </HeroTitle>
+                            { isBreakpoint && 
+                            <ImgContainer>
+                                <HeroImg src={img} />
+                            </ImgContainer>
+                            }
+                            <SubtitleHero > {subtitle} </SubtitleHero>
+                            {/* <ButtonInputGroup /> */} 
+                            <ButtonHero href={form} target="blank">MÁM ZÁJEM</ButtonHero> 
+                        </TitleContainer>
+                        { !isBreakpoint && 
+                        <ImgContainer>
+                            <HeroImg src={img} />
+                        </ImgContainer>
+                        }
 
-                    </ImgContainer>
-
+                    </HeroWrapper>
                 </Wrapper>
-
             </Container>
     )
 }

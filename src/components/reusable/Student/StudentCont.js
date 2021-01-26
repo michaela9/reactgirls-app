@@ -13,7 +13,7 @@ function StudentCont({data}) {
         <StudentContainer>
             {data.map((student) => {
                 return (
-                    <StudentCard>
+                    <StudentCard key={student.heading} >
                         <StudentIcon src={student.icon} />
                         <StudentHeading>{student.heading}</StudentHeading>
                         <StudentText>{student.text}</StudentText>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Wrapper, Name, Paragraph, ParagraphS } from '../reusable/styled';
-import { Link } from 'react-router-dom';
+import { Container, Wrapper, Name } from '../reusable/styled';
 import contactArr from './contactArr';
 
 import {
@@ -19,7 +18,7 @@ function ContactPeople() {
             <Wrapper>
                 <ContactCardContainer>
                     {contactArr.map((contact) => (
-                        <ContactCard>
+                        <ContactCard key={contact.name} >
                             <ContactImg src={contact.photo}/>
                             <ContactText>
                                 <Name>{contact.name}</Name>

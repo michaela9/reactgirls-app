@@ -3,11 +3,11 @@ export const heroObjTwo = {
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_48.jpg",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform"
 };
 
 export const infoObjOne = {
     text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který tě bude mentorovat a rozvíjet tvé technické dovednosti",
-
 }
 
 export const mentoringCardArr = [
@@ -51,12 +51,12 @@ export const titleObjOne = {
 
 export const mentStudentArr = [
     {
-        icon: "/images/icons/woman1.svg",
+        icon: "/images/icons/website.svg",
         heading: "Zájemkyním",
         text: "Zájemkyním o programování, které se chtějí naučit tvorbu webových stránek v populární JavaScrtipové knihovně React.",
     },
     {
-        icon: "/images/icons/woman6.svg",
+        icon: "/images/icons/victory.svg",
         heading: "Začátečnicím",
         text: "Začatečnicím, které již mají zkušenosti s programováním a chtěly by je posunout na další úroveň s Reactem.",
     },
@@ -66,6 +66,11 @@ export const mentStudentArr = [
         text: "Ženám, které se chtějí naučit frontendové programování a nechat se mentorovat osobnostmi z IT.",
     }
 ];
+
+export const mentPrice = {
+    price: "2700 CZK",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform",
+}
 
 export const mentPriceArr = [
     {
@@ -81,25 +86,22 @@ export const mentPriceArr = [
         text: "možnost konzultace s dalšími kouči",
     },
     {
-        text: "vstup na celodenní workshop ReactGirls",  
-    },
-    {
         text: "možnost vyzkoušet si mock interview",  
     },
 ];
 
 export const mentQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?.",
+        question: "Pro koho je kurz určen?",
         answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
     },
     {
         question: "Jak se můžu na kurz přihlásit?",
-        answer: "Stačí kliknout ZDE a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.",
+        answer: <>Stačí kliknout <a>ZDE </a>a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: "Akademie bude probíhat prezenčně, materiály budou k dispozici na Slacku a Google Disku. V harmonogramu výše jsou vypsány časy jednotlivých lekcí.",
+        answer: <>Akademie bude probíhat prezenčně, materiály budou k dispozici na <a>Slacku</a> a <a>Google Disku</a>. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
     },
     {
         question: "Co si z kurzu odnesu?",
@@ -111,6 +113,33 @@ export const mentQuestionsArr = [
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: "Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás kontaktovat",
+        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
     }, 
 ];
+
+export const processArrMent = [
+    {
+        number: 1,
+        heading: "MÁM ZÁJEM",
+        text: "Klikni na tlačítko MÁM ZÁJEM",
+        reversed: false,
+        last: false,
+        first: true
+    },
+    {
+        number: 2,
+        heading: "VYPLŇ FORMULÁŘ",
+        text: "Po kliknutí na tlačítko REGISTRACE se objeví formulář, ten vyplň a nezapomeň zejména na vyplnění motivaci a přiložení odkazu na GitHub či jiné úložiště tvých kódů.",
+        reversed: true,
+        last: false,
+        first: false
+    },
+    {
+        number: 3,
+        heading: "KONTAKTUJEME TĚ",
+        text: "2 týdny před spuštěním běhu tě budeme kontaktovat a sdělíme ti, zda jsme vybrali právě tebe. Pošleme ti taky všechny potřebné informace o mentoringovom programu společně s informacemi o platbě.",
+        reversed: false,
+        last: true,
+        first: false
+    }
+]

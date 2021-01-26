@@ -4,16 +4,25 @@ import { ParagraphS } from '../reusable/styled';
 
 export const ContactCardContainer = styled.div`
     display: flex;
-    width: 1000px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     justify-content: space-around;
-`;
+    padding: 80px 0;
 
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 40px 0;
+        
+    }
+`;
 
 export const ContactCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px 50px; 
 
 `;
 
@@ -30,9 +39,7 @@ export const ContactText = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 150px;
-
 `;
-
 
 export const ContactSocial = styled.div`
     display: flex;
@@ -45,7 +52,11 @@ export const SocialContactIcon = styled.img`
     width: 20px;
     height: 20px;
     margin-top: 10px;
+    :hover{
+        filter: invert(100%);
+    }
 `;
+
 export const ContactInfo = styled(ParagraphS)`
     font-weight: 300;
     color:${colors.grey};   

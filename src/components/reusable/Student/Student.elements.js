@@ -1,20 +1,48 @@
 import styled from 'styled-components';
-import { sizes, colors } from '../../../variables';
+import { sizes, breakpoints } from '../../../variables';
 
+export const StudentWrapper = styled.div`
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        padding-top: 60px;
+        padding-bottom: 60px;   
+        margin-right: 16px;
+        margin-left: 16px;   
+    }
+`;
 
 export const StudentContainer = styled.div`
     display: flex;
-    width: 1000px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 80px;
+    margin: 40px auto 20px auto;
+    
+
+    @media only screen and (max-width: ${breakpoints.tablet} ) {
+        flex-direction: column;
+        padding-bottom: 20px;
+        align-items: center;
+        margin: 20px auto 0 auto;  
+    }
 `;
 
 export const StudentCard = styled.div`
-    width: 250px;
-    height: 350px;
+    width: 30%;
+    max-width: 250px;
+    //height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: ${breakpoints.tablet})  {
+        width: 100%;
+        
+    }
+
 `;
 
 export const StudentHeading = styled.h3`
