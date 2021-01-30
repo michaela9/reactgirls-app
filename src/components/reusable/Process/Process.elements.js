@@ -3,14 +3,14 @@ import { sizes, colors, breakpoints } from '../../../variables';
 import { Heading3, ParagraphS } from '../styled';
 
 export const ProcessWrapper = styled.div`
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     //border: 1px solid red;
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 60px;
-        padding-bottom: 60px;
         margin-right: 16px;
         margin-left: 16px;
+        padding-top: 80px;
+        padding-bottom: 80px;
 
     }
 `;
@@ -20,7 +20,7 @@ export const ProcessContainer = styled.div`
     //border: 1px solid yellow;
     margin-top: 80px;
     @media screen and (max-width: ${breakpoints.tablet}) {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 `;
 
@@ -45,7 +45,7 @@ export const ProcessRow = styled.div`
 
 export const ProcessNumber = styled.div`
     width: 45%;
-    font-size: 150px;
+    font-size: 125px;
     color: ${colors.mainBlue};
     text-align: ${({reversed}) => (reversed ? `left`  : `right` )};
     //border-right: 1px solid ${colors.mainBlue};
@@ -82,7 +82,7 @@ export const ProcessLine = styled.div`
    display: ${({last}) => (last ? `none`  : `` )};
    width: 1px;
    border-left: 2px dotted ${colors.veryLightGrey};
-   height: 190px;
+   height: 160px;
    position: absolute;
     top: 0px;
 

@@ -8,12 +8,13 @@ export const InfoCont = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-between;
-    margin: 80px auto 0 auto;
+    margin: 100px auto 0 auto;
     //border: 1px solid red;
+    padding-bottom: 100px;
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        padding-bottom: 40px;
-        margin: 60px auto 0 auto;  
+        padding-bottom: 80px;
+        margin: 80px auto 0 auto;  
     }
     @media only screen and (min-width: ${breakpoints.tablet} ) and (max-width: 1250px ) {
         
@@ -21,11 +22,11 @@ export const InfoCont = styled.div`
 `;
 
 export const WrapperInfoSection = styled.div`
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    //padding-bottom: 40px;
     //border: 1px solid blue;
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 60px;
+        padding-top: 80px;
         padding-bottom: 0;
         margin-right: 16px;
         margin-left: 16px;

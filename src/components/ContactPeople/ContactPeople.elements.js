@@ -9,11 +9,11 @@ export const ContactCardContainer = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     justify-content: space-around;
-    padding: 80px 0;
+    padding: 100px 0;
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
-        padding: 40px 0;
+        padding: 80px 0;
         
     }
 `;

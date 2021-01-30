@@ -11,15 +11,17 @@ export const HeroHomeRow = styled.div`
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     transition: all 1.5s ease-in-out;
+    //border: 1px solid red;
 
     @media only screen and (max-width: 1250px) {
         padding-top: 120px;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
         &.active{
-            padding-top: 40px;
+            padding-top: 80px;
+            padding-bottom: 80px;
 
         }
     @media only screen and (max-width: 325px) {
@@ -31,6 +33,7 @@ export const HeroHomeRow = styled.div`
 `;
 
 export const HeroHomeColumn = styled.div`
+    //border: 1px solid red;
     flex: 1;
     max-width: 50%;
     flex-basis: 50%;
@@ -44,6 +47,7 @@ export const HeroHomeColumn = styled.div`
 `;
 
 export const TextWrapperHome = styled.div`
+    //border: 1px solid red;
     max-width: 540px;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -56,6 +60,7 @@ export const TextWrapperHome = styled.div`
 export const HeadingHome = styled.div`
     display: flex;
     flex-direction: column;
+    //border: 1px solid red;
 
     @media only screen and (max-width: 1250px) {
         align-items: center; 
@@ -147,7 +152,7 @@ export const ImgHomeContainer = styled.div`
     border-radius: 50%;
     overflow: hidden;
     outline: none;
-    margin-top: 20px;
+    margin-top: 40px;
 
 
     @media only screen and (max-width: 319px) { 
@@ -239,6 +244,8 @@ export const SubtitleHero = styled(Subtitle)`
     
     @media only screen and (max-width: 1250px) { 
         text-align: center;
+        margin-top: 40px; 
+        margin-bottom: 40px; 
     }   
 `;
 

@@ -4,16 +4,18 @@ import { Paragraph, ParagraphS } from '../reusable/styled';
 
 
 export const WrapperAbout = styled.div`
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;   
    @media only screen and (max-width: ${breakpoints.tablet}) {
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     }
 `;
 
 export const ItemContainer = styled.div`
-    padding: 40px 0 80px 0;
+    //padding: 80px 0 80px 0;
     margin: 0 auto;
     //width: 50%;
     display: flex;
@@ -54,11 +56,13 @@ export const ItemRow = styled.div`
     margin: 10px;
     width: 140px;
     height: 140px;
+    border: 1px solid red;
 
     @media only screen and (max-width: 1000px ) {
         width: 90px;
         height: 90px;
-        margin: 5px;  
+        margin: 5px; 
+
     }   
 
 `;
@@ -75,7 +79,9 @@ export const ItemText = styled(ParagraphS)`
     text-align: center;
     font-weight: 500;
     color: ${colors.grey};
+    border: 1px solid red;
     @media only screen and (max-width: 1000px ) {
         font-size: ${sizes.sizeXXS};
     }
+
 `;

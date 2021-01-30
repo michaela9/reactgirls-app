@@ -7,12 +7,12 @@ export const SponsorContainer = styled.div`
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 80px 50px;
+    padding: 100px 50px;
     align-items: center;
     //border: 1px solid red;
     
     @media only screen and (max-width: 768px) {
-    padding: 40px 0px;
+        padding: 80px 0px;
     }
 `;
 
@@ -39,6 +39,8 @@ export const SponsorImgContainer = styled.div`
     10px 15px 10px; 
     @media only screen and (max-width: 768px) {
         //padding: 10px 8px 10px 8px; 
+        justify-content: space-around;
+        align-items: center;
     }
 `;
 
@@ -51,18 +53,17 @@ export const GoldSponsorship = styled.div`
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 15px;  
+    margin-bottom: 40px;  
     margin-top: 50px;
 
     @media only screen and (max-width: 768px) {
-        border-left: 3px solid #b8860b;
         padding-left: 10px;
         padding-right: 10px;
-        margin-bottom: 10px;  
-        margin-top: 40px;
+        margin-bottom: 20px;  
+        margin-top: 80px;
         padding-bottom: 15px;
         //margin-left: 16px;
-        border-left: 15px solid #b8860b;
+        border-left: 12px solid #b8860b;
     }
 `;
 
@@ -74,14 +75,13 @@ export const SilverSponsorship = styled.div`
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 15px; 
+    margin-bottom: 40px; 
 
     @media only screen and (max-width: 768px) {
-        border-left: 3px solid #838996;
         padding-left: 10px;
         padding-right: 10px;
-        margin-bottom: 10px; 
-        border-left: 15px solid #838996; 
+        margin-bottom: 20px; 
+        border-left: 12px solid #838996; 
         padding-bottom: 15px;
     }
 `;
@@ -96,11 +96,10 @@ export const CommunitySponsorship = styled.div`
     padding-right: 15px;
     
     @media only screen and (max-width: 768px) {
-        border-left: 3px solid #003399;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 15px;
         margin-bottom: 10px; 
-        border-left: 15px solid #003399;
+        border-left: 12px solid #003399;
     }
 `;

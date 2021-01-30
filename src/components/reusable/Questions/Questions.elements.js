@@ -5,13 +5,13 @@ import { ParagraphS, Paragraph } from '../../reusable/styled';
 export const QuestionsContainer = styled.div`
     max-width: 650px;
     width: 100%;
-    padding: 40px;
+    padding: 50px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     position: relative;
-    left: 40px;
+    left: 60px;
     //border: 1px solid red;
     margin-top: 20px;
 
@@ -29,15 +29,15 @@ export const QuestionsContainer = styled.div`
 `;
 
 export const QuestionWrapper = styled.div`
-    padding-top: 80px;
-    padding-bottom: 40px;
-    height: 750px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 820px;
     //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         height: auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
+        padding-top: 80px;
     }
 `;
 
@@ -68,7 +68,7 @@ export const QuestionsText = styled(Paragraph)`
     display: flex;
     align-items: center;
     font-weight: 500;
-    color: ${colors.mainBlue};
+    //color: ${colors.mainBlue};
     padding: 4px;
 
     @media screen and (max-width: ${breakpoints.tablet}) {

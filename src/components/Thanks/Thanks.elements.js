@@ -13,8 +13,9 @@ export const ThanksText = styled(Paragraph)`
 export const WrapperThanks = styled(Paragraph)`
     padding-top: 80px;
     padding-bottom: 80px;
-    border-top: 2px solid #EBEBEB ;
-    border-bottom: 2px solid #EBEBEB;
+    //border-top: 2px solid #EBEBEB ;
+    //border-bottom: 2px solid #EBEBEB;
+    //border: 1px solid red;
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         border-top: none;
         border-bottom: none;
@@ -22,6 +23,6 @@ export const WrapperThanks = styled(Paragraph)`
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 20px;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 `;

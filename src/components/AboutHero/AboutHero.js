@@ -8,7 +8,7 @@ function AboutHero({title, text1, text2 }) {
     const navLogo = useTheme();
     const changeLogoSize = useThemeUpdate();
     return (
-        <Container >
+        <Container lightBlue >
             <WrapperAbout className={navLogo ? 'active' : ''}>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>

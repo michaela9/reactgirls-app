@@ -9,8 +9,8 @@ export const WrapperLector = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 `;
 
@@ -27,35 +27,30 @@ export const CardsContainer = styled.div`
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 100px 20px;
 
     @media only screen and (max-width: 1280px) {
-        padding: 60px 40px;
+        padding: 60px 20px;
         max-width: 960px;
     }
     @media only screen and (max-width: 1200px) {
-        padding: 60px 40px;
         max-width: 950px;
     }
     @media only screen and (max-width: 1130px) {
-        padding: 60px 40px;
         max-width: 680px;
     }
     @media only screen and (max-width: 700px) {
-        padding: 60px 20px;
         max-width: 350px;
     }
     @media only screen and (max-width: 420px) {
-        padding: 60px 10px;
-        max-width: 300px;
+        max-width: 340px;
     }
     @media only screen and (max-width: 380px) {
-        padding: 60px 10px;
-        max-width: 260px;
+        max-width: 300px;
     }
     @media only screen and (max-width: 320px) {
-        padding: 60px 10px;
-        max-width: 220px;
+        //padding: 60px 10px;
+        max-width: 240px;
     }
 `;
 
