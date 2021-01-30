@@ -26,9 +26,9 @@ function ContactBank() {
                             <br />
                             Česká republika
                             <br />
-                            info@reactgirls.cz 
+                            code@reactgirls.com 
                             <br />
-                            IČO xxxxxxxx, DIČ xxxxxxxxxxx
+                            IČO 09587535, DIČ CZ09587535
                         </BankText>
                     </BankContainer>
                     <BankContainer>

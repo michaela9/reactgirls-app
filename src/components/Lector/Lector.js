@@ -13,7 +13,8 @@ import {
     IconIn,
     SliderLector,
     WrapperLector,
-    Arrow
+    Arrow,
+    LectorCompany
  } from './Lector.elements';
 
  import lectorArr from './lectorArr';
@@ -75,7 +76,7 @@ function Lector({ deviceType }) {
                                 
                                 <LectorName>{lector.lectorName}</LectorName>
                                 <LectorJob>{lector.lectorJob}</LectorJob>
-                                <LectorJob>{lector.lectorCompany}</LectorJob>
+                                <LectorCompany>{lector.lectorCompany}</LectorCompany>
                             </Card>
                             )
                          )}

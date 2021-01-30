@@ -14,18 +14,14 @@ const contactArr = [
         name: "Simona Töröková",
         interest: "Organizátorka",
         mail: "simca@reactgirls.com",
-        linkedIn: "https://www.linkedIn.com",
-        facebook: "https://www.facebook.com/",
-        twitter: "https://www.twitter.com"    
+        linkedIn: "https://www.linkedIn.com",   
     },
     {
         photo: "/images/lectors/zuzkastav-1.png",
         name: "Zuzana Stavjaňová",
         interest: "Organizátorka",
         mail: "zuzka@reactgirls.com",
-        linkedIn: "https://www.linkedIn.com",
-        facebook: "https://www.facebook.com/",
-        twitter: "https://www.twitter.com"    
+        linkedIn: "https://www.linkedIn.com",  
     },
 ]
 

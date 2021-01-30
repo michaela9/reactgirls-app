@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors, breakpoints } from '../../variables.js';
-import { Name } from '../reusable/styled';
+import { Name, Paragraph } from '../reusable/styled';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -84,7 +84,7 @@ export const Card = styled.div`
     @media only screen and (max-width: 700px) {
         width: 220px;
         padding: 25px 5px;
-        box-shadow: none;
+        
         height: 350px;
     }
     @media only screen and (max-width: 380px) {
@@ -92,6 +92,8 @@ export const Card = styled.div`
         margin: 0px;
         width: 200px;
         height: 300px;
+        box-shadow: none;
+        background-color: none;
     }
 `;
 
@@ -101,11 +103,23 @@ export const LectorName = styled(Name)`
     margin-bottom: 10px;
 `;
 
-export const LectorJob = styled.p`
+export const LectorJob = styled(Paragraph)`
     text-align: center;
     font-weight: 400;
     font-size: ${sizes.sizeXS};
-    color: ${colors.grey};
+    color: ${colors.darkGrey};
+    margin: 5px auto;
+    width: 85%;
+    @media only screen and (max-width: ${breakpoints.tablet}) {
+        width: 100%;
+    }
+`;
+export const LectorCompany = styled(Paragraph)`
+    text-align: center;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: ${sizes.sizeXS};
+    color: #8C8C8C;
     margin: 5px auto;
     width: 85%;
     @media only screen and (max-width: ${breakpoints.tablet}) {
