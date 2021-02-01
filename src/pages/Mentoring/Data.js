@@ -3,7 +3,7 @@ export const heroObjTwo = {
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_48.jpg",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform"
+    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI"
 };
 
 export const infoObjOne = {
@@ -62,14 +62,14 @@ export const mentStudentArr = [
     },
     {
         icon: "/images/icons/woman3.svg",
-        heading: "Ženám",
-        text: "Ženám, které se chtějí naučit frontendové programování a nechat se mentorovat osobnostmi z IT.",
+        heading: "Studentkám",
+        text: "Studentkám, které se chtějí naučit frontendové programování a nechat se mentorovat osobnostmi z IT.",
     }
 ];
 
 export const mentPrice = {
     price: "2700 CZK",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSeZEEMSnugDTjhWJGHhar14JfrEinx-fGpkC3tl2m8HJcLn1w/viewform",
+    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI",
 }
 
 export const mentPriceArr = [

@@ -61,8 +61,8 @@ export const acadStudentArr = [
     },
     {
         icon: "/images/icons/woman3.svg",
-        heading: "Ženám",
-        text: "Ženám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
+        heading: "Studentkám",
+        text: "Studentkám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
     }
 ];
 

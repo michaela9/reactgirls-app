@@ -42,16 +42,21 @@ export const ContactText = styled.div`
 `;
 
 export const ContactSocial = styled.div`
+   //border: 1px solid blue; 
     display: flex;
-    width: 80px;
+    //width: 80px;
     justify-content: space-between;
     align-items: center;
 `;
 
 export const SocialContactIcon = styled.img`
+//border: 1px solid red;
     width: 20px;
     height: 20px;
     margin-top: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+
     :hover{
         filter: invert(100%);
     }
