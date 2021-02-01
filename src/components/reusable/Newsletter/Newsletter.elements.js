@@ -3,14 +3,14 @@ import { colors, sizes, breakpoints } from '../../../variables';
 import { Paragraph, TitleCenter } from '../styled';
 
 export const NewsletterContainer = styled.div `
-    margin: 80px auto 80px auto;  
+    margin: 100px auto 100px auto;  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     //border: 1px solid red;
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        margin: 40px auto 40px auto;
+        margin: 80px auto 80px auto;  
         padding-right: 16px;
         padding-left: 16px;
         width: 100%; 

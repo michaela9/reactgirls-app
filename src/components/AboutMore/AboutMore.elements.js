@@ -7,14 +7,14 @@ export const TitleAboutMore = styled(TitleCenter)`
 `;
 
 export const WrapperAboutMore = styled.div`
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 `;
 

@@ -7,12 +7,12 @@ export const ContactHeroContainer = styled.div`
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-    padding: 80px 0;
+    padding: 100px 0 100px 0;
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding: 120px 0 60px 0;
+        padding: 120px 0 80px 0;
         transition: all 1.5s ease-in-out;
         &.active {
-            padding: 60px 0 20px 0; 
+            padding: 80px 0 80px 0; 
         }
     }
 `;
@@ -28,7 +28,7 @@ export const ContactHeroTitle = styled(TitleCenter)`
 export const ContactInfo = styled(Paragraph)`
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     width: 45%;
     font-weight: 300;
     color: ${colors.grey};
@@ -40,6 +40,6 @@ export const ContactInfo = styled(Paragraph)`
 
 export const SlackIcon = styled.img`
     width: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 `;
 

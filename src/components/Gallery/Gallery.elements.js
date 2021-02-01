@@ -16,8 +16,8 @@ export const WrapperGallery = styled.div`
     //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding-top: 40px;
-        padding-bottom: 40px;  
+        padding-top: 60px;
+        padding-bottom: 60px;  
     }
 `;
 
@@ -31,7 +31,7 @@ export const GalleryContainer = styled.div`
     //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
-        padding: 40px 0px 0px 0px;
+        padding: 60px 0px 0px 0px;
     }
 `;
 

@@ -57,13 +57,14 @@ function Navbar() {
         <Nav>
             <Container>
                 <Wrapper>
+                    
                     <NavWrapper className={navLogo ? 'active' : ''} > 
                         <NavLogo onClick={toggleHome} smooth={true} src="/images/logo-blue.svg" className={navLogo ? 'active' : ''} />
-                        <MobileIcon onClick={handleClick}>
+                        <MobileIcon onClick={handleClick} >
                             {click ? <MobileIconClose src="/images/icons/close.svg"/> : <MobileIconMenu src="/images/icons/menu.svg"/> }
                         </MobileIcon>
                     
-                        <NavMenu onClick = {handleClick} click={click}>
+                        <NavMenu onClick = {handleClick} click={click} className={navLogo ? 'active' : '' }>
                             <NavItem>
                                 <NavLinks activeStyle={{ color: '#00B4CD' }} exact to='/'>Úvod</NavLinks>
                             </NavItem>
@@ -81,6 +82,8 @@ function Navbar() {
                             </NavItem>
                         </NavMenu>
                     </NavWrapper> 
+                    
+                   
                 </Wrapper>
             </Container>
             { !isBreakpoint &&   

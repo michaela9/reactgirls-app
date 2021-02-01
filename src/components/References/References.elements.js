@@ -6,18 +6,19 @@ export const ReferenceContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 80px;
+    padding: 100px 16px 0px 16px; 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        padding: 60px 16px; 
+        padding: 80px 16px 0px 16px; 
     }
 `;
 
 export const Speech = styled.div`
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
+    //border: 1px solid red;
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        margin-top: 80px;
+        margin-top: 100px;
         margin-bottom: 0px;
     }
 `;
@@ -66,13 +67,14 @@ export const SpeechImg = styled.img`
 export const SpeechCont = styled.div`
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 50%;
     margin: 80px auto 0 auto;
     justify-content: center;
 
-    @media only screen and (max-width: ${breakpoints.tablet} ) {
+    @media only screen and (max-width: 700px ) {
         width: 90%; 
         margin: 0 auto 0 auto;
+        margin-top:-20px;
     }
 `;
 

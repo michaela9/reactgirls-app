@@ -23,6 +23,8 @@ export const ProductInfo = styled(Paragraph)`
         //width: 100%;
         margin-right: 16px;
         margin-left: 16px;
+        margin-bottom: 40px;
+        margin-top: 32px;
     }
 `;
 
@@ -32,7 +34,7 @@ export const ProductMainTitle = styled(TitleCenter)`
     margin: 0 auto;
 
     @media only screen and (max-width: 1130px) {
-        padding: 40px;
+        padding: 60px;
         text-align: center;
     }
 `;
@@ -42,15 +44,16 @@ export const ProductInfoRow = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     @media only screen and (max-width: 1130px) {
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+       // padding-bottom: 40px;
+       //border: 1px solid red;
     }
 `;
 
@@ -90,7 +93,7 @@ export const ProductImg = styled.img`
 export const ProductImgContainer = styled.div`
    border-radius: 50%;
    overflow: hidden;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
    display: flex;
    justify-content: ${({imgStart}) => (imgStart ? 'flex-start' : 'flex-end')};
 

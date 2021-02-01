@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { sizes, breakpoints } from '../../../variables';
 
 export const StudentWrapper = styled.div`
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-        padding-top: 60px;
-        padding-bottom: 60px;   
+    
         margin-right: 16px;
         margin-left: 16px;   
     }
@@ -19,14 +19,15 @@ export const StudentContainer = styled.div`
     max-width: 1000px;
     width: 100%;
     justify-content: space-between;
-    margin: 40px auto 20px auto;
+    margin: 100px auto 0px auto;
+    //border: 1px solid red;
     
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         flex-direction: column;
-        padding-bottom: 20px;
         align-items: center;
-        margin: 20px auto 0 auto;  
+        margin: 80px auto 0px auto;
+        //border: 1px solid red; 
     }
 `;
 
@@ -37,9 +38,12 @@ export const StudentCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    //border: 1px solid red;
+    margin-bottom: 100px;
 
     @media only screen and (max-width: ${breakpoints.tablet})  {
         width: 100%;
+        margin-bottom: 80px;
         
     }
 
@@ -62,5 +66,6 @@ export const StudentText = styled.p`
 export const StudentIcon = styled.img`
     width: 80px;
     height: 80px;
-    margin: 50px auto 30px auto;
+    margin-bottom: 20px;
+
 `;

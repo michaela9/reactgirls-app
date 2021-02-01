@@ -23,8 +23,12 @@ function References () {
                                 <Speech>
                                     <SpeechIcon src='/images/icons/quote.svg'/>
                                     <SpeechText>{speech.text1}</SpeechText>
+                                    {!speech.hideText2 &&
                                     <SpeechText>{speech.text2}</SpeechText>
+                                    }
+                                    {!speech.hideText3 &&
                                     <SpeechText>{speech.text3}</SpeechText>
+                                    }
                                     <SpeechNameContainer>
                                         <SpeechImgContainer>
                                             <SpeechImg src={speech.photo}/>

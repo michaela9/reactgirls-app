@@ -21,21 +21,26 @@ export const aboutInfoObj1 =
         { 
             text: "vytváříme komunitu",
             productStart: true,
+            id: "item1",
         }, 
         { 
             text: "pořádáme workshopy",
             productStart: false,
+            id: "item2",
         },
         { 
             text: "pořádáme webináře",
             productStart: true,
+            id: "item3",
         },
         { 
             text: "provozujeme Mentoring",
             productStart: false,
+            id: "item4",
         }, 
         { 
             text: "organizujeme Meetupy",
             productStart: true,
+            id: "item5",
         },
       ];

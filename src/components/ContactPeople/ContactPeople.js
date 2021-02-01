@@ -29,12 +29,16 @@ function ContactPeople() {
                                     <a href={contact.linkedIn}>
                                         <SocialContactIcon src="/images/icons/linkedIn.svg" />
                                     </a>
+                                    {!contact.hideFacebook &&
                                     <a href={contact.facebook}>
                                         <SocialContactIcon src="/images/icons/facebook.svg" />
                                     </a>
+                                    }
+                                    {!contact.hideTwitter &&
                                     <a href={contact.twitter}>
                                         <SocialContactIcon src="/images/icons/twitter.svg" />
                                     </a>
+                                    }
                                 </ContactSocial>
                             </ContactText>
                         </ContactCard>

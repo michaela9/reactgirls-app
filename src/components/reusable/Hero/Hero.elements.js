@@ -4,16 +4,16 @@ import { TitleLeft, Subtitle, Button } from '../styled';
 
 export const HeroWrapper = styled.div`
     display: flex;
-    padding: 80px 0 80px 0;
+    padding: 100px 0 100px 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding: 120px 0 60px 0;
+        padding: 120px 0 80px 0;
         transition: all 1.5s ease-in-out;
         &.active {
-            padding: 40px 0 20px 0; 
+            padding: 80px 0 80px 0; 
         }
     }
 
@@ -38,6 +38,7 @@ export const ButtonHero = styled(Button)`
 `;
 
 export const TitleContainer = styled.div`
+    //border: 1px solid red;
     display: flex;
     flex-direction:column;
     width: 50%;
@@ -48,7 +49,7 @@ export const TitleContainer = styled.div`
 
     @media screen and (max-width: 1250px) {
         width: 100%;
-        margin: 0 auto 40px auto;
+        margin: 0 auto ;
         padding-left: 16px;
         padding-right: 16px;
         display: flex;
@@ -62,35 +63,27 @@ export const TitleContainer = styled.div`
     height: 450px;
     border-radius: 50%;
     overflow: hidden;
-
-
-
-
+    margin-top: 40px;
+    margin-bottom: 40px;
     //border: 1px solid red;
-
     @media only screen and (max-width: 319px) { 
         width: 240px;
         height: 240px;         
-        margin-top: 20px;
-        margin-bottom: 15px;
     }
     @media only screen and (min-width:319px) and (max-width: 370px) { 
         width: 280px;
         height: 280px; 
-        margin-top: 20px;
-        margin-bottom: 15px;
+
     }
     @media only screen and (min-width:370px) and (max-width: 420px) { 
         width: 320px; 
         height: 320px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+
     }
     @media only screen and (min-width: 420px) and (max-width: 1250px) { 
         width: 360px; 
         height: 360px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+
     }
 
     @media only screen and (min-width: 1250px) { 
@@ -122,7 +115,7 @@ export const HeroImg = styled.img`
  `;
 
 export const SubtitleHero = styled(Subtitle)`
-    margin-bottom: 25px;
-    margin-top: 15px;
+    margin-bottom: 40px;
+   //margin-top: 40px;
 `;
 

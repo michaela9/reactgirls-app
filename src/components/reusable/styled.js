@@ -66,7 +66,8 @@ export const LinkScroll = styled(Link) `
 export const Container = styled.div`
     z-index:1;
     width: 100%;
-    background-color: ${({lightBlue}) => (lightBlue ? `#EBF6F8`  : `#FFFBFA` )};
+    background-color: ${({lightBlue}) => (lightBlue ? `#EBF6F8`  : `#FFFFFF` )};
+
 `;
 
 export const Wrapper = styled.div`

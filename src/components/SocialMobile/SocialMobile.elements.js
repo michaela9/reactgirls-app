@@ -5,10 +5,7 @@ import { colors, breakpoints } from '../../variables';
 export const SocialMob = styled.div`
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
-    //width: 100%;
-    //max-width: 320px;
-    padding: 40px 16px 40px 16px;
+    padding: 80px 16px 80px 16px;
     justify-content: center;
 `;
 

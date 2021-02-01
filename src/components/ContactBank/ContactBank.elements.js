@@ -6,7 +6,7 @@ export const ContentContainer = styled.div`
     display: flex;
     justify-content: space-around;
     width: 90%;
-    padding: 80px 0 80px 0;
+    padding: 100px 0 100px 0;
     position: relative;
     left: 70px; 
 

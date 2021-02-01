@@ -20,11 +20,11 @@ export const NavWrapper = styled.div`
         margin-right: 16px;
         margin-left: 16px;
         justify-content: flex-end;
+        transition: all 350ms;
         &.active {
             justify-content: space-between;
     }
     }
-
 `;
 
 export const NavLogo = styled.img`
@@ -35,6 +35,7 @@ export const NavLogo = styled.img`
     transition: all 1.5s ease-in-out;
     top: 80px;
     cursor: pointer;
+    z-index: 100;
     
     &.active {
         width: 60px;
@@ -44,7 +45,6 @@ export const NavLogo = styled.img`
         position: relative;
         top: 0;
     }
-
     @media screen and (max-width: ${breakpoints.tablet}) {
         height: 140px;
         width: 140px;
@@ -73,18 +73,32 @@ export const NavMenu = styled.ul`
     list-style: none;
     justify-content: space-between;
     //border: 1px solid blue;
+    z-index: 10;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
-        display: flex;
-        flex-direction: column;
+        padding-top: 120px;
+        justify-content: flex-start;
         width: 100%;
-        transition: all 1.5s ease-in-out;
-        position: absolute;
+        flex-direction: column; 
+        position: fixed; 
+        z-index: 1; 
         top: 80px;
         right: ${({click}) => (click ? 0 : '-100%')};
-        padding-bottom: 20px;
-        opacity: 1;
-        background-color: ${colors.white};
+        background-color: ${colors.white}; 
+        overflow-x: hidden; 
+        padding-bottom: 40px;
+        transition: 0.4s; 
+        height: 90vh;
+            &.active {
+                padding-top: 40px;
+                }
+        }
+    }
+    @media screen and (max-width: 376px) {
+        padding-top: 130px;
+    }
+    @media screen and (max-width: 321px) {
+        padding-top: 110px;
     }
 `;
 
@@ -93,6 +107,7 @@ export const NavItem = styled.li`
     font-weight: 400;
     color:${colors.grey};
     margin-left: 2em;
+    //border: 1px solid red;
     //border: 1px solid red;
    
     @media screen and (max-width: ${breakpoints.tablet}) {
@@ -107,18 +122,25 @@ export const NavLinks = styled(NavLink)`
     align-items: center;
     height: 100%;
     //border: 1px solid red;
+    //border: 1px solid red;
     &:hover {
         color: ${colors.mainBlue} ;
     }
     @media screen and (max-width: ${breakpoints.tablet}) {
         text-align: center;
         width: 100%;
-        padding: 20px;
         display: table;
-        font-size: ${sizes.sizeS};
+        font-size: ${sizes.sizeM};
+        margin-top: 30px;
+        margin-bottom: 30px;
         &:hover {
             color: ${colors.mainBlue};
             transition: all 0.3 ease;
+        }
+        @media screen and (max-width: 321px) {
+            font-size: ${sizes.sizeS};
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
     }
     `;
@@ -130,7 +152,6 @@ export const Social = styled.div`
     justify-content: space-between;
     top: 110px;
     right: 70px;
-
     @media only screen and (max-width: 768px) {
         right: 20px;
     }
@@ -140,7 +161,6 @@ export const SocialIcon = styled.img`
     width: 22px;
     height: 22px;
     margin-bottom: 18px;
-
     @media only screen and (max-width: 768px) {
         width: 20px;
         height: 20px;
@@ -153,11 +173,9 @@ export const SocialIcon = styled.img`
 
 export const MobileIcon = styled.div`
     display: none;
-
     @media screen and (max-width: ${breakpoints.tablet}) {
         display: flex;
         cursor: pointer;
-
     }
     :hover{
         filter: invert(100%);
@@ -171,5 +189,3 @@ export const MobileIconClose = styled.img`
 export const MobileIconMenu = styled.img`
     width: 25px;
 `;
-
-

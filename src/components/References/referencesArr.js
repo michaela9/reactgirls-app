@@ -12,13 +12,24 @@ const referencesArr = [
         text1: "V ReactGirls mi ukázali, že vývoj v React.js je zábavný, nie tak zložitý, ako som sa bála a môžu vzniknúť pekné a dynamické aplikácie.",
         text2: "Vďaka prvým krokom v JavaScripte a dobre spracovanému prechodu na tvorbu aplikácie v React.js som jasne videla rozdiely, vedela som si naštudovať ďalšie materiály a odraziť sa v samoštúdiu. ",
         text3: "Všetky lekcie na seba dobre nadväzovali, preto aj začiatočník pochopí prepojenie medzi HTML, CSS a JavaScriptom a utvorí si celkový obraz o tom, ako vyzerá reálna aplikácia.",   
+        hideText2: false,
+        hideText3: false,
     },
     {
         name: "Laura Blažková",
         photo: '/images/references/laura.jpg',
         text1: "Za jeden měsíc mě lektoři z ReactGirsl Academy naučili všechny základni jazyky programování.",
         text2: "Díky přátelskému přístupu jsem se jako začátečnice nebála zeptat na otázky nebo o dovysvětlení. Všechny přednášky jsou praktické, takže už po pár uvodních lekcí jsem si byla schopna vytvořit malou hru! ",
-        text3: "Kreativní a talentovaní programatoři z ReactGirls Acadamy mi ukázali, že programovaní je zábava. Doporučila bych Akademii všem, a hlavně holkám, které chtějí nahlédout do programovaní a stát se součástí IT komunity.",   
+        text3: "Kreativní a talentovaní programatoři z ReactGirls Acadamy mi ukázali, že programovaní je zábava. Doporučila bych Akademii všem, a hlavně holkám, které chtějí nahlédout do programovaní a stát se součástí IT komunity.",  
+        hideText2: false,
+        hideText3: false, 
+    },
+    {
+        name: "Kateřina Voláková",
+        photo: '/images/references/katerina.jpg',
+        text1: "S akademií jsem byla velmi spokojená. Lektoři jsou výborní a organizace zvládnutá na jedničku. Jednotlivé lekce i závěrečný celodenní workshop mi přinesly nejen hodně informací, ale i pár lifehacků a tipů do budoucna.",
+        hideText2: true,
+        hideText3: true,
     }
 ]
 

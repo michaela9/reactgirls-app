@@ -27,15 +27,13 @@ export const WrapperAbout = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 80px 300px;
+    padding: 100px 300px;
     
-   @media only screen and (max-width: ${breakpoints.tablet}) {
-    }
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding: 120px 16px 60px 16px;
+        padding: 120px 16px 80px 16px;
         transition: all 1.5s ease-in-out;
         &.active {
-            padding: 60px 16px 20px 16px; 
+            padding: 80px 16px 80px 16px; 
         }
     }
 `;
