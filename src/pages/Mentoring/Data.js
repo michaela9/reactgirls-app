@@ -1,9 +1,13 @@
+/* switch between Newsletter and LogInButton on Hero Mentoring page*/
+
 export const heroObjTwo = {
     title: "Zúčastni se jedinečného Mentoringu s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_48.jpg",
-    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI"
+    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI",
+    showNewsletter: false,
+    showLogInButton: true,
 };
 
 export const infoObjOne = {
@@ -67,9 +71,13 @@ export const mentStudentArr = [
     }
 ];
 
+/* switch between Newsletter and LogInButton on Price Container of Mentoring page*/
+
 export const mentPrice = {
     price: "2700 CZK",
     form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI",
+    showNewsletter: false,
+    showLogInButton: true,
 }
 
 export const mentPriceArr = [

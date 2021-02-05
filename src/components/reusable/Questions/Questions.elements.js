@@ -68,8 +68,9 @@ export const QuestionsText = styled(Paragraph)`
     display: flex;
     align-items: center;
     font-weight: 500;
-    //color: ${colors.mainBlue};
+    color: ${colors.mainBlue};
     padding: 4px;
+    cursor: pointer;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         text-align: left;
@@ -87,9 +88,11 @@ export const AnswerText = styled(ParagraphS)`
         color: ${colors.mainBlue};
         font-weight: 500;
         cursor: pointer; 
+        @media screen and (max-width: ${breakpoints.tablet}) {
+        font-size: ${sizes.sizeXS};
+    }
     }
     @media screen and (max-width: ${breakpoints.tablet}) {
-        //text-align: left;
         font-size: ${sizes.sizeXS};
     }
 `;

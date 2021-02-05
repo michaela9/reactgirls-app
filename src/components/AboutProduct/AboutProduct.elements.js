@@ -14,21 +14,32 @@ export const WrapperAbout = styled.div`
     }
 `;
 
+export const WrapperAboutProducts = styled.div`
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;   
+   @media only screen and (max-width: ${breakpoints.tablet}) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    }
+`;
+
 export const ItemContainer = styled.div`
     //padding: 80px 0 80px 0;
+    //border: 1px solid red;
     margin: 0 auto;
     //width: 50%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+
     justify-content: center;
     align-items: center;
-    @media only screen and (min-width: 1000px ) {
-        max-width: 900px;
+    @media only screen and (min-width: 1250px ) {
+        flex-direction: row;
     }
 
-    @media only screen and (max-width: 1000px ) {
-        max-width: 350px;
-    }
 `;
 
 export const AboutText = styled(Paragraph)`
@@ -46,24 +57,102 @@ export const AboutText = styled(Paragraph)`
 `;
 
 export const ItemRow = styled.div`
+//border: 1px solid red;
     display: flex;
-    margin-top: 25px;
+    flex-direction: column;
+    //margin-top: 25px;
     border-radius: 50%;
     background-color: white;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.15);
-    margin: 10px;
+    margin: 20px;
     width: 140px;
     height: 140px;
-    border: 1px solid red;
+    position: relative;
 
-    @media only screen and (max-width: 1000px ) {
-        width: 90px;
-        height: 90px;
-        margin: 5px; 
+    &.item1{
+        //top: -50px;
+       //left: 0px;
+        width: 130px;
+        height: 130px;
+    }
+    &.item2{
+       //left: 20px;
+       // top: 20px;
+        width: 190px;
+        height: 190px;
+        box-shadow: 0px 0px 10px #89CDDA ; 
+    }
+    &.item3{
+       // left: 20px;
+       // top: 0px;
+        width: 160px;
+        height: 160px;
+      
+    }
+    &.item4{
+        //left: 20px;
+        //top: 0px;
+        width: 120px;
+        height: 120px;
 
-    }   
+    }
+    &.item5{
+        //left: -100px;
+       //top: 0px;
+        width: 220px;
+        height: 220px;
+        box-shadow: 0px 0px 10px #89CDDA ; 
+    }
+    &.item6{
+      // left: 20px;
+       // bottom: -20px;
+        width: 120px;
+        height: 120px;
+    }
+    @media only screen and (min-width: 1250px ) {
+    &.item1{
+       // top: -100px;
+       // right: -50px;
+        width: 130px;
+        height: 130px;
+    }
+    &.item2{
+       //left: 100px;
+       // top: 80px;
+        width: 190px;
+        height: 190px;
+        box-shadow: 0px 0px 10px #89CDDA ; 
+    }
+    &.item3{
+       // left: 20px;
+       // top: -100px;
+        width: 160px;
+        height: 160px;
+      
+    }
+    &.item4{
+       // left: -20px;
+       // top: 50px;
+        width: 120px;
+        height: 120px;
+
+    }
+    &.item5{
+       // left: -80px;
+       //top: -150px;
+        width: 220px;
+        height: 220px;
+        box-shadow: 0px 0px 10px #89CDDA ; 
+    }
+    &.item6{
+       //left: -50px;
+        //bottom: -50px;
+        width: 120px;
+        height: 120px;
+    }
+    }
 
 `;
 
@@ -74,14 +163,44 @@ export const ItemIcon = styled.img`
 `;
 
 export const ItemText = styled(ParagraphS)`
+    font-size: ${sizes.sizeXS};
+    text-align: center;
+    font-weight: 300;
+    color: ${colors.grey};
+
+    @media only screen and (max-width: 1000px ) {
+        font-size: ${sizes.sizeXXS};
+    }
+
+`;
+
+export const ItemTextProduct = styled(ParagraphS)`
     font-size: ${sizes.sizeS};
-    width: 95%;
     text-align: center;
     font-weight: 500;
     color: ${colors.grey};
-    border: 1px solid red;
-    @media only screen and (max-width: 1000px ) {
-        font-size: ${sizes.sizeXXS};
+    &.item1{
+    
+    }   
+    &.item2{
+        font-size: ${sizes.sizeM};
+        width: 65%;
+    }
+    &.item3{
+        font-size: ${sizes.sizeXS};
+      
+    }
+    &.item4{
+        
+
+    }
+    &.item5{
+        font-size: ${sizes.sizeM};
+        width: 65%;
+    }
+    &.item6{
+        
+
     }
 
 `;

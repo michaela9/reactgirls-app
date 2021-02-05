@@ -19,7 +19,6 @@ export const ContactHeroContainer = styled.div`
 
 export const ContactHeroTitle = styled(TitleCenter)`   
     margin-bottom: 40px;
-
     @media only screen and (max-width: 968px) {
         width: 75%;
     }
@@ -32,7 +31,6 @@ export const ContactInfo = styled(Paragraph)`
     width: 45%;
     font-weight: 300;
     color: ${colors.grey};
-
     @media only screen and (max-width: 968px) {
         width: 75%;
     }
@@ -42,4 +40,3 @@ export const SlackIcon = styled.img`
     width: 60px;
     margin-bottom: 50px;
 `;
-

@@ -14,7 +14,7 @@ function Accordion({question, answer, open, setOpen}) {
             <QuestionsIcon onClick={setOpen} src={open ? "/images/icons/minus.svg" : "/images/icons/plus.svg"}>
             </QuestionsIcon>  
             <QuestionsContent>  
-                <QuestionsText>{question}</QuestionsText>
+                <QuestionsText  onClick={setOpen} >{question}</QuestionsText>
                 {open && (
                 <AnswerText>{answer}</AnswerText>
                 )}

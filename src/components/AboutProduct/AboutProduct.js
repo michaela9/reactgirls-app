@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Wrapper, TitleCenter } from '../reusable/styled';
-import { ItemContainer, ItemRow, ItemIcon, ItemText, AboutText, WrapperAbout } from './AboutProduct.elements';
+import { ItemContainer, ItemRow, ItemIcon, ItemText, AboutText, WrapperAbout, WrapperAboutProducts, ItemTextProduct } from './AboutProduct.elements';
 
 function AboutProduct({data}) {
     return (
@@ -15,18 +15,19 @@ function AboutProduct({data}) {
             </Container>
             <Container lightBlue >
                 <Wrapper>
-                    <WrapperAbout>
+                    <WrapperAboutProducts>
                         <ItemContainer>                  
                         {data.map((item) => {
                         return(
-                            <ItemRow productStart={item.productStart} key={item.text}data={data}>
-                                    <ItemText className={item.class}>{item.text}</ItemText>
+                            <ItemRow productStart={item.productStart} key={item.id} data={data} className={item.id} >
+                                    <ItemText className={item.id} >{item.text}</ItemText>
+                                    <ItemTextProduct className={item.id} >{item.textProduct}</ItemTextProduct>
                             </ItemRow>
                                 )
                             })
                             } 
                         </ItemContainer>
-                    </WrapperAbout>
+                    </WrapperAboutProducts>
                 </Wrapper>
             </Container>
         </>

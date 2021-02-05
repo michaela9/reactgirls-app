@@ -20,7 +20,9 @@ function Hero({
     subtitle,
     buttonText,
     img,
-    form
+    form,
+    showNewsletter,
+    showLogInButton
 } ) {
     const useMediaQuery = (width) => {
         const [targetReached, setTargetReached] = useState(false);
@@ -64,7 +66,13 @@ function Hero({
                             }
                             <SubtitleHero > {subtitle} </SubtitleHero>
                                {/*<Newsletter /> */} 
+                            {showNewsletter &&
+                              <Newsletter />
+                            }
+                            {showLogInButton &&
                             <ButtonHero href={form} target="blank">MÁM ZÁJEM</ButtonHero>
+                            }
+                            	
                         </TitleContainer>
                         { !isBreakpoint && 
                         <ImgContainer>

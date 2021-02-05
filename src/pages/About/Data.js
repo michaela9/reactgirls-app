@@ -1,7 +1,7 @@
 export const aboutInfoObj1 = 
     {
         title: "O ReactGirls",
-        text1: "ReactGirls je komunita lidí, která pomáhá ženám v jejich cestě do IT světa. Snažíme se motivovat, dodávat odvahu a propojovat ty správné lidi.Naučíme programovat jak úplné začátečnice, tak i zkušenější programátorky.",
+        text1: "ReactGirls je komunita lidí, která pomáhá ženám v jejich cestě do IT světa. Snažíme se motivovat, dodávat odvahu a propojovat ty správné lidi. Naučíme programovat jak úplné začátečnice, tak i zkušenější programátorky.",
         lightBlue: true,
     }
     export const aboutInfoObj2 = 
@@ -19,28 +19,40 @@ export const aboutInfoObj1 =
 
     export const aboutProductArr = [
         { 
-            text: "vytváříme komunitu",
+            text: "vytváříme",
+            textProduct: "KOMUNITU",
             productStart: true,
             id: "item1",
+            
         }, 
         { 
-            text: "pořádáme workshopy",
-            productStart: false,
+            text: "organizujeme",
+            textProduct: "AKADEMII",
+            productStart: true,
             id: "item2",
         },
         { 
-            text: "pořádáme webináře",
-            productStart: true,
+            text: "pořádáme",
+             textProduct: "WORKSHOPY",
+            productStart: false,
             id: "item3",
         },
         { 
-            text: "provozujeme Mentoring",
-            productStart: false,
+            text: "připravujeme",
+            textProduct: "WEBINÁŘE",
+            productStart: true,
             id: "item4",
+        },
+        { 
+            text: "provozujeme",
+            textProduct: "MENTORING",
+            productStart: false,
+            id: "item5",
         }, 
         { 
-            text: "organizujeme Meetupy",
+            text: "organizujeme",
+            textProduct: "MEETUPY",
             productStart: true,
-            id: "item5",
+            id: "item6",
         },
       ];

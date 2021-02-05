@@ -1,9 +1,13 @@
+/* switch between Newsletter and LogInButton on Hero Academy page*/
+
 export const heroObjThree = {
     title: "Zúčastni se intenzivní Akademie s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_9.jpg",
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform"
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
+    showNewsletter: true,
+    showLogInButton: false,
 };
 
 export const infoObjTwo = {
@@ -90,9 +94,13 @@ export const acadPriceArr = [
     }
 ];
 
+/* switch between Newsletter and LogInButton on Price Container of Academy page*/
+
 export const acadPrice = {
     price: "470 CZK",
     form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
+    showNewsletter: true,
+    showLogInButton: false,
 }
 
 export const programArr1 = [
