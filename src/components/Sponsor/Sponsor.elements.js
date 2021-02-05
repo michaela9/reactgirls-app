@@ -31,7 +31,7 @@ export const SponsorImgContainer = styled.div`
 //border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 0 auto;

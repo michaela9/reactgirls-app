@@ -2,7 +2,7 @@ const referencesArr = [
     {
         name: "Michaela Rudolfová",
         photo: '/images/references/michaela.jpg',
-        text1: "Kdybych to nezažila, nevěřila bych. V pracovní svéře může existovat přátelská a vlídná komunita? Která mi ochotně pomůže ze slepé uličky, když to potřebuji?",
+        text1: "Kdybych to nezažila, nevěřila bych. V pracovní sféře může existovat přátelská a vlídná komunita? Která mi ochotně pomůže ze slepé uličky, když to potřebuji?",
         text2: "V rámci mého Mentoringu vznikl web, který si právě prohlížíte. Ten jsem měla možnost vytvořit od fáze designu až po naprogramování v Reactu. Práci za mě nikdo neudělal, ale díky radám z komunity zkušenějších a především díky týdenním meetingům se svým mentorem, jsem nikdy neztratila směr a rytmus.",
         text3: "Mentoring mi přinesl úlevu od skličujícího množství informací, které při samostudiu vyplynou. Praktické rady a moderní pojetí webdesignu mě posunulo o obrovský kus dál!",   
     },

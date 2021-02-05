@@ -21,12 +21,16 @@ import { Program }  from '../../components';
     acadPrice
     } from './Data';
 
-function Academy() {
+function Academy({showProgramTable}) {
+    /* show or hide ProgramTable*/
+    showProgramTable = false;   
     return (
         <>
             <Hero {...heroObjThree} />
             <Info {...infoObjTwo} />
+            {showProgramTable &&
             <Program data={programArr1}/>
+            }
             <InfoCards data={academyCardArr} {...titleObjTwo} />
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Process data={processArrAcad} />

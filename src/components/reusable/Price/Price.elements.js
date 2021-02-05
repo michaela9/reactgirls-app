@@ -12,6 +12,7 @@ export const PriceWrapper = styled.div`
 `;
 
 export const PriceArea = styled.div`
+    //border: 1px solid red;
     border-bottom: 2px solid ${colors.veryLightGrey};
     border-radius: 30px 30px 0px 0px;
     font-size: ${sizes.sizeXXXL} ;
@@ -20,18 +21,19 @@ export const PriceArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    margin: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     @media screen and (max-width: ${breakpoints.tablet}) {
 
-        padding-bottom: 30px;
-        padding-top: 30px;
-        margin: 80px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin: 30px;
     }
 `;
 
 export const PriceRectangle = styled.div`
+
     width: 380px;
     margin: 80px auto 40px auto;
     background: ${colors.white};
@@ -60,6 +62,7 @@ export const PriceRectangle = styled.div`
 
 export const PriceContainer = styled.div`
     padding: 10px 40px 50px 40px;
+    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 0 40px 30px 40px;

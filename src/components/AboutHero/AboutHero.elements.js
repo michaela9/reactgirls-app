@@ -19,6 +19,7 @@ export const AboutText = styled(Paragraph)`
     margin-bottom: 10px;
     color: ${colors.grey};
     font-weight: 300;
+
 `;
 
 export const WrapperAbout = styled.div`
@@ -29,9 +30,10 @@ export const WrapperAbout = styled.div`
     margin: 0 auto;
     padding: 100px 300px;
     
-    @media screen and (max-width: ${breakpoints.tablet}) {
+    @media screen and (max-width: 960px) {
         padding: 120px 16px 80px 16px;
         transition: all 1.5s ease-in-out;
+        //border: 1px solid red;
         &.active {
             padding: 80px 16px 80px 16px; 
         }
@@ -41,7 +43,7 @@ export const WrapperAbout = styled.div`
 export const AboutTitle = styled(TitleCenter)`
     padding-bottom: 40px;
 
-    @media only screen and (max-width: ${breakpoints.tablet}) {
+    @media only screen and (max-width: 960px) {
         padding-bottom: 20px;
     }
 `;

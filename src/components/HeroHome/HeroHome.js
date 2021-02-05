@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useTheme, useThemeUpdate } from '../../ThemeContext';
+import { useTheme } from '../../ThemeContext';
 
 import { 
     HeroHomeRow, 
@@ -63,8 +63,8 @@ function HeroHome( {img}) {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1350,
-        speed: 500,
-        pauseOnHover: true,
+        speed: 550,
+        pauseOnHover: false,
         appendDots: dots => <ul>{dots}</ul>,
         customPaging: i => (
             <div className="slickCustomDots">
@@ -79,10 +79,10 @@ function HeroHome( {img}) {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 500,
+        speed: 550,
         fade: true,
         autoplaySpeed: 1350,
-        pauseOnHover: true,
+        pauseOnHover: false,
         appendDots: dots => <ul>{dots}</ul>,
         customPaging: i => (
             <div className="slickCustomDots">
@@ -98,12 +98,11 @@ function HeroHome( {img}) {
         autoplay: true,
         autoplaySpeed: 1350,
         arrows: false,
-        speed: 500,
-        pauseOnHover: true, 
+        speed: 550,
+        pauseOnHover: false, 
       };
       const isBreakpoint = useMediaQuery(1250);
       const navLogo = useTheme();
-      const changeLogoSize = useThemeUpdate();
     return (
             <Container lightBlue>
                 <Wrapper>

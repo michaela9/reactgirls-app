@@ -17,9 +17,14 @@ const productArr = [
     {
         title: "Workshopy",
         info: 
-            <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technická témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš 
-                <LinkScroll to="#newsletterHero" > Newsletter
-                </LinkScroll>.
+            <>Pořádáme pravidelné workshopy plné programování a přednášek na nejen technická témata. Naučíme vás základy HTML, CSS, Javascriptu a Reactu. Další workshop momentálně připravujeme, pro bližší informace sledujte naše sociální sítě nebo odebírejte náš  <LinkScroll 
+                    to="newsletterHero"
+                    smooth={true}
+                    duration='700'
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    >Newsletter</LinkScroll>.
             </>,
         hideButton: true,
         img: "images/products/workshop.jpg",
@@ -29,7 +34,15 @@ const productArr = [
     },
     {
         title: "Webináře",
-        info: <>Pořádáme webináře související s programováním v Reactu, soft témata o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <LinkA href="https://www.youtube.com/channel/UCO8WGBzS6J00zlXroeTf90g" target="blank">Youtube</LinkA>. O dalších se dozvíte v <LinkA>Newsletteru</LinkA> a na ostatních sociálních sítích.</>,
+        info: <>Pořádáme webináře související s programováním v Reactu, soft tématy o práci a rekvalifikaci v IT. Některé z webinářů je možné shlédnout na našem <LinkA href="https://www.youtube.com/channel/UCO8WGBzS6J00zlXroeTf90g" target="blank">Youtube</LinkA>. O dalších se dozvíte v <LinkScroll 
+        to="newsletterHero"
+        smooth={true}
+        duration='700'
+        spy={true}
+        exact='true'
+        offset={-80}
+        >Newsletteru </LinkScroll> 
+        a na ostatních sociálních sítích.</>,
         hideButton: true,
         img: "images/products/webinar.jpg",
         imgStart: false,
@@ -38,7 +51,9 @@ const productArr = [
     },
     {
         title: "Mentoring",
-        info: "Vyzkoušejte si náš jedinečný mentoringový program. Mentor vede mentee během několikatýdenního školení k tvorbě komplexního webového projektu a předává ji užitečné know-how. Na konci je mentee připravena sama zvládnout tvorbu dalších projektů v Reactu.",
+
+        
+        info: "Vyzkoušejte si náš jedinečný mentoringový program. Mentor vede mentee během tří měsíců k tvorbě komplexního webového projektu zvoleného podle cílu mentee a předává ji tak užitečné know-how. Na konci je mentee připravena sama zvládnout tvorbu dalších projektů v Reactu.",
         hideButton: false,
         buttonText: "Zjistit více",
         img: "images/products/mentoring.jpg",

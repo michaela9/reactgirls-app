@@ -15,7 +15,6 @@ export const NavWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 80px;
-
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin-right: 16px;
         margin-left: 16px;
@@ -72,10 +71,9 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    //border: 1px solid blue;
     z-index: 10;
 
-    @media screen and (max-width: ${breakpoints.tablet}) {
+    @media screen and (max-width: 960px) {
         padding-top: 120px;
         justify-content: flex-start;
         width: 100%;
@@ -107,12 +105,13 @@ export const NavItem = styled.li`
     font-weight: 400;
     color:${colors.grey};
     margin-left: 2em;
-    //border: 1px solid red;
-    //border: 1px solid red;
-   
-    @media screen and (max-width: ${breakpoints.tablet}) {
+
+    @media screen and (max-width: 960px) {
         width: 100%;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -121,18 +120,18 @@ export const NavLinks = styled(NavLink)`
     text-decoration: none;
     align-items: center;
     height: 100%;
-    //border: 1px solid red;
-    //border: 1px solid red;
+
     &:hover {
         color: ${colors.mainBlue} ;
     }
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        text-align: center;
+    @media screen and (max-width: 960px) {
         width: 100%;
-        display: table;
         font-size: ${sizes.sizeM};
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+
         &:hover {
             color: ${colors.mainBlue};
             transition: all 0.3 ease;
@@ -173,7 +172,7 @@ export const SocialIcon = styled.img`
 
 export const MobileIcon = styled.div`
     display: none;
-    @media screen and (max-width: ${breakpoints.tablet}) {
+    @media screen and (max-width: 960px) {
         display: flex;
         cursor: pointer;
     }

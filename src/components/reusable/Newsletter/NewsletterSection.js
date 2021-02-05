@@ -5,7 +5,7 @@ import { Container, Wrapper } from '../styled';
 
 function NewsletterSection() {
     return (
-        <Container>
+        <Container id="newsletterHero">
             <Wrapper>
             <NewsletterContainer>
                 <TitleCenterNews>
