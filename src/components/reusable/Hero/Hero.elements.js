@@ -94,6 +94,8 @@ export const TitleContainer = styled.div`
 export const HeroImg = styled.img`
     height: 450px;
     width: auto;
+    position: relative;
+    right: 100px;
 
     @media only screen and (max-width: 319px) { 
         height: 240px; 
