@@ -6,7 +6,7 @@ export const heroObjTwo = {
     title: "Zúčastni se jedinečného Mentoringu s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
-    img: "/images/community/photo_48.jpg",
+    img: "/images/gallery/mentoring",
     form: "https://docs.google.com/forms/d/e/1FAIpQLSdLTtWVz3S3cLZtxeTbmlkL9VtXYv9YGYlBH1XxrlXVv-60Qw/viewform",
     showNewsletter: false,
     showLogInButton: true,
@@ -110,7 +110,7 @@ export const mentPriceArr = [
 export const mentQuestionsArr = [
     {
         question: "Pro koho je mentoring určen?",
-        answer: "Mentoring je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
+        answer: "Začatečnicím, které již mají zkušenosti s programováním*, znají základy HTML a CSS, prípadne JS* a chtěly by je posunout na další úroveň s Reactem.",
     },
     {
         question: "Jak se můžu na mentoring přihlásit?",

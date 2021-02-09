@@ -183,7 +183,7 @@ export const processArrAcad = [
     {
         number: 1,
         heading: "MÁM ZÁJEM",
-        text: "V případě, že je momentálně otevřené přihlašování na akademii, v horní části této stránky je možné kliknout na tlačítko MÁM ZÁJEM v opačném případě můžete odebírat náš Newsletter, kde se o otevření další akademie dozvíte",
+        text: "V případě, že je momentálně otevřené přihlašování na akademii, v horní části této stránky je možné kliknout na tlačítko MÁM ZÁJEM v opačném případě můžeš odebírat náš Newsletter, kde se o otevření další akademie dozvíte",
         reversed: false,
         last: false,
         first: true
