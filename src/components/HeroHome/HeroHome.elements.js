@@ -61,6 +61,7 @@ export const HeadingHome = styled.div`
 
     @media only screen and (max-width: 1250px) {
         align-items: center; 
+        //margin-bottom: 20px;
     }
 `;
 
@@ -157,12 +158,12 @@ export const ImgHomeContainer = styled.div`
     @media only screen and (min-width: 420px) and (max-width: 1130px) { 
         width: 380px; 
         height: 380px;
+
     }
 
     @media only screen and (min-width: 1130px) { 
         width: 480px; 
         height: 480px;
-        margin-top: 0px;
     }
 `;
 
@@ -170,7 +171,7 @@ export const HeroHomeImg = styled.img`
     object-fit: cover;
     height: 100%;
     position: relative;
-    right: 130px;
+    right: 0px;
 
     &.community01{
         right: 0px;
@@ -178,8 +179,17 @@ export const HeroHomeImg = styled.img`
     &.webinar01{
         right: 120px;
     }
+    &.mentoring01{
+        right: 130px
+    }
+    &.academy01{
+        right: 130px
+    }
     &.meetup01{
-        right: 80px
+        right: 130px
+    }
+    &.mworkshop{
+        right: 130px
     }
  `;
 

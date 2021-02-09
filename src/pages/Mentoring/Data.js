@@ -130,7 +130,7 @@ export const processArrMent = [
     {
         number: 1,
         heading: "MÁM ZÁJEM",
-        text: "Klikni na tlačítko registrace",
+        text: "Klikni na tlačítko MÁM ZÁJEM",
         reversed: false,
         last: false,
         first: true
