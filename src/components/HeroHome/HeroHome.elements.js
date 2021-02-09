@@ -183,6 +183,18 @@ export const ImgHomeContainer = styled.div`
 export const HeroHomeImg = styled.img`
     object-fit: cover;
     height: 100%;
+    position: relative;
+    right: 130px;
+
+    &.community01{
+        right: 0px;
+    }
+    &.webinar01{
+        right: 120px;
+    }
+    &.meetup01{
+        right: 80px
+    }
  `;
 
  export const SliderImg = styled(Slider)`

@@ -1,17 +1,20 @@
-/* switch between Newsletter and LogInButton on Hero Mentoring page*/
+import { LinkA, LinkScroll } from '../../components/reusable/styled';
 
+
+/* switch between Newsletter and LogInButton on Hero Mentoring page*/
 export const heroObjTwo = {
     title: "Zúčastni se jedinečného Mentoringu s ReactGirls!",
     subtitle: "#ReactGirlsPrague",
     buttonText: "ODEBÍRAT NEWSLETTER",
     img: "/images/community/photo_48.jpg",
-    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdLTtWVz3S3cLZtxeTbmlkL9VtXYv9YGYlBH1XxrlXVv-60Qw/viewform",
     showNewsletter: false,
     showLogInButton: true,
 };
 
 export const infoObjOne = {
-    text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který tě bude mentorovat a rozvíjet tvé technické dovednosti",
+    text: "Přihlaš se do Mentoringu ReactGirls a získej kouče, který tě bude mentorovat a rozvíjet tvé technické dovednosti.",
+    content: "mentoring",
 }
 
 export const mentoringCardArr = [
@@ -66,8 +69,8 @@ export const mentStudentArr = [
     },
     {
         icon: "/images/icons/woman3.svg",
-        heading: "Studentkám",
-        text: "Studentkám, které se chtějí naučit frontendové programování a nechat se mentorovat osobnostmi z IT.",
+        heading: "Ženám",
+        text: "Ženám, které se chtějí naučit frontendové programování a být mentorované osobnostmi z IT.",
     }
 ];
 
@@ -75,53 +78,51 @@ export const mentStudentArr = [
 
 export const mentPrice = {
     price: "2700 CZK",
-    form: "https://docs.google.com/forms/d/160ZcvYJN0OVk_HVyuofUIh5p4dWrSGtqFer3U38pQcw/edit#response=ACYDBNhfy5HQSHHoSiBf-z4fhtDebQNdTdb07g1DTfj4qWV2T-0y7MtrPsYiZGhbMWBUkHI",
+    form: "https://docs.google.com/forms/d/e/1FAIpQLSdLTtWVz3S3cLZtxeTbmlkL9VtXYv9YGYlBH1XxrlXVv-60Qw/viewform",
     showNewsletter: false,
     showLogInButton: true,
 }
 
 export const mentPriceArr = [
     {
-        text: "kouč po dobu 3 měsíců",
+        text: "mentor po dobu 3 měsíců",
     },
     {
         text: "pravidelná týdenní setkávání",
     },
     {
-        text: "pravidelné zadávání úkolů", 
+        text: "plánování agendy", 
     },
     {
-        text: "možnost konzultace s dalšími kouči",
+        text: "code review", 
     },
     {
-        text: "možnost vyzkoušet si mock interview",  
+        text: "online konzultace s dalšími kouči",
+    },
+    {
+        text: "možnost prezentace vytvořeného projektu",  
+    },
+    {
+        text: "mock interview",  
     },
 ];
 
 export const mentQuestionsArr = [
     {
-        question: "Pro koho je kurz určen?",
-        answer: "Kurz je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
+        question: "Pro koho je mentoring určen?",
+        answer: "Mentoring je určen pro všechny ženy, které mají základní zkušenosti s programováním a mají zájem se naučit programovat v ReactJS.",
     },
     {
-        question: "Jak se můžu na kurz přihlásit?",
-        answer: <>Stačí kliknout <a>ZDE </a>a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
+        question: "Jak se můžu na mentoring přihlásit?",
+        answer: <>Stačí kliknout <LinkA href="https://docs.google.com/forms/d/e/1FAIpQLSdLTtWVz3S3cLZtxeTbmlkL9VtXYv9YGYlBH1XxrlXVv-60Qw/viewform">ZDE </LinkA>a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
-        question: "Jak bude Akademie probíhat? ",
-        answer: <>Akademie bude probíhat prezenčně, materiály budou k dispozici na <a>Slacku</a> a <a>Google Disku</a>. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
-    },
-    {
-        question: "Co si z kurzu odnesu?",
+        question: "Co si z mentoringu odnesu?",
         answer: "Odneseš si znalosti HTML, CSS, JavaScriptu, Reactu. Reálnou zkušenost s Reactem, motivaci, možnost vyzkoušet si interview se zkušeným HR, certifikát o absolvování a merch ReactGirls.",
     },
     {
-        question: "Co se stane pokud bude opět karanténa?",
-        answer: "V případě karantény přesuneme celou výuku do online prostředí.",
-    },
-    {
         question: "Stále si nejsi jistá?",
-        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
+        answer: <>Pokud se chceš ujistit, že je mentoring pro tebe to pravé, případně máš ještě další otázky, neváhej nás <LinkA href="/contact">kontaktovat</LinkA>.</>
     }, 
 ];
 
@@ -129,7 +130,7 @@ export const processArrMent = [
     {
         number: 1,
         heading: "MÁM ZÁJEM",
-        text: "Klikni na tlačítko MÁM ZÁJEM",
+        text: "Klikni na tlačítko registrace",
         reversed: false,
         last: false,
         first: true
@@ -137,7 +138,7 @@ export const processArrMent = [
     {
         number: 2,
         heading: "VYPLŇ FORMULÁŘ",
-        text: "Po kliknutí na tlačítko REGISTRACE se objeví formulář, ten vyplň a nezapomeň zejména na vyplnění motivaci a přiložení odkazu na GitHub či jiné úložiště tvých kódů.",
+        text: "Po kliknutí na tlačítko REGISTRACE se objeví formulář, ten vyplň a nezapomeň zejména na vyplnění motivace a přiložení odkazu na GitHub či jiné úložiště tvých kódů.",
         reversed: true,
         last: false,
         first: false
@@ -145,7 +146,7 @@ export const processArrMent = [
     {
         number: 3,
         heading: "KONTAKTUJEME TĚ",
-        text: "2 týdny před spuštěním běhu tě budeme kontaktovat a sdělíme ti, zda jsme vybrali právě tebe. Pošleme ti taky všechny potřebné informace o mentoringovom programu společně s informacemi o platbě.",
+        text: "Před spuštěním běhu tě budeme kontaktovat a sdělíme ti, zda jsme vybrali právě tebe. Pošleme ti taky všechny potřebné informace o mentoringovom programu společně s informacemi o platbě.",
         reversed: false,
         last: true,
         first: false

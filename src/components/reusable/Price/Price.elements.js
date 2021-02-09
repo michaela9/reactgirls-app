@@ -5,6 +5,8 @@ import { TitleLeft, Button, ParagraphS, TitleCenter } from '../styled';
 export const PriceWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 100px;
+    border-bottom: ${({showNewsletter}) => (showNewsletter ? `1px solid #DEDCDC`  : `none` )};
+    //border-bottom: 1px solid #DEDCDC;
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 80px;
     padding-bottom: 80px;

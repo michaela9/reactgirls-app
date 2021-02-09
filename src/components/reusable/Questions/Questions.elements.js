@@ -31,7 +31,10 @@ export const QuestionsContainer = styled.div`
 export const QuestionWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 100px;
-    height: 820px;
+    height: 900px;
+    &.mentoring{
+        height: 700px;
+    }
     //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {

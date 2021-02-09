@@ -1,3 +1,5 @@
+import { LinkA, LinkScroll } from '../../components/reusable/styled';
+
 /* switch between Newsletter and LogInButton on Hero Academy page*/
 
 export const heroObjThree = {
@@ -12,6 +14,8 @@ export const heroObjThree = {
 
 export const infoObjTwo = {
     text: "Přihlaš se do intenzivní Akademie ReactGirls a nauč se s námi programovat od základů.",
+    content: "academy",
+    
 }
 
 export const academyCardArr = [
@@ -65,8 +69,8 @@ export const acadStudentArr = [
     },
     {
         icon: "/images/icons/woman3.svg",
-        heading: "Studentkám",
-        text: "Studentkám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
+        heading: "Ženám",
+        text: "Ženám, které se chtějí naučit frontendové programování a vyzkoušet si získané znalosti v praxi. Zároveň si vyzkoušet případné mock interview",
     }
 ];
 
@@ -97,7 +101,7 @@ export const acadPriceArr = [
 /* switch between Newsletter and LogInButton on Price Container of Academy page*/
 
 export const acadPrice = {
-    price: "470 CZK",
+    price: "490 CZK",
     form: "https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform",
     showNewsletter: true,
     showLogInButton: false,
@@ -148,11 +152,18 @@ export const acadQuestionsArr = [
     },
     {
         question: "Jak se můžu na kurz přihlásit? ",
-        answer: <>Stačí kliknout <a>ZDE</a> a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
+        answer: <>Stačí kliknout <LinkA href="https://docs.google.com/forms/d/e/1FAIpQLSdb2wmsMPvBtEqxBmfMUdnOaaAcZm5MtTXDFTGLC5mmbBhMWQ/viewform" target="blank">ZDE</LinkA> a vyplnit registrační formulář. Obratem ti na e-mail pošleme všechny nezbytné informace a informace o platbě.</>
     },
     {
         question: "Jak bude Akademie probíhat? ",
-        answer: <>Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. V harmonogramu <a>výše</a> jsou vypsány časy jednotlivých lekcí.</>
+        answer: <>Akademie bude probíhat prezenčně nebo online, materiály budou k dispozici na Slacku, Notionu a Google Disku. Pokud je Akademie aktivní, v harmonogramu <LinkScroll
+        to="program"
+        smooth={true}
+        duration='700'
+        spy={true}
+        exact='true'
+        offset={-80}
+        >výše</LinkScroll> jsou vypsány časy jednotlivých lekcí.</>
     },
     {
         question: "Co si z akademie odnesu? ",
@@ -164,7 +175,7 @@ export const acadQuestionsArr = [
     },
     {
         question: "Stále si nejsi jistá?",
-        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <a>kontaktovat</a>.</>
+        answer: <>Pokud se chceš ujistit, že je akademie pro tebe to pravé, případně máš ještě další otázky, neváhej nás <LinkA href="/contact">kontaktovat</LinkA>.</>
     }, 
 ];
 
@@ -172,7 +183,7 @@ export const processArrAcad = [
     {
         number: 1,
         heading: "MÁM ZÁJEM",
-        text: "Klikni na tlačítko MÁM ZÁJEM",
+        text: "V případě, že je momentálně otevřené přihlašování na akademii, v horní části této stránky je možné kliknout na tlačítko MÁM ZÁJEM v opačném případě můžete odebírat náš Newsletter, kde se o otevření další akademie dozvíte",
         reversed: false,
         last: false,
         first: true

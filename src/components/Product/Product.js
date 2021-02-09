@@ -43,7 +43,7 @@ function Product() {
                             }
                         </ProductInfoColumn>
                         <ProductImgContainer imgStart={product.imgStart}>
-                            <ProductImg src={product.img} />
+                            <ProductImg className={product.id} src={product.img} />
                         </ProductImgContainer >
                     </ProductInfoRow>
                 </Wrapper>

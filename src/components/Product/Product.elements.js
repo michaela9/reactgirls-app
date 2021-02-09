@@ -88,6 +88,11 @@ export const ProductImg = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    &.meetup{
+        width: auto;
+        position: relative;
+        left: -70px;
+    }
 `;
 
 export const ProductImgContainer = styled.div`

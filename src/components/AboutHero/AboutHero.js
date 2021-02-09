@@ -11,7 +11,7 @@ function AboutHero({title, text1 }) {
             <WrapperAbout className={navLogo ? 'active' : ''}>
                     <AboutTitle>{title}</AboutTitle>
                     <AboutText>{text1}</AboutText>
-                    <SubTitleAbout>#ReactGirls Prague</SubTitleAbout>
+                    <SubTitleAbout>#ReactGirlsPrague</SubTitleAbout>
                     <ButtonAbout href='/contact'>KONTAKT</ButtonAbout>
             </WrapperAbout>
         </Container>

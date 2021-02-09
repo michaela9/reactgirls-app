@@ -10,12 +10,12 @@ import {
     QuestionWrapper
 } from './Questions.elements';
 
-function Questions({ data }) {
+function Questions({ data, content }) {
     const [indexOpen, setIndexOpen] = useState(0);
     return (
         <Container lightBlue>
             <Wrapper>
-                <QuestionWrapper>
+                <QuestionWrapper className={content} >
                 <TitleCenter>Q&A</TitleCenter>
                     <QuestionsContainer>
                         {data.map((item, index) => {
