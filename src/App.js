@@ -49,10 +49,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/about' exact component={About} />
+          <Route path='/onas' exact component={About} />
           <Route path='/mentoring' exact component={Mentoring} />
-          <Route path='/academy' exact component={Academy} />
-          <Route path='/contact' exact component={Contact} />
+          <Route path='/akademie' exact component={Academy} />
+          <Route path='/kontakt' exact component={Contact} />
         </Switch>
         { isBreakpoint &&  
         <SocialMobile />
