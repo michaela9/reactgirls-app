@@ -26,16 +26,16 @@ function ContactPeople() {
                                 <ContactInfo>{contact.mail}</ContactInfo>
                                 <ContactInfo>{contact.phone}</ContactInfo>
                                 <ContactSocial>
-                                    <a href={contact.linkedIn}>
+                                    <a href={contact.linkedIn} target="blank">
                                         <SocialContactIcon src="/images/icons/linkedIn.svg" />
                                     </a>
                                     {!contact.hideFacebook &&
-                                    <a href={contact.facebook}>
+                                    <a href={contact.facebook} target="blank">
                                         <SocialContactIcon src="/images/icons/facebook.svg" />
                                     </a>
                                     }
                                     {!contact.hideTwitter &&
-                                    <a href={contact.twitter}>
+                                    <a href={contact.twitter} target="blank">
                                         <SocialContactIcon src="/images/icons/twitter.svg" />
                                     </a>
                                     }
