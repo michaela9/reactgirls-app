@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import  { colors, breakpoints } from '../../variables.js';
+import  { colors } from '../../variables.js';
 import { Button, Paragraph, TitleCenter, Subtitle } from '../reusable/styled';
 
 export const SubTitleAbout = styled(Subtitle)`
@@ -19,7 +19,6 @@ export const AboutText = styled(Paragraph)`
     margin-bottom: 10px;
     color: ${colors.grey};
     font-weight: 300;
-
 `;
 
 export const WrapperAbout = styled.div`
@@ -33,7 +32,6 @@ export const WrapperAbout = styled.div`
     @media screen and (max-width: 960px) {
         padding: 120px 16px 80px 16px;
         transition: all 1.5s ease-in-out;
-        //border: 1px solid red;
         &.active {
             padding: 80px 16px 80px 16px; 
         }

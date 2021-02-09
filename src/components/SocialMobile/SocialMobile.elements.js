@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import { colors, breakpoints } from '../../variables';
 
 export const SocialMob = styled.div`
     display: flex;
@@ -13,6 +11,7 @@ export const SocialIconMob = styled.img`
     width: 22px;
     height: 22px;
     margin: 14px;
+
     :hover{
         filter: invert(100%);
     }

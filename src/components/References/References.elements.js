@@ -7,6 +7,7 @@ export const ReferenceContainer = styled.div`
     flex-direction: column;
     width: 100%;
     padding: 100px 16px 0px 16px; 
+
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         padding: 80px 16px 0px 16px; 
     }
@@ -16,7 +17,7 @@ export const Speech = styled.div`
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    //border: 1px solid red;
+
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         margin-top: 100px;
         margin-bottom: 0px;
@@ -33,7 +34,6 @@ export const SpeechText = styled(ParagraphS)`
     text-align: left;
     font-style: italic;
     margin-bottom: 15px;
-    //color: ${colors.darkGrey};
     font-weight: 300;
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
@@ -45,7 +45,6 @@ export const SpeechText = styled(ParagraphS)`
 export const SpeechNameContainer = styled.div`
     display: flex;
     align-items: center;
-
 `;
 
 export const SpeechImgContainer = styled.div`
@@ -53,10 +52,7 @@ export const SpeechImgContainer = styled.div`
     width: 70px;
     height: 70px;
     overflow: hidden;
-    //margin-bottom: 15px;
-    //margin: 0 auto;
     margin-right: 15px;
-
 `;
 
 export const SpeechImg = styled.img`

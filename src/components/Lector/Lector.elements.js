@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 export const WrapperLector = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -15,7 +16,6 @@ export const WrapperLector = styled.div`
 `;
 
 export const SliderLector = styled(Slider)`
-    //width: 100%;
     .slider-wrapper {
     }
     .slick-slide {
@@ -33,23 +33,28 @@ export const CardsContainer = styled.div`
         padding: 60px 20px;
         max-width: 960px;
     }
+
     @media only screen and (max-width: 1200px) {
         max-width: 950px;
     }
+
     @media only screen and (max-width: 1130px) {
         max-width: 680px;
     }
+
     @media only screen and (max-width: 700px) {
         max-width: 350px;
     }
+
     @media only screen and (max-width: 420px) {
         max-width: 340px;
     }
+
     @media only screen and (max-width: 380px) {
         max-width: 300px;
     }
+
     @media only screen and (max-width: 320px) {
-        //padding: 60px 10px;
         max-width: 240px;
     }
 `;
@@ -69,6 +74,7 @@ export const Card = styled.div`
     box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.15);
     margin: 20px;
     outline: none;
+
     @media only screen and (max-width: 1280px) {
         height: 400px;
         width: 260px;
@@ -76,12 +82,14 @@ export const Card = styled.div`
         width: 260px;
         padding: 25px 25px;
     }
+
     @media only screen and (max-width: 700px) {
         width: 220px;
         padding: 25px 5px;
         
         height: 350px;
     }
+
     @media only screen and (max-width: 380px) {
         padding: 0px 0px;
         margin: 0px;
@@ -105,6 +113,7 @@ export const LectorJob = styled(Paragraph)`
     color: ${colors.darkGrey};
     margin: 5px auto;
     width: 85%;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 100%;
     }
@@ -117,6 +126,7 @@ export const LectorCompany = styled(Paragraph)`
     color: #8C8C8C;
     margin: 5px auto;
     width: 85%;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 100%;
     }
@@ -139,13 +149,13 @@ export const LectorLink = styled.a`
 export const LectorImg = styled.img`
     height: 150px;
     border-radius: 80px;
-    `;
+ `;
 
 export const LectorImgContainer = styled.div`
-   width: 150px;
-   height: 150px;
+    width: 150px;
+    height: 150px;
     margin: 20px auto 40px auto;
-   position: relative;
+    position: relative;
 `
 
 export const IconIn = styled.img`

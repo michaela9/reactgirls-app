@@ -46,7 +46,7 @@ function Program({data}) {
     const isBreakpoint = useMediaQuery(960);
     return (
         <>
-            <Container lightBlue >
+            <Container lightBlue id="program" >
                 <Wrapper>
                     <ProgramWrapper>
                     <TitleCenter>Program Akademie</TitleCenter>

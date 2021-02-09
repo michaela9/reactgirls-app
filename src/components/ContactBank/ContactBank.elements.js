@@ -22,6 +22,7 @@ export const ContentContainer = styled.div`
 export const BankContainer = styled.div`
     display: flex;
     flex-direction: column;
+    
     @media only screen and (max-width: ${breakpoints.tablet}) {
         margin-bottom: 60px;
     }

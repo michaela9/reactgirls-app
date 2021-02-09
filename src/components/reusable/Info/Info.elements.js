@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { sizes, colors, breakpoints } from '../../../variables';
+import { sizes } from '../../../variables';
 import { Heading3 } from '../styled';
 
 export const InfoContent = styled(Heading3)`
@@ -10,7 +10,7 @@ export const InfoContent = styled(Heading3)`
     line-height: 1.6;
     padding: 30px 0;
     font-weight: 500;
-    //color: ${colors.grey};
+
 
     
     @media screen and (max-width: 750px) {

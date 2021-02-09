@@ -7,6 +7,7 @@ import { Program }  from '../../components';
  import  Questions  from '../../components/reusable/Questions/Questions';
  import  Process from '../../components/reusable/Process/Process';
  import Price from '../../components/reusable/Price/Price';
+ import NewsletterSection from '../../components/reusable/Newsletter/NewsletterSection';
 
  import { 
     acadStudentArr, 
@@ -21,9 +22,10 @@ import { Program }  from '../../components';
     acadPrice
     } from './Data';
 
-function Academy({showProgramTable}) {
+function Academy({showProgramTable, showNewsletter}) {
     /* show or hide ProgramTable*/
-    showProgramTable = false;   
+    showProgramTable = false;  
+    showNewsletter = true; 
     return (
         <>
             <Hero {...heroObjThree} />
@@ -35,7 +37,10 @@ function Academy({showProgramTable}) {
             <Student data={acadStudentArr} {...titleObjTwo} />
             <Process data={processArrAcad} />
             <Price data={acadPriceArr} {...titleObjTwo} {...acadPrice} />
-            <Questions data={acadQuestionsArr} />
+            {showNewsletter &&
+            <NewsletterSection/>
+            }
+            <Questions data={acadQuestionsArr} {...infoObjTwo}/>
         </>
     )
 }

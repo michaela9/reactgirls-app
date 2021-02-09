@@ -15,7 +15,7 @@ function Footer() {
     return (
             <FooterContainer>
                 <FooterLogo onClick={toggleHome} smooth={true} duration={5000} />
-                <FooterInfo>© Michaela Rudolfová 2020</FooterInfo> 
+                <FooterInfo>© Michaela Rudolfová 2021</FooterInfo> 
             </FooterContainer>
     )
 }

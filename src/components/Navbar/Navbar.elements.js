@@ -15,6 +15,7 @@ export const NavWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 80px;
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin-right: 16px;
         margin-left: 16px;
@@ -22,7 +23,7 @@ export const NavWrapper = styled.div`
         transition: all 350ms;
         &.active {
             justify-content: space-between;
-    }
+        }
     }
 `;
 
@@ -44,6 +45,7 @@ export const NavLogo = styled.img`
         position: relative;
         top: 0;
     }
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         height: 140px;
         width: 140px;
@@ -95,6 +97,7 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 376px) {
         padding-top: 130px;
     }
+
     @media screen and (max-width: 321px) {
         padding-top: 110px;
     }
@@ -124,6 +127,7 @@ export const NavLinks = styled(NavLink)`
     &:hover {
         color: ${colors.mainBlue} ;
     }
+
     @media screen and (max-width: 960px) {
         width: 100%;
         font-size: ${sizes.sizeM};
@@ -136,6 +140,7 @@ export const NavLinks = styled(NavLink)`
             color: ${colors.mainBlue};
             transition: all 0.3 ease;
         }
+
         @media screen and (max-width: 321px) {
             font-size: ${sizes.sizeS};
             margin-top: 25px;
@@ -151,6 +156,7 @@ export const Social = styled.div`
     justify-content: space-between;
     top: 110px;
     right: 70px;
+
     @media only screen and (max-width: 768px) {
         right: 20px;
     }
@@ -160,6 +166,7 @@ export const SocialIcon = styled.img`
     width: 22px;
     height: 22px;
     margin-bottom: 18px;
+
     @media only screen and (max-width: 768px) {
         width: 20px;
         height: 20px;
@@ -172,6 +179,7 @@ export const SocialIcon = styled.img`
 
 export const MobileIcon = styled.div`
     display: none;
+    
     @media screen and (max-width: 960px) {
         display: flex;
         cursor: pointer;

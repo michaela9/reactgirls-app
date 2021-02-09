@@ -158,7 +158,7 @@ function HeroHome( {img}) {
                             {heroHomeArr.map((item) => { 
                             return ( 
                                 <ImgHomeContainer key={item.id} >
-                                        <HeroHomeImg src={item.img} />
+                                        <HeroHomeImg className={item.id} src={item.img} />
                                 </ImgHomeContainer>
                                 
                                 )

@@ -3,7 +3,6 @@ import {
     Container, 
     Wrapper, 
 } from '../styled';
-import Newsletter from '../Newsletter/Newsletter';
 
 import { 
     PriceContainer,
@@ -21,7 +20,7 @@ function Price({mainPriceTitle, data, price, form, showLogInButton, showNewslett
     return (
         <Container>
             <Wrapper>
-                <PriceWrapper>
+                <PriceWrapper showNewsletter={showNewsletter}>
                     <TitlePrice>{mainPriceTitle}</TitlePrice>
                     <PriceRectangle>
                         <PriceArea>
@@ -37,9 +36,6 @@ function Price({mainPriceTitle, data, price, form, showLogInButton, showNewslett
                             )
                         })
                         } 
-                        {showNewsletter &&
-                        <Newsletter />
-                        }
                         {showLogInButton &&
                         <ButtonPrice href={form} target="blank" >MÁM ZÁJEM</ButtonPrice>
                         }

@@ -13,8 +13,7 @@ export const ContactCardContainer = styled.div`
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
-        padding: 80px 0;
-        
+        padding: 80px 0;   
     }
 `;
 
@@ -23,7 +22,6 @@ export const ContactCard = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 40px 50px; 
-
 `;
 
 export const ContactImg = styled.img`
@@ -42,15 +40,12 @@ export const ContactText = styled.div`
 `;
 
 export const ContactSocial = styled.div`
-   //border: 1px solid blue; 
     display: flex;
-    //width: 80px;
     justify-content: space-between;
     align-items: center;
 `;
 
 export const SocialContactIcon = styled.img`
-//border: 1px solid red;
     width: 20px;
     height: 20px;
     margin-top: 10px;

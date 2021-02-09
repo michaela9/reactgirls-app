@@ -117,7 +117,7 @@ const lectorArr = [
         lectorImg: "/images/lectors/petraz-300x300.jpg",
         lectorName: "Petra Zárubová",
         lectorJob: "Lecturer",
-        lectorCompany: "Top Vision s.r.o.",
+        lectorCompany: "Freelancer",
         lectorLinkedIn: "https://www.linkedin.com/in/petra-gasek-zarubova/",
     },
     {
@@ -131,7 +131,7 @@ const lectorArr = [
         lectorImg: "/images/lectors/kamilam.jpg",
         lectorName: "Kamila Macháčová",
         lectorJob: "HR",
-        lectorCompany: "Applifting Česko",
+        lectorCompany: "",
         lectorLinkedIn: "https://www.linkedin.com/in/kamilamach%C3%A1%C4%8Dov%C3%A1/",
     },
     {

@@ -8,6 +8,7 @@ export const ContactHeroContainer = styled.div`
     margin: 0 auto;
     align-items: center;
     padding: 100px 0 100px 0;
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 120px 0 80px 0;
         transition: all 1.5s ease-in-out;
@@ -19,6 +20,7 @@ export const ContactHeroContainer = styled.div`
 
 export const ContactHeroTitle = styled(TitleCenter)`   
     margin-bottom: 40px;
+
     @media only screen and (max-width: 968px) {
         width: 75%;
     }
@@ -31,6 +33,7 @@ export const ContactInfo = styled(Paragraph)`
     width: 45%;
     font-weight: 300;
     color: ${colors.grey};
+    
     @media only screen and (max-width: 968px) {
         width: 75%;
     }

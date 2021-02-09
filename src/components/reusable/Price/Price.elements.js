@@ -5,14 +5,15 @@ import { TitleLeft, Button, ParagraphS, TitleCenter } from '../styled';
 export const PriceWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 100px;
+    border-bottom: ${({showNewsletter}) => (showNewsletter ? `1px solid #DEDCDC`  : `none` )};
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 80px;
-    padding-bottom: 80px;
+        padding-bottom: 80px;
     }
 `;
 
 export const PriceArea = styled.div`
-    //border: 1px solid red;
     border-bottom: 2px solid ${colors.veryLightGrey};
     border-radius: 30px 30px 0px 0px;
     font-size: ${sizes.sizeXXXL} ;
@@ -24,8 +25,8 @@ export const PriceArea = styled.div`
     margin: 30px;
     padding-bottom: 50px;
     padding-top: 50px;
-    @media screen and (max-width: ${breakpoints.tablet}) {
 
+    @media screen and (max-width: ${breakpoints.tablet}) {
         padding-bottom: 40px;
         padding-top: 40px;
         margin: 30px;
@@ -33,7 +34,6 @@ export const PriceArea = styled.div`
 `;
 
 export const PriceRectangle = styled.div`
-
     width: 380px;
     margin: 80px auto 40px auto;
     background: ${colors.white};
@@ -44,14 +44,17 @@ export const PriceRectangle = styled.div`
         width: 351px;
         margin: 20px auto 0px auto;
     }
+
     @media screen and (max-width: 376px) {
         width: 320px;
         margin: 20px auto 0px auto;
     }
+
     @media screen and (max-width: 340px) {
         width: 280px;
         margin: 20px auto 0px auto;
     }
+
     @media screen and (max-width: 319px) {
         width: 100%;
         margin: 20px auto 0px auto;
@@ -62,7 +65,6 @@ export const PriceRectangle = styled.div`
 
 export const PriceContainer = styled.div`
     padding: 10px 40px 50px 40px;
-    //border: 1px solid red;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 0 40px 30px 40px;
@@ -71,6 +73,7 @@ export const PriceContainer = styled.div`
 `;
 
 export const TitlePrice = styled(TitleCenter)`
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin-right: 16px;
         margin-left: 16px;
@@ -81,6 +84,7 @@ export const PriceRow = styled.div`
     display: flex;
     margin-bottom: 28px;
     align-items: flex-start;
+    
     @media screen and (max-width: ${breakpoints.tablet}) {
         margin-bottom: 20px;
     }

@@ -15,7 +15,6 @@ import {
     ProcessGraphic,
     ProcessLine,
     ProcessWrapper,
-    ProcessContOpp,
     ProcessNumber
 } from './Process.elements';
 

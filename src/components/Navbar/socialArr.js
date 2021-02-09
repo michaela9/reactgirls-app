@@ -1,9 +1,5 @@
 const socialArr = [
     {
-        link: "https://app.slack.com/client/TL2R6BTPA/CL5002YES",
-        icon: "/images/icons/slack.svg"
-    },
-    {
         link: "https://www.linkedin.com/company/reactgirlsprague/",
         icon: "/images/icons/linkedIn.svg"
     },

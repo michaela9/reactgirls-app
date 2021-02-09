@@ -9,7 +9,6 @@ export const SponsorContainer = styled.div`
     margin: 0 auto;
     padding: 100px 50px;
     align-items: center;
-    //border: 1px solid red;
     
     @media only screen and (max-width: 768px) {
         padding: 80px 0px;
@@ -19,7 +18,6 @@ export const SponsorContainer = styled.div`
 export const SponsorImg = styled.img`
     height: 100px;
     margin: 40px; 
-    //border: 1px solid red;
 
     @media only screen and (max-width: 768px) {
         height: 60px;
@@ -28,7 +26,6 @@ export const SponsorImg = styled.img`
 `;
 
 export const SponsorImgContainer = styled.div`
-//border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -36,16 +33,15 @@ export const SponsorImgContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 15px
-    10px 15px 10px; 
+    10px 15px 10px;
+
     @media only screen and (max-width: 768px) {
-        //padding: 10px 8px 10px 8px; 
         justify-content: space-around;
         align-items: center;
     }
 `;
 
 export const GoldSponsorship = styled.div`
-//border: 1px solid red;
     border-left: 5px solid #b8860b;
     color: #b8860b;
     font-size: ${sizes.sizeM};
@@ -62,7 +58,6 @@ export const GoldSponsorship = styled.div`
         margin-bottom: 20px;  
         margin-top: 80px;
         padding-bottom: 15px;
-        //margin-left: 16px;
         border-left: 12px solid #b8860b;
     }
 `;

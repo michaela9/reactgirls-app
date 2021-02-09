@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Wrapper, TitleCenter } from '../reusable/styled';
-import { ItemContainer, ItemRow, ItemIcon, ItemText, AboutText, WrapperAbout, WrapperAboutProducts, ItemTextProduct } from './AboutProduct.elements';
+import { ItemContainer, ItemRow, ItemText, AboutText, WrapperAbout, WrapperAboutProducts, ItemTextProduct } from './AboutProduct.elements';
 
 function AboutProduct({data}) {
     return (

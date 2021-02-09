@@ -12,7 +12,6 @@ export const QuestionsContainer = styled.div`
     margin: 0 auto;
     position: relative;
     left: 60px;
-    //border: 1px solid red;
     margin-top: 20px;
 
     @media screen and (max-width: 481px) {
@@ -20,6 +19,7 @@ export const QuestionsContainer = styled.div`
         left: 0px;
         padding: 15px;
     }
+
     @media screen and (min-width: 481px) and (max-width: ${breakpoints.tablet}) {
         position: relative;
         left: 20px;
@@ -31,8 +31,10 @@ export const QuestionsContainer = styled.div`
 export const QuestionWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 100px;
-    height: 820px;
-    //border: 1px solid red;
+    height: 900px;
+    &.mentoring{
+        height: 700px;
+    }
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         height: auto;
@@ -88,9 +90,10 @@ export const AnswerText = styled(ParagraphS)`
         color: ${colors.mainBlue};
         font-weight: 500;
         cursor: pointer; 
+
         @media screen and (max-width: ${breakpoints.tablet}) {
         font-size: ${sizes.sizeXS};
-    }
+        }
     }
     @media screen and (max-width: ${breakpoints.tablet}) {
         font-size: ${sizes.sizeXS};

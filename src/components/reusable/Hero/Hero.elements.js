@@ -27,6 +27,7 @@ export const HeroTitle = styled(TitleLeft)`
 @media screen and (max-width: 1250px) {
         text-align: center;
     }
+
     @media only screen and (max-width: 330px) {
         font-size: 22px;
         font-weight: 700;
@@ -38,14 +39,12 @@ export const ButtonHero = styled(Button)`
 `;
 
 export const TitleContainer = styled.div`
-    //border: 1px solid red;
     display: flex;
     flex-direction:column;
     width: 50%;
     margin-right: 50px;
     justify-content: center;
     align-items: flex-start;
-    //border: 1px solid red;
 
     @media screen and (max-width: 1250px) {
         width: 100%;
@@ -65,46 +64,49 @@ export const TitleContainer = styled.div`
     overflow: hidden;
     margin-top: 40px;
     margin-bottom: 40px;
-    //border: 1px solid red;
+
     @media only screen and (max-width: 319px) { 
         width: 240px;
         height: 240px;         
     }
+
     @media only screen and (min-width:319px) and (max-width: 370px) { 
         width: 280px;
         height: 280px; 
-
     }
+
     @media only screen and (min-width:370px) and (max-width: 420px) { 
         width: 320px; 
         height: 320px;
-
     }
+
     @media only screen and (min-width: 420px) and (max-width: 1250px) { 
         width: 360px; 
         height: 360px;
-
     }
 
     @media only screen and (min-width: 1250px) { 
         width: 450px; 
         height: 450px;
-
     }
  `;
 
 export const HeroImg = styled.img`
     height: 450px;
     width: auto;
+
     @media only screen and (max-width: 319px) { 
         height: 240px; 
     }
+
     @media only screen and (min-width:319px) and (max-width: 370px) { 
         height: 280px; 
     }
+
     @media only screen and (min-width:370px) and (max-width: 420px) { 
         height: 320px;
     }
+
     @media only screen and (min-width: 420px) and (max-width: 1250px) { 
         height: 360px;
     }
@@ -115,7 +117,7 @@ export const HeroImg = styled.img`
  `;
 
 export const SubtitleHero = styled(Subtitle)`
-    margin-bottom: 40px;
-   //margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 `;
 

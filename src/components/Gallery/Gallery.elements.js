@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Carousel from 'react-elastic-carousel';
-import { colors, breakpoints } from '../../variables';
+import { breakpoints } from '../../variables';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,7 +12,6 @@ export const WrapperGallery = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 60px;
@@ -26,9 +24,6 @@ export const GalleryContainer = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 80px 20px 0px 20px;
-    //position: relative;
-    //left: 10px;
-    //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding: 60px 0px 0px 0px;
@@ -36,7 +31,6 @@ export const GalleryContainer = styled.div`
 `;
 
 export const SliderGallery = styled(Slider)`
-        //width: 95%;
         .slider-wrapper {
         }
         .slick-slide {
@@ -45,9 +39,8 @@ export const SliderGallery = styled(Slider)`
 `;
 
 export const GalleryImg = styled.img`
-    //height: 350px;
-    //border: 1px solid red;
     padding: 10px;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding: 0px; 
     }
@@ -63,11 +56,13 @@ export const NextArrow = styled.img`
         height: 30px;   
         filter: invert(0%) contrast(500%) drop-shadow(0px 0px 14px black);
     }
+
     @media only screen and (max-width: 651px) {
         right: 15px;
         width: 20px;
         height: 20px;
     }
+
     :hover{
         filter: invert(50%);
     }
@@ -81,14 +76,13 @@ export const PrevArrow = styled.img`
         z-index: 100;
         width: 30px;
         height: 30px;
-        filter: invert(0%) contrast(500%) drop-shadow(0px 0px 14px black);
-    }
-    @media only screen and (max-width: 651px) {
-        left: 15px;
-        width: 20px;
-        height: 20px;
+        filter: invert(0%) contrast(1000%) drop-shadow(0px 0px 14px black);
 
+        :hover{
+            filter: invert(0%);
+        }
     }
+    
     :hover{
         filter: invert(50%);
     }

@@ -9,22 +9,17 @@ export const InfoCont = styled.div`
     justify-content: center;
     align-items: space-between;
     margin: 100px auto 0 auto;
-    //border: 1px solid red;
     padding-bottom: 100px;
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         padding-bottom: 80px;
         margin: 80px auto 0 auto;  
     }
-    @media only screen and (min-width: ${breakpoints.tablet} ) and (max-width: 1250px ) {
-        
-    }
 `;
 
 export const WrapperInfoSection = styled.div`
     padding-top: 100px;
-    //padding-bottom: 40px;
-    //border: 1px solid blue;
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 80px;
         padding-bottom: 0;
@@ -52,6 +47,7 @@ export const InfoCard = styled.div`
         width: 280px;
         height: 380px;
     }
+    
     @media screen and (max-width: 320px) {
         padding: 0 5px 20px 5px;
         height: auto;
