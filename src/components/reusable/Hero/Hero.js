@@ -71,8 +71,7 @@ function Hero({
                             }
                             {showLogInButton &&
                             <ButtonHero href={form} target="blank">MÁM ZÁJEM</ButtonHero>
-                            }
-                            	
+                            }   	
                         </TitleContainer>
                         { !isBreakpoint && 
                         <ImgContainer>
