@@ -4,21 +4,16 @@ import { colors, breakpoints, sizes } from '../../variables';
 export const ProgramWrapper = styled.div`
     padding-top: 80px;
     padding-bottom: 80px;
-    //border-top: 2px solid #EBEBEB;
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
-
 `;
 
 export const ProgramDataRow= styled.div`
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: ${breakpoints.tablet}) {
-       
-    }
 `;
 
 export const ProgramTable = styled.table`
@@ -27,12 +22,15 @@ export const ProgramTable = styled.table`
     width: 100%;
     border-collapse: collapse; 
     border: none;
+
     @media screen and (max-width:480px) {
         margin: 60px auto 0 auto;  
     }
+
     @media screen and (min-width: 480px) and (max-width: 680px) {
         width: 80%;
     }
+
     @media screen and (min-width: 680px) and (max-width: ${breakpoints.tablet}) {
         width: 60%;
     }
@@ -76,6 +74,7 @@ export const ProgramData = styled.td`
     text-align: left;
     color: ${colors.darkGrey};
     font-weight: 300;
+
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 10px;
         font-size: ${sizes.sizeS};
@@ -87,6 +86,7 @@ export const ProgramDataTopic = styled.td`
     text-align: left;
     font-weight: 700;
     font-size: ${sizes.sizeS};
+    
     @media screen and (max-width: ${breakpoints.tablet}) {
         padding: 10px;
     }

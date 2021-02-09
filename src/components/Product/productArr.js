@@ -5,7 +5,7 @@ import { LinkA, LinkScroll } from '../reusable/styled';
 const productArr = [ 
     {
         title: "Komunita",
-        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na <LinkA href="https://app.slack.com/client/TL2R6BTPA/CL5002YES" target="blank">Slacku</LinkA> a ostatních sociálních sítích.</>,
+        info: <>ReactGirls je komunita lidí, které spojuje láska k technologiím a programování. Pomáháme ženám, které se chtějí stát programátorkami za vedení profesionálních lektorů a mentorů. Zapojte se do naší komunity na Slacku a ostatních sociálních sítích.</>,
         hideButton: false,
         buttonText: "Zjistit více",
         img: "images/products/community.jpg",

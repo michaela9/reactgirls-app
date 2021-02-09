@@ -38,7 +38,9 @@ function App() {
   
     return targetReached;
   };
+
   const isBreakpoint = useMediaQuery(960)
+
   return (
     <ThemeProvider>
       <Router>

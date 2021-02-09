@@ -3,7 +3,7 @@ import { sizes, colors, breakpoints } from '../../variables';
 import { Paragraph , TitleCenter} from '../reusable/styled';
 
 export const TitleAboutMore = styled(TitleCenter)`
- margin-bottom: 30px;
+    margin-bottom: 30px;
 `;
 
 export const WrapperAboutMore = styled.div`
@@ -21,7 +21,6 @@ export const WrapperAboutMore = styled.div`
 export const TextAboutMore = styled(Paragraph)`
     text-align: center;
     padding-bottom: 15px;
-    //padding-top: 40px;
     color: ${colors.grey};
     font-weight: 300;
     width: 60%;
@@ -42,7 +41,6 @@ export const ArticleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `;
 
 export const AboutMoreArticle = styled.div`

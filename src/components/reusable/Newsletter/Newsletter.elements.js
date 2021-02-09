@@ -8,7 +8,7 @@ export const NewsletterContainer = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    //border: 1px solid red;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         margin: 80px auto 80px auto;  
         padding-right: 16px;
@@ -39,7 +39,6 @@ export const NewsletterButton = styled.input`
     width: 100%;
     background-color: ${colors.mainBlue};
     border: none;
-    //white-space: nowrap;
     outline: none;
     border: none;
     cursor: pointer;
@@ -48,7 +47,6 @@ export const NewsletterButton = styled.input`
     padding: 0 32px;
     border-radius: 25px;
     color: ${colors.white};
-    //box-shadow: 0px 4px 2px rgba(68, 68, 68, 0.15);
     letter-spacing: 1px;
     font-weight: 500;
     ${({hideButton}) => hideButton && css`
@@ -59,15 +57,17 @@ export const NewsletterButton = styled.input`
     align-items: center;
     text-decoration: none;
     width: 300px;
-    //border: 1px solid red;
+
     &:hover {
         transition: all 0.2s ease-in-out;
         background-color: #0099AE;  
     }
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         padding: 0;
         width: 280px;
     }
+
     @media only screen and (max-width: 325px) {
         width: 240px;
         font-size: ${sizes.sizeS};
@@ -82,19 +82,18 @@ export const InputContainer = styled.div`
     height: 50px;
     border-radius: 25px;
     width: 300px;
-    //max-width: 300px;
     display: flex;
-    //align-items: center;
-    //border:1px solid blue;
+
     @media only screen and (max-width: ${breakpoints.tablet}) {
         width: 280px;
     }
+
     @media only screen and (max-width: 325px) {
         width: 240px;
         padding: 0 25px;
         height: 42px;
     }
-    `;
+`;
 
 export const CustomInput = styled.input`
     color: ${colors.lightGrey};
@@ -109,6 +108,7 @@ export const CustomInput = styled.input`
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
     }
+
     @media only screen and (max-width: 325px) {
         width: 240px;
         font-size: ${sizes.sizeS};
@@ -117,21 +117,19 @@ export const CustomInput = styled.input`
 `;
 
 export const ButtonInputCont = styled.div`
-    //width: 300px;
     display: flex;
     flex-direction: column;
     height: 120px;
     justify-content: space-between;
     align-items: flex-start;
-    //border: 1px solid red;
     margin: 0 0;
 
     @media only screen and (max-width: 1250px) {
         align-items: center;
-        //margin-bottom: 40px;
         width: 280px;
         margin: 0 auto;
     }
+    
     @media only screen and (max-width: 325px) {
         width: 240px;
         height: 100px;

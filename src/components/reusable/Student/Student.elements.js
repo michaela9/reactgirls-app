@@ -4,10 +4,8 @@ import { sizes, breakpoints } from '../../../variables';
 export const StudentWrapper = styled.div`
     padding-top: 100px;
     padding-bottom: 0px;
-    //border: 1px solid red;
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
-    
         margin-right: 16px;
         margin-left: 16px;   
     }
@@ -20,33 +18,26 @@ export const StudentContainer = styled.div`
     width: 100%;
     justify-content: space-between;
     margin: 100px auto 0px auto;
-    //border: 1px solid red;
-    
 
     @media only screen and (max-width: ${breakpoints.tablet} ) {
         flex-direction: column;
         align-items: center;
         margin: 80px auto 0px auto;
-        //border: 1px solid red; 
     }
 `;
 
 export const StudentCard = styled.div`
     width: 30%;
     max-width: 250px;
-    //height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //border: 1px solid red;
     margin-bottom: 100px;
 
     @media only screen and (max-width: ${breakpoints.tablet})  {
         width: 100%;
-        margin-bottom: 80px;
-        
+        margin-bottom: 80px;   
     }
-
 `;
 
 export const StudentHeading = styled.h3`

@@ -21,22 +21,22 @@ export const mentoringCardArr = [
     {
         icon: "/images/icons/week.svg",
         title: "Týdenní setkávání",
-        text: "Pravidelné týdenní setkávání po dobu 3 měsíců, mentorování a úkoly od zkušeného kouče.",
+        text: "Pravidelná týdenní setkávání po dobu 3 měsíců, mentorování a tvorba projektu, code review.",
     },
     {
         icon: "/images/icons/coach.svg",
-        title: "Kouč k dispozici",
-        text: "Na horké lince k dispozici další koučové, kteří ti při řešení zadaných úkolů také poradí.",
+        title: "Koučové k dispozici",
+        text: "Na horké lince k dispozici další koučové, kteří ti poradí.",
     },
     {
         icon: "/images/icons/flexible.svg",
         title: "Flexibilita",
-        text: "Forma setkávání s koučem je zcela na domluvě – online i offline, dle tvých časových možností.",
+        text: "Forma setkávání online i offline, dle tvých časových možností.",
     },
     {
         icon: "/images/icons/feedback.svg",
         title: "Feedback",
-        text: "Závěrečné zhodnocení a feedback od kouče, možnost absolvovat celodenní Reactgirls Workshop.",
+        text: "Závěrečné zhodnocení a feedback od mentora.",
     },
     {
         icon: "/images/icons/interview.svg",
@@ -46,7 +46,7 @@ export const mentoringCardArr = [
     {
         icon: "/images/icons/certificate.svg",
         title: "Certifikát",
-        text: "Certifikát o absolvování mentoringu a merch ve formě trička a batůžku.",
+        text: "Certifikát o absolvování mentoringu a ReactGirls merch ve formě trička a batůžku.",
     },
 ];
 

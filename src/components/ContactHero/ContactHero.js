@@ -5,7 +5,6 @@ import {
     ContactHeroTitle,
     ContactInfo,
     ContactHeroContainer,
-    SlackIcon,
 } from './ContactHero.elements';
 
 import Newsletter from '../reusable/Newsletter/Newsletter';

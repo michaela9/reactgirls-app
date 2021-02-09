@@ -1,10 +1,9 @@
 import React from 'react';
-import { GalleryContainer, GalleryImg, CarouselGallery, WrapperGallery, SliderGallery, NextArrow, PrevArrow } from './Gallery.elements';
+import { GalleryContainer, GalleryImg, WrapperGallery, SliderGallery, NextArrow, PrevArrow } from './Gallery.elements';
 import { galleryArr } from './galleryArr';
 import { Container, TitleCenter, Wrapper } from '../reusable/styled';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 
 function Gallery() {
@@ -39,7 +38,7 @@ function Gallery() {
                 }
             }
         ]
-        }
+    }
 
     return (
         <Container >

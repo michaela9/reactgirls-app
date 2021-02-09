@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { sizes, colors, breakpoints } from '../../variables.js';
 
-
 export const FooterLogo = styled.h1`
     height: 160px;
     width: 160px;

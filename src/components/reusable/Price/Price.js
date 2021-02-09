@@ -3,7 +3,6 @@ import {
     Container, 
     Wrapper, 
 } from '../styled';
-import Newsletter from '../Newsletter/Newsletter';
 
 import { 
     PriceContainer,

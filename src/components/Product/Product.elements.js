@@ -10,17 +10,19 @@ export const ProductInfo = styled(Paragraph)`
     margin-top: 32px;
     color: ${colors.grey};
     text-align: left;
+
     a{
         color: ${colors.mainBlue};
         font-weight: 500;
         cursor: pointer;
         text-decoration: none;
     }
+
     @media only screen and (max-width: 1130px) {
         text-align: center;
     }
+
     @media only screen and (max-width: ${breakpoints.tablet} ) { 
-        //width: 100%;
         margin-right: 16px;
         margin-left: 16px;
         margin-bottom: 40px;
@@ -52,14 +54,11 @@ export const ProductInfoRow = styled.div`
         align-items: center;
         flex-direction: column-reverse;
         padding-top: 80px;
-       // padding-bottom: 40px;
-       //border: 1px solid red;
     }
 `;
 
 export const ProductInfoColumn = styled.div`
     flex: 1;
-    //max-width: 60%;
     flex-basis: 50%;
     display: flex;
     justify-content: center;
@@ -75,6 +74,7 @@ export const ProductInfoColumn = styled.div`
 
 export const ProductTitle = styled(TitleLeft)`
     margin-bottom: -15px;
+
     @media only screen and (max-width: 1130px) {
         text-align: center;
     }
@@ -106,18 +106,22 @@ export const ProductImgContainer = styled.div`
         width: 240px;
         height: 240px; 
     }
+
     @media only screen and (min-width:319px) and (max-width: 370px) { 
         width: 280px;
         height: 280px; 
     }
+
     @media only screen and (min-width:370px) and (max-width: 420px) { 
         width: 338px; 
         height: 338px;
     }
+
     @media only screen and (min-width: 420px) and (max-width: 960px) { 
         width: 380px; 
         height: 380px;
     }
+    
     @media only screen and (min-width: 960px)   and (max-width: 1130px) { 
         width: 380px; 
         height: 380px;
